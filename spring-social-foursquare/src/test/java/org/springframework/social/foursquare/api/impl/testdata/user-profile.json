@@ -1,0 +1,286 @@
+{
+   "meta":{
+      "code":200
+   },
+   "response":{
+      "user":{
+         "id":"700390",
+         "firstName":"Matt",
+         "lastName":"Wright",
+         "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/OGGQATTYHOGWJL4E.jpg",
+         "gender":"male",
+         "homeCity":"New York",
+         "relationship":"self",
+         "type":"user",
+         "pings":false,
+         "contact":{
+            "email":"mdw1980@gmail.com",
+            "twitter":"mattupstate"
+         },
+         "badges":{
+            "count":21
+         },
+         "mayorships":{
+            "count":5,
+            "items":[
+               {
+                  "id":"4a8030abf964a520bcf41fe3",
+                  "name":"Syrup",
+                  "contact":{
+                     "phone":"2126801477"
+                  },
+                  "location":{
+                     "address":"12 Vestry St.",
+                     "crossStreet":"Hudson Street",
+                     "city":"New York",
+                     "state":"NY",
+                     "postalCode":"10013",
+                     "country":"USA",
+                     "lat":40.7228,
+                     "lng":-74.0073
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d124941735",
+                        "name":"Office",
+                        "pluralName":"Offices",
+                        "icon":"https://foursquare.com/img/categories/building/default.png",
+                        "parents":[
+                           "Homes, Work, Others"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":212,
+                     "usersCount":39
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               },
+               {
+                  "id":"475b9b74f964a520d34c1fe3",
+                  "name":"Bar Great Harry",
+                  "contact":{
+                     "phone":"7182221103"
+                  },
+                  "location":{
+                     "address":"280 Smith Street",
+                     "crossStreet":"Sackett St",
+                     "city":"Brooklyn",
+                     "state":"NY",
+                     "postalCode":"11231",
+                     "country":"USA",
+                     "lat":40.6823,
+                     "lng":-73.9935
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d116941735",
+                        "name":"Bar",
+                        "pluralName":"Bars",
+                        "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                        "parents":[
+                           "Nightlife Spots"
+                        ],
+                        "primary":true
+                     },
+                     {
+                        "id":"4bf58dd8d48988d11b941735",
+                        "name":"Pub",
+                        "pluralName":"Pubs",
+                        "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                        "parents":[
+                           "Nightlife Spots"
+                        ]
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":3833,
+                     "usersCount":1425
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               },
+               {
+                  "id":"4d98d98061a3a1cd06d4d742",
+                  "name":"Kate's Fun Bags",
+                  "contact":{
+
+                  },
+                  "location":{
+                     "address":"355 5th Ave",
+                     "crossStreet":"5th Street",
+                     "city":"Brooklyn",
+                     "state":"New York",
+                     "postalCode":"11215",
+                     "lat":40.676321359999996,
+                     "lng":-73.98349092000001
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1bc941735",
+                        "name":"Cupcake Shop",
+                        "pluralName":"Cupcake Shops",
+                        "icon":"https://foursquare.com/img/categories/food/cupcakes.png",
+                        "parents":[
+                           "Food"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":9,
+                     "usersCount":3
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               },
+               {
+                  "id":"4d67f3cca800721e90af15b8",
+                  "name":"Rainageddon",
+                  "contact":{
+
+                  },
+                  "location":{
+                     "state":"New York",
+                     "lat":40.723536,
+                     "lng":-74.008097
+                  },
+                  "categories":[
+
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":4,
+                     "usersCount":3
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               },
+               {
+                  "id":"4c439f9af0bdd13a4d88c8cc",
+                  "name":"355 5th Ave Roof",
+                  "contact":{
+
+                  },
+                  "location":{
+                     "address":"355 5th Ave",
+                     "city":"Brooklyn",
+                     "state":"New York",
+                     "postalCode":"11215",
+                     "lat":40.671622,
+                     "lng":-73.983891
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d103941735",
+                        "name":"Home",
+                        "pluralName":"Homes",
+                        "icon":"https://foursquare.com/img/categories/building/home.png",
+                        "parents":[
+                           "Homes, Work, Others"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":5,
+                     "usersCount":2
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               }
+            ]
+         },
+         "checkins":{
+            "count":555,
+            "items":[
+               {
+                  "id":"4df8d11f45dd816eb5a80dfb",
+                  "createdAt":1308152095,
+                  "type":"checkin",
+                  "isMayor":true,
+                  "timeZone":"America/New_York",
+                  "venue":{
+                     "id":"4a8030abf964a520bcf41fe3",
+                     "name":"Syrup",
+                     "contact":{
+                        "phone":"2126801477"
+                     },
+                     "location":{
+                        "address":"12 Vestry St.",
+                        "crossStreet":"Hudson Street",
+                        "city":"New York",
+                        "state":"NY",
+                        "postalCode":"10013",
+                        "country":"USA",
+                        "lat":40.7228,
+                        "lng":-74.0073
+                     },
+                     "categories":[
+                        {
+                           "id":"4bf58dd8d48988d124941735",
+                           "name":"Office",
+                           "pluralName":"Offices",
+                           "icon":"https://foursquare.com/img/categories/building/default.png",
+                           "parents":[
+                              "Homes, Work, Others"
+                           ],
+                           "primary":true
+                        }
+                     ],
+                     "verified":false,
+                     "stats":{
+                        "checkinsCount":212,
+                        "usersCount":39
+                     },
+                     "todos":{
+                        "count":0
+                     }
+                  }
+               }
+            ]
+         },
+         "friends":{
+            "count":25,
+            "groups":[
+               {
+                  "type":"others",
+                  "name":"other friends",
+                  "count":25,
+                  "items":[
+
+                  ]
+               }
+            ]
+         },
+         "following":{
+            "count":0
+         },
+         "requests":{
+            "count":3
+         },
+         "tips":{
+            "count":3
+         },
+         "todos":{
+            "count":0
+         },
+         "scores":{
+            "recent":30,
+            "max":89,
+            "checkinsCount":8
+         }
+      }
+   }
+}
