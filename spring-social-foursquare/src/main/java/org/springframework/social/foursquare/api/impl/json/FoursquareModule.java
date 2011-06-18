@@ -9,6 +9,8 @@ import org.springframework.social.foursquare.api.ContactInfo;
 import org.springframework.social.foursquare.api.FoursquareUser;
 import org.springframework.social.foursquare.api.FriendGroup;
 import org.springframework.social.foursquare.api.FriendInfo;
+import org.springframework.social.foursquare.api.LeaderboardItem;
+import org.springframework.social.foursquare.api.Leaderboard;
 import org.springframework.social.foursquare.api.Location;
 import org.springframework.social.foursquare.api.MayorshipInfo;
 import org.springframework.social.foursquare.api.Scores;
@@ -31,6 +33,8 @@ public class FoursquareModule extends SimpleModule {
 		context.setMixInAnnotations(FoursquareUser.class, FoursquareUserMixin.class);
 		context.setMixInAnnotations(FriendGroup.class, FriendGroupMixin.class);
 		context.setMixInAnnotations(FriendInfo.class, FriendInfoMixin.class);
+		context.setMixInAnnotations(Leaderboard.class, LeaderboardMixin.class);
+		context.setMixInAnnotations(LeaderboardItem.class, LeaderboardItemMixin.class);
 		context.setMixInAnnotations(Location.class, LocationMixin.class);
 		context.setMixInAnnotations(MayorshipInfo.class, MayorshipInfoMixin.class);
 		context.setMixInAnnotations(Scores.class, ScoresMixin.class);
@@ -38,7 +42,5 @@ public class FoursquareModule extends SimpleModule {
 		context.setMixInAnnotations(Todo.class, TodoMixin.class);
 		context.setMixInAnnotations(Venue.class, VenueMixin.class);
 		context.setMixInAnnotations(VenueStats.class, VenueStatsMixin.class);
-		
-		//addDeserializer(FoursquareUserContainer.class, new FoursquareUserContainerDeserializer());
 	}
 }
