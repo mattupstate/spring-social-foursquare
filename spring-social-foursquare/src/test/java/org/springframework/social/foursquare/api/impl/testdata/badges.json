@@ -1,0 +1,2213 @@
+{
+   "meta":{
+      "code":200
+   },
+   "response":{
+      "sets":{
+         "groups":[
+            {
+               "type":"all",
+               "name":"all badges",
+               "image":{
+                  "prefix":"https://foursquare.com/img/badge/",
+                  "sizes":[
+                     24,
+                     32,
+                     48,
+                     64
+                  ],
+                  "name":"/allbadges.png"
+               },
+               "items":[
+                  "4dbe3e4a0437955ec060aef9",
+                  "4da9b72b43a1128196e480b6",
+                  "4da8ec368154abafc287cf1a",
+                  "4d431f3258e9b1f7c554e0ce",
+                  "4d3e83bfa2e4b1f77c9cfb25",
+                  "4d3d99b53ec9a35d13d95281",
+                  "4d27c7d355a8b60cf62cc7c0",
+                  "4d20bd4ff7a9a1431db72f9f",
+                  "4d1e994b6e8c3704cad3e89f",
+                  "4d0d77f47d28721ef839f920",
+                  "4cf6a1f455e1370437d8cdb6",
+                  "4cd041dd6200b1f71e31d328",
+                  "4ccb7ded566aa093fe531bfd",
+                  "4c91810fae96a0937b5aa446",
+                  "4c77109e923ba143071e66e6",
+                  "4c116e02675403bbb27c7d94",
+                  "4bd8464a675403bbcc6e6594",
+                  "4bc8d78d675403bb8f466094",
+                  "4bb54cd2675403bb55e25a94",
+                  "4bb169f2675403bb10045a94",
+                  "4bacbd17675403bbedb75894"
+               ],
+               "groups":[
+
+               ]
+            },
+            {
+               "type":"4sq",
+               "name":"foursquare",
+               "image":{
+                  "prefix":"https://foursquare.com/img/badge/",
+                  "sizes":[
+                     24,
+                     32,
+                     48,
+                     64
+                  ],
+                  "name":"/foursquare.png"
+               },
+               "items":[
+                  "4bacbd17675403bbedb75894",
+                  "4bb54cd2675403bb55e25a94",
+                  "4c77109e923ba143071e66e6",
+                  "4cf6a1f455e1370437d8cdb6",
+                  "4d27c7d355a8b60cf62cc7c0",
+                  "4bb169f2675403bb10045a94",
+                  "4bd8464a675403bbcc6e6594",
+                  "4c91810fae96a0937b5aa446",
+                  "4c4f08667a0803bbb2202ab7",
+                  "4d3e83bfa2e4b1f77c9cfb25",
+                  "4da8ec368154abafc287cf1a",
+                  "4d20bd4ff7a9a1431db72f9f",
+                  "4d0d77f47d28721ef839f920",
+                  "4c4f08667a0803bbba202ab7",
+                  "4c4f08667a0803bbb7202ab7",
+                  "4c4f08667a0803bbb8202ab7",
+                  "4c4f08667a0803bbb9202ab7",
+                  "4c4f08667a0803bbce202ab7",
+                  "4c4f08667a0803bbcf202ab7",
+                  "4c4f08667a0803bbd0202ab7",
+                  "4c4f08667a0803bbc3202ab7",
+                  "4c4f08667a0803bbd2202ab7",
+                  "4c4f08667a0803bbda202ab7",
+                  "4c4f08667a0803bbdb202ab7",
+                  "4c4f08667a0803bbdc202ab7",
+                  "4c4f08667a0803bbdd202ab7",
+                  "4c4f08667a0803bbde202ab7",
+                  "4c4f08667a0803bbdf202ab7",
+                  "4c4f08667a0803bbe0202ab7",
+                  "4c116e02675403bbb27c7d94",
+                  "4c4f08667a0803bbe4202ab7",
+                  "4c4f08667a0803bbe5202ab7",
+                  "4d3d99b53ec9a35d13d95281",
+                  "4dbe3e4a0437955ec060aef9",
+                  "4c4f08677a0803bb4e212ab7",
+                  "4c7d1dd0978976b0c7cee939",
+                  "4c7d1deb978976b064cfe939",
+                  "4d431f3258e9b1f7c554e0ce",
+                  "4ccb7ded566aa093fe531bfd",
+                  "4cd041dd6200b1f71e31d328",
+                  "4cec5f0bf7ac8eecd229e51e",
+                  "4cf5199da41a60fcf71d2fc0",
+                  "4d0925ed304460fc7117da63",
+                  "4d1e994b6e8c3704cad3e89f",
+                  "4da9b72b43a1128196e480b6"
+               ],
+               "groups":[
+
+               ]
+            },
+            {
+               "type":"partner",
+               "name":"partner",
+               "image":{
+                  "prefix":"https://foursquare.com/img/badge/",
+                  "sizes":[
+                     24,
+                     32,
+                     48,
+                     64
+                  ],
+                  "name":"/partner.png"
+               },
+               "items":[
+                  "4bc8d78d675403bb8f466094"
+               ],
+               "groups":[
+                  {
+                     "type":"event",
+                     "name":"Event",
+                     "items":[
+                        "4bc8d78d675403bb8f466094"
+                     ],
+                     "groups":[
+
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      "badges":{
+         "4bc8d78d675403bb8f466094":{
+            "id":"4bc8d78d675403bb8f466094",
+            "badgeId":"4c4f08667a0803bb1b212ab7",
+            "name":"#4sqDay 2010",
+            "description":"Happy foursquare day! (four squared = 4/16, get it?) Here's a toast to all of you for making foursquare so amazing and to the 150+ #4sqDay parties going on around the world!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/4sqday.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4bc8d78da4de2f5e1b540dbd",
+                        "createdAt":1271453581,
+                        "type":"shout",
+                        "shout":"Happy foursquare day",
+                        "timeZone":"America/New_York",
+                        "location":{
+                           "lat":40.72112833333333,
+                           "lng":-73.994962
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4d3d99b53ec9a35d13d95281":{
+            "id":"4d3d99b53ec9a35d13d95281",
+            "badgeId":"4c4f08667a0803bb1c212ab7",
+            "name":"Super Swarm",
+            "description":"50 person foursquare swarms are soooo 2009.  We upped it to 250 for the Super Swarm and you still nailed it.  Well played!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/super_swarm.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4d3d90856b3d236a43cf6a64",
+                        "createdAt":1295880325,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"4d3d1d746b3d236ac6096764",
+                           "name":"Freezepocalypse 2011",
+                           "contact":{
+
+                           },
+                           "location":{
+                              "address":"Moving Target!",
+                              "city":"New York",
+                              "state":"NY",
+                              "lat":40.7143528,
+                              "lng":-74.0059731
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d1f1931735",
+                                 "name":"General Entertainment",
+                                 "pluralName":"General Entertainment",
+                                 "icon":"https://foursquare.com/img/categories/arts_entertainment/default.png",
+                                 "parents":[
+                                    "Arts & Entertainment"
+                                 ],
+                                 "primary":true
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d162941735",
+                                 "name":"Other Great Outdoors",
+                                 "pluralName":"Other Great Outdoors",
+                                 "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                                 "parents":[
+                                    "Great Outdoors"
+                                 ]
+                              }
+                           ],
+                           "verified":false,
+                           "stats":{
+                              "checkinsCount":7853,
+                              "usersCount":5596
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4bacbd17675403bbedb75894":{
+            "id":"4bacbd17675403bbedb75894",
+            "badgeId":"4c4f08667a0803bbaa202ab7",
+            "name":"Newbie",
+            "description":"Congrats on your first check-in! In foursquare, you earn badges for your best check-ins \u2013 like going to museums, staying out late, or working out at the gym ten times in a month. Have fun exploring!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/newbie.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4bacbd17a4de2f5eaf028dbc",
+                        "createdAt":1269611799,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"4a5393edf964a52071b21fe3",
+                           "name":"Rokkan",
+                           "contact":{
+
+                           },
+                           "location":{
+                              "address":"203 Lafayette St.",
+                              "crossStreet":"Kenmare",
+                              "city":"New York",
+                              "state":"NY",
+                              "postalCode":"10012",
+                              "lat":40.7214374,
+                              "lng":-73.9978405
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d174941735",
+                                 "name":"Coworking Space",
+                                 "pluralName":"Coworking Spaces",
+                                 "icon":"https://foursquare.com/img/categories/building/default.png",
+                                 "parents":[
+                                    "Homes, Work, Others",
+                                    "Offices"
+                                 ],
+                                 "primary":true
+                              }
+                           ],
+                           "verified":false,
+                           "stats":{
+                              "checkinsCount":122,
+                              "usersCount":15
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4bb54cd2675403bb55e25a94":{
+            "id":"4bb54cd2675403bb55e25a94",
+            "badgeId":"4c4f08667a0803bbab202ab7",
+            "name":"Adventurer",
+            "description":"You've checked into 10 different venues!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/adventurer.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4bb54cd2a4de2f5eaa5db2bc",
+                        "createdAt":1270172882,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"4bb092aef964a520cc4c3ce3",
+                           "name":"Mission Dolores",
+                           "contact":{
+                              "phone":"7183990099"
+                           },
+                           "location":{
+                              "address":"249 4th Ave.",
+                              "crossStreet":"at Carroll St.",
+                              "city":"Brooklyn",
+                              "state":"NY",
+                              "postalCode":"11215",
+                              "lat":40.67621785391348,
+                              "lng":-73.98339539766312
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d117941735",
+                                 "name":"Beer Garden",
+                                 "pluralName":"Beer Gardens",
+                                 "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                                 "parents":[
+                                    "Nightlife Spots"
+                                 ],
+                                 "primary":true
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d116941735",
+                                 "name":"Bar",
+                                 "pluralName":"Bars",
+                                 "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                                 "parents":[
+                                    "Nightlife Spots"
+                                 ]
+                              }
+                           ],
+                           "verified":false,
+                           "stats":{
+                              "checkinsCount":4078,
+                              "usersCount":2114
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4c77109e923ba143071e66e6":{
+            "id":"4c77109e923ba143071e66e6",
+            "badgeId":"4c4f08667a0803bbac202ab7",
+            "name":"Explorer",
+            "description":"You've checked into 25 different venues!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/explorer.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4c77109e923ba143041e66e6",
+                        "createdAt":1282871454,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"4acbe67af964a52044c820e3",
+                           "name":"Katz's Delicatessen",
+                           "contact":{
+                              "phone":"8004468364"
+                           },
+                           "location":{
+                              "address":"205 E Houston St",
+                              "crossStreet":"at Ludlow",
+                              "city":"New York",
+                              "state":"NY",
+                              "postalCode":"10002",
+                              "country":"USA",
+                              "lat":40.72230706635953,
+                              "lng":-73.98735165596008
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d1c5941735",
+                                 "name":"Sandwich Place",
+                                 "pluralName":"Sandwich Places",
+                                 "icon":"https://foursquare.com/img/categories/food/sandwiches.png",
+                                 "parents":[
+                                    "Food"
+                                 ],
+                                 "primary":true
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d14e941735",
+                                 "name":"American Restaurant",
+                                 "pluralName":"American Restaurants",
+                                 "icon":"https://foursquare.com/img/categories/food/default.png",
+                                 "parents":[
+                                    "Food"
+                                 ]
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d146941735",
+                                 "name":"Deli or Bodega",
+                                 "pluralName":"Delis or Bodegas",
+                                 "icon":"https://foursquare.com/img/categories/food/deli.png",
+                                 "parents":[
+                                    "Food"
+                                 ]
+                              }
+                           ],
+                           "verified":false,
+                           "stats":{
+                              "checkinsCount":8930,
+                              "usersCount":7460
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4cf6a1f455e1370437d8cdb6":{
+            "id":"4cf6a1f455e1370437d8cdb6",
+            "badgeId":"4c4f08667a0803bbad202ab7",
+            "name":"Superstar",
+            "description":"You've checked into 50 different venues!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/superstar.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4cf6a1f455e1370435d8cdb6",
+                        "createdAt":1291231732,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"4cf5e29c9d11b1f78ea0bded",
+                           "name":"World AIDS Day",
+                           "contact":{
+
+                           },
+                           "location":{
+                              "address":"Everywhere",
+                              "city":"Everywhere",
+                              "state":"Everywhere",
+                              "lat":40.71437869906487,
+                              "lng":-74.00699615478516
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d104941735",
+                                 "name":"Medical Center",
+                                 "pluralName":"Medical Centers",
+                                 "icon":"https://foursquare.com/img/categories/building/medical.png",
+                                 "parents":[
+                                    "Homes, Work, Others"
+                                 ],
+                                 "primary":true
+                              }
+                           ],
+                           "verified":false,
+                           "stats":{
+                              "checkinsCount":2359,
+                              "usersCount":1805
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4d27c7d355a8b60cf62cc7c0":{
+            "id":"4d27c7d355a8b60cf62cc7c0",
+            "badgeId":"4c4f08667a0803bbae202ab7",
+            "name":"Bender",
+            "description":"That's 4+ nights in a row for you!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/bender.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4d27c7d355a8b60cf32cc7c0",
+                        "createdAt":1294452691,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"49c86272f964a52019581fe3",
+                           "name":"Bonnie's Grill",
+                           "contact":{
+                              "phone":"7183699527"
+                           },
+                           "location":{
+                              "address":"278 5th Ave",
+                              "crossStreet":"Garfield Pl",
+                              "city":"Brooklyn",
+                              "state":"NY",
+                              "postalCode":"11215",
+                              "lat":40.674286,
+                              "lng":-73.982412
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d16c941735",
+                                 "name":"Burger Joint",
+                                 "pluralName":"Burger Joints",
+                                 "icon":"https://foursquare.com/img/categories/food/burger.png",
+                                 "parents":[
+                                    "Food"
+                                 ],
+                                 "primary":true
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d116941735",
+                                 "name":"Bar",
+                                 "pluralName":"Bars",
+                                 "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                                 "parents":[
+                                    "Nightlife Spots"
+                                 ]
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d14e941735",
+                                 "name":"American Restaurant",
+                                 "pluralName":"American Restaurants",
+                                 "icon":"https://foursquare.com/img/categories/food/default.png",
+                                 "parents":[
+                                    "Food"
+                                 ]
+                              }
+                           ],
+                           "verified":false,
+                           "stats":{
+                              "checkinsCount":1434,
+                              "usersCount":809
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4bb169f2675403bb10045a94":{
+            "id":"4bb169f2675403bb10045a94",
+            "badgeId":"4c4f08667a0803bbaf202ab7",
+            "name":"Crunked",
+            "description":"That's 4+ stops in one night for you!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/crunked.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4bb169f2a4de2f5ecab2a1bc",
+                        "createdAt":1269918194,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"4afd89c6f964a520692822e3",
+                           "name":"Lord Hobo",
+                           "contact":{
+                              "phone":"6172508454"
+                           },
+                           "location":{
+                              "address":"92 Hampshire St",
+                              "crossStreet":"Windsor St",
+                              "city":"Cambridge",
+                              "state":"MA",
+                              "postalCode":"02139",
+                              "country":"USA",
+                              "lat":42.3687887,
+                              "lng":-71.0948726
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d116941735",
+                                 "name":"Bar",
+                                 "pluralName":"Bars",
+                                 "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                                 "parents":[
+                                    "Nightlife Spots"
+                                 ],
+                                 "primary":true
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d121941735",
+                                 "name":"Lounge",
+                                 "pluralName":"Lounges",
+                                 "icon":"https://foursquare.com/img/categories/nightlife/lounge.png",
+                                 "parents":[
+                                    "Nightlife Spots"
+                                 ]
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d157941735",
+                                 "name":"New American Restaurant",
+                                 "pluralName":"New American Restaurants",
+                                 "icon":"https://foursquare.com/img/categories/food/default.png",
+                                 "parents":[
+                                    "Food"
+                                 ]
+                              }
+                           ],
+                           "verified":false,
+                           "stats":{
+                              "checkinsCount":2637,
+                              "usersCount":1224
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4bd8464a675403bbcc6e6594":{
+            "id":"4bd8464a675403bbcc6e6594",
+            "badgeId":"4c4f08667a0803bbb0202ab7",
+            "name":"Local",
+            "description":"You've been at the same place 3x in one week!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/local.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4bd84649a4de2f5eaec164bd",
+                        "createdAt":1272464969,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"4bcc7d733740b713fc116465",
+                           "name":"Rokkan",
+                           "contact":{
+                              "twitter":"ROKKANmedia"
+                           },
+                           "location":{
+                              "address":"176 Grand St",
+                              "crossStreet":"Mulberry St",
+                              "city":"New York",
+                              "state":"NY",
+                              "postalCode":"10013",
+                              "lat":40.71955460687492,
+                              "lng":-73.99790346622467
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d124941735",
+                                 "name":"Office",
+                                 "pluralName":"Offices",
+                                 "icon":"https://foursquare.com/img/categories/building/default.png",
+                                 "parents":[
+                                    "Homes, Work, Others"
+                                 ],
+                                 "primary":true
+                              }
+                           ],
+                           "verified":false,
+                           "stats":{
+                              "checkinsCount":616,
+                              "usersCount":56
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4c91810fae96a0937b5aa446":{
+            "id":"4c91810fae96a0937b5aa446",
+            "badgeId":"4c4f08667a0803bbb1202ab7",
+            "name":"Super User",
+            "description":"That's 30 check-ins in a month for you!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/superuser.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4c91810fae96a093785aa446",
+                        "createdAt":1284604175,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"4a8c3613f964a520500d20e3",
+                           "name":"Mura",
+                           "contact":{
+                              "phone":"7189651288"
+                           },
+                           "location":{
+                              "address":"369 5th Ave",
+                              "crossStreet":"btw 5th St & 6th St",
+                              "city":"Brooklyn",
+                              "state":"NY",
+                              "postalCode":"11215",
+                              "lat":40.6713,
+                              "lng":-73.9845
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d142941735",
+                                 "name":"Asian Restaurant",
+                                 "pluralName":"Asian Restaurants",
+                                 "icon":"https://foursquare.com/img/categories/food/default.png",
+                                 "parents":[
+                                    "Food"
+                                 ],
+                                 "primary":true
+                              }
+                           ],
+                           "verified":false,
+                           "stats":{
+                              "checkinsCount":330,
+                              "usersCount":187
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4d3e83bfa2e4b1f77c9cfb25":{
+            "id":"4d3e83bfa2e4b1f77c9cfb25",
+            "badgeId":"4c4f08667a0803bbb3202ab7",
+            "name":"School Night",
+            "description":"Checking in after 3am on a school night? Well done!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/schoolnight.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4d3e83bfa2e4b1f7759cfb25",
+                        "createdAt":1295942591,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"4b1a74dcf964a52097ea23e3",
+                           "name":"Stop & Fifth Deli",
+                           "contact":{
+
+                           },
+                           "location":{
+                              "address":"5th Ave",
+                              "crossStreet":"at 5th St",
+                              "city":"New York",
+                              "state":"NY",
+                              "postalCode":"11215",
+                              "lat":40.671622436454356,
+                              "lng":-73.98416519165039
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d11f951735",
+                                 "name":"Deli or Bodega",
+                                 "pluralName":"Delis or Bodegas",
+                                 "icon":"https://foursquare.com/img/categories/shops/food_deli.png",
+                                 "parents":[
+                                    "Shops",
+                                    "Food and Drink Shops"
+                                 ],
+                                 "primary":true
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d1c5941735",
+                                 "name":"Sandwich Place",
+                                 "pluralName":"Sandwich Places",
+                                 "icon":"https://foursquare.com/img/categories/food/sandwiches.png",
+                                 "parents":[
+                                    "Food"
+                                 ]
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d118951735",
+                                 "name":"Grocery Store",
+                                 "pluralName":"Grocery Stores",
+                                 "icon":"https://foursquare.com/img/categories/shops/food_grocery.png",
+                                 "parents":[
+                                    "Shops",
+                                    "Food and Drink Shops"
+                                 ]
+                              }
+                           ],
+                           "verified":false,
+                           "stats":{
+                              "checkinsCount":138,
+                              "usersCount":40
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4da8ec368154abafc287cf1a":{
+            "id":"4da8ec368154abafc287cf1a",
+            "badgeId":"4c4f08667a0803bbb4202ab7",
+            "name":"Far Far Away",
+            "description":"Welcome to the world above 59th Street!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/farfaraway.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4da8ec358154abafc287cf12",
+                        "createdAt":1302916149,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"4bd6d09d6f649521a75771ec",
+                           "name":"Associated Supermarket",
+                           "contact":{
+
+                           },
+                           "location":{
+                              "address":"448 Lenox Avenue",
+                              "crossStreet":"133rd Street",
+                              "city":"New York",
+                              "state":"New York",
+                              "postalCode":"10027",
+                              "lat":40.8125406,
+                              "lng":-73.9418902
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d118951735",
+                                 "name":"Grocery Store",
+                                 "pluralName":"Grocery Stores",
+                                 "icon":"https://foursquare.com/img/categories/shops/food_grocery.png",
+                                 "parents":[
+                                    "Shops",
+                                    "Food and Drink Shops"
+                                 ],
+                                 "primary":true
+                              }
+                           ],
+                           "verified":false,
+                           "stats":{
+                              "checkinsCount":95,
+                              "usersCount":35
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4d20bd4ff7a9a1431db72f9f":{
+            "id":"4d20bd4ff7a9a1431db72f9f",
+            "badgeId":"4c4f08667a0803bbb5202ab7",
+            "name":"Brooklyn 4 Life",
+            "description":"That's 25+ check-ins in Brooklyn for you!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/brooklyn4life.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4d20bd4ff7a9a1431ab72f9f",
+                        "createdAt":1293991247,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"4a50d88bf964a5202bb01fe3",
+                           "name":"Bagel World",
+                           "contact":{
+                              "phone":"7184991143"
+                           },
+                           "location":{
+                              "address":"339 5th Ave",
+                              "crossStreet":"at 4th St",
+                              "city":"Brooklyn",
+                              "state":"NY",
+                              "postalCode":"11215",
+                              "country":"USA",
+                              "lat":40.671985,
+                              "lng":-73.983611
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d179941735",
+                                 "name":"Bagel Shop",
+                                 "pluralName":"Bagel Shops",
+                                 "icon":"https://foursquare.com/img/categories/food/bagels.png",
+                                 "parents":[
+                                    "Food"
+                                 ],
+                                 "primary":true
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d146941735",
+                                 "name":"Deli or Bodega",
+                                 "pluralName":"Delis or Bodegas",
+                                 "icon":"https://foursquare.com/img/categories/food/deli.png",
+                                 "parents":[
+                                    "Food"
+                                 ]
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d1c7941735",
+                                 "name":"Snack Place",
+                                 "pluralName":"Snack Places",
+                                 "icon":"https://foursquare.com/img/categories/food/default.png",
+                                 "parents":[
+                                    "Food"
+                                 ]
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d1e0931735",
+                                 "name":"Coffee Shop",
+                                 "pluralName":"Coffee Shops",
+                                 "icon":"https://foursquare.com/img/categories/food/coffeeshop.png",
+                                 "parents":[
+                                    "Food"
+                                 ]
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d1c5941735",
+                                 "name":"Sandwich Place",
+                                 "pluralName":"Sandwich Places",
+                                 "icon":"https://foursquare.com/img/categories/food/sandwiches.png",
+                                 "parents":[
+                                    "Food"
+                                 ]
+                              }
+                           ],
+                           "verified":false,
+                           "stats":{
+                              "checkinsCount":681,
+                              "usersCount":201
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4d0d77f47d28721ef839f920":{
+            "id":"4d0d77f47d28721ef839f920",
+            "badgeId":"4c4f08667a0803bbb6202ab7",
+            "name":"Photogenic",
+            "description":"You found 3 places with a photobooth!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/photogenic.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4d0d77f47d28721ef539f920",
+                        "createdAt":1292728308,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"47b47ac8f964a520aa4d1fe3",
+                           "name":"The Cove",
+                           "contact":{
+                              "phone":"7185995959"
+                           },
+                           "location":{
+                              "address":"108 North 6th St.",
+                              "crossStreet":"Berry/Wythe",
+                              "city":"Brooklyn",
+                              "state":"NY",
+                              "postalCode":"11211",
+                              "lat":40.718271,
+                              "lng":-73.960378
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d116941735",
+                                 "name":"Bar",
+                                 "pluralName":"Bars",
+                                 "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                                 "parents":[
+                                    "Nightlife Spots"
+                                 ],
+                                 "primary":true
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d120941735",
+                                 "name":"Karaoke Bar",
+                                 "pluralName":"Karaoke Bars",
+                                 "icon":"https://foursquare.com/img/categories/nightlife/karaoke.png",
+                                 "parents":[
+                                    "Nightlife Spots"
+                                 ]
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d11f941735",
+                                 "name":"Nightclub",
+                                 "pluralName":"Nightclubs",
+                                 "icon":"https://foursquare.com/img/categories/nightlife/danceparty.png",
+                                 "parents":[
+                                    "Nightlife Spots"
+                                 ]
+                              }
+                           ],
+                           "verified":true,
+                           "stats":{
+                              "checkinsCount":1561,
+                              "usersCount":1035
+                           },
+                           "url":"http://www.thecovenyc.com",
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4c116e02675403bbb27c7d94":{
+            "id":"4c116e02675403bbb27c7d94",
+            "badgeId":"4c4f08667a0803bbe1202ab7",
+            "name":"Swarm",
+            "description":"50+ people are also checked in here - it's a foursquare flashmob!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/swarm.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4c116e0272caa59365835da4",
+                        "createdAt":1276210690,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"3fd66200f964a520e0e51ee3",
+                           "name":"Sweet and Vicious",
+                           "contact":{
+                              "phone":"2123347915"
+                           },
+                           "location":{
+                              "address":"5 Spring St",
+                              "crossStreet":"at Bowery",
+                              "city":"New York",
+                              "state":"NY",
+                              "postalCode":"10012",
+                              "country":"USA",
+                              "lat":40.72136,
+                              "lng":-73.994258
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d116941735",
+                                 "name":"Bar",
+                                 "pluralName":"Bars",
+                                 "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                                 "parents":[
+                                    "Nightlife Spots"
+                                 ],
+                                 "primary":true
+                              }
+                           ],
+                           "verified":true,
+                           "stats":{
+                              "checkinsCount":7546,
+                              "usersCount":4321
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4dbe3e4a0437955ec060aef9":{
+            "id":"4dbe3e4a0437955ec060aef9",
+            "badgeId":"4c4f08677a0803bb4c212ab7",
+            "name":"Super Duper Swarm",
+            "description":"That \"Super Swarm\" badge is for babies!  Welcome to the Super Duper Swarm Club - 500 people checked in at once!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/super_duper_swarm.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4dbe2ba943a1d8504bb848b8",
+                        "createdAt":1304308649,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"4dbe1c2b4df044e5250bdb47",
+                           "name":"Osama bin gonathon",
+                           "contact":{
+
+                           },
+                           "location":{
+                              "address":"Everywhere",
+                              "city":"New York",
+                              "state":"New York",
+                              "lat":40.745008,
+                              "lng":-74.005449
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d171941735",
+                                 "name":"Event Space",
+                                 "pluralName":"Event Spaces",
+                                 "icon":"https://foursquare.com/img/categories/building/default.png",
+                                 "parents":[
+                                    "Homes, Work, Others"
+                                 ],
+                                 "primary":true
+                              }
+                           ],
+                           "verified":false,
+                           "stats":{
+                              "checkinsCount":1891,
+                              "usersCount":1809
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4d431f3258e9b1f7c554e0ce":{
+            "id":"4d431f3258e9b1f7c554e0ce",
+            "badgeId":"4caa535f30bd9eb05be32923",
+            "name":"9 to 5",
+            "description":"Looks like someone's filed 15 TPS reports in 30 days. Ummm... Yeeaahh... we're gonna need to go ahead and move you downstairs into Storage B.",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/9to5.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4d431f3158e9b1f7c254e0ce",
+                        "createdAt":1296244529,
+                        "type":"checkin",
+                        "isMayor":true,
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"4a8030abf964a520bcf41fe3",
+                           "name":"Syrup",
+                           "contact":{
+                              "phone":"2126801477"
+                           },
+                           "location":{
+                              "address":"12 Vestry St.",
+                              "crossStreet":"Hudson Street",
+                              "city":"New York",
+                              "state":"NY",
+                              "postalCode":"10013",
+                              "country":"USA",
+                              "lat":40.7228,
+                              "lng":-74.0073
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d124941735",
+                                 "name":"Office",
+                                 "pluralName":"Offices",
+                                 "icon":"https://foursquare.com/img/categories/building/default.png",
+                                 "parents":[
+                                    "Homes, Work, Others"
+                                 ],
+                                 "primary":true
+                              }
+                           ],
+                           "verified":false,
+                           "stats":{
+                              "checkinsCount":216,
+                              "usersCount":39
+                           },
+                           "todos":{
+                              "count":1
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4ccb7ded566aa093fe531bfd":{
+            "id":"4ccb7ded566aa093fe531bfd",
+            "badgeId":"4cc747aeb4179c74b237e2e3",
+            "name":"Spooky Swarm",
+            "description":"This Monster Mash is now swarming! I'd watch out if I were you... ♫ cause this is Thriller! Thriller Night! And no one's going to save you from the beast about to strike! ♫",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/halloween_swarm.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4ccb583a063a721e0729879a",
+                        "createdAt":1288394810,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"4ae6363ef964a520aba521e3",
+                           "name":"Madison Square Garden",
+                           "contact":{
+                              "phone":"2124656741",
+                              "twitter":"MSGnyc"
+                           },
+                           "location":{
+                              "address":"4 Penn Plz.",
+                              "crossStreet":"btwn 7th & 8th",
+                              "city":"New York",
+                              "state":"NY",
+                              "postalCode":"10001",
+                              "lat":40.75018302371518,
+                              "lng":-73.99227619171143
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d184941735",
+                                 "name":"Stadium",
+                                 "pluralName":"Stadiums",
+                                 "icon":"https://foursquare.com/img/categories/arts_entertainment/stadium.png",
+                                 "parents":[
+                                    "Arts & Entertainment"
+                                 ],
+                                 "primary":true
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d1e5931735",
+                                 "name":"Music Venue",
+                                 "pluralName":"Music Venues",
+                                 "icon":"https://foursquare.com/img/categories/arts_entertainment/musicvenue.png",
+                                 "parents":[
+                                    "Arts & Entertainment"
+                                 ]
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d185941735",
+                                 "name":"Hockey Stadium",
+                                 "pluralName":"Hockey Stadiums",
+                                 "icon":"https://foursquare.com/img/categories/arts_entertainment/stadium_hockey.png",
+                                 "parents":[
+                                    "Arts & Entertainment",
+                                    "Stadiums"
+                                 ]
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d18b941735",
+                                 "name":"Basketball Stadium",
+                                 "pluralName":"Basketball Stadiums",
+                                 "icon":"https://foursquare.com/img/categories/arts_entertainment/stadium_basketball.png",
+                                 "parents":[
+                                    "Arts & Entertainment",
+                                    "Stadiums"
+                                 ]
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d1f3931735",
+                                 "name":"Concert Hall",
+                                 "pluralName":"Concert Halls",
+                                 "icon":"https://foursquare.com/img/categories/arts_entertainment/default.png",
+                                 "parents":[
+                                    "Arts & Entertainment",
+                                    "Performing Arts Venues"
+                                 ]
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d171941735",
+                                 "name":"Event Space",
+                                 "pluralName":"Event Spaces",
+                                 "icon":"https://foursquare.com/img/categories/building/default.png",
+                                 "parents":[
+                                    "Homes, Work, Others"
+                                 ]
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d1f1931735",
+                                 "name":"General Entertainment",
+                                 "pluralName":"General Entertainment",
+                                 "icon":"https://foursquare.com/img/categories/arts_entertainment/default.png",
+                                 "parents":[
+                                    "Arts & Entertainment"
+                                 ]
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d1f2931735",
+                                 "name":"Performing Arts Venue",
+                                 "pluralName":"Performing Arts Venues",
+                                 "icon":"https://foursquare.com/img/categories/arts_entertainment/default.png",
+                                 "parents":[
+                                    "Arts & Entertainment"
+                                 ]
+                              }
+                           ],
+                           "verified":true,
+                           "stats":{
+                              "checkinsCount":57432,
+                              "usersCount":34534
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4cd041dd6200b1f71e31d328":{
+            "id":"4cd041dd6200b1f71e31d328",
+            "badgeId":"4cc87ab5dbc376b044a5a3bc",
+            "name":"I Voted 2010",
+            "description":"♫...and the home of the brave!♫  Thanks for voting!  Now visit elections.foursquare.com ",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/vote2010.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4cd041dc6200b1f71c31d328",
+                        "createdAt":1288716764,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"4cce3c75a9259521c9296f29",
+                           "name":"Votepocalypse",
+                           "contact":{
+
+                           },
+                           "location":{
+                              "address":"Moving Target!",
+                              "city":"New York",
+                              "state":"NY",
+                              "lat":40.712654662428214,
+                              "lng":-74.00733947753906
+                           },
+                           "categories":[
+                              {
+                                 "id":"4cae28ecbf23941eb1190695",
+                                 "name":"Voting Booth",
+                                 "pluralName":"Voting Booths",
+                                 "icon":"https://foursquare.com/img/categories/building/votingbooth.png",
+                                 "parents":[
+                                    "Homes, Work, Others"
+                                 ],
+                                 "primary":true
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d126941735",
+                                 "name":"Government Building",
+                                 "pluralName":"Government Buildings",
+                                 "icon":"https://foursquare.com/img/categories/building/default.png",
+                                 "parents":[
+                                    "Homes, Work, Others"
+                                 ]
+                              }
+                           ],
+                           "verified":false,
+                           "stats":{
+                              "checkinsCount":888,
+                              "usersCount":789
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4d1e994b6e8c3704cad3e89f":{
+            "id":"4d1e994b6e8c3704cad3e89f",
+            "badgeId":"4d1255480e9e8eece9f7481c",
+            "name":"New Year's 2011",
+            "description":"Happy New Year!  Thanks for all your check-ins, tips, photos, comments and badge unlocks in 2010. Here's to a happy and healthy 2011 - and a hangover free tomorrow.",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/newyears11.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4d1e994b6e8c3704c7d3e89f",
+                        "createdAt":1293850955,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"4bb092aef964a520cc4c3ce3",
+                           "name":"Mission Dolores",
+                           "contact":{
+                              "phone":"7183990099"
+                           },
+                           "location":{
+                              "address":"249 4th Ave.",
+                              "crossStreet":"at Carroll St.",
+                              "city":"Brooklyn",
+                              "state":"NY",
+                              "postalCode":"11215",
+                              "lat":40.67621785391348,
+                              "lng":-73.98339539766312
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d117941735",
+                                 "name":"Beer Garden",
+                                 "pluralName":"Beer Gardens",
+                                 "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                                 "parents":[
+                                    "Nightlife Spots"
+                                 ],
+                                 "primary":true
+                              },
+                              {
+                                 "id":"4bf58dd8d48988d116941735",
+                                 "name":"Bar",
+                                 "pluralName":"Bars",
+                                 "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                                 "parents":[
+                                    "Nightlife Spots"
+                                 ]
+                              }
+                           ],
+                           "verified":false,
+                           "stats":{
+                              "checkinsCount":4078,
+                              "usersCount":2114
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4da9b72b43a1128196e480b6":{
+            "id":"4da9b72b43a1128196e480b6",
+            "badgeId":"4d951c60c162530c255ceca3",
+            "name":"4sqDay 2011",
+            "description":"And we thought last year was huge! Happy 4/4^2 day! Thanks to all of you amazing people, for organizing over 1000 parties around the world for our little startup! We would give a speech, but we're just trying to hold back our tears.",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/4sqday2011.png"
+            },
+            "unlocks":[
+               {
+                  "checkins":[
+                     {
+                        "id":"4da9b72b43a1128196e480af",
+                        "createdAt":1302968107,
+                        "type":"checkin",
+                        "timeZone":"America/New_York",
+                        "venue":{
+                           "id":"4b9bebc3f964a520fc3536e3",
+                           "name":"Sharon Dorram Color at Sally Hershberger",
+                           "contact":{
+
+                           },
+                           "location":{
+                              "address":"17 E. 71st St.",
+                              "crossStreet":"Madison Ave. and Park Ave.",
+                              "city":"New York",
+                              "state":"New York",
+                              "postalCode":"10021",
+                              "lat":40.771427,
+                              "lng":-73.966109
+                           },
+                           "categories":[
+                              {
+                                 "id":"4bf58dd8d48988d110951735",
+                                 "name":"Salon or Barbershop",
+                                 "pluralName":"Salons or Barbershops",
+                                 "icon":"https://foursquare.com/img/categories/shops/salon_barber.png",
+                                 "parents":[
+                                    "Shops"
+                                 ],
+                                 "primary":true
+                              }
+                           ],
+                           "verified":false,
+                           "stats":{
+                              "checkinsCount":90,
+                              "usersCount":28
+                           },
+                           "todos":{
+                              "count":0
+                           }
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "4c4f08667a0803bbb2202ab7":{
+            "id":"4c4f08667a0803bbb2202ab7",
+            "badgeId":"4c4f08667a0803bbb2202ab7",
+            "name":"Player Please!",
+            "hint":"Don't hate the player. Hate the game!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbba202ab7":{
+            "id":"4c4f08667a0803bbba202ab7",
+            "badgeId":"4c4f08667a0803bbba202ab7",
+            "name":"Socialite",
+            "hint":"Go get seen at a scene a few times!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbb7202ab7":{
+            "id":"4c4f08667a0803bbb7202ab7",
+            "badgeId":"4c4f08667a0803bbb7202ab7",
+            "name":"Gossip Girl",
+            "hint":"We'll never tell, xoxo",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbb8202ab7":{
+            "id":"4c4f08667a0803bbb8202ab7",
+            "badgeId":"4c4f08667a0803bbb8202ab7",
+            "name":"Douchebag",
+            "hint":"Is that Drakkar Noir you smell? Follow your nose, until it gets broken!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbb9202ab7":{
+            "id":"4c4f08667a0803bbb9202ab7",
+            "badgeId":"4c4f08667a0803bbb9202ab7",
+            "name":"Animal House",
+            "hint":"Hanging out with a raucous college crowd?  If not, then you won't be unlocking this badge anytime soon! ",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbce202ab7":{
+            "id":"4c4f08667a0803bbce202ab7",
+            "badgeId":"4c4f08667a0803bbce202ab7",
+            "name":"Ziggy's Wagon",
+            "hint":"mmmmm..... Meals on Wheels (and we don't mean the assisted living type) ",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbcf202ab7":{
+            "id":"4c4f08667a0803bbcf202ab7",
+            "badgeId":"4c4f08667a0803bbcf202ab7",
+            "name":"Don't Stop Believin'",
+            "hint":"Sure, you've got a great voice in the shower, who doesn't? Singing in public is the key to unlocking this badge!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbd0202ab7":{
+            "id":"4c4f08667a0803bbd0202ab7",
+            "badgeId":"4c4f08667a0803bbd0202ab7",
+            "name":"Gym Rat",
+            "hint":"If you want this badge you have to work for it - do another 10 reps and we'll talk!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbc3202ab7":{
+            "id":"4c4f08667a0803bbc3202ab7",
+            "badgeId":"4c4f08667a0803bbc3202ab7",
+            "name":"Overshare",
+            "hint":"Tweets and blogs aren't enough to satisfy your digital desire to share.  You're gonna need a thumb-massage after unlocking this badge.",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbd2202ab7":{
+            "id":"4c4f08667a0803bbd2202ab7",
+            "badgeId":"4c4f08667a0803bbd2202ab7",
+            "name":"Trainspotter",
+            "hint":"Ditch your wheels and make BART your best friend.",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbda202ab7":{
+            "id":"4c4f08667a0803bbda202ab7",
+            "badgeId":"4c4f08667a0803bbda202ab7",
+            "name":"JetSetter",
+            "hint":"Getting the ol' pat-down by five different strangers is a small price to pay for this rare bird.  ",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbdb202ab7":{
+            "id":"4c4f08667a0803bbdb202ab7",
+            "badgeId":"4c4f08667a0803bbdb202ab7",
+            "name":"16 Candles",
+            "hint":"Good friends always remember birthdays. Great friends sing real loud!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbdc202ab7":{
+            "id":"4c4f08667a0803bbdc202ab7",
+            "badgeId":"4c4f08667a0803bbdc202ab7",
+            "name":"Zoetrope",
+            "hint":"Phone on silent? Soda? Popcorn? Check!  Now its time to see a ton of movies!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbdd202ab7":{
+            "id":"4c4f08667a0803bbdd202ab7",
+            "badgeId":"4c4f08667a0803bbdd202ab7",
+            "name":"Pizzaiolo",
+            "hint":"The path to this badge is paved with slices from many many ovens - not to mention 10 extra lbs.",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbde202ab7":{
+            "id":"4c4f08667a0803bbde202ab7",
+            "badgeId":"4c4f08667a0803bbde202ab7",
+            "name":"Jobs",
+            "hint":"Here's the silver lining to breaking your iPhone 3 times. ",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbdf202ab7":{
+            "id":"4c4f08667a0803bbdf202ab7",
+            "badgeId":"4c4f08667a0803bbdf202ab7",
+            "name":"Warhol",
+            "hint":"You may want to check into the decahedron period before unlocking this badge!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbe0202ab7":{
+            "id":"4c4f08667a0803bbe0202ab7",
+            "badgeId":"4c4f08667a0803bbe0202ab7",
+            "name":"Babysitter",
+            "hint":"If the monkey bars were an Olympic event, you'd be a Gold Medalist. ",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbe4202ab7":{
+            "id":"4c4f08667a0803bbe4202ab7",
+            "badgeId":"4c4f08667a0803bbe4202ab7",
+            "name":"Super Mayor",
+            "hint":"One badge to rule them all. ",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08667a0803bbe5202ab7":{
+            "id":"4c4f08667a0803bbe5202ab7",
+            "badgeId":"4c4f08667a0803bbe5202ab7",
+            "name":"I'm on a boat!",
+            "hint":"I can't even fathom how to unlock this deep sea treasure.",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c4f08677a0803bb4e212ab7":{
+            "id":"4c4f08677a0803bb4e212ab7",
+            "badgeId":"4c4f08677a0803bb4e212ab7",
+            "name":"Dog's Best Friend",
+            "hint":"\"Bark Bark Woof!\" Somebody wants to play!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c7d1dd0978976b0c7cee939":{
+            "id":"4c7d1dd0978976b0c7cee939",
+            "badgeId":"4c7d1dd0978976b0c7cee939",
+            "name":"Swimmies",
+            "hint":"Only properly pruned hands can unlock this badge.",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4c7d1deb978976b064cfe939":{
+            "id":"4c7d1deb978976b064cfe939",
+            "badgeId":"4c7d1deb978976b064cfe939",
+            "name":"Great Outdoors",
+            "hint":"Looks like someone could use some fresh air.",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4cec5f0bf7ac8eecd229e51e":{
+            "id":"4cec5f0bf7ac8eecd229e51e",
+            "badgeId":"4cec5f0bf7ac8eecd229e51e",
+            "name":"Ski Bum",
+            "hint":"Get your skis shined up. Grab a stick of Juicy Fruit! The taste is gonna move ya!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4cf5199da41a60fcf71d2fc0":{
+            "id":"4cf5199da41a60fcf71d2fc0",
+            "badgeId":"4cf5199da41a60fcf71d2fc0",
+            "name":"Bookworm",
+            "hint":"Shhhhh!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         },
+         "4d0925ed304460fc7117da63":{
+            "id":"4d0925ed304460fc7117da63",
+            "badgeId":"4d0925ed304460fc7117da63",
+            "name":"7-10 Split",
+            "hint":"Hit the lanes and show us some XXX - and no, not that kind of XXX. Get your head out of the gutter!",
+            "image":{
+               "prefix":"https://playfoursquare.s3.amazonaws.com/badge/",
+               "sizes":[
+                  57,
+                  114,
+                  200,
+                  300,
+                  400
+               ],
+               "name":"/default_off.png"
+            },
+            "unlocks":[
+
+            ]
+         }
+      },
+      "defaultSetType":"4sq"
+   }
+}

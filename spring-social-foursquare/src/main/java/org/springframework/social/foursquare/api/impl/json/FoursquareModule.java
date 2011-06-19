@@ -2,6 +2,12 @@ package org.springframework.social.foursquare.api.impl.json;
 
 import org.codehaus.jackson.Version;
 import org.codehaus.jackson.map.module.SimpleModule;
+import org.springframework.social.foursquare.api.Badge;
+import org.springframework.social.foursquare.api.BadgeGroup;
+import org.springframework.social.foursquare.api.BadgeImage;
+import org.springframework.social.foursquare.api.BadgeSets;
+import org.springframework.social.foursquare.api.BadgeUnlocks;
+import org.springframework.social.foursquare.api.BadgesResponse;
 import org.springframework.social.foursquare.api.Category;
 import org.springframework.social.foursquare.api.Checkin;
 import org.springframework.social.foursquare.api.CheckinInfo;
@@ -16,7 +22,7 @@ import org.springframework.social.foursquare.api.MayorshipInfo;
 import org.springframework.social.foursquare.api.Scores;
 import org.springframework.social.foursquare.api.Tip;
 import org.springframework.social.foursquare.api.Todo;
-import org.springframework.social.foursquare.api.UserSearchResults;
+import org.springframework.social.foursquare.api.UserSearchResponse;
 import org.springframework.social.foursquare.api.Venue;
 import org.springframework.social.foursquare.api.VenueStats;
 
@@ -28,7 +34,13 @@ public class FoursquareModule extends SimpleModule {
 	
 	@Override 
 	public void setupModule(SetupContext context) {
-		context.setMixInAnnotations(Category.class, CategoryMixin.class);
+	    context.setMixInAnnotations(Badge.class, BadgeMixin.class);
+	    context.setMixInAnnotations(BadgeGroup.class, BadgeGroupMixin.class);
+	    context.setMixInAnnotations(BadgeImage.class, BadgeImageMixin.class);
+	    context.setMixInAnnotations(BadgeSets.class, BadgeSetsMixin.class);
+	    context.setMixInAnnotations(BadgesResponse.class, BadgesResponseMixin.class);
+	    context.setMixInAnnotations(BadgeUnlocks.class, BadgeUnlocksMixin.class);
+	    context.setMixInAnnotations(Category.class, CategoryMixin.class);
 		context.setMixInAnnotations(Checkin.class, CheckinMixin.class);
 		context.setMixInAnnotations(CheckinInfo.class, CheckinInfoMixin.class);
 		context.setMixInAnnotations(ContactInfo.class, ContactInfoMixin.class);
@@ -42,7 +54,7 @@ public class FoursquareModule extends SimpleModule {
 		context.setMixInAnnotations(Scores.class, ScoresMixin.class);
 		context.setMixInAnnotations(Tip.class, TipMixin.class);
 		context.setMixInAnnotations(Todo.class, TodoMixin.class);
-		context.setMixInAnnotations(UserSearchResults.class, UserSearchResultsMixin.class);
+		context.setMixInAnnotations(UserSearchResponse.class, UserSearchResponseMixin.class);
 		context.setMixInAnnotations(Venue.class, VenueMixin.class);
 		context.setMixInAnnotations(VenueStats.class, VenueStatsMixin.class);
 	}

@@ -11,9 +11,10 @@ import java.util.List;
 
 import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.social.foursquare.api.BadgesResponse;
 import org.springframework.social.foursquare.api.FoursquareUser;
 import org.springframework.social.foursquare.api.Leaderboard;
-import org.springframework.social.foursquare.api.UserSearchResults;
+import org.springframework.social.foursquare.api.UserSearchResponse;
 
 public class UserTemplateTest extends AbstractFoursquareApiTest {
 	
@@ -45,7 +46,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/user-search.json", getClass()), responseHeaders));
         
-        UserSearchResults results = foursquare.userOperations().search(Arrays.asList("123"),
+        UserSearchResponse results = foursquare.userOperations().search(Arrays.asList("123"),
                 Arrays.asList("john@doe.com"), Arrays.asList("matt"), Arrays.asList("321"));
         
         assertEquals(3, results.getResults().size());
@@ -58,7 +59,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/user-search.json", getClass()), responseHeaders));
         
-        UserSearchResults results = foursquare.userOperations().searchByName("matt");
+        UserSearchResponse results = foursquare.userOperations().searchByName("matt");
         assertEquals(3, results.getResults().size());
         mockServer.verify();
     }
@@ -69,7 +70,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/user-search.json", getClass()), responseHeaders));
         
-        UserSearchResults results = foursquare.userOperations().searchTwitterFriends("matt");
+        UserSearchResponse results = foursquare.userOperations().searchTwitterFriends("matt");
         assertEquals(3, results.getResults().size());
         mockServer.verify();
     }
@@ -82,6 +83,17 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
         
         List<FoursquareUser> requests = foursquare.userOperations().getRequests();
         assertEquals(3, requests.size());
+        mockServer.verify();
+    }
+    
+    @Test
+    public void getBadges() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/badges/?access_token=ACCESS_TOKEN"))
+            .andExpect(method(GET))
+            .andRespond(withResponse(new ClassPathResource("testdata/badges.json", getClass()), responseHeaders));
+        
+        BadgesResponse response = foursquare.userOperations().getBadges();
+        assertEquals("#4sqDay 2010", response.getBadges().get("4bc8d78d675403bb8f466094").getName());
         mockServer.verify();
     }
     

@@ -4,14 +4,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.social.foursquare.api.BadgesResponse;
 import org.springframework.social.foursquare.api.FoursquareUser;
 import org.springframework.social.foursquare.api.Leaderboard;
 import org.springframework.social.foursquare.api.UserOperations;
-import org.springframework.social.foursquare.api.UserSearchResults;
+import org.springframework.social.foursquare.api.UserSearchResponse;
+import org.springframework.social.foursquare.api.impl.json.BadgesResponseContainer;
 import org.springframework.social.foursquare.api.impl.json.FoursquareUserContainer;
 import org.springframework.social.foursquare.api.impl.json.LeaderboardContainer;
 import org.springframework.social.foursquare.api.impl.json.RequestsContainer;
-import org.springframework.social.foursquare.api.impl.json.UserSearchResultsContainer;
+import org.springframework.social.foursquare.api.impl.json.UserSearchResponseContainer;
 import org.springframework.util.StringUtils;
 
 public class UserTemplate extends AbstractFoursquareOperations implements UserOperations {
@@ -21,9 +23,13 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 	}
 	
 	public FoursquareUser getUser() {
-		requireUserAuthorization();
-		return get(buildUri(USERS_ENDPOINT + "self/"), FoursquareUserContainer.class).getUser();
+		return getUser("self");
 	}
+	
+	public FoursquareUser getUser(String userId) {
+        requireUserAuthorization();
+        return get(buildUri(USERS_ENDPOINT + userId + "/"), FoursquareUserContainer.class).getUser();
+    }
 
     public Leaderboard getLeaderboard() {
         return getLeaderboard(0);
@@ -37,7 +43,7 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
         return get(buildUri(USERS_ENDPOINT + "leaderboard/", params), LeaderboardContainer.class).getLeaderboard();
     }
     
-    public UserSearchResults search(List<String> phoneNumbers, List<String> emailAddresses,
+    public UserSearchResponse search(List<String> phoneNumbers, List<String> emailAddresses,
             List<String> twitterHandles, List<String> facebookUserIds) {
         Map<String,String> params = new HashMap<String, String>();
         if(phoneNumbers != null) {
@@ -52,23 +58,38 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
         if(facebookUserIds != null) {
             params.put("fbid", StringUtils.collectionToCommaDelimitedString(facebookUserIds));
         }
-        return get(buildUri(USERS_ENDPOINT + "search/", params), UserSearchResultsContainer.class).getResults();
+        return doSearch(params);
     }
     
-    public UserSearchResults searchByName(String name) {
+    public UserSearchResponse searchByName(String name) {
         Map<String,String> params = new HashMap<String, String>();
         params.put("name", name);
-        return get(buildUri(USERS_ENDPOINT + "search/", params), UserSearchResultsContainer.class).getResults();
+        return doSearch(params);
     }
     
-    public UserSearchResults searchTwitterFriends(String twitterHandle) {
+    public UserSearchResponse searchTwitterFriends(String twitterHandle) {
         Map<String,String> params = new HashMap<String, String>();
         params.put("twitterSource", twitterHandle);
-        return get(buildUri(USERS_ENDPOINT + "search/", params), UserSearchResultsContainer.class).getResults();
+        return doSearch(params);
+    }
+    
+    private UserSearchResponse doSearch(Map<String,String> params) {
+        requireUserAuthorization();
+        return get(buildUri(USERS_ENDPOINT + "search/", params), UserSearchResponseContainer.class).getResults();
     }
     
     public List<FoursquareUser> getRequests() {
+        requireUserAuthorization();
         return get(buildUri(USERS_ENDPOINT + "requests/"), RequestsContainer.class).getRequests();
     }
 
+    public BadgesResponse getBadges() {
+        return getBadges("self");
+    }
+
+    public BadgesResponse getBadges(String userId) {
+        requireUserAuthorization();
+        return get(buildUri(USERS_ENDPOINT + userId + "/badges/"), BadgesResponseContainer.class).getResponse();
+    }
+    
 }

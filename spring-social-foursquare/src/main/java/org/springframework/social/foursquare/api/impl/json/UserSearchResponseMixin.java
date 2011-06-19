@@ -9,9 +9,9 @@ import org.codehaus.jackson.annotate.JsonProperty;
 import org.springframework.social.foursquare.api.FoursquareUser;
 
 @JsonIgnoreProperties(ignoreUnknown=true)
-abstract class UserSearchResultsMixin {
+abstract class UserSearchResponseMixin {
     @JsonCreator
-    UserSearchResultsMixin(
+    UserSearchResponseMixin(
             @JsonProperty("results") List<FoursquareUser> results,
             @JsonProperty("unmatched") Map<String, Object> unmatched){}
     

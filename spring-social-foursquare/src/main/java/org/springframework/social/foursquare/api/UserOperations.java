@@ -11,6 +11,13 @@ public interface UserOperations {
 	FoursquareUser getUser();
 	
 	/**
+     * Retrieve the specified FoursquareUser
+     * @param userId a Foursquare user ID
+     * @return A FoursquareUser
+     */
+    FoursquareUser getUser(String userId);
+	
+	/**
 	 * Retrieve the authenticated user's leaderboard
 	 * @return A Leaderboard
 	 */
@@ -42,7 +49,7 @@ public interface UserOperations {
 	 * @param facebookUserIds A list of Facebook user IDs
 	 * @return A UserSearchResults object containg matching users and a graph of unmatched criteria
 	 */
-	UserSearchResults search(List<String> phoneNumbers, List<String> emailAddresses,
+	UserSearchResponse search(List<String> phoneNumbers, List<String> emailAddresses,
             List<String> twitterHandles, List<String> facebookUserIds);
 	
 	/**
@@ -50,14 +57,18 @@ public interface UserOperations {
 	 * @param name A users name
 	 * @return A UserSearchResults object containg matching users and a graph of unmatched criteria
 	 */
-	UserSearchResults searchByName(String name);
+	UserSearchResponse searchByName(String name);
 	
 	/**
 	 * Searches the specified Twitter handle's followers for users who have Foursquare accounts.
 	 * @param name A Twitter handle
      * @return A UserSearchResults object containg matching users and a graph of unmatched criteria
 	 */
-	UserSearchResults searchTwitterFriends(String twitterHandle);
+	UserSearchResponse searchTwitterFriends(String twitterHandle);
+	
+	BadgesResponse getBadges();
+	
+	BadgesResponse getBadges(String userId);
 	
 	public static final String USERS_ENDPOINT = "users/";
 }
