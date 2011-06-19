@@ -26,7 +26,8 @@ public class FoursquareModule extends SimpleModule {
 		super(FoursquareModule.class.getName(), new Version(1, 0, 0, null));
 	}
 	
-	@Override public void setupModule(SetupContext context) {
+	@Override 
+	public void setupModule(SetupContext context) {
 		context.setMixInAnnotations(Category.class, CategoryMixin.class);
 		context.setMixInAnnotations(Checkin.class, CheckinMixin.class);
 		context.setMixInAnnotations(CheckinInfo.class, CheckinInfoMixin.class);

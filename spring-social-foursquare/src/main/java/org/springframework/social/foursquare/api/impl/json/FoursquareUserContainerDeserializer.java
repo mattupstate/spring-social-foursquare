@@ -12,7 +12,7 @@ public class FoursquareUserContainerDeserializer extends AbstractFoursquareDeser
 	@Override
 	public FoursquareUserContainer deserialize(JsonParser jp, DeserializationContext ctxt)
 			throws IOException, JsonProcessingException {
-		return new FoursquareUserContainer(getNestedObject(jp, "user", FoursquareUser.class));
+		return new FoursquareUserContainer(deserializeNestedResponseObject(jp, "user", FoursquareUser.class));
 	}
 	
 	

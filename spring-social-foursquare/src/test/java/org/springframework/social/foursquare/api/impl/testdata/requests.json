@@ -1,0 +1,36 @@
+{
+   "meta":{
+      "code":200
+   },
+   "response":{
+      "requests":[
+         {
+            "id":"2275522",
+            "firstName":"Albert",
+            "lastName":"Rosa",
+            "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/WX0PYSIEZ2CCZGOO.png",
+            "gender":"male",
+            "homeCity":"Bronx, New York",
+            "relationship":"pendingMe"
+         },
+         {
+            "id":"9851792",
+            "firstName":"Ben",
+            "lastName":"van den Heever",
+            "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/REHTQ5HCQWDOOWZY.jpg",
+            "gender":"male",
+            "homeCity":"NY",
+            "relationship":"pendingMe"
+         },
+         {
+            "id":"25718",
+            "firstName":"Elad",
+            "lastName":"Elrom",
+            "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/550YBSH5ENUEL0LE.jpg",
+            "gender":"male",
+            "homeCity":"New York, NY",
+            "relationship":"pendingMe"
+         }
+      ]
+   }
+}

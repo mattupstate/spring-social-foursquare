@@ -7,6 +7,7 @@ import static org.springframework.social.test.client.RequestMatchers.requestTo;
 import static org.springframework.social.test.client.ResponseCreators.withResponse;
 
 import java.util.Arrays;
+import java.util.List;
 
 import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
@@ -70,6 +71,17 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
         
         UserSearchResults results = foursquare.userOperations().searchTwitterFriends("matt");
         assertEquals(3, results.getResults().size());
+        mockServer.verify();
+    }
+    
+    @Test
+    public void getRequests() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/requests/?access_token=ACCESS_TOKEN"))
+            .andExpect(method(GET))
+            .andRespond(withResponse(new ClassPathResource("testdata/requests.json", getClass()), responseHeaders));
+        
+        List<FoursquareUser> requests = foursquare.userOperations().getRequests();
+        assertEquals(3, requests.size());
         mockServer.verify();
     }
     

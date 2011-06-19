@@ -28,16 +28,35 @@ public interface UserOperations {
      */
 	Leaderboard getLeaderboard(int neighbors);
 	
-	UserSearchResults search(List<String> phoneNumbers, List<String> emailAddresses,
-            List<String> twitterUsernames, List<String> facebookUserIds);
+	/**
+	 * Get a list of users with whom the authenticated user has a pending friend request
+	 * @return A list of FoursquareUser objects
+	 */
+	List<FoursquareUser> getRequests();
 	
 	/**
-	 * Search by name.
-	 * @param name
-	 * @return
+	 * Search for users by a combination of parameters
+	 * @param phoneNumbers A list of phone numbers
+	 * @param emailAddresses A list of email addresses
+	 * @param twitterHandles A list of Twitter handles
+	 * @param facebookUserIds A list of Facebook user IDs
+	 * @return A UserSearchResults object containg matching users and a graph of unmatched criteria
+	 */
+	UserSearchResults search(List<String> phoneNumbers, List<String> emailAddresses,
+            List<String> twitterHandles, List<String> facebookUserIds);
+	
+	/**
+	 * Search for users by name.
+	 * @param name A users name
+	 * @return A UserSearchResults object containg matching users and a graph of unmatched criteria
 	 */
 	UserSearchResults searchByName(String name);
 	
+	/**
+	 * Searches the specified Twitter handle's followers for users who have Foursquare accounts.
+	 * @param name A Twitter handle
+     * @return A UserSearchResults object containg matching users and a graph of unmatched criteria
+	 */
 	UserSearchResults searchTwitterFriends(String twitterHandle);
 	
 	public static final String USERS_ENDPOINT = "users/";

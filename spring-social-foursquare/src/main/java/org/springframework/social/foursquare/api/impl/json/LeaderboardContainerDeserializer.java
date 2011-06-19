@@ -12,7 +12,7 @@ public class LeaderboardContainerDeserializer extends AbstractFoursquareDeserial
     @Override
     public LeaderboardContainer deserialize(JsonParser jp, DeserializationContext ctxt)
             throws IOException, JsonProcessingException {
-        return new LeaderboardContainer(getNestedObject(jp, "leaderboard", Leaderboard.class));
+        return new LeaderboardContainer(deserializeNestedResponseObject(jp, "leaderboard", Leaderboard.class));
     }
     
 }
