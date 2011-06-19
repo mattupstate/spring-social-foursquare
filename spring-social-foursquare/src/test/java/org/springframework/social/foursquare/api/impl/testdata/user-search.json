@@ -1,0 +1,45 @@
+{
+   "meta":{
+      "code":200
+   },
+   "response":{
+      "results":[
+         {
+            "id":"1726",
+            "firstName":"adafruit",
+            "lastName":"fried & torrone",
+            "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/1726_1236972007.jpg",
+            "gender":"none",
+            "homeCity":"New York, NY"
+         },
+         {
+            "id":"2275522",
+            "firstName":"Albert",
+            "lastName":"Rosa",
+            "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/WX0PYSIEZ2CCZGOO.png",
+            "gender":"male",
+            "homeCity":"Bronx, New York",
+            "relationship":"pendingMe"
+         },
+         {
+            "id":"684789",
+            "firstName":"Andy",
+            "lastName":"P",
+            "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/KIGWT34QW2S401XP.jpg",
+            "gender":"male",
+            "homeCity":"New York",
+            "relationship":"friend"
+         }
+      ],
+      "unmatched":{
+         "fbid":[
+            10347651
+         ],
+         "twitterSource":[
+            40061400,
+            45309257,
+            15056788
+         ]
+      }
+   }
+}
