@@ -11,7 +11,6 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.social.foursquare.api.FoursquareUser;
 import org.springframework.social.foursquare.api.Leaderboard;
 
-@SuppressWarnings("unused")
 public class UserTemplateTest extends AbstractFoursquareApiTest {
 	
     @Test
@@ -35,5 +34,6 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
         mockServer.verify();
         assertEquals(23, leaderboard.getCount());
     }
+    
 	
 }

@@ -7,16 +7,12 @@ import org.codehaus.jackson.JsonProcessingException;
 import org.codehaus.jackson.map.DeserializationContext;
 import org.springframework.social.foursquare.api.FoursquareUser;
 
-public class FoursquareUserContainerDeserializer extends AbstractFoursquareDeserializer<FoursquareUserContainer, FoursquareUser> {
-
-	FoursquareUserContainerDeserializer() {
-		super("user", FoursquareUser.class);
-	}
-	
+public class FoursquareUserContainerDeserializer extends AbstractFoursquareDeserializer<FoursquareUserContainer> {
+    
 	@Override
 	public FoursquareUserContainer deserialize(JsonParser jp, DeserializationContext ctxt)
 			throws IOException, JsonProcessingException {
-		return new FoursquareUserContainer(getNestedObject(jp));
+		return new FoursquareUserContainer(getNestedObject(jp, "user", FoursquareUser.class));
 	}
 	
 	
