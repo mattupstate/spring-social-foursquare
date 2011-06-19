@@ -1,5 +1,7 @@
 package org.springframework.social.foursquare.api;
 
+import java.util.List;
+
 public interface UserOperations {
 
     /**
@@ -25,6 +27,18 @@ public interface UserOperations {
      * @return A Leaderboard
      */
 	Leaderboard getLeaderboard(int neighbors);
+	
+	UserSearchResults search(List<String> phoneNumbers, List<String> emailAddresses,
+            List<String> twitterUsernames, List<String> facebookUserIds);
+	
+	/**
+	 * Search by name.
+	 * @param name
+	 * @return
+	 */
+	UserSearchResults searchByName(String name);
+	
+	UserSearchResults searchTwitterFriends(String twitterHandle);
 	
 	public static final String USERS_ENDPOINT = "users/";
 }

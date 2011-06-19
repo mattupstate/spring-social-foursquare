@@ -10,7 +10,7 @@ import org.codehaus.jackson.map.JsonDeserializer;
 public abstract class AbstractFoursquareDeserializer<T> extends JsonDeserializer<T> {
     
 	public <C> C getNestedObject(JsonParser jp, String responseProperty, Class<C> responseType)
-		throws IOException, JsonProcessingException {
+		    throws IOException, JsonProcessingException {
 		while (jp.nextToken() != JsonToken.END_OBJECT) {
 			String fieldname = jp.getCurrentName();
 			jp.nextToken();
@@ -21,7 +21,6 @@ public abstract class AbstractFoursquareDeserializer<T> extends JsonDeserializer
 				while(jp.nextToken() != JsonToken.END_OBJECT) {
 					String responseField = jp.getCurrentName();
 					jp.nextToken();
-					responseType.getClass();
 					if(responseProperty.equals(responseField)) {
 						return jp.readValueAs(responseType);
 					}
@@ -30,4 +29,5 @@ public abstract class AbstractFoursquareDeserializer<T> extends JsonDeserializer
         }
 		return null;
 	}
+	
 }

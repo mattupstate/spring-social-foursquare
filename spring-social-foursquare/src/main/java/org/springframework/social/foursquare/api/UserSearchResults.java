@@ -6,9 +6,9 @@ import java.util.Map;
 public class UserSearchResults {
     
     private final List<FoursquareUser> results;
-    private final Map<String, List<Object>> unmatched;
+    private Map<String, Object> unmatched;
     
-    public UserSearchResults(List<FoursquareUser> results, Map<String, List<Object>> unmatched) {
+    public UserSearchResults(List<FoursquareUser> results, Map<String, Object> unmatched) {
         this.results = results;
         this.unmatched = unmatched;
     }
@@ -17,7 +17,7 @@ public class UserSearchResults {
         return results;
     }
 
-    public Map<String, List<Object>> getUnmatched() {
+    public Map<String, Object> getUnmatched() {
         return unmatched;
     }
     
