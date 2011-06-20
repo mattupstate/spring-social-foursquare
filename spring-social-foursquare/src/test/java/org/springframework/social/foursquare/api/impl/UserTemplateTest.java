@@ -12,7 +12,9 @@ import java.util.List;
 import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.social.foursquare.api.BadgesResponse;
+import org.springframework.social.foursquare.api.CheckinInfo;
 import org.springframework.social.foursquare.api.FoursquareUser;
+import org.springframework.social.foursquare.api.Friends;
 import org.springframework.social.foursquare.api.Leaderboard;
 import org.springframework.social.foursquare.api.UserSearchResponse;
 
@@ -97,5 +99,27 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
         mockServer.verify();
     }
     
-	
+    @Test
+    public void getCheckins() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/checkins/?access_token=ACCESS_TOKEN"))
+            .andExpect(method(GET))
+            .andRespond(withResponse(new ClassPathResource("testdata/checkins.json", getClass()), responseHeaders));
+        
+        CheckinInfo checkinInfo = foursquare.userOperations().getCheckins();
+        assertEquals(562, checkinInfo.getTotal());
+        mockServer.verify();
+    }
+    
+
+    @Test
+    public void getFriends() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/friends/?access_token=ACCESS_TOKEN"))
+            .andExpect(method(GET))
+            .andRespond(withResponse(new ClassPathResource("testdata/friends.json", getClass()), responseHeaders));
+        
+        Friends friends = foursquare.userOperations().getFriends();
+        assertEquals(6, friends.getCount());
+        assertEquals(6, friends.getItems().size());
+        mockServer.verify();
+    }
 }

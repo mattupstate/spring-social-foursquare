@@ -1,0 +1,65 @@
+{
+   "meta":{
+      "code":200
+   },
+   "response":{
+      "friends":{
+         "count":6,
+         "items":[
+            {
+               "id":"527",
+               "firstName":"Crystal",
+               "lastName":"Ginn",
+               "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/527_1236920910.jpg",
+               "gender":"female",
+               "homeCity":"New York, NY",
+               "relationship":"friend"
+            },
+            {
+               "id":"702521",
+               "firstName":"Matt",
+               "lastName":"Burniston",
+               "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/DGMGAGH3SLS30OGN.jpg",
+               "gender":"male",
+               "homeCity":"New York, NY",
+               "relationship":"friend"
+            },
+            {
+               "id":"6061196",
+               "firstName":"Matt",
+               "lastName":"Lohmann",
+               "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/BM2PSQOSZ4XFMT4G.jpg",
+               "gender":"male",
+               "homeCity":"Brooklyn, NY",
+               "relationship":"friend"
+            },
+            {
+               "id":"2045181",
+               "firstName":"Tung",
+               "lastName":"Luong",
+               "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/1I3RLTZEYCDKJVD3.jpg",
+               "gender":"male",
+               "homeCity":"Rochester, NY",
+               "relationship":"friend"
+            },
+            {
+               "id":"90521",
+               "firstName":"Brian",
+               "lastName":"Carley",
+               "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/90521_1257544228738.jpg",
+               "gender":"male",
+               "homeCity":"New York",
+               "relationship":"friend"
+            },
+            {
+               "id":"674228",
+               "firstName":"Quirine",
+               "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/1U2CECU3GWBKPVT4.jpg",
+               "gender":"female",
+               "homeCity":"New York, NY",
+               "relationship":"friend"
+            }
+         ]
+      }
+   }
+}

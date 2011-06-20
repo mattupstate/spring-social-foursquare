@@ -5,12 +5,16 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.social.foursquare.api.BadgesResponse;
+import org.springframework.social.foursquare.api.CheckinInfo;
 import org.springframework.social.foursquare.api.FoursquareUser;
+import org.springframework.social.foursquare.api.Friends;
 import org.springframework.social.foursquare.api.Leaderboard;
 import org.springframework.social.foursquare.api.UserOperations;
 import org.springframework.social.foursquare.api.UserSearchResponse;
 import org.springframework.social.foursquare.api.impl.json.BadgesResponseContainer;
+import org.springframework.social.foursquare.api.impl.json.CheckinInfoContainer;
 import org.springframework.social.foursquare.api.impl.json.FoursquareUserContainer;
+import org.springframework.social.foursquare.api.impl.json.FriendsContainer;
 import org.springframework.social.foursquare.api.impl.json.LeaderboardContainer;
 import org.springframework.social.foursquare.api.impl.json.RequestsContainer;
 import org.springframework.social.foursquare.api.impl.json.UserSearchResponseContainer;
@@ -91,5 +95,37 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
         requireUserAuthorization();
         return get(buildUri(USERS_ENDPOINT + userId + "/badges/"), BadgesResponseContainer.class).getResponse();
     }
+
+	public CheckinInfo getCheckins() {
+		return getCheckins("self");
+	}
+
+	public CheckinInfo getCheckins(String userId) {
+		requireUserAuthorization();
+        return get(buildUri(USERS_ENDPOINT + userId + "/checkins/"), CheckinInfoContainer.class).getCheckinInfo();
+	}
+
+	public Friends getFriends() {
+		return getFriends(0, 0);
+	}
+
+	public Friends getFriends(int limit, int offset) {
+		return getFriends("self", limit, offset);
+	}
+
+	public Friends getFriends(String userId) {
+		return getFriends(userId, 0, 0);
+	}
     
+	public Friends getFriends(String userId, int limit, int offset) {
+		Map<String,String> params = new HashMap<String,String>();
+		if(limit > 0) {
+			params.put("limit", Integer.toString(limit));
+		}
+		if(offset > 0) {
+			params.put("offset", Integer.toString(offset));
+		}
+		return get(buildUri(USERS_ENDPOINT + userId + "/friends/", params), FriendsContainer.class).getFriends();
+	}
+	
 }

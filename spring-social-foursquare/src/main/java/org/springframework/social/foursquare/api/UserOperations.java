@@ -66,9 +66,61 @@ public interface UserOperations {
 	 */
 	UserSearchResponse searchTwitterFriends(String twitterHandle);
 	
+	/**
+	 * Retrieve badges for the authenticated user
+	 * @return A BadgesResponse object
+	 */
 	BadgesResponse getBadges();
 	
+	/**
+	 * Retrieve badges for the specified user
+	 * @param userId A Foursquare user ID
+	 * @return	A BadgesReponse object
+	 */
 	BadgesResponse getBadges(String userId);
+	
+	/**
+	 * Retrieve the authenticated user's checkin history
+	 * @return CheckinInfo
+	 */
+	CheckinInfo getCheckins();
+	
+	/**
+	 * Retrieve the specified user's checkin history
+	 * @param userId A Foursquare user ID
+	 * @return CheckinInfo
+	 */
+	CheckinInfo getCheckins(String userId);
+	
+	/**
+	 * Retrieve the authenticated user's friends
+	 * @return	Friends object
+	 */
+	Friends getFriends();
+	
+	/**
+	 * Retrieve the authenticated user's friends
+	 * @param limit	Number of results to return, up to 500
+	 * @param offset Page offset
+	 * @return	Friends object
+	 */
+	Friends getFriends(int limit, int offset);
+	
+	/**
+	 * Retrieve the specified user's friends
+	 * @param userId A Foursquare user ID
+	 * @return	Friends object
+	 */
+	Friends getFriends(String userId);
+	
+	/**
+	 * Retrieve the specified user's friends
+	 * @param userId A Foursquare user ID
+	 * @param limit	Number of results to return, up to 500
+	 * @param offset Page offset
+	 * @return	Friends object
+	 */
+	Friends getFriends(String userId, int limit, int offset);
 	
 	public static final String USERS_ENDPOINT = "users/";
 }
