@@ -1,0 +1,1239 @@
+{
+   "meta":{
+      "code":200
+   },
+   "response":{
+      "checkins":{
+         "count":562,
+         "items":[
+            {
+               "id":"4dfea100c65be3b1068006cf",
+               "createdAt":1308532992,
+               "type":"checkin",
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"3fd66200f964a520dbe91ee3",
+                  "name":"Lupa Osteria Romana",
+                  "contact":{
+                     "phone":"2129825089",
+                     "twitter":"LupaOsteria"
+                  },
+                  "location":{
+                     "address":"170 Thompson St",
+                     "crossStreet":"btwn Bleecker & Houston",
+                     "city":"New York",
+                     "state":"NY",
+                     "postalCode":"10012",
+                     "country":"USA",
+                     "lat":40.7276468,
+                     "lng":-74.0002398
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d110941735",
+                        "name":"Italian Restaurant",
+                        "pluralName":"Italian Restaurants",
+                        "icon":"https://foursquare.com/img/categories/food/default.png",
+                        "parents":[
+                           "Food"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":2253,
+                     "usersCount":1623
+                  },
+                  "url":"http://www.luparestaurant.com/",
+                  "todos":{
+                     "count":0
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4dfcf13d62846d918b96058b",
+               "createdAt":1308422461,
+               "type":"checkin",
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"4a75c449f964a5203ae11fe3",
+                  "name":"La Bagel Delight",
+                  "contact":{
+                     "phone":"7187686107"
+                  },
+                  "location":{
+                     "address":"284 7th Avenue",
+                     "crossStreet":"btw 6th St & 7th St",
+                     "city":"Brooklyn",
+                     "state":"NY",
+                     "postalCode":"11215",
+                     "country":"USA",
+                     "lat":40.6683981,
+                     "lng":-73.9803512
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d179941735",
+                        "name":"Bagel Shop",
+                        "pluralName":"Bagel Shops",
+                        "icon":"https://foursquare.com/img/categories/food/bagels.png",
+                        "parents":[
+                           "Food"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":1617,
+                     "usersCount":471
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4dfc18e962846d918b9345b8",
+               "createdAt":1308367081,
+               "type":"checkin",
+               "isMayor":true,
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"475b9b74f964a520d34c1fe3",
+                  "name":"Bar Great Harry",
+                  "contact":{
+                     "phone":"7182221103"
+                  },
+                  "location":{
+                     "address":"280 Smith Street",
+                     "crossStreet":"Sackett St",
+                     "city":"Brooklyn",
+                     "state":"NY",
+                     "postalCode":"11231",
+                     "country":"USA",
+                     "lat":40.6823,
+                     "lng":-73.9935
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d116941735",
+                        "name":"Bar",
+                        "pluralName":"Bars",
+                        "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                        "parents":[
+                           "Nightlife Spots"
+                        ],
+                        "primary":true
+                     },
+                     {
+                        "id":"4bf58dd8d48988d11b941735",
+                        "name":"Pub",
+                        "pluralName":"Pubs",
+                        "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                        "parents":[
+                           "Nightlife Spots"
+                        ]
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":3886,
+                     "usersCount":1446
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4dfb65e162e19b42f1e405a8",
+               "createdAt":1308321249,
+               "type":"checkin",
+               "isMayor":true,
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"4a8030abf964a520bcf41fe3",
+                  "name":"Syrup",
+                  "contact":{
+                     "phone":"2126801477"
+                  },
+                  "location":{
+                     "address":"12 Vestry St.",
+                     "crossStreet":"Hudson Street",
+                     "city":"New York",
+                     "state":"NY",
+                     "postalCode":"10013",
+                     "country":"USA",
+                     "lat":40.7228,
+                     "lng":-74.0073
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d124941735",
+                        "name":"Office",
+                        "pluralName":"Offices",
+                        "icon":"https://foursquare.com/img/categories/building/default.png",
+                        "parents":[
+                           "Homes, Work, Others"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":216,
+                     "usersCount":39
+                  },
+                  "todos":{
+                     "count":1
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4dfaa66c149557de37aae32d",
+               "createdAt":1308272236,
+               "type":"checkin",
+               "isMayor":true,
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"475b9b74f964a520d34c1fe3",
+                  "name":"Bar Great Harry",
+                  "contact":{
+                     "phone":"7182221103"
+                  },
+                  "location":{
+                     "address":"280 Smith Street",
+                     "crossStreet":"Sackett St",
+                     "city":"Brooklyn",
+                     "state":"NY",
+                     "postalCode":"11231",
+                     "country":"USA",
+                     "lat":40.6823,
+                     "lng":-73.9935
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d116941735",
+                        "name":"Bar",
+                        "pluralName":"Bars",
+                        "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                        "parents":[
+                           "Nightlife Spots"
+                        ],
+                        "primary":true
+                     },
+                     {
+                        "id":"4bf58dd8d48988d11b941735",
+                        "name":"Pub",
+                        "pluralName":"Pubs",
+                        "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                        "parents":[
+                           "Nightlife Spots"
+                        ]
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":3886,
+                     "usersCount":1446
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4dfa480162e1e9a243698a86",
+               "createdAt":1308248065,
+               "type":"checkin",
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"4a7a7a8ef964a5205de91fe3",
+                  "name":"Jin Market",
+                  "contact":{
+
+                  },
+                  "location":{
+                     "address":"111 Hudson St.",
+                     "crossStreet":"Franklin St.",
+                     "city":"New York",
+                     "state":"NY",
+                     "postalCode":"10013",
+                     "lat":40.7197,
+                     "lng":-74.0089
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d11f951735",
+                        "name":"Deli or Bodega",
+                        "pluralName":"Delis or Bodegas",
+                        "icon":"https://foursquare.com/img/categories/shops/food_deli.png",
+                        "parents":[
+                           "Shops",
+                           "Food and Drink Shops"
+                        ],
+                        "primary":true
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1c5941735",
+                        "name":"Sandwich Place",
+                        "pluralName":"Sandwich Places",
+                        "icon":"https://foursquare.com/img/categories/food/sandwiches.png",
+                        "parents":[
+                           "Food"
+                        ]
+                     },
+                     {
+                        "id":"4bf58dd8d48988d146941735",
+                        "name":"Deli or Bodega",
+                        "pluralName":"Delis or Bodegas",
+                        "icon":"https://foursquare.com/img/categories/food/deli.png",
+                        "parents":[
+                           "Food"
+                        ]
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":781,
+                     "usersCount":199
+                  },
+                  "todos":{
+                     "count":1
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4dfa43d58877b30c39874bc2",
+               "createdAt":1308246997,
+               "type":"checkin",
+               "isMayor":true,
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"4a8030abf964a520bcf41fe3",
+                  "name":"Syrup",
+                  "contact":{
+                     "phone":"2126801477"
+                  },
+                  "location":{
+                     "address":"12 Vestry St.",
+                     "crossStreet":"Hudson Street",
+                     "city":"New York",
+                     "state":"NY",
+                     "postalCode":"10013",
+                     "country":"USA",
+                     "lat":40.7228,
+                     "lng":-74.0073
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d124941735",
+                        "name":"Office",
+                        "pluralName":"Offices",
+                        "icon":"https://foursquare.com/img/categories/building/default.png",
+                        "parents":[
+                           "Homes, Work, Others"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":216,
+                     "usersCount":39
+                  },
+                  "todos":{
+                     "count":1
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4df8d11f45dd816eb5a80dfb",
+               "createdAt":1308152095,
+               "type":"checkin",
+               "isMayor":true,
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"4a8030abf964a520bcf41fe3",
+                  "name":"Syrup",
+                  "contact":{
+                     "phone":"2126801477"
+                  },
+                  "location":{
+                     "address":"12 Vestry St.",
+                     "crossStreet":"Hudson Street",
+                     "city":"New York",
+                     "state":"NY",
+                     "postalCode":"10013",
+                     "country":"USA",
+                     "lat":40.7228,
+                     "lng":-74.0073
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d124941735",
+                        "name":"Office",
+                        "pluralName":"Offices",
+                        "icon":"https://foursquare.com/img/categories/building/default.png",
+                        "parents":[
+                           "Homes, Work, Others"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":216,
+                     "usersCount":39
+                  },
+                  "todos":{
+                     "count":1
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4df8a6942271607ac9187b67",
+               "createdAt":1308141204,
+               "type":"checkin",
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"4dbd755043a1d8504ba572ac",
+                  "name":"Sara D. Roosevelt Park - Nike Field",
+                  "contact":{
+
+                  },
+                  "location":{
+                     "address":"216 Chrystie St",
+                     "crossStreet":"Between Rivington and Stanton",
+                     "city":"New York",
+                     "state":"NY",
+                     "postalCode":"10002",
+                     "lat":40.7217355,
+                     "lng":-73.9919614
+                  },
+                  "categories":[
+                     {
+                        "id":"4cce455aebf7b749d5e191f5",
+                        "name":"Soccer Field",
+                        "pluralName":"Soccer Fields",
+                        "icon":"https://foursquare.com/img/categories/parks_outdoors/soccer_field.png",
+                        "parents":[
+                           "Great Outdoors"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":27,
+                     "usersCount":17
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4df7d9fdaeb70af3f27504f5",
+               "createdAt":1308088829,
+               "type":"checkin",
+               "isMayor":true,
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"475b9b74f964a520d34c1fe3",
+                  "name":"Bar Great Harry",
+                  "contact":{
+                     "phone":"7182221103"
+                  },
+                  "location":{
+                     "address":"280 Smith Street",
+                     "crossStreet":"Sackett St",
+                     "city":"Brooklyn",
+                     "state":"NY",
+                     "postalCode":"11231",
+                     "country":"USA",
+                     "lat":40.6823,
+                     "lng":-73.9935
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d116941735",
+                        "name":"Bar",
+                        "pluralName":"Bars",
+                        "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                        "parents":[
+                           "Nightlife Spots"
+                        ],
+                        "primary":true
+                     },
+                     {
+                        "id":"4bf58dd8d48988d11b941735",
+                        "name":"Pub",
+                        "pluralName":"Pubs",
+                        "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                        "parents":[
+                           "Nightlife Spots"
+                        ]
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":3886,
+                     "usersCount":1446
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4df79384d1642d7385a70778",
+               "createdAt":1308070788,
+               "type":"checkin",
+               "isMayor":true,
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"4a8030abf964a520bcf41fe3",
+                  "name":"Syrup",
+                  "contact":{
+                     "phone":"2126801477"
+                  },
+                  "location":{
+                     "address":"12 Vestry St.",
+                     "crossStreet":"Hudson Street",
+                     "city":"New York",
+                     "state":"NY",
+                     "postalCode":"10013",
+                     "country":"USA",
+                     "lat":40.7228,
+                     "lng":-74.0073
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d124941735",
+                        "name":"Office",
+                        "pluralName":"Offices",
+                        "icon":"https://foursquare.com/img/categories/building/default.png",
+                        "parents":[
+                           "Homes, Work, Others"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":216,
+                     "usersCount":39
+                  },
+                  "todos":{
+                     "count":1
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4df66a5f52b10928a7e55522",
+               "createdAt":1307994719,
+               "type":"checkin",
+               "isMayor":true,
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"4a8030abf964a520bcf41fe3",
+                  "name":"Syrup",
+                  "contact":{
+                     "phone":"2126801477"
+                  },
+                  "location":{
+                     "address":"12 Vestry St.",
+                     "crossStreet":"Hudson Street",
+                     "city":"New York",
+                     "state":"NY",
+                     "postalCode":"10013",
+                     "country":"USA",
+                     "lat":40.7228,
+                     "lng":-74.0073
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d124941735",
+                        "name":"Office",
+                        "pluralName":"Offices",
+                        "icon":"https://foursquare.com/img/categories/building/default.png",
+                        "parents":[
+                           "Homes, Work, Others"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":216,
+                     "usersCount":39
+                  },
+                  "todos":{
+                     "count":1
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4df4c87362e1288ed3086e4f",
+               "createdAt":1307887731,
+               "type":"checkin",
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"4b7eecabf964a520d40930e3",
+                  "name":"Four Points Sheraton",
+                  "contact":{
+                     "phone":"9785349000"
+                  },
+                  "location":{
+                     "address":"99 Erdman Way",
+                     "crossStreet":"N Main St",
+                     "city":"Leominster",
+                     "state":"MA",
+                     "postalCode":"01453",
+                     "country":"USA",
+                     "lat":42.5477558,
+                     "lng":-71.75974
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1fa931735",
+                        "name":"Hotel",
+                        "pluralName":"Hotels",
+                        "icon":"https://foursquare.com/img/categories/travel/hotel.png",
+                        "parents":[
+                           "Travel Spots"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":166,
+                     "usersCount":100
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4df2d661b61cbd3ec0193da9",
+               "createdAt":1307760225,
+               "type":"checkin",
+               "isMayor":true,
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"475b9b74f964a520d34c1fe3",
+                  "name":"Bar Great Harry",
+                  "contact":{
+                     "phone":"7182221103"
+                  },
+                  "location":{
+                     "address":"280 Smith Street",
+                     "crossStreet":"Sackett St",
+                     "city":"Brooklyn",
+                     "state":"NY",
+                     "postalCode":"11231",
+                     "country":"USA",
+                     "lat":40.6823,
+                     "lng":-73.9935
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d116941735",
+                        "name":"Bar",
+                        "pluralName":"Bars",
+                        "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                        "parents":[
+                           "Nightlife Spots"
+                        ],
+                        "primary":true
+                     },
+                     {
+                        "id":"4bf58dd8d48988d11b941735",
+                        "name":"Pub",
+                        "pluralName":"Pubs",
+                        "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                        "parents":[
+                           "Nightlife Spots"
+                        ]
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":3886,
+                     "usersCount":1446
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4df244e4b0fb807158bd85f4",
+               "createdAt":1307722980,
+               "type":"checkin",
+               "isMayor":true,
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"4a8030abf964a520bcf41fe3",
+                  "name":"Syrup",
+                  "contact":{
+                     "phone":"2126801477"
+                  },
+                  "location":{
+                     "address":"12 Vestry St.",
+                     "crossStreet":"Hudson Street",
+                     "city":"New York",
+                     "state":"NY",
+                     "postalCode":"10013",
+                     "country":"USA",
+                     "lat":40.7228,
+                     "lng":-74.0073
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d124941735",
+                        "name":"Office",
+                        "pluralName":"Offices",
+                        "icon":"https://foursquare.com/img/categories/building/default.png",
+                        "parents":[
+                           "Homes, Work, Others"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":216,
+                     "usersCount":39
+                  },
+                  "todos":{
+                     "count":1
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4df1596c88772e1f814a9872",
+               "createdAt":1307662700,
+               "type":"checkin",
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"4b9bebc3f964a520fc3536e3",
+                  "name":"Sharon Dorram Color at Sally Hershberger",
+                  "contact":{
+
+                  },
+                  "location":{
+                     "address":"17 E. 71st St.",
+                     "crossStreet":"Madison Ave. and Park Ave.",
+                     "city":"New York",
+                     "state":"New York",
+                     "postalCode":"10021",
+                     "lat":40.771427,
+                     "lng":-73.966109
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d110951735",
+                        "name":"Salon or Barbershop",
+                        "pluralName":"Salons or Barbershops",
+                        "icon":"https://foursquare.com/img/categories/shops/salon_barber.png",
+                        "parents":[
+                           "Shops"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":90,
+                     "usersCount":28
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4df11106e4cdfec0ed308e37",
+               "createdAt":1307644166,
+               "type":"checkin",
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"49e606ebf964a520ef631fe3",
+                  "name":"Peace & Love Cafe",
+                  "contact":{
+                     "phone":"2123498500",
+                     "twitter":"peaceandloveNYC"
+                  },
+                  "location":{
+                     "address":"378 1/2 Greenwich St",
+                     "crossStreet":"N Moore",
+                     "city":"New York",
+                     "state":"NY",
+                     "postalCode":"10013",
+                     "lat":40.7199,
+                     "lng":-74.0102
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1e0931735",
+                        "name":"Coffee Shop",
+                        "pluralName":"Coffee Shops",
+                        "icon":"https://foursquare.com/img/categories/food/coffeeshop.png",
+                        "parents":[
+                           "Food"
+                        ],
+                        "primary":true
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1c5941735",
+                        "name":"Sandwich Place",
+                        "pluralName":"Sandwich Places",
+                        "icon":"https://foursquare.com/img/categories/food/sandwiches.png",
+                        "parents":[
+                           "Food"
+                        ]
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":1456,
+                     "usersCount":443
+                  },
+                  "url":"http://www.peaceandlovenyc.com",
+                  "todos":{
+                     "count":0
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4df0cfc6e4cdfec0ed2f1857",
+               "createdAt":1307627462,
+               "type":"checkin",
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"48fa0ebef964a52050521fe3",
+                  "name":"92YTribeca",
+                  "contact":{
+                     "phone":"2126011000",
+                     "twitter":"92YTribeca"
+                  },
+                  "location":{
+                     "address":"200 Hudson St",
+                     "crossStreet":"Canal St",
+                     "city":"New York",
+                     "state":"NY",
+                     "postalCode":"10013",
+                     "lat":40.722852,
+                     "lng":-74.00809
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1f1931735",
+                        "name":"General Entertainment",
+                        "pluralName":"General Entertainment",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/default.png",
+                        "parents":[
+                           "Arts & Entertainment"
+                        ],
+                        "primary":true
+                     },
+                     {
+                        "id":"4bf58dd8d48988d18e941735",
+                        "name":"Comedy Club",
+                        "pluralName":"Comedy Clubs",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/comedyclub.png",
+                        "parents":[
+                           "Arts & Entertainment"
+                        ]
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1e5931735",
+                        "name":"Music Venue",
+                        "pluralName":"Music Venues",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/musicvenue.png",
+                        "parents":[
+                           "Arts & Entertainment"
+                        ]
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1f2931735",
+                        "name":"Performing Arts Venue",
+                        "pluralName":"Performing Arts Venues",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/default.png",
+                        "parents":[
+                           "Arts & Entertainment"
+                        ]
+                     },
+                     {
+                        "id":"4bf58dd8d48988d171941735",
+                        "name":"Event Space",
+                        "pluralName":"Event Spaces",
+                        "icon":"https://foursquare.com/img/categories/building/default.png",
+                        "parents":[
+                           "Homes, Work, Others"
+                        ]
+                     },
+                     {
+                        "id":"4bf58dd8d48988d11a941735",
+                        "name":"Other Nightlife",
+                        "pluralName":"Other Nightlife",
+                        "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                        "parents":[
+                           "Nightlife Spots"
+                        ]
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":3142,
+                     "usersCount":2016
+                  },
+                  "url":"http://www.92YTribeca.org",
+                  "todos":{
+                     "count":0
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4df019b088775c5de125b012",
+               "createdAt":1307580848,
+               "type":"checkin",
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"4b82b44cf964a52074df30e3",
+                  "name":"Food Lin",
+                  "contact":{
+                     "phone":"7187687329"
+                  },
+                  "location":{
+                     "address":"399 5th Ave",
+                     "crossStreet":"btw 6th & 7th",
+                     "city":"Brooklyn",
+                     "state":"NY",
+                     "postalCode":"11215",
+                     "lat":40.6704906,
+                     "lng":-73.9850299
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d145941735",
+                        "name":"Chinese Restaurant",
+                        "pluralName":"Chinese Restaurants",
+                        "icon":"https://foursquare.com/img/categories/food/default.png",
+                        "parents":[
+                           "Food"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":9,
+                     "usersCount":7
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            },
+            {
+               "id":"4def15dcae609ae4fa405bf3",
+               "createdAt":1307514332,
+               "type":"checkin",
+               "timeZone":"America/New_York",
+               "venue":{
+                  "id":"4bb092aef964a520cc4c3ce3",
+                  "name":"Mission Dolores",
+                  "contact":{
+                     "phone":"7183990099"
+                  },
+                  "location":{
+                     "address":"249 4th Ave.",
+                     "crossStreet":"at Carroll St.",
+                     "city":"Brooklyn",
+                     "state":"NY",
+                     "postalCode":"11215",
+                     "lat":40.67621785391348,
+                     "lng":-73.98339539766312
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d117941735",
+                        "name":"Beer Garden",
+                        "pluralName":"Beer Gardens",
+                        "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                        "parents":[
+                           "Nightlife Spots"
+                        ],
+                        "primary":true
+                     },
+                     {
+                        "id":"4bf58dd8d48988d116941735",
+                        "name":"Bar",
+                        "pluralName":"Bars",
+                        "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                        "parents":[
+                           "Nightlife Spots"
+                        ]
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":4089,
+                     "usersCount":2114
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               },
+               "photos":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               },
+               "comments":{
+                  "count":0,
+                  "items":[
+
+                  ]
+               }
+            }
+         ]
+      }
+   }
+}
