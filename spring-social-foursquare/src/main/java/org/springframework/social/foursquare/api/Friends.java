@@ -16,16 +16,8 @@ public class Friends {
 		return count;
 	}
 
-	public void setCount(int count) {
-		this.count = count;
-	}
-
 	public List<FoursquareUser> getItems() {
 		return items;
-	}
-
-	public void setItems(List<FoursquareUser> items) {
-		this.items = items;
 	}
 	
 }
