@@ -24,6 +24,7 @@ public class FoursquareTemplate extends AbstractOAuth2ApiBinding implements Four
 
 	private final String accessToken;
 	private final String clientId;
+	private final String clientSecret;
 	private final UserOperations userOperations;
 	private final VenueOperations venueOperations;
 	private final CheckinOperations checkinOperations;
@@ -32,9 +33,14 @@ public class FoursquareTemplate extends AbstractOAuth2ApiBinding implements Four
 	private final SettingOperations settingOperations;
 	private final SpecialOperations specialOperations;
 	
-	public FoursquareTemplate(String clientId, String accessToken) {
+	public FoursquareTemplate(String clientId, String clientSecret) {
+		this(clientId, clientSecret, null);
+	}
+	
+	public FoursquareTemplate(String clientId, String clientSecret, String accessToken) {
 		super(accessToken);
 		this.clientId = clientId;
+		this.clientSecret = clientSecret;
 		this.accessToken = accessToken;
 		
 		MappingJacksonHttpMessageConverter json = new MappingJacksonHttpMessageConverter();
@@ -43,8 +49,9 @@ public class FoursquareTemplate extends AbstractOAuth2ApiBinding implements Four
 		registerFoursquareJsonModule(getRestTemplate());
 		getRestTemplate().setErrorHandler(new FoursquareErrorHandler());
 		
-		this.userOperations = new UserTemplate(this, true);
-		this.venueOperations = new VenueTemplate(this, true);
+		boolean isAuthorized = (accessToken != null);
+		this.userOperations = new UserTemplate(this, isAuthorized);
+		this.venueOperations = new VenueTemplate(this, isAuthorized);
 		this.checkinOperations = new CheckinTemplate();
 		this.tipOperations = new TipTemplate();
 		this.photoOperations = new PhotoTemplate();
@@ -95,7 +102,7 @@ public class FoursquareTemplate extends AbstractOAuth2ApiBinding implements Four
 
 	public URIBuilder withAccessToken(String uri) {
 		return (accessToken == null) 
-			? URIBuilder.fromUri(uri).queryParam("client_id", clientId)
+			? URIBuilder.fromUri(uri).queryParam("client_id", clientId).queryParam("client_secret", clientSecret)
 			: URIBuilder.fromUri(uri).queryParam("access_token", accessToken);
 	}
 	

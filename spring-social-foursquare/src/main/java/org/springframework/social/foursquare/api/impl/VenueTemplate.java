@@ -18,6 +18,7 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
 
 	public Venue addVenue(String name, String address, String crossStreet, String city, String state, 
 			String zip, String phone, double latitude, double longitude, String primaryCategoryId) {
+		requireUserAuthorization();
 		MultiValueMap<String,String> params = new LinkedMultiValueMap<String, String>();
 		params.add("name", name);
 		params.add("address", address);

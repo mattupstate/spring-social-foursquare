@@ -18,7 +18,7 @@ public class AbstractFoursquareApiTest {
 	
 	@Before
 	public void setup() {
-		foursquare = new FoursquareTemplate("CLIENT_ID", "ACCESS_TOKEN");
+		foursquare = new FoursquareTemplate("CLIENT_ID", "CLIENT_SECRET", "ACCESS_TOKEN");
 		mockServer = MockRestServiceServer.createServer(foursquare.getRestTemplate());
 		responseHeaders = new HttpHeaders();
 		responseHeaders.setContentType(MediaType.APPLICATION_JSON);
