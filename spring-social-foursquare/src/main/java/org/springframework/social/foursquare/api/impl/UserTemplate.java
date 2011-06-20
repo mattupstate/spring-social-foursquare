@@ -24,8 +24,13 @@ import org.springframework.social.foursquare.api.impl.json.TipsContainer;
 import org.springframework.social.foursquare.api.impl.json.TodosContainer;
 import org.springframework.social.foursquare.api.impl.json.UserSearchResponseContainer;
 import org.springframework.social.foursquare.api.impl.json.VenueHistoryContainer;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 import org.springframework.util.StringUtils;
 
+/**
+ * Implementation of {@link UserOperations}, providing a binding to Foursquare's user-oriented REST resources.
+ */
 public class UserTemplate extends AbstractFoursquareOperations implements UserOperations {
 	
 	public UserTemplate(FoursquareTemplate foursquare, boolean isAuthorized) {
@@ -212,6 +217,7 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 	}
 
 	public VenueHistory getVenueHistory(String userId, long beforeTimestamp, long afterTimestamp, String categoryId) {
+		requireUserAuthorization();
 		Map<String,String> params = new HashMap<String,String>();
 		if(beforeTimestamp > 0) {
 			params.put("beforeTimestamp", Long.toString(beforeTimestamp));
@@ -225,4 +231,30 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 		return get(buildUri(USERS_ENDPOINT + userId + "/venuehistory/", params), VenueHistoryContainer.class).getVenueHistory();
 	}
 
+	public void requestFriend(String userId) {
+		requireUserAuthorization();
+		post(buildUri(USERS_ENDPOINT + userId + "/request/"), new LinkedMultiValueMap<String, String>(), Map.class);
+	}
+
+	public void removeFriend(String userId) {
+		requireUserAuthorization();
+		post(buildUri(USERS_ENDPOINT + userId + "/unfriend/"), new LinkedMultiValueMap<String, String>(), Map.class);
+	}
+
+	public void approveFriend(String userId) {
+		requireUserAuthorization();
+		post(buildUri(USERS_ENDPOINT + userId + "/approve/"), new LinkedMultiValueMap<String, String>(), Map.class);
+	}
+
+	public void denyFriend(String userId) {
+		requireUserAuthorization();
+		post(buildUri(USERS_ENDPOINT + userId + "/deny/"), new LinkedMultiValueMap<String, String>(), Map.class);
+	}
+
+	public void setPings(String userId, boolean value) {
+		requireUserAuthorization();
+		MultiValueMap<String,String> params = new LinkedMultiValueMap<String, String>();
+		params.add("value", Boolean.toString(value));
+		post(buildUri(USERS_ENDPOINT + userId + "/setpings/"), params, Map.class);
+	}
 }

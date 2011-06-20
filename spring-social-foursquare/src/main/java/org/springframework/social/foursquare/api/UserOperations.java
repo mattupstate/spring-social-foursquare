@@ -240,5 +240,15 @@ public interface UserOperations {
 	 */
 	VenueHistory getVenueHistory(String userId, long beforeTimestamp, long afterTimestamp, String categoryId);
 	
+	void requestFriend(String userId);
+	
+	void removeFriend(String userId);
+	
+	void approveFriend(String userId);
+	
+	void denyFriend(String userId);
+	
+	void setPings(String userId, boolean value);
+	
 	public static final String USERS_ENDPOINT = "users/";
 }

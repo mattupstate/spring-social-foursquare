@@ -1,7 +1,10 @@
 package org.springframework.social.foursquare.api.impl;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 import static org.springframework.http.HttpMethod.GET;
+import static org.springframework.http.HttpMethod.POST;
+import static org.springframework.social.test.client.RequestMatchers.body;
 import static org.springframework.social.test.client.RequestMatchers.method;
 import static org.springframework.social.test.client.RequestMatchers.requestTo;
 import static org.springframework.social.test.client.ResponseCreators.withResponse;
@@ -110,6 +113,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
         
         CheckinInfo checkinInfo = foursquare.userOperations().getCheckins();
         assertEquals(562, checkinInfo.getTotal());
+        assertTrue(checkinInfo.getRecentCheckins().get(0) != null);
         mockServer.verify();
     }
     
@@ -133,6 +137,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
         
         Tips tips = foursquare.userOperations().getRecentTips(0, 0);
         assertEquals(3, tips.getCount());
+        assertTrue(tips.getItems().get(0) != null);
         mockServer.verify();
     }
 
@@ -144,6 +149,8 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
         
         Todos todos = foursquare.userOperations().getRecentTodos();
         assertEquals(2, todos.getCount());
+        assertTrue(todos.getItems().get(0) != null);
+        assertTrue(todos.getItems().get(0).getTip() != null);
         mockServer.verify();
     }
     
@@ -155,6 +162,54 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
         
         VenueHistory history = foursquare.userOperations().getVenueHistory(0, 0, null);
         assertEquals(163, history.getCount());
+        assertEquals(1, history.getItems().get(0).getBeenHere());
+        assertTrue(history.getItems().get(0).getVenue() != null);
         mockServer.verify();
+    }
+    
+    @Test
+    public void requestFriend() {
+    	mockServer.expect(requestTo("https://api.foursquare.com/v2/users/USER_ID/request/?access_token=ACCESS_TOKEN"))
+	        .andExpect(method(POST))
+	        .andRespond(withResponse(new ClassPathResource("testdata/ok-response.json", getClass()), responseHeaders));
+    	
+    	foursquare.userOperations().requestFriend("USER_ID");
+    }
+    
+    @Test
+    public void removeFriend() {
+    	mockServer.expect(requestTo("https://api.foursquare.com/v2/users/USER_ID/unfriend/?access_token=ACCESS_TOKEN"))
+	        .andExpect(method(POST))
+	        .andRespond(withResponse(new ClassPathResource("testdata/ok-response.json", getClass()), responseHeaders));
+    	
+    	foursquare.userOperations().removeFriend("USER_ID");
+    }
+    
+    @Test
+    public void approveFriend() {
+    	mockServer.expect(requestTo("https://api.foursquare.com/v2/users/USER_ID/approve/?access_token=ACCESS_TOKEN"))
+	        .andExpect(method(POST))
+	        .andRespond(withResponse(new ClassPathResource("testdata/ok-response.json", getClass()), responseHeaders));
+    	
+    	foursquare.userOperations().approveFriend("USER_ID");
+    }
+    
+    @Test
+    public void denyFriend() {
+    	mockServer.expect(requestTo("https://api.foursquare.com/v2/users/USER_ID/deny/?access_token=ACCESS_TOKEN"))
+	        .andExpect(method(POST))
+	        .andRespond(withResponse(new ClassPathResource("testdata/ok-response.json", getClass()), responseHeaders));
+    	
+    	foursquare.userOperations().denyFriend("USER_ID");
+    }
+    
+    @Test
+    public void setPings() {
+    	mockServer.expect(requestTo("https://api.foursquare.com/v2/users/USER_ID/setpings/?access_token=ACCESS_TOKEN"))
+	        .andExpect(method(POST))
+	        .andExpect(body("value=true"))
+	        .andRespond(withResponse(new ClassPathResource("testdata/ok-response.json", getClass()), responseHeaders));
+    	
+    	foursquare.userOperations().setPings("USER_ID", true);
     }
 }
