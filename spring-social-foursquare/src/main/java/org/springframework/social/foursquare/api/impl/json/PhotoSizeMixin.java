@@ -1,16 +1,14 @@
 package org.springframework.social.foursquare.api.impl.json;
 
-import java.util.List;
-
 import org.codehaus.jackson.annotate.JsonCreator;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.codehaus.jackson.annotate.JsonProperty;
-import org.springframework.social.foursquare.api.FoursquareUserGroup;
 
 @JsonIgnoreProperties(ignoreUnknown=true)
-abstract class FriendInfoMixin {
+public class PhotoSizeMixin {
 	@JsonCreator
-	FriendInfoMixin(
-			@JsonProperty("count") int total,
-			@JsonProperty("groups") List<FoursquareUserGroup> groups){}
+	PhotoSizeMixin(
+			@JsonProperty("url") String url, 
+			@JsonProperty("width") int width, 
+			@JsonProperty("height") int height){}
 }

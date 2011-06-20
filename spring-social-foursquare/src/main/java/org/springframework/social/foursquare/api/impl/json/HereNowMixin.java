@@ -8,9 +8,9 @@ import org.codehaus.jackson.annotate.JsonProperty;
 import org.springframework.social.foursquare.api.FoursquareUserGroup;
 
 @JsonIgnoreProperties(ignoreUnknown=true)
-abstract class FriendInfoMixin {
+abstract class HereNowMixin {
 	@JsonCreator
-	FriendInfoMixin(
-			@JsonProperty("count") int total,
+	HereNowMixin(
+			@JsonProperty("count") int count,
 			@JsonProperty("groups") List<FoursquareUserGroup> groups){}
 }

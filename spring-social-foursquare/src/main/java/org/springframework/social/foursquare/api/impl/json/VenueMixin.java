@@ -1,14 +1,19 @@
 package org.springframework.social.foursquare.api.impl.json;
 
 import java.util.List;
+import java.util.Map;
 
 import org.codehaus.jackson.annotate.JsonCreator;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.codehaus.jackson.annotate.JsonProperty;
 import org.springframework.social.foursquare.api.Category;
 import org.springframework.social.foursquare.api.ContactInfo;
+import org.springframework.social.foursquare.api.HereNow;
 import org.springframework.social.foursquare.api.Location;
+import org.springframework.social.foursquare.api.Photos;
+import org.springframework.social.foursquare.api.VenueSpecial;
 import org.springframework.social.foursquare.api.VenueStats;
+import org.springframework.social.foursquare.api.VenueTips;
 
 @JsonIgnoreProperties(ignoreUnknown=true)
 abstract class VenueMixin {
@@ -21,4 +26,37 @@ abstract class VenueMixin {
 			@JsonProperty("categories") List<Category> categories,
 			@JsonProperty("verified") boolean verified, 
 			@JsonProperty("stats") VenueStats stats){}
+	
+	@JsonProperty("url")
+	String url;
+	
+	@JsonProperty("hereNow")
+	HereNow hereNow;
+	
+	@JsonProperty("tips")
+	VenueTips tips;
+	
+	@JsonProperty("tags")
+	List<String> tags;
+	
+	@JsonProperty("specials")
+	List<VenueSpecial> specials;
+
+	@JsonProperty("specialsNearby")
+	List<VenueSpecial> specialsNearby;
+	
+	@JsonProperty("shortUrl")
+	String shortUrl;
+	
+	@JsonProperty("timezone")
+	String timezone;
+	
+	@JsonProperty("beenHere")
+	Map<String,Integer> beenHere;
+	
+	@JsonProperty("photos")
+	Photos photos;
+	
+	@JsonProperty("description")
+	String description;
 }

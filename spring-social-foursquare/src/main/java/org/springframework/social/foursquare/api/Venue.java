@@ -1,6 +1,7 @@
 package org.springframework.social.foursquare.api;
 
 import java.util.List;
+import java.util.Map;
 
 public class Venue {
 	
@@ -11,6 +12,17 @@ public class Venue {
 	private List<Category> categories;
 	private boolean verified;
 	private VenueStats stats;
+	private String url;
+	private HereNow hereNow;
+	private VenueTips tips;
+	private List<String> tags;
+	private List<VenueSpecial> specials;
+	private List<VenueSpecial> specialsNearby;
+	private String shortUrl;
+	private String timezone;
+	private Map<String,Integer> beenHere;
+	private Photos photos;
+	private String description;
 	
 	public Venue(String id, String name, ContactInfo contactInfo, Location location, List<Category> categories,
 			boolean verified, VenueStats stats) {
@@ -78,4 +90,49 @@ public class Venue {
 	public void setStats(VenueStats stats) {
 		this.stats = stats;
 	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public HereNow getHereNow() {
+		return hereNow;
+	}
+
+	public VenueTips getTips() {
+		return tips;
+	}
+
+	public List<String> getTags() {
+		return tags;
+	}
+
+	public List<VenueSpecial> getSpecials() {
+		return specials;
+	}
+
+	public List<VenueSpecial> getSpecialsNearby() {
+		return specialsNearby;
+	}
+
+	public String getShortUrl() {
+		return shortUrl;
+	}
+
+	public String getTimezone() {
+		return timezone;
+	}
+
+	public Map<String, Integer> getBeenHere() {
+		return beenHere;
+	}
+
+	public Photos getPhotos() {
+		return photos;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+	
 }

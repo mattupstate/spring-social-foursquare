@@ -44,7 +44,7 @@ public class FoursquareTemplate extends AbstractOAuth2ApiBinding implements Four
 		getRestTemplate().setErrorHandler(new FoursquareErrorHandler());
 		
 		this.userOperations = new UserTemplate(this, true);
-		this.venueOperations = new VenueTemplate();
+		this.venueOperations = new VenueTemplate(this, true);
 		this.checkinOperations = new CheckinTemplate();
 		this.tipOperations = new TipTemplate();
 		this.photoOperations = new PhotoTemplate();

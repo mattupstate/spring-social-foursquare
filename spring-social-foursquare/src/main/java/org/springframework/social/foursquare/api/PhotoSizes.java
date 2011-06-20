@@ -2,12 +2,12 @@ package org.springframework.social.foursquare.api;
 
 import java.util.List;
 
-public class Tips {
+public class PhotoSizes {
 	
 	private int count;
-	private List<Tip> items;
+	private List<PhotoSize> items;
 	
-	public Tips(int count, List<Tip> items) {
+	public PhotoSizes(int count, List<PhotoSize> items) {
 		this.count = count;
 		this.items = items;
 	}
@@ -16,7 +16,8 @@ public class Tips {
 		return count;
 	}
 
-	public List<Tip> getItems() {
+	public List<PhotoSize> getItems() {
 		return items;
 	}
+	
 }
