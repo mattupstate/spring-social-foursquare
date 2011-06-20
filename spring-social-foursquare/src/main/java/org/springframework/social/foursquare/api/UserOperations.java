@@ -177,17 +177,68 @@ public interface UserOperations {
 	 */
 	Tips getNearbyTips(String userId, double latitude, double longitude, int limit, int offset);
 	
+	/**
+	 * Get recent todos for the authenticated user
+	 * @param userId A Foursquare user ID
+	 * @return Todos object
+	 */
 	Todos getRecentTodos();
 	
+	/**
+	 * Get recent todos for the specified user
+	 * @param userId A Foursquare user ID
+	 * @return Todos object
+	 */
 	Todos getRecentTodos(String userId);
 	
+	/**
+	 * Get nearby todos for the authenticated user
+	 * @param latitude	Latitude
+	 * @param longitude	Longitude
+	 * @return Todos object
+	 */
 	Todos getNearbyTodos(double latitude, double longitude);
 	
+	/**
+	 * Get nearby todos for the specified user
+	 * @param userId A Foursquare user ID
+	 * @param latitude	Latitude
+	 * @param longitude	Longitude
+	 * @return Todos object
+	 */
 	Todos getNearbyTodos(String userId, double latitude, double longitude);
 	
+	/**
+	 * Get popular todos for the authenticated user
+	 * @return Todos object
+	 */
 	Todos getPopularTodos();
 	
+	/**
+	 * Get popular todos for the specified user
+	 * @param userId A Foursquare user ID
+	 * @return Todos object
+	 */
 	Todos getPopularTodos(String userId);
+	
+	/**
+	 * Retrieve venues for the authenticated user with how many visits
+	 * @param beforeTimestamp	Seconds since epoch
+	 * @param afterTimestamp	Seconds after epoch
+	 * @param categoryId	Foursquare venue category ID
+	 * @return VenueHistory
+	 */
+	VenueHistory getVenueHistory(long beforeTimestamp, long afterTimestamp, String categoryId);
+	
+	/**
+	 * Retrieve venues for the specified user with how many visits
+	 * @param userId	A Foursquare user ID
+	 * @param beforeTimestamp	Seconds since epoch
+	 * @param afterTimestamp	Seconds after epoch
+	 * @param categoryId	Foursquare venue category ID
+	 * @return	VenueHistory
+	 */
+	VenueHistory getVenueHistory(String userId, long beforeTimestamp, long afterTimestamp, String categoryId);
 	
 	public static final String USERS_ENDPOINT = "users/";
 }

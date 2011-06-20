@@ -19,6 +19,7 @@ import org.springframework.social.foursquare.api.Leaderboard;
 import org.springframework.social.foursquare.api.Tips;
 import org.springframework.social.foursquare.api.Todos;
 import org.springframework.social.foursquare.api.UserSearchResponse;
+import org.springframework.social.foursquare.api.VenueHistory;
 
 public class UserTemplateTest extends AbstractFoursquareApiTest {
 	
@@ -143,6 +144,17 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
         
         Todos todos = foursquare.userOperations().getRecentTodos();
         assertEquals(2, todos.getCount());
+        mockServer.verify();
+    }
+    
+    @Test
+    public void getVenueHistory() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/venuehistory/?access_token=ACCESS_TOKEN"))
+            .andExpect(method(GET))
+            .andRespond(withResponse(new ClassPathResource("testdata/venue-history.json", getClass()), responseHeaders));
+        
+        VenueHistory history = foursquare.userOperations().getVenueHistory(0, 0, null);
+        assertEquals(163, history.getCount());
         mockServer.verify();
     }
 }

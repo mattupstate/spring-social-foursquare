@@ -13,6 +13,7 @@ import org.springframework.social.foursquare.api.Tips;
 import org.springframework.social.foursquare.api.Todos;
 import org.springframework.social.foursquare.api.UserOperations;
 import org.springframework.social.foursquare.api.UserSearchResponse;
+import org.springframework.social.foursquare.api.VenueHistory;
 import org.springframework.social.foursquare.api.impl.json.BadgesResponseContainer;
 import org.springframework.social.foursquare.api.impl.json.CheckinInfoContainer;
 import org.springframework.social.foursquare.api.impl.json.FoursquareUserContainer;
@@ -22,6 +23,7 @@ import org.springframework.social.foursquare.api.impl.json.RequestsContainer;
 import org.springframework.social.foursquare.api.impl.json.TipsContainer;
 import org.springframework.social.foursquare.api.impl.json.TodosContainer;
 import org.springframework.social.foursquare.api.impl.json.UserSearchResponseContainer;
+import org.springframework.social.foursquare.api.impl.json.VenueHistoryContainer;
 import org.springframework.util.StringUtils;
 
 public class UserTemplate extends AbstractFoursquareOperations implements UserOperations {
@@ -203,6 +205,24 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 			params.put("ll", latitude.toString() + "," + longitude.toString());
 		}
 		return get(buildUri(USERS_ENDPOINT + userId + "/todos/", params), TodosContainer.class).getTodos();
+	}
+
+	public VenueHistory getVenueHistory(long beforeTimestamp, long afterTimestamp, String categoryId) {
+		return getVenueHistory("self", beforeTimestamp, afterTimestamp, categoryId);
+	}
+
+	public VenueHistory getVenueHistory(String userId, long beforeTimestamp, long afterTimestamp, String categoryId) {
+		Map<String,String> params = new HashMap<String,String>();
+		if(beforeTimestamp > 0) {
+			params.put("beforeTimestamp", Long.toString(beforeTimestamp));
+		}
+		if(afterTimestamp > 0) {
+			params.put("afterTimestamp", Long.toString(afterTimestamp));
+		}
+		if(categoryId != null) {
+			params.put("categoryId", categoryId);
+		}
+		return get(buildUri(USERS_ENDPOINT + userId + "/venuehistory/", params), VenueHistoryContainer.class).getVenueHistory();
 	}
 
 }
