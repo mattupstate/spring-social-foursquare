@@ -22,6 +22,7 @@ import org.springframework.social.foursquare.api.Location;
 import org.springframework.social.foursquare.api.MayorshipInfo;
 import org.springframework.social.foursquare.api.Scores;
 import org.springframework.social.foursquare.api.Tip;
+import org.springframework.social.foursquare.api.Tips;
 import org.springframework.social.foursquare.api.Todo;
 import org.springframework.social.foursquare.api.UserSearchResponse;
 import org.springframework.social.foursquare.api.Venue;
@@ -55,6 +56,7 @@ public class FoursquareModule extends SimpleModule {
 		context.setMixInAnnotations(MayorshipInfo.class, MayorshipInfoMixin.class);
 		context.setMixInAnnotations(Scores.class, ScoresMixin.class);
 		context.setMixInAnnotations(Tip.class, TipMixin.class);
+		context.setMixInAnnotations(Tips.class, TipsMixin.class);
 		context.setMixInAnnotations(Todo.class, TodoMixin.class);
 		context.setMixInAnnotations(UserSearchResponse.class, UserSearchResponseMixin.class);
 		context.setMixInAnnotations(Venue.class, VenueMixin.class);

@@ -1,0 +1,184 @@
+{
+   "meta":{
+      "code":200
+   },
+   "response":{
+      "tips":{
+         "count":3,
+         "items":[
+            {
+               "id":"4d3b77d56de7721ef81cf949",
+               "createdAt":1295742933,
+               "text":"Excellent coffee. Cozy little space",
+               "status":"done",
+               "todo":{
+                  "count":0
+               },
+               "done":{
+                  "count":2
+               },
+               "venue":{
+                  "id":"4bfc53bce05e0f47a486cfa8",
+                  "name":"Cafe Martin",
+                  "contact":{
+
+                  },
+                  "location":{
+                     "address":"355 5th Ave.",
+                     "city":"Brooklyn",
+                     "state":"NY",
+                     "postalCode":"11231",
+                     "lat":40.671622,
+                     "lng":-73.983891
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1e0931735",
+                        "name":"Coffee Shop",
+                        "pluralName":"Coffee Shops",
+                        "icon":"https://foursquare.com/img/categories/food/coffeeshop.png",
+                        "parents":[
+                           "Food"
+                        ],
+                        "primary":true
+                     },
+                     {
+                        "id":"4bf58dd8d48988d16d941735",
+                        "name":"Café",
+                        "pluralName":"Cafés",
+                        "icon":"https://foursquare.com/img/categories/food/cafe.png",
+                        "parents":[
+                           "Food"
+                        ]
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":629,
+                     "usersCount":163
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               }
+            },
+            {
+               "id":"4d3b778034ee3704487a839b",
+               "createdAt":1295742848,
+               "text":"Guys that work here are nice.",
+               "status":"done",
+               "todo":{
+                  "count":0
+               },
+               "done":{
+                  "count":2
+               },
+               "venue":{
+                  "id":"4b1a74dcf964a52097ea23e3",
+                  "name":"Stop & Fifth Deli",
+                  "contact":{
+
+                  },
+                  "location":{
+                     "address":"5th Ave",
+                     "crossStreet":"at 5th St",
+                     "city":"New York",
+                     "state":"NY",
+                     "postalCode":"11215",
+                     "lat":40.671622436454356,
+                     "lng":-73.98416519165039
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d11f951735",
+                        "name":"Deli or Bodega",
+                        "pluralName":"Delis or Bodegas",
+                        "icon":"https://foursquare.com/img/categories/shops/food_deli.png",
+                        "parents":[
+                           "Shops",
+                           "Food and Drink Shops"
+                        ],
+                        "primary":true
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1c5941735",
+                        "name":"Sandwich Place",
+                        "pluralName":"Sandwich Places",
+                        "icon":"https://foursquare.com/img/categories/food/sandwiches.png",
+                        "parents":[
+                           "Food"
+                        ]
+                     },
+                     {
+                        "id":"4bf58dd8d48988d118951735",
+                        "name":"Grocery Store",
+                        "pluralName":"Grocery Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/food_grocery.png",
+                        "parents":[
+                           "Shops",
+                           "Food and Drink Shops"
+                        ]
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":138,
+                     "usersCount":40
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               }
+            },
+            {
+               "id":"4d3b7735979ea143ab329cfc",
+               "createdAt":1295742773,
+               "text":"Decent consistent affordable sushi.",
+               "status":"done",
+               "todo":{
+                  "count":0
+               },
+               "done":{
+                  "count":1
+               },
+               "venue":{
+                  "id":"4a8c3613f964a520500d20e3",
+                  "name":"Mura",
+                  "contact":{
+                     "phone":"7189651288"
+                  },
+                  "location":{
+                     "address":"369 5th Ave",
+                     "crossStreet":"btw 5th St & 6th St",
+                     "city":"Brooklyn",
+                     "state":"NY",
+                     "postalCode":"11215",
+                     "lat":40.6713,
+                     "lng":-73.9845
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d142941735",
+                        "name":"Asian Restaurant",
+                        "pluralName":"Asian Restaurants",
+                        "icon":"https://foursquare.com/img/categories/food/default.png",
+                        "parents":[
+                           "Food"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":332,
+                     "usersCount":188
+                  },
+                  "todos":{
+                     "count":0
+                  }
+               }
+            }
+         ]
+      }
+   }
+}

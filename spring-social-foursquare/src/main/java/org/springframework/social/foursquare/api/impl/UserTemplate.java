@@ -9,6 +9,7 @@ import org.springframework.social.foursquare.api.CheckinInfo;
 import org.springframework.social.foursquare.api.FoursquareUser;
 import org.springframework.social.foursquare.api.Friends;
 import org.springframework.social.foursquare.api.Leaderboard;
+import org.springframework.social.foursquare.api.Tips;
 import org.springframework.social.foursquare.api.UserOperations;
 import org.springframework.social.foursquare.api.UserSearchResponse;
 import org.springframework.social.foursquare.api.impl.json.BadgesResponseContainer;
@@ -17,6 +18,7 @@ import org.springframework.social.foursquare.api.impl.json.FoursquareUserContain
 import org.springframework.social.foursquare.api.impl.json.FriendsContainer;
 import org.springframework.social.foursquare.api.impl.json.LeaderboardContainer;
 import org.springframework.social.foursquare.api.impl.json.RequestsContainer;
+import org.springframework.social.foursquare.api.impl.json.TipsContainer;
 import org.springframework.social.foursquare.api.impl.json.UserSearchResponseContainer;
 import org.springframework.util.StringUtils;
 
@@ -127,5 +129,45 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 		}
 		return get(buildUri(USERS_ENDPOINT + userId + "/friends/", params), FriendsContainer.class).getFriends();
 	}
+
+	public Tips getRecentTips(int limit, int offset) {
+		return getRecentTips("self", limit, offset);
+	}
+
+	public Tips getRecentTips(String userId, int limit, int offset) {
+		return doTips(userId, "recent", null, null, limit, offset);
+	}
+
+	public Tips getPopularTips(int limit, int offset) {
+		return getPopularTips("self", limit, offset);
+	}
+
+	public Tips getPopularTips(String userId, int limit, int offset) {
+		return doTips(userId, "popular", null, null, limit, offset);
+	}
+
+	public Tips getNearbyTips(double latitude, double longitude, int limit, int offset) {
+		return getNearbyTips("self", latitude, longitude, limit, offset);
+	}
 	
+	public Tips getNearbyTips(String userId, double latitude, double longitude, int limit, int offset) {
+		return doTips(userId, "nearby", new Double(latitude), new Double(longitude), limit, offset);
+	}
+	
+	private Tips doTips(String userId, String sort, Double latitude, Double longitude, int limit, int offset) {
+		requireUserAuthorization();
+		Map<String,String> params = new HashMap<String,String>();
+		params.put("sort", sort);
+		if(latitude != null && longitude != null) {
+			params.put("ll", latitude.toString() + "," + longitude.toString());
+		}
+		if(limit > 0) {
+			params.put("limit", Integer.toString(limit));
+		}
+		if(offset > 0) {
+			params.put("offset", Integer.toString(offset));
+		}
+		return get(buildUri(USERS_ENDPOINT + userId + "/tips/", params), TipsContainer.class).getTips();
+	}
+
 }

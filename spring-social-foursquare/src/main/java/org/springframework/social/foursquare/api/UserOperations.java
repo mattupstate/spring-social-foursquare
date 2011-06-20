@@ -122,5 +122,60 @@ public interface UserOperations {
 	 */
 	Friends getFriends(String userId, int limit, int offset);
 	
+	/**
+	 * Retrieve recent tips for the authenticated user
+	 * @param limit	limit number of results, up to 500
+	 * @param offset Page offset
+	 * @return	Tips object
+	 */
+	Tips getRecentTips(int limit, int offset);
+	
+	/**
+	 * Retrieve recent tips for the specified user
+	 * @param userId A Foursquare user ID
+	 * @param limit	limit number of results, up to 500
+	 * @param offset Page offset
+	 * @return	Tips object
+	 */
+	Tips getRecentTips(String userId, int limit, int offset);
+	
+	/**
+	 * Retrieve popular tips for the authenticated user
+	 * @param limit	limit number of results, up to 500
+	 * @param offset Page offset
+	 * @return	Tips object
+	 */
+	Tips getPopularTips(int limit, int offset);
+	
+	/**
+	 * Retrieve popular tips for the specified user
+	 * @param userId A Foursquare user ID
+	 * @param limit	limit number of results, up to 500
+	 * @param offset Page offset
+	 * @return	Tips object
+	 */
+	Tips getPopularTips(String userId, int limit, int offset);
+	
+	/**
+	 * Retrieve nearby tips for the authenticated user
+	 * @param latitude Latitude
+	 * @param longitude Longitude 
+	 * @param limit	limit number of results, up to 500
+	 * @param offset Page offset
+	 * @return	Tips object
+	 */
+	Tips getNearbyTips(double latitude, double longitude, int limit, int offset);
+	
+	/**
+	 * Retrieve nearby tips for the specified user
+	 * @param userId A Foursquare user ID
+	 * @param latitude Latitude
+	 * @param longitude Longitude 
+	 * @param limit	limit number of results, up to 500
+	 * @param offset Page offset
+	 * @return	Tips object
+	 */
+	Tips getNearbyTips(String userId, double latitude, double longitude, int limit, int offset);
+	
 	public static final String USERS_ENDPOINT = "users/";
 }

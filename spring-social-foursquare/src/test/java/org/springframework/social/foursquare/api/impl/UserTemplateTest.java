@@ -16,6 +16,7 @@ import org.springframework.social.foursquare.api.CheckinInfo;
 import org.springframework.social.foursquare.api.FoursquareUser;
 import org.springframework.social.foursquare.api.Friends;
 import org.springframework.social.foursquare.api.Leaderboard;
+import org.springframework.social.foursquare.api.Tips;
 import org.springframework.social.foursquare.api.UserSearchResponse;
 
 public class UserTemplateTest extends AbstractFoursquareApiTest {
@@ -110,7 +111,6 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
         mockServer.verify();
     }
     
-
     @Test
     public void getFriends() {
         mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/friends/?access_token=ACCESS_TOKEN"))
@@ -120,6 +120,17 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
         Friends friends = foursquare.userOperations().getFriends();
         assertEquals(6, friends.getCount());
         assertEquals(6, friends.getItems().size());
+        mockServer.verify();
+    }
+    
+    @Test
+    public void getTips() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/tips/?access_token=ACCESS_TOKEN&sort=recent"))
+            .andExpect(method(GET))
+            .andRespond(withResponse(new ClassPathResource("testdata/tips.json", getClass()), responseHeaders));
+        
+        Tips tips = foursquare.userOperations().getRecentTips(0, 0);
+        assertEquals(3, tips.getCount());
         mockServer.verify();
     }
 }

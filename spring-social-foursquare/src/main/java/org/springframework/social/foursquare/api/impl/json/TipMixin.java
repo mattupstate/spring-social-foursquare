@@ -12,12 +12,10 @@ import org.springframework.social.foursquare.api.Venue;
 abstract class TipMixin {
 	@JsonCreator
 	TipMixin(
-			@JsonProperty("id") long id,
+			@JsonProperty("id") String id,
 			@JsonProperty("createdAt") Date createdAt, 
 			@JsonProperty("text") String text, 
 			@JsonProperty("status") String status, 
-			@JsonProperty("todoCount") int todoCount,
-			@JsonProperty("doneCount") int doneCount, 
 			@JsonProperty("venue") Venue venue, 
 			@JsonProperty("user") FoursquareUser user){}
 }
