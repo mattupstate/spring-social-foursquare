@@ -17,6 +17,7 @@ import org.springframework.social.foursquare.api.FoursquareUser;
 import org.springframework.social.foursquare.api.Friends;
 import org.springframework.social.foursquare.api.Leaderboard;
 import org.springframework.social.foursquare.api.Tips;
+import org.springframework.social.foursquare.api.Todos;
 import org.springframework.social.foursquare.api.UserSearchResponse;
 
 public class UserTemplateTest extends AbstractFoursquareApiTest {
@@ -131,6 +132,17 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
         
         Tips tips = foursquare.userOperations().getRecentTips(0, 0);
         assertEquals(3, tips.getCount());
+        mockServer.verify();
+    }
+
+    @Test
+    public void getTodos() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/todos/?access_token=ACCESS_TOKEN&sort=recent"))
+            .andExpect(method(GET))
+            .andRespond(withResponse(new ClassPathResource("testdata/todos.json", getClass()), responseHeaders));
+        
+        Todos todos = foursquare.userOperations().getRecentTodos();
+        assertEquals(2, todos.getCount());
         mockServer.verify();
     }
 }

@@ -1,0 +1,154 @@
+{
+   "meta":{
+      "code":200
+   },
+   "response":{
+      "todos":{
+         "count":2,
+         "items":[
+            {
+               "id":"4dfa596a8877b30c3987985f",
+               "createdAt":1308252522,
+               "tip":{
+                  "id":"4dfa596a8877b30c3987985e",
+                  "createdAt":1308252522,
+                  "text":"Work on stuff",
+                  "status":"todo",
+                  "todo":{
+                     "count":1
+                  },
+                  "done":{
+                     "count":0
+                  },
+                  "venue":{
+                     "id":"4a8030abf964a520bcf41fe3",
+                     "name":"Syrup",
+                     "contact":{
+                        "phone":"2126801477"
+                     },
+                     "location":{
+                        "address":"12 Vestry St.",
+                        "crossStreet":"Hudson Street",
+                        "city":"New York",
+                        "state":"NY",
+                        "postalCode":"10013",
+                        "country":"USA",
+                        "lat":40.7228,
+                        "lng":-74.0073
+                     },
+                     "categories":[
+                        {
+                           "id":"4bf58dd8d48988d124941735",
+                           "name":"Office",
+                           "pluralName":"Offices",
+                           "icon":"https://foursquare.com/img/categories/building/default.png",
+                           "parents":[
+                              "Homes, Work, Others"
+                           ],
+                           "primary":true
+                        }
+                     ],
+                     "verified":false,
+                     "stats":{
+                        "checkinsCount":216,
+                        "usersCount":39
+                     },
+                     "todos":{
+                        "count":1
+                     }
+                  },
+                  "user":{
+                     "id":"700390",
+                     "firstName":"Matt",
+                     "lastName":"Wright",
+                     "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/OGGQATTYHOGWJL4E.jpg",
+                     "gender":"male",
+                     "homeCity":"New York",
+                     "relationship":"self"
+                  }
+               }
+            },
+            {
+               "id":"4dfa59557d8b1f1d6c07ec73",
+               "createdAt":1308252501,
+               "tip":{
+                  "id":"4dfa59557d8b1f1d6c07ec72",
+                  "createdAt":1308252501,
+                  "text":"Get some coffee",
+                  "status":"todo",
+                  "todo":{
+                     "count":1
+                  },
+                  "done":{
+                     "count":0
+                  },
+                  "venue":{
+                     "id":"4a7a7a8ef964a5205de91fe3",
+                     "name":"Jin Market",
+                     "contact":{
+
+                     },
+                     "location":{
+                        "address":"111 Hudson St.",
+                        "crossStreet":"Franklin St.",
+                        "city":"New York",
+                        "state":"NY",
+                        "postalCode":"10013",
+                        "lat":40.7197,
+                        "lng":-74.0089
+                     },
+                     "categories":[
+                        {
+                           "id":"4bf58dd8d48988d11f951735",
+                           "name":"Deli or Bodega",
+                           "pluralName":"Delis or Bodegas",
+                           "icon":"https://foursquare.com/img/categories/shops/food_deli.png",
+                           "parents":[
+                              "Shops",
+                              "Food and Drink Shops"
+                           ],
+                           "primary":true
+                        },
+                        {
+                           "id":"4bf58dd8d48988d1c5941735",
+                           "name":"Sandwich Place",
+                           "pluralName":"Sandwich Places",
+                           "icon":"https://foursquare.com/img/categories/food/sandwiches.png",
+                           "parents":[
+                              "Food"
+                           ]
+                        },
+                        {
+                           "id":"4bf58dd8d48988d146941735",
+                           "name":"Deli or Bodega",
+                           "pluralName":"Delis or Bodegas",
+                           "icon":"https://foursquare.com/img/categories/food/deli.png",
+                           "parents":[
+                              "Food"
+                           ]
+                        }
+                     ],
+                     "verified":false,
+                     "stats":{
+                        "checkinsCount":781,
+                        "usersCount":199
+                     },
+                     "todos":{
+                        "count":1
+                     }
+                  },
+                  "user":{
+                     "id":"700390",
+                     "firstName":"Matt",
+                     "lastName":"Wright",
+                     "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/OGGQATTYHOGWJL4E.jpg",
+                     "gender":"male",
+                     "homeCity":"New York",
+                     "relationship":"self"
+                  }
+               }
+            }
+         ]
+      }
+   }
+}

@@ -10,6 +10,7 @@ import org.springframework.social.foursquare.api.FoursquareUser;
 import org.springframework.social.foursquare.api.Friends;
 import org.springframework.social.foursquare.api.Leaderboard;
 import org.springframework.social.foursquare.api.Tips;
+import org.springframework.social.foursquare.api.Todos;
 import org.springframework.social.foursquare.api.UserOperations;
 import org.springframework.social.foursquare.api.UserSearchResponse;
 import org.springframework.social.foursquare.api.impl.json.BadgesResponseContainer;
@@ -19,6 +20,7 @@ import org.springframework.social.foursquare.api.impl.json.FriendsContainer;
 import org.springframework.social.foursquare.api.impl.json.LeaderboardContainer;
 import org.springframework.social.foursquare.api.impl.json.RequestsContainer;
 import org.springframework.social.foursquare.api.impl.json.TipsContainer;
+import org.springframework.social.foursquare.api.impl.json.TodosContainer;
 import org.springframework.social.foursquare.api.impl.json.UserSearchResponseContainer;
 import org.springframework.util.StringUtils;
 
@@ -168,6 +170,39 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 			params.put("offset", Integer.toString(offset));
 		}
 		return get(buildUri(USERS_ENDPOINT + userId + "/tips/", params), TipsContainer.class).getTips();
+	}
+
+	public Todos getRecentTodos() {
+		return getRecentTodos("self");
+	}
+
+	public Todos getRecentTodos(String userId) {
+		return doTodos(userId, "recent", null, null);
+	}
+
+	public Todos getNearbyTodos(double latitude, double longitude) {
+		return getNearbyTodos("self", latitude, longitude);
+	}
+	
+	public Todos getNearbyTodos(String userId, double latitude, double longitude) {
+		return doTodos(userId, "nearby", new Double(latitude), new Double(longitude));
+	}
+
+	public Todos getPopularTodos(String userId) {
+		return doTodos(userId, "popular", null, null);
+	}
+
+	public Todos getPopularTodos() {
+		return getPopularTodos("self");
+	}
+	
+	private Todos doTodos(String userId, String sort, Double latitude, Double longitude) {
+		Map<String,String> params = new HashMap<String,String>();
+		params.put("sort", sort);
+		if(latitude != null && longitude != null) {
+			params.put("ll", latitude.toString() + "," + longitude.toString());
+		}
+		return get(buildUri(USERS_ENDPOINT + userId + "/todos/", params), TodosContainer.class).getTodos();
 	}
 
 }

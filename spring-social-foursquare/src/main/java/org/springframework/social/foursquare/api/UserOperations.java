@@ -177,5 +177,17 @@ public interface UserOperations {
 	 */
 	Tips getNearbyTips(String userId, double latitude, double longitude, int limit, int offset);
 	
+	Todos getRecentTodos();
+	
+	Todos getRecentTodos(String userId);
+	
+	Todos getNearbyTodos(double latitude, double longitude);
+	
+	Todos getNearbyTodos(String userId, double latitude, double longitude);
+	
+	Todos getPopularTodos();
+	
+	Todos getPopularTodos(String userId);
+	
 	public static final String USERS_ENDPOINT = "users/";
 }
