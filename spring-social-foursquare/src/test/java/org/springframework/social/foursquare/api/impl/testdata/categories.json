@@ -1,0 +1,2855 @@
+{
+   "meta":{
+      "code":200
+   },
+   "response":{
+      "categories":[
+         {
+            "name":"Arts & Entertainment",
+            "pluralName":"Arts & Entertainment",
+            "icon":"https://foursquare.com/img/categories/arts_entertainment/default.png",
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1e1931735",
+                  "name":"Arcade",
+                  "pluralName":"Arcades",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/arcade.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1e2931735",
+                  "name":"Art Gallery",
+                  "pluralName":"Art Galleries",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/artgallery.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1e4931735",
+                  "name":"Bowling Alley",
+                  "pluralName":"Bowling Alleys",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/bowling.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d17c941735",
+                  "name":"Casino",
+                  "pluralName":"Casinos",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/casino.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d18e941735",
+                  "name":"Comedy Club",
+                  "pluralName":"Comedy Clubs",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/comedyclub.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1f1931735",
+                  "name":"General Entertainment",
+                  "pluralName":"General Entertainment",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4deefb944765f83613cdba6e",
+                  "name":"Historic Site",
+                  "pluralName":"Historic Sites",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/museum.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d17f941735",
+                  "name":"Movie Theater",
+                  "pluralName":"Movie Theaters",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/movietheater.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d17e941735",
+                        "name":"Indie Movie Theater",
+                        "pluralName":"Indie Movie Theaters",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/movietheater.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d180941735",
+                        "name":"Multiplex",
+                        "pluralName":"Multiplexes",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/movietheater.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d181941735",
+                  "name":"Museum",
+                  "pluralName":"Museums",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/museum.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d18f941735",
+                        "name":"Art Museum",
+                        "pluralName":"Art Museums",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/museum_art.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d190941735",
+                        "name":"History Museum",
+                        "pluralName":"History Museums",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/museum.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d192941735",
+                        "name":"Planetarium",
+                        "pluralName":"Planetariums",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/museum_planetarium.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d191941735",
+                        "name":"Science Museum",
+                        "pluralName":"Science Museums",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/museum_science.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1e5931735",
+                  "name":"Music Venue",
+                  "pluralName":"Music Venues",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/musicvenue.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1e6931735",
+                        "name":"Concert Hall",
+                        "pluralName":"Concert Halls",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/musicvenue.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1e7931735",
+                        "name":"Jazz Club",
+                        "pluralName":"Jazz Clubs",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/musicvenue.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1e8931735",
+                        "name":"Piano Bar",
+                        "pluralName":"Piano Bars",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/musicvenue.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1e9931735",
+                        "name":"Rock Club",
+                        "pluralName":"Rock Clubs",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/musicvenue_rockclub.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1f2931735",
+                  "name":"Performing Arts Venue",
+                  "pluralName":"Performing Arts Venues",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/default.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1f3931735",
+                        "name":"Concert Hall",
+                        "pluralName":"Concert Halls",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d134941735",
+                        "name":"Dance Studio",
+                        "pluralName":"Dance Studios",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d135941735",
+                        "name":"Indie or Off Broadway Theater",
+                        "pluralName":"Indie or Off Broadway Theaters",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d136941735",
+                        "name":"Opera House",
+                        "pluralName":"Opera Houses",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d137941735",
+                        "name":"Theater",
+                        "pluralName":"Theaters",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/default.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1e3931735",
+                  "name":"Pool Hall",
+                  "pluralName":"Pool Halls",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/billiards.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1f4931735",
+                  "name":"Racetrack",
+                  "pluralName":"Racetracks",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/racetrack.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d184941735",
+                  "name":"Stadium",
+                  "pluralName":"Stadiums",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/stadium.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d18c941735",
+                        "name":"Baseball Stadium",
+                        "pluralName":"Baseball Stadiums",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/stadium_baseball.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d18b941735",
+                        "name":"Basketball Stadium",
+                        "pluralName":"Basketball Stadiums",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/stadium_basketball.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d18a941735",
+                        "name":"Cricket Ground",
+                        "pluralName":"Cricket Grounds",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/stadium_cricket.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d189941735",
+                        "name":"Football Stadium",
+                        "pluralName":"Football Stadiums",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/stadium_football.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d185941735",
+                        "name":"Hockey Stadium",
+                        "pluralName":"Hockey Stadiums",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/stadium_hockey.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d188941735",
+                        "name":"Soccer Stadium",
+                        "pluralName":"Soccer Stadiums",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/stadium_soccer.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d187941735",
+                        "name":"Track",
+                        "pluralName":"Tracks",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/stadium_track.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d183941735",
+                  "name":"Strip Club",
+                  "pluralName":"Strip Clubs",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/stripclub.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d182941735",
+                  "name":"Theme Park",
+                  "pluralName":"Theme Parks",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/themepark.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d193941735",
+                  "name":"Water Park",
+                  "pluralName":"Water Parks",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/waterpark.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d17b941735",
+                  "name":"Zoo or Aquarium",
+                  "pluralName":"Zoos or Aquariums",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/zoo.png",
+                  "categories":[
+
+                  ]
+               }
+            ]
+         },
+         {
+            "name":"College & University",
+            "pluralName":"Colleges & Universities",
+            "icon":"https://foursquare.com/img/categories/education/default.png",
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d198941735",
+                  "name":"College Academic Building",
+                  "pluralName":"College Academic Buildings",
+                  "icon":"https://foursquare.com/img/categories/education/default.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d199941735",
+                        "name":"College Arts Building",
+                        "pluralName":"College Arts Buildings",
+                        "icon":"https://foursquare.com/img/categories/education/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d19a941735",
+                        "name":"College Communications Building",
+                        "pluralName":"College Communications Buildings",
+                        "icon":"https://foursquare.com/img/categories/education/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d19e941735",
+                        "name":"College Engineering Building",
+                        "pluralName":"College Engineering Buildings",
+                        "icon":"https://foursquare.com/img/categories/education/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d19d941735",
+                        "name":"College History Building",
+                        "pluralName":"College History Buildings",
+                        "icon":"https://foursquare.com/img/categories/education/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d19c941735",
+                        "name":"College Math Building",
+                        "pluralName":"College Math Buildings",
+                        "icon":"https://foursquare.com/img/categories/education/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d19b941735",
+                        "name":"College Science Building",
+                        "pluralName":"College Science Buildings",
+                        "icon":"https://foursquare.com/img/categories/education/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d19f941735",
+                        "name":"College Technology Building",
+                        "pluralName":"College Technology Buildings",
+                        "icon":"https://foursquare.com/img/categories/education/default.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d197941735",
+                  "name":"College Administrative Building",
+                  "pluralName":"College Administrative Buildings",
+                  "icon":"https://foursquare.com/img/categories/education/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1af941735",
+                  "name":"College Auditorium",
+                  "pluralName":"College Auditoriums",
+                  "icon":"https://foursquare.com/img/categories/education/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1b1941735",
+                  "name":"College Bookstore",
+                  "pluralName":"College Bookstores",
+                  "icon":"https://foursquare.com/img/categories/education/bookstore.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1a1941735",
+                  "name":"College Cafeteria",
+                  "pluralName":"College Cafeterias",
+                  "icon":"https://foursquare.com/img/categories/education/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1a0941735",
+                  "name":"College Classroom",
+                  "pluralName":"College Classrooms",
+                  "icon":"https://foursquare.com/img/categories/education/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1a3941735",
+                  "name":"College Dorm",
+                  "pluralName":"College Dorms",
+                  "icon":"https://foursquare.com/img/categories/education/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1b2941735",
+                  "name":"College Gym",
+                  "pluralName":"College Gyms",
+                  "icon":"https://foursquare.com/img/categories/education/gym.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1a5941735",
+                  "name":"College Lab",
+                  "pluralName":"College Labs",
+                  "icon":"https://foursquare.com/img/categories/education/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1a7941735",
+                  "name":"College Library",
+                  "pluralName":"College Libraries",
+                  "icon":"https://foursquare.com/img/categories/education/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1aa941735",
+                  "name":"College Quad",
+                  "pluralName":"College Quads",
+                  "icon":"https://foursquare.com/img/categories/education/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1a9941735",
+                  "name":"College Rec Center",
+                  "pluralName":"College Rec Centers",
+                  "icon":"https://foursquare.com/img/categories/education/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1b4941735",
+                  "name":"College Stadium",
+                  "pluralName":"College Stadiums",
+                  "icon":"https://foursquare.com/img/categories/education/stadium.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1bb941735",
+                        "name":"College Baseball Diamond",
+                        "pluralName":"College Baseball Diamonds",
+                        "icon":"https://foursquare.com/img/categories/education/stadium_baseball.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1ba941735",
+                        "name":"College Basketball Court",
+                        "pluralName":"College Basketball Courts",
+                        "icon":"https://foursquare.com/img/categories/education/stadium_basketball.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1b9941735",
+                        "name":"College Cricket Pitch",
+                        "pluralName":"College Cricket Pitches",
+                        "icon":"https://foursquare.com/img/categories/education/stadium_cricket.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1b8941735",
+                        "name":"College Football Field",
+                        "pluralName":"College Football Fields",
+                        "icon":"https://foursquare.com/img/categories/education/stadium_football.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1b5941735",
+                        "name":"College Hockey Rink",
+                        "pluralName":"College Hockey Rinks",
+                        "icon":"https://foursquare.com/img/categories/education/stadium_hockey.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1b7941735",
+                        "name":"College Soccer Field",
+                        "pluralName":"College Soccer Fields",
+                        "icon":"https://foursquare.com/img/categories/education/stadium_soccer.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1b6941735",
+                        "name":"College Track",
+                        "pluralName":"College Tracks",
+                        "icon":"https://foursquare.com/img/categories/education/stadium_track.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1ac941735",
+                  "name":"College Theater",
+                  "pluralName":"College Theaters",
+                  "icon":"https://foursquare.com/img/categories/education/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1a2941735",
+                  "name":"Community College",
+                  "pluralName":"Community Colleges",
+                  "icon":"https://foursquare.com/img/categories/education/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1b0941735",
+                  "name":"Fraternity House",
+                  "pluralName":"Fraternity Houses",
+                  "icon":"https://foursquare.com/img/categories/education/frathouse.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1a8941735",
+                  "name":"General College & University",
+                  "pluralName":"General Colleges & Universities",
+                  "icon":"https://foursquare.com/img/categories/education/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1a6941735",
+                  "name":"Law School",
+                  "pluralName":"Law Schools",
+                  "icon":"https://foursquare.com/img/categories/education/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1b3941735",
+                  "name":"Medical School",
+                  "pluralName":"Medical Schools",
+                  "icon":"https://foursquare.com/img/categories/education/medicalschool.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d141941735",
+                  "name":"Sorority House",
+                  "pluralName":"Sorority Houses",
+                  "icon":"https://foursquare.com/img/categories/education/sororityhouse.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1ab941735",
+                  "name":"Student Center",
+                  "pluralName":"Student Centers",
+                  "icon":"https://foursquare.com/img/categories/education/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1ad941735",
+                  "name":"Trade School",
+                  "pluralName":"Trade Schools",
+                  "icon":"https://foursquare.com/img/categories/education/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1ae941735",
+                  "name":"University",
+                  "pluralName":"Universities",
+                  "icon":"https://foursquare.com/img/categories/education/default.png",
+                  "categories":[
+
+                  ]
+               }
+            ]
+         },
+         {
+            "name":"Food",
+            "pluralName":"Food",
+            "icon":"https://foursquare.com/img/categories/food/default.png",
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1c8941735",
+                  "name":"African Restaurant",
+                  "pluralName":"African Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/african.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d14e941735",
+                  "name":"American Restaurant",
+                  "pluralName":"American Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d152941735",
+                  "name":"Arepa Restaurant",
+                  "pluralName":"Arepa Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d107941735",
+                  "name":"Argentinian Restaurant",
+                  "pluralName":"Argentinian Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/argentinian.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d142941735",
+                  "name":"Asian Restaurant",
+                  "pluralName":"Asian Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d169941735",
+                  "name":"Australian Restaurant",
+                  "pluralName":"Australian Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/australian.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1df931735",
+                  "name":"BBQ Joint",
+                  "pluralName":"BBQ Joints",
+                  "icon":"https://foursquare.com/img/categories/food/bbq.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d179941735",
+                  "name":"Bagel Shop",
+                  "pluralName":"Bagel Shops",
+                  "icon":"https://foursquare.com/img/categories/food/bagels.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d16a941735",
+                  "name":"Bakery",
+                  "pluralName":"Bakeries",
+                  "icon":"https://foursquare.com/img/categories/food/bakery.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d16b941735",
+                  "name":"Brazilian Restaurant",
+                  "pluralName":"Brazilian Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/brazilian.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d143941735",
+                  "name":"Breakfast Spot",
+                  "pluralName":"Breakfast Spots",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1cf941735",
+                  "name":"Brewery",
+                  "pluralName":"Breweries",
+                  "icon":"https://foursquare.com/img/categories/food/brewery.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d16c941735",
+                  "name":"Burger Joint",
+                  "pluralName":"Burger Joints",
+                  "icon":"https://foursquare.com/img/categories/food/burger.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d153941735",
+                  "name":"Burrito Place",
+                  "pluralName":"Burrito Places",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d16d941735",
+                  "name":"Café",
+                  "pluralName":"Cafés",
+                  "icon":"https://foursquare.com/img/categories/food/cafe.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d17a941735",
+                  "name":"Cajun or Creole Restaurant",
+                  "pluralName":"Cajun or Creole Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d144941735",
+                  "name":"Caribbean Restaurant",
+                  "pluralName":"Caribbean Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d145941735",
+                  "name":"Chinese Restaurant",
+                  "pluralName":"Chinese Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1e0931735",
+                  "name":"Coffee Shop",
+                  "pluralName":"Coffee Shops",
+                  "icon":"https://foursquare.com/img/categories/food/coffeeshop.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d154941735",
+                  "name":"Cuban Restaurant",
+                  "pluralName":"Cuban Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1bc941735",
+                  "name":"Cupcake Shop",
+                  "pluralName":"Cupcake Shops",
+                  "icon":"https://foursquare.com/img/categories/food/cupcakes.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d146941735",
+                  "name":"Deli or Bodega",
+                  "pluralName":"Delis or Bodegas",
+                  "icon":"https://foursquare.com/img/categories/food/deli.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1d0941735",
+                  "name":"Dessert Shop",
+                  "pluralName":"Dessert Shops",
+                  "icon":"https://foursquare.com/img/categories/food/dessert.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1f5931735",
+                  "name":"Dim Sum Restaurant",
+                  "pluralName":"Dim Sum Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d147941735",
+                  "name":"Diner",
+                  "pluralName":"Diners",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d148941735",
+                  "name":"Donut Shop",
+                  "pluralName":"Donut Shops",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d108941735",
+                  "name":"Dumpling Restaurant",
+                  "pluralName":"Dumpling Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d109941735",
+                  "name":"Eastern European Restaurant",
+                  "pluralName":"Eastern European Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d10a941735",
+                  "name":"Ethiopian Restaurant",
+                  "pluralName":"Ethiopian Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d10b941735",
+                  "name":"Falafel Restaurant",
+                  "pluralName":"Falafel Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d16e941735",
+                  "name":"Fast Food Restaurant",
+                  "pluralName":"Fast Food Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/fastfood.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d114941735",
+                  "name":"Food Court",
+                  "pluralName":"Food Courts",
+                  "icon":"https://foursquare.com/img/categories/food/foodcourt.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1cb941735",
+                  "name":"Food Truck",
+                  "pluralName":"Food Trucks",
+                  "icon":"https://foursquare.com/img/categories/food/streetfood.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d10c941735",
+                  "name":"French Restaurant",
+                  "pluralName":"French Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/french.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4d4ae6fc7a7b7dea34424761",
+                  "name":"Fried Chicken Joint",
+                  "pluralName":"Fried Chicken Joints",
+                  "icon":"https://foursquare.com/img/categories/food/friedchicken.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d155941735",
+                  "name":"Gastropub",
+                  "pluralName":"Gastropubs",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d10d941735",
+                  "name":"German Restaurant",
+                  "pluralName":"German Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4c2cd86ed066bed06c3c5209",
+                  "name":"Gluten-free Restaurant",
+                  "pluralName":"Gluten-free Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d10e941735",
+                  "name":"Greek Restaurant",
+                  "pluralName":"Greek Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d16f941735",
+                  "name":"Hot Dog Joint",
+                  "pluralName":"Hot Dog Joints",
+                  "icon":"https://foursquare.com/img/categories/food/hotdog.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1c9941735",
+                  "name":"Ice Cream Shop",
+                  "pluralName":"Ice Cream Shops",
+                  "icon":"https://foursquare.com/img/categories/food/icecream.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d10f941735",
+                  "name":"Indian Restaurant",
+                  "pluralName":"Indian Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/indian.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4deefc054765f83613cdba6f",
+                  "name":"Indonesian Restaurant",
+                  "pluralName":"Indonesian Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d110941735",
+                  "name":"Italian Restaurant",
+                  "pluralName":"Italian Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d111941735",
+                  "name":"Japanese Restaurant",
+                  "pluralName":"Japanese Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d112941735",
+                  "name":"Juice Bar",
+                  "pluralName":"Juice Bars",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d113941735",
+                  "name":"Korean Restaurant",
+                  "pluralName":"Korean Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/korean.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1be941735",
+                  "name":"Latin American Restaurant",
+                  "pluralName":"Latin American Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1bf941735",
+                  "name":"Mac & Cheese Joint",
+                  "pluralName":"Mac & Cheese Joints",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d156941735",
+                  "name":"Malaysian Restaurant",
+                  "pluralName":"Malaysian Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1c0941735",
+                  "name":"Mediterranean Restaurant",
+                  "pluralName":"Mediterranean Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1c1941735",
+                  "name":"Mexican Restaurant",
+                  "pluralName":"Mexican Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d115941735",
+                  "name":"Middle Eastern Restaurant",
+                  "pluralName":"Middle Eastern Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/middleeastern.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1c2941735",
+                  "name":"Molecular Gastronomy Restaurant",
+                  "pluralName":"Molecular Gastronomy Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1c3941735",
+                  "name":"Moroccan Restaurant",
+                  "pluralName":"Moroccan Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d157941735",
+                  "name":"New American Restaurant",
+                  "pluralName":"New American Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1ca941735",
+                  "name":"Pizza Place",
+                  "pluralName":"Pizza Places",
+                  "icon":"https://foursquare.com/img/categories/food/pizza.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4def73e84765ae376e57713a",
+                  "name":"Portuguese Restaurant",
+                  "pluralName":"Portuguese Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1d1941735",
+                  "name":"Ramen or Noodle House",
+                  "pluralName":"Ramen or Noodle House",
+                  "icon":"https://foursquare.com/img/categories/food/ramen.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1c4941735",
+                  "name":"Restaurant",
+                  "pluralName":"Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1bd941735",
+                  "name":"Salad Place",
+                  "pluralName":"Salad Shop",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1c5941735",
+                  "name":"Sandwich Place",
+                  "pluralName":"Sandwich Places",
+                  "icon":"https://foursquare.com/img/categories/food/sandwiches.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1c6941735",
+                  "name":"Scandinavian Restaurant",
+                  "pluralName":"Scandinavian Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1ce941735",
+                  "name":"Seafood Restaurant",
+                  "pluralName":"Seafood Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/seafood.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1c7941735",
+                  "name":"Snack Place",
+                  "pluralName":"Snack Places",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1dd931735",
+                  "name":"Soup Place",
+                  "pluralName":"Soup Places",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1cd941735",
+                  "name":"South American Restaurant",
+                  "pluralName":"South American Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/southamerican.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d14f941735",
+                  "name":"Southern or Soul Food Restaurant",
+                  "pluralName":"Southern or Soul Food Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/southern.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d150941735",
+                  "name":"Spanish Restaurant",
+                  "pluralName":"Spanish Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d14d941735",
+                        "name":"Paella Restaurant",
+                        "pluralName":"Paella Restaurants",
+                        "icon":"https://foursquare.com/img/categories/food/default.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1cc941735",
+                  "name":"Steakhouse",
+                  "pluralName":"Steakhouses",
+                  "icon":"https://foursquare.com/img/categories/food/steakhouse.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1d2941735",
+                  "name":"Sushi Restaurant",
+                  "pluralName":"Sushi Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/sushi.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d158941735",
+                  "name":"Swiss Restaurant",
+                  "pluralName":"Swiss Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/swiss.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d151941735",
+                  "name":"Taco Place",
+                  "pluralName":"Taco Places",
+                  "icon":"https://foursquare.com/img/categories/food/tacos.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1db931735",
+                  "name":"Tapas Restaurant",
+                  "pluralName":"Tapas Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1dc931735",
+                  "name":"Tea Room",
+                  "pluralName":"Tea Rooms",
+                  "icon":"https://foursquare.com/img/categories/food/tearoom.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d149941735",
+                  "name":"Thai Restaurant",
+                  "pluralName":"Thai Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1d3941735",
+                  "name":"Vegetarian or Vegan Restaurant",
+                  "pluralName":"Vegetarian or Vegan Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/vegetarian.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d14a941735",
+                  "name":"Vietnamese Restaurant",
+                  "pluralName":"Vietnamese Restaurants",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d14b941735",
+                  "name":"Winery",
+                  "pluralName":"Wineries",
+                  "icon":"https://foursquare.com/img/categories/food/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d14c941735",
+                  "name":"Wings Joint",
+                  "pluralName":"Wings Joints",
+                  "icon":"https://foursquare.com/img/categories/food/wings.png",
+                  "categories":[
+
+                  ]
+               }
+            ]
+         },
+         {
+            "name":"Great Outdoors",
+            "pluralName":"Great Outdoors",
+            "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1e8941735",
+                  "name":"Baseball Field",
+                  "pluralName":"Baseball Fields",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/baseballfield.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1e1941735",
+                  "name":"Basketball Court",
+                  "pluralName":"Basketball Courts",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/basketballcourt.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1e2941735",
+                  "name":"Beach",
+                  "pluralName":"Beaches",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/beach.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1e3941735",
+                        "name":"Surf Spot",
+                        "pluralName":"Surf Spots",
+                        "icon":"https://foursquare.com/img/categories/parks_outdoors/beach.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1df941735",
+                  "name":"Bridge",
+                  "pluralName":"Bridges",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1e4941735",
+                  "name":"Campground",
+                  "pluralName":"Campgrounds",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/campground.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d15c941735",
+                  "name":"Cemetery",
+                  "pluralName":"Cemeteries",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/cemetery.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1e5941735",
+                  "name":"Dog Run",
+                  "pluralName":"Dog Runs",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/dogrun.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d15b941735",
+                  "name":"Farm",
+                  "pluralName":"Farms",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/farm.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d15f941735",
+                  "name":"Field",
+                  "pluralName":"Fields",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d15a941735",
+                  "name":"Garden",
+                  "pluralName":"Gardens",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/garden.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1e6941735",
+                  "name":"Golf Course",
+                  "pluralName":"Golf Courses",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/golfcourse.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1e0941735",
+                  "name":"Harbor or Marina",
+                  "pluralName":"Harbors or Marinas",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/harbor.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d159941735",
+                  "name":"Hiking Trail",
+                  "pluralName":"Hiking Trails",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/hikingtrail.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d160941735",
+                  "name":"Hot Spring",
+                  "pluralName":"Hot Springs",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d161941735",
+                  "name":"Lake",
+                  "pluralName":"Lakes",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d15d941735",
+                  "name":"Lighthouse",
+                  "pluralName":"Lighthouses",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/lighthouse.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d162941735",
+                  "name":"Other Great Outdoors",
+                  "pluralName":"Other Great Outdoors",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d163941735",
+                  "name":"Park",
+                  "pluralName":"Parks",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1e7941735",
+                  "name":"Playground",
+                  "pluralName":"Playgrounds",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/playground.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d164941735",
+                  "name":"Plaza",
+                  "pluralName":"Plazas",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d15e941735",
+                  "name":"Pool",
+                  "pluralName":"Pools",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/pool.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d165941735",
+                  "name":"Scenic Lookout",
+                  "pluralName":"Scenic Lookouts",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d166941735",
+                  "name":"Sculpture Garden",
+                  "pluralName":"Sculpture Gardens",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d167941735",
+                  "name":"Skate Park",
+                  "pluralName":"Skate Parks",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/skate_park.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d168941735",
+                  "name":"Skating Rink",
+                  "pluralName":"Skating Rinks",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/skatingrink.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1e9941735",
+                  "name":"Ski Area",
+                  "pluralName":"Ski Areas",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/ski_snowboard.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1ea941735",
+                        "name":"Apres Ski Bar",
+                        "pluralName":"Apres Ski Bars",
+                        "icon":"https://foursquare.com/img/categories/parks_outdoors/ski_snowboard.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1ec941735",
+                        "name":"Ski Chalet",
+                        "pluralName":"Ski Chalets",
+                        "icon":"https://foursquare.com/img/categories/parks_outdoors/ski_snowboard.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1eb941735",
+                        "name":"Ski Lodge",
+                        "pluralName":"Ski Lodges",
+                        "icon":"https://foursquare.com/img/categories/parks_outdoors/ski_snowboard.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4cce455aebf7b749d5e191f5",
+                  "name":"Soccer Field",
+                  "pluralName":"Soccer Fields",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/soccer_field.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1de941735",
+                  "name":"Vineyard",
+                  "pluralName":"Vineyards",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/winery.png",
+                  "categories":[
+
+                  ]
+               }
+            ]
+         },
+         {
+            "name":"Home, Work, Other",
+            "pluralName":"Homes, Work, Others",
+            "icon":"https://foursquare.com/img/categories/building/default.png",
+            "categories":[
+               {
+                  "id":"4d954b06a243a5684965b473",
+                  "name":"Apartment Building",
+                  "pluralName":"Apartment Buildings",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d130941735",
+                  "name":"Building",
+                  "pluralName":"Buildings",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1ff931735",
+                  "name":"Convention Center",
+                  "pluralName":"Convention Centers",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d100941735",
+                        "name":"Meeting Room",
+                        "pluralName":"Meeting Rooms",
+                        "icon":"https://foursquare.com/img/categories/building/default.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d171941735",
+                  "name":"Event Space",
+                  "pluralName":"Event Spaces",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d126941735",
+                  "name":"Government Building",
+                  "pluralName":"Government Buildings",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d12a941735",
+                        "name":"Capitol Building",
+                        "pluralName":"Capitol Buildings",
+                        "icon":"https://foursquare.com/img/categories/building/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d129941735",
+                        "name":"City Hall",
+                        "pluralName":"City Halls",
+                        "icon":"https://foursquare.com/img/categories/building/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d12b941735",
+                        "name":"Courthouse",
+                        "pluralName":"Courthouses",
+                        "icon":"https://foursquare.com/img/categories/building/government_courthouse.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d12c941735",
+                        "name":"Fire Station",
+                        "pluralName":"Fire Stations",
+                        "icon":"https://foursquare.com/img/categories/building/government_firestation.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d12d941735",
+                        "name":"Monument or Landmark",
+                        "pluralName":"Monuments or Landmarks",
+                        "icon":"https://foursquare.com/img/categories/building/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d12e941735",
+                        "name":"Police Station",
+                        "pluralName":"Police Stations",
+                        "icon":"https://foursquare.com/img/categories/building/default.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d175941735",
+                  "name":"Gym or Fitness Center",
+                  "pluralName":"Gyms or Fitness Centers",
+                  "icon":"https://foursquare.com/img/categories/building/gym.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d176941735",
+                        "name":"Gym",
+                        "pluralName":"Gyms",
+                        "icon":"https://foursquare.com/img/categories/building/gym.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d101941735",
+                        "name":"Martial Arts Dojo",
+                        "pluralName":"Martial Arts Dojos",
+                        "icon":"https://foursquare.com/img/categories/building/gym.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d105941735",
+                        "name":"Pool",
+                        "pluralName":"Pools",
+                        "icon":"https://foursquare.com/img/categories/building/gym_pool.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d106941735",
+                        "name":"Track",
+                        "pluralName":"Tracks",
+                        "icon":"https://foursquare.com/img/categories/building/gym_track.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d102941735",
+                        "name":"Yoga Studio",
+                        "pluralName":"Yoga Studios",
+                        "icon":"https://foursquare.com/img/categories/building/gym.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d103941735",
+                  "name":"Home",
+                  "pluralName":"Homes",
+                  "icon":"https://foursquare.com/img/categories/building/home.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d12f941735",
+                  "name":"Library",
+                  "pluralName":"Libraries",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d104941735",
+                  "name":"Medical Center",
+                  "pluralName":"Medical Centers",
+                  "icon":"https://foursquare.com/img/categories/building/medical.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d178941735",
+                        "name":"Dentist's Office",
+                        "pluralName":"Dentist's Offices",
+                        "icon":"https://foursquare.com/img/categories/building/medical_dentist.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d177941735",
+                        "name":"Doctor's Office",
+                        "pluralName":"Doctor's Offices",
+                        "icon":"https://foursquare.com/img/categories/building/medical.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d194941735",
+                        "name":"Emergency Room",
+                        "pluralName":"Emergency Rooms",
+                        "icon":"https://foursquare.com/img/categories/building/medical_ems.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d196941735",
+                        "name":"Hospital",
+                        "pluralName":"Hospitals",
+                        "icon":"https://foursquare.com/img/categories/building/medical_hospital.png"
+                     },
+                     {
+                        "id":"4d954afda243a5684865b473",
+                        "name":"Optical Shop",
+                        "pluralName":"Optical Shops",
+                        "icon":"https://foursquare.com/img/categories/building/medical.png"
+                     },
+                     {
+                        "id":"4d954af4a243a5684765b473",
+                        "name":"Veterinarian",
+                        "pluralName":"Veterinarians",
+                        "icon":"https://foursquare.com/img/categories/building/medical.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d124941735",
+                  "name":"Office",
+                  "pluralName":"Offices",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d173941735",
+                        "name":"Auditorium",
+                        "pluralName":"Auditoriums",
+                        "icon":"https://foursquare.com/img/categories/building/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d128941735",
+                        "name":"Cafeteria",
+                        "pluralName":"Cafeterias",
+                        "icon":"https://foursquare.com/img/categories/building/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d127941735",
+                        "name":"Conference Room",
+                        "pluralName":"Conference Rooms",
+                        "icon":"https://foursquare.com/img/categories/building/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d174941735",
+                        "name":"Coworking Space",
+                        "pluralName":"Coworking Spaces",
+                        "icon":"https://foursquare.com/img/categories/building/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d125941735",
+                        "name":"Tech Startup",
+                        "pluralName":"Tech Startups",
+                        "icon":"https://foursquare.com/img/categories/building/default.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4c38df4de52ce0d596b336e1",
+                  "name":"Parking Garage",
+                  "pluralName":"Parking Garages",
+                  "icon":"https://foursquare.com/img/categories/building/parking.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d172941735",
+                  "name":"Post Office",
+                  "pluralName":"Post Offices",
+                  "icon":"https://foursquare.com/img/categories/building/postoffice.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d131941735",
+                  "name":"Religious Center",
+                  "pluralName":"Religious Centers",
+                  "icon":"https://foursquare.com/img/categories/building/religious.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d132941735",
+                        "name":"Church",
+                        "pluralName":"Churches",
+                        "icon":"https://foursquare.com/img/categories/building/religious_church.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d138941735",
+                        "name":"Mosque",
+                        "pluralName":"Mosques",
+                        "icon":"https://foursquare.com/img/categories/building/religious_mosque.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d139941735",
+                        "name":"Synagogue",
+                        "pluralName":"Synagogues",
+                        "icon":"https://foursquare.com/img/categories/building/religious_synagogue.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d13a941735",
+                        "name":"Temple",
+                        "pluralName":"Temples",
+                        "icon":"https://foursquare.com/img/categories/building/religious.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d13b941735",
+                  "name":"School",
+                  "pluralName":"Schools",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d13d941735",
+                        "name":"High School",
+                        "pluralName":"High Schools",
+                        "icon":"https://foursquare.com/img/categories/building/default.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4cae28ecbf23941eb1190695",
+                  "name":"Voting Booth",
+                  "pluralName":"Voting Booths",
+                  "icon":"https://foursquare.com/img/categories/building/votingbooth.png",
+                  "categories":[
+
+                  ]
+               }
+            ]
+         },
+         {
+            "name":"Nightlife Spot",
+            "pluralName":"Nightlife Spots",
+            "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d116941735",
+                  "name":"Bar",
+                  "pluralName":"Bars",
+                  "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d117941735",
+                  "name":"Beer Garden",
+                  "pluralName":"Beer Gardens",
+                  "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1d7941735",
+                  "name":"Brewery",
+                  "pluralName":"Breweries",
+                  "icon":"https://foursquare.com/img/categories/nightlife/brewery.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d11e941735",
+                  "name":"Cocktail Bar",
+                  "pluralName":"Cocktails Bars",
+                  "icon":"https://foursquare.com/img/categories/nightlife/cocktails.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d118941735",
+                  "name":"Dive Bar",
+                  "pluralName":"Dive Bars",
+                  "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1d8941735",
+                  "name":"Gay Bar",
+                  "pluralName":"Gay Bars",
+                  "icon":"https://foursquare.com/img/categories/nightlife/gaybar.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d119941735",
+                  "name":"Hookah Bar",
+                  "pluralName":"Hookah Bars",
+                  "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1d5941735",
+                  "name":"Hotel Bar",
+                  "pluralName":"Hotel Bars",
+                  "icon":"https://foursquare.com/img/categories/nightlife/hotelbar.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d120941735",
+                  "name":"Karaoke Bar",
+                  "pluralName":"Karaoke Bars",
+                  "icon":"https://foursquare.com/img/categories/nightlife/karaoke.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d121941735",
+                  "name":"Lounge",
+                  "pluralName":"Lounges",
+                  "icon":"https://foursquare.com/img/categories/nightlife/lounge.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1d9941735",
+                  "name":"Music Venue",
+                  "pluralName":"Music Venues",
+                  "icon":"https://foursquare.com/img/categories/nightlife/musicvenue.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1da941735",
+                        "name":"Concert Hall",
+                        "pluralName":"Concert Halls",
+                        "icon":"https://foursquare.com/img/categories/nightlife/musicvenue.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1db941735",
+                        "name":"Jazz Club",
+                        "pluralName":"Jazz Clubs",
+                        "icon":"https://foursquare.com/img/categories/nightlife/musicvenue.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1dc941735",
+                        "name":"Piano Bar",
+                        "pluralName":"Piano Bars",
+                        "icon":"https://foursquare.com/img/categories/nightlife/musicvenue.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1dd941735",
+                        "name":"Rock Club",
+                        "pluralName":"Rock Clubs",
+                        "icon":"https://foursquare.com/img/categories/nightlife/musicvenue_rockclub.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d11f941735",
+                  "name":"Nightclub",
+                  "pluralName":"Nightclubs",
+                  "icon":"https://foursquare.com/img/categories/nightlife/danceparty.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d11a941735",
+                  "name":"Other Nightlife",
+                  "pluralName":"Other Nightlife",
+                  "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d11b941735",
+                  "name":"Pub",
+                  "pluralName":"Pubs",
+                  "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d11c941735",
+                  "name":"Sake Bar",
+                  "pluralName":"Sake Bars",
+                  "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1d4941735",
+                  "name":"Speakeasy",
+                  "pluralName":"Speakeasies",
+                  "icon":"https://foursquare.com/img/categories/nightlife/secretbar.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d11d941735",
+                  "name":"Sports Bar",
+                  "pluralName":"Sports Bars",
+                  "icon":"https://foursquare.com/img/categories/nightlife/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1d6941735",
+                  "name":"Strip Club",
+                  "pluralName":"Strip Clubs",
+                  "icon":"https://foursquare.com/img/categories/nightlife/stripclub.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d122941735",
+                  "name":"Whisky Bar",
+                  "pluralName":"Whisky Bars",
+                  "icon":"https://foursquare.com/img/categories/nightlife/whiskey.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d123941735",
+                  "name":"Wine Bar",
+                  "pluralName":"Wine Bars",
+                  "icon":"https://foursquare.com/img/categories/nightlife/wine.png",
+                  "categories":[
+
+                  ]
+               }
+            ]
+         },
+         {
+            "name":"Shop",
+            "pluralName":"Shops",
+            "icon":"https://foursquare.com/img/categories/shops/default.png",
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d116951735",
+                  "name":"Antique Shop",
+                  "pluralName":"Antique Shops",
+                  "icon":"https://foursquare.com/img/categories/shops/antique.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d127951735",
+                  "name":"Arts & Crafts Store",
+                  "pluralName":"Arts & Crafts Stores",
+                  "icon":"https://foursquare.com/img/categories/shops/artstore.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d124951735",
+                  "name":"Automotive Shop",
+                  "pluralName":"Automotive Shops",
+                  "icon":"https://foursquare.com/img/categories/shops/automotive.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d10a951735",
+                  "name":"Bank",
+                  "pluralName":"Banks",
+                  "icon":"https://foursquare.com/img/categories/shops/financial.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d115951735",
+                  "name":"Bike Shop",
+                  "pluralName":"Bike Shops",
+                  "icon":"https://foursquare.com/img/categories/shops/bikeshop.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1f1941735",
+                  "name":"Board Shop",
+                  "pluralName":"Board Shops",
+                  "icon":"https://foursquare.com/img/categories/shops/skate_surf_snowboard.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d114951735",
+                  "name":"Bookstore",
+                  "pluralName":"Bookstores",
+                  "icon":"https://foursquare.com/img/categories/shops/bookstore.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d11a951735",
+                  "name":"Bridal Shop",
+                  "pluralName":"Bridal Shops",
+                  "icon":"https://foursquare.com/img/categories/shops/bridal.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d117951735",
+                  "name":"Candy Store",
+                  "pluralName":"Candy Stores",
+                  "icon":"https://foursquare.com/img/categories/shops/candystore.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d103951735",
+                  "name":"Clothing Store",
+                  "pluralName":"Clothing Stores",
+                  "icon":"https://foursquare.com/img/categories/shops/apparel.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d102951735",
+                        "name":"Accessories Store",
+                        "pluralName":"Accessories Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/apparel_accessories.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d104951735",
+                        "name":"Boutique",
+                        "pluralName":"Boutiques",
+                        "icon":"https://foursquare.com/img/categories/shops/apparel_boutique.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d105951735",
+                        "name":"Kids Shop",
+                        "pluralName":"Kids Shops",
+                        "icon":"https://foursquare.com/img/categories/shops/apparel_kids.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d109951735",
+                        "name":"Lingerie Store",
+                        "pluralName":"Lingerie Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/apparel_lingerie.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d106951735",
+                        "name":"Men's Store",
+                        "pluralName":"Men's Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/apparel_men.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d107951735",
+                        "name":"Shoe Store",
+                        "pluralName":"Shoe Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/apparel_shoestore.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d108951735",
+                        "name":"Women's Store",
+                        "pluralName":"Women's Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/apparel_women.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4d954b0ea243a5684a65b473",
+                  "name":"Convenience Store",
+                  "pluralName":"Convenience Stores",
+                  "icon":"https://foursquare.com/img/categories/shops/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d10c951735",
+                  "name":"Cosmetics Shop",
+                  "pluralName":"Cosmetics Shops",
+                  "icon":"https://foursquare.com/img/categories/shops/beauty_cosmetic.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1f6941735",
+                  "name":"Department Store",
+                  "pluralName":"Department Stores",
+                  "icon":"https://foursquare.com/img/categories/shops/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1f4941735",
+                  "name":"Design Studio",
+                  "pluralName":"Design Studios",
+                  "icon":"https://foursquare.com/img/categories/shops/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d10f951735",
+                  "name":"Drugstore or Pharmacy",
+                  "pluralName":"Drugstores or Pharmacies",
+                  "icon":"https://foursquare.com/img/categories/shops/drugstore.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d122951735",
+                  "name":"Electronics Store",
+                  "pluralName":"Electronics Stores",
+                  "icon":"https://foursquare.com/img/categories/shops/technology.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1f7941735",
+                  "name":"Flea Market",
+                  "pluralName":"Flea Markets",
+                  "icon":"https://foursquare.com/img/categories/shops/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d11b951735",
+                  "name":"Flower Shop",
+                  "pluralName":"Flower Shops",
+                  "icon":"https://foursquare.com/img/categories/shops/flowershop.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1f9941735",
+                  "name":"Food and Drink Shop",
+                  "pluralName":"Food and Drink Shops",
+                  "icon":"https://foursquare.com/img/categories/shops/default.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d11c951735",
+                        "name":"Bakery",
+                        "pluralName":"Bakeries",
+                        "icon":"https://foursquare.com/img/categories/shops/food_bakery.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d11d951735",
+                        "name":"Butcher",
+                        "pluralName":"Butchers",
+                        "icon":"https://foursquare.com/img/categories/shops/food_butcher.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d11e951735",
+                        "name":"Cheese Shop",
+                        "pluralName":"Cheese Shops",
+                        "icon":"https://foursquare.com/img/categories/shops/food_cheese.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d11f951735",
+                        "name":"Deli or Bodega",
+                        "pluralName":"Delis or Bodegas",
+                        "icon":"https://foursquare.com/img/categories/shops/food_deli.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1fa941735",
+                        "name":"Farmers Market",
+                        "pluralName":"Farmers Markets",
+                        "icon":"https://foursquare.com/img/categories/shops/food_farmersmarket.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d10e951735",
+                        "name":"Fish Market",
+                        "pluralName":"Fish Markets",
+                        "icon":"https://foursquare.com/img/categories/shops/fish_market.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d120951735",
+                        "name":"Food Court",
+                        "pluralName":"Food Courts",
+                        "icon":"https://foursquare.com/img/categories/shops/food_foodcourt.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1f5941735",
+                        "name":"Gourmet Shop",
+                        "pluralName":"Gourmet Shops",
+                        "icon":"https://foursquare.com/img/categories/shops/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d118951735",
+                        "name":"Grocery Store",
+                        "pluralName":"Grocery Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/food_grocery.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d186941735",
+                        "name":"Liquor Store",
+                        "pluralName":"Liquor Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/default.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d119951735",
+                        "name":"Wine Shop",
+                        "pluralName":"Wine Shops",
+                        "icon":"https://foursquare.com/img/categories/shops/food_wineshop.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1f8941735",
+                  "name":"Furniture or Home Store",
+                  "pluralName":"Furniture or Home Stores",
+                  "icon":"https://foursquare.com/img/categories/shops/furniture.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d18d941735",
+                  "name":"Gaming Cafe",
+                  "pluralName":"Gaming Cafes",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/gamingcafe.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d113951735",
+                  "name":"Gas Station or Garage",
+                  "pluralName":"Gas Stations or Garages",
+                  "icon":"https://foursquare.com/img/categories/shops/gas.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d128951735",
+                  "name":"Gift Shop",
+                  "pluralName":"Gift Shops",
+                  "icon":"https://foursquare.com/img/categories/shops/giftshop.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d112951735",
+                  "name":"Hardware Store",
+                  "pluralName":"Hardware Stores",
+                  "icon":"https://foursquare.com/img/categories/shops/hardware.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1fb941735",
+                  "name":"Hobby Shop",
+                  "pluralName":"Hobby Shops",
+                  "icon":"https://foursquare.com/img/categories/shops/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1f0941735",
+                  "name":"Internet Cafe",
+                  "pluralName":"Internet Cafes",
+                  "icon":"https://foursquare.com/img/categories/shops/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d111951735",
+                  "name":"Jewelry Store",
+                  "pluralName":"Jewelry Stores",
+                  "icon":"https://foursquare.com/img/categories/shops/jewelry.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1fc941735",
+                  "name":"Laundromat or Dry Cleaner",
+                  "pluralName":"Laundromats or Dry Cleaners",
+                  "icon":"https://foursquare.com/img/categories/shops/laundry.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1fd941735",
+                  "name":"Mall",
+                  "pluralName":"Malls",
+                  "icon":"https://foursquare.com/img/categories/shops/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1ff941735",
+                  "name":"Miscellaneous Shop",
+                  "pluralName":"Miscellaneous Shops",
+                  "icon":"https://foursquare.com/img/categories/shops/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1fe941735",
+                  "name":"Music Store",
+                  "pluralName":"Music Stores",
+                  "icon":"https://foursquare.com/img/categories/shops/music_instruments.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d121951735",
+                  "name":"Paper or Office Supplies Store",
+                  "pluralName":"Paper or Office Supplies Stores",
+                  "icon":"https://foursquare.com/img/categories/shops/papergoods.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d100951735",
+                  "name":"Pet Store",
+                  "pluralName":"Pet Stores",
+                  "icon":"https://foursquare.com/img/categories/shops/pet_store.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d10d951735",
+                  "name":"Record Shop",
+                  "pluralName":"Record Shops",
+                  "icon":"https://foursquare.com/img/categories/shops/record_shop.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1ef941735",
+                  "name":"Rental Car Location",
+                  "pluralName":"Rental Car Locations",
+                  "icon":"https://foursquare.com/img/categories/shops/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d110951735",
+                  "name":"Salon or Barbershop",
+                  "pluralName":"Salons or Barbershops",
+                  "icon":"https://foursquare.com/img/categories/shops/salon_barber.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d123951735",
+                  "name":"Smoke Shop",
+                  "pluralName":"Smoke Shops",
+                  "icon":"https://foursquare.com/img/categories/shops/tobacco.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1ed941735",
+                  "name":"Spa or Massage",
+                  "pluralName":"Spas or Massages",
+                  "icon":"https://foursquare.com/img/categories/shops/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1f2941735",
+                  "name":"Sporting Goods Shop",
+                  "pluralName":"Sporting Goods Shops",
+                  "icon":"https://foursquare.com/img/categories/shops/sports_outdoors.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4d1cf8421a97d635ce361c31",
+                  "name":"Tanning Salon",
+                  "pluralName":"Tanning Salons",
+                  "icon":"https://foursquare.com/img/categories/shops/tanning_salon.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1de931735",
+                  "name":"Tattoo Parlor",
+                  "pluralName":"Tattoo Parlors",
+                  "icon":"https://foursquare.com/img/categories/shops/tattoos.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d101951735",
+                  "name":"Thrift or Vintage Store",
+                  "pluralName":"Thrift or Vintage Stores",
+                  "icon":"https://foursquare.com/img/categories/shops/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1f3941735",
+                  "name":"Toy or Game Store",
+                  "pluralName":"Toy or Game Stores",
+                  "icon":"https://foursquare.com/img/categories/shops/toys.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d10b951735",
+                  "name":"Video Game Store",
+                  "pluralName":"Video Game Stores",
+                  "icon":"https://foursquare.com/img/categories/shops/videogames.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d126951735",
+                  "name":"Video Store",
+                  "pluralName":"Video Stores",
+                  "icon":"https://foursquare.com/img/categories/shops/video.png",
+                  "categories":[
+
+                  ]
+               }
+            ]
+         },
+         {
+            "name":"Travel Spot",
+            "pluralName":"Travel Spots",
+            "icon":"https://foursquare.com/img/categories/travel/default.png",
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1ed931735",
+                  "name":"Airport",
+                  "pluralName":"Airports",
+                  "icon":"https://foursquare.com/img/categories/travel/airport.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1ef931735",
+                        "name":"Airport Food Court",
+                        "pluralName":"Airport Food Court",
+                        "icon":"https://foursquare.com/img/categories/travel/airport_foodcourt.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1f0931735",
+                        "name":"Airport Gate",
+                        "pluralName":"Airport Gates",
+                        "icon":"https://foursquare.com/img/categories/travel/airport_gate.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1ea931735",
+                        "name":"Airport Rental Car Spot",
+                        "pluralName":"Airport Rental Car Spots",
+                        "icon":"https://foursquare.com/img/categories/travel/airport_rentalcar.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1eb931735",
+                        "name":"Airport Terminal",
+                        "pluralName":"Airport Terminals",
+                        "icon":"https://foursquare.com/img/categories/travel/airport_terminal.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1ec931735",
+                        "name":"Airport Tram",
+                        "pluralName":"Airport Trams",
+                        "icon":"https://foursquare.com/img/categories/travel/airport_tram.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1f7931735",
+                        "name":"Plane",
+                        "pluralName":"Planes",
+                        "icon":"https://foursquare.com/img/categories/travel/airport.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1f8931735",
+                  "name":"Bed & Breakfast",
+                  "pluralName":"Bed & Breakfasts",
+                  "icon":"https://foursquare.com/img/categories/travel/bedandbreakfast.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d12d951735",
+                  "name":"Boat or Ferry",
+                  "pluralName":"Boats or Ferries",
+                  "icon":"https://foursquare.com/img/categories/travel/boat.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1fe931735",
+                  "name":"Bus Station",
+                  "pluralName":"Bus Stations",
+                  "icon":"https://foursquare.com/img/categories/travel/busstation.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d12b951735",
+                        "name":"Bus Line",
+                        "pluralName":"Bus Lines",
+                        "icon":"https://foursquare.com/img/categories/travel/busstation.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d12c951735",
+                  "name":"Embassy or Consulate",
+                  "pluralName":"Embassies or Consulates",
+                  "icon":"https://foursquare.com/img/categories/travel/embassy.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1f6931735",
+                  "name":"General Travel",
+                  "pluralName":"General Travel",
+                  "icon":"https://foursquare.com/img/categories/travel/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1f9931735",
+                  "name":"Highway or Road",
+                  "pluralName":"Highways or Roads",
+                  "icon":"https://foursquare.com/img/categories/travel/highway.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1ee931735",
+                  "name":"Hostel",
+                  "pluralName":"Hostels",
+                  "icon":"https://foursquare.com/img/categories/travel/hostel.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1fa931735",
+                  "name":"Hotel",
+                  "pluralName":"Hotels",
+                  "icon":"https://foursquare.com/img/categories/travel/hotel.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d131951735",
+                        "name":"Hotel Bar",
+                        "pluralName":"Hotel Bars",
+                        "icon":"https://foursquare.com/img/categories/travel/hotel_bar.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1fb931735",
+                        "name":"Motel",
+                        "pluralName":"Motels",
+                        "icon":"https://foursquare.com/img/categories/travel/hotel.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d132951735",
+                        "name":"Pool",
+                        "pluralName":"Pools",
+                        "icon":"https://foursquare.com/img/categories/travel/hotel_pool.png"
+                     },
+                     {
+                        "id":"4bf58dd8d48988d133951735",
+                        "name":"Roof Deck",
+                        "pluralName":"Roof Decks",
+                        "icon":"https://foursquare.com/img/categories/travel/hotel_roofdeck.png"
+                     }
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1fc931735",
+                  "name":"Light Rail",
+                  "pluralName":"Light Rails",
+                  "icon":"https://foursquare.com/img/categories/travel/lightrail.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d12f951735",
+                  "name":"Resort",
+                  "pluralName":"Resorts",
+                  "icon":"https://foursquare.com/img/categories/travel/resort.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4d954b16a243a5684b65b473",
+                  "name":"Rest Area",
+                  "pluralName":"Rest Areas",
+                  "icon":"https://foursquare.com/img/categories/travel/default.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d1fd931735",
+                  "name":"Subway",
+                  "pluralName":"Subways",
+                  "icon":"https://foursquare.com/img/categories/travel/subway.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d130951735",
+                  "name":"Taxi",
+                  "pluralName":"Taxis",
+                  "icon":"https://foursquare.com/img/categories/travel/taxi.png",
+                  "categories":[
+
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d129951735",
+                  "name":"Train Station",
+                  "pluralName":"Train Stations",
+                  "icon":"https://foursquare.com/img/categories/travel/trainstation.png",
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d12a951735",
+                        "name":"Train",
+                        "pluralName":"Trains",
+                        "icon":"https://foursquare.com/img/categories/travel/trainstation.png"
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+}

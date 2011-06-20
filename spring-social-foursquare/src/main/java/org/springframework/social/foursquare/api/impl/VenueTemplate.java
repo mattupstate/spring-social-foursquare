@@ -1,7 +1,11 @@
 package org.springframework.social.foursquare.api.impl;
 
+import java.util.List;
+
+import org.springframework.social.foursquare.api.Category;
 import org.springframework.social.foursquare.api.Venue;
 import org.springframework.social.foursquare.api.VenueOperations;
+import org.springframework.social.foursquare.api.impl.json.CategoriesContainer;
 import org.springframework.social.foursquare.api.impl.json.VenueContainer;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
@@ -30,6 +34,10 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
 		params.add("ll", Double.toString(latitude) + "," + Double.toString(longitude));
 		params.add("primaryCategoryId", primaryCategoryId);
 		return post(buildUri(VENUES_ENDPOINT + "add/"), params, VenueContainer.class).getVenue();
+	}
+
+	public List<Category> getCategories() {
+		return get(buildUri(VENUES_ENDPOINT + "categories/"), CategoriesContainer.class).getCategories();
 	}
 
 }

@@ -1,7 +1,6 @@
 package org.springframework.social.foursquare.api.impl;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 import static org.springframework.http.HttpMethod.GET;
 import static org.springframework.http.HttpMethod.POST;
 import static org.springframework.social.test.client.RequestMatchers.body;
@@ -9,8 +8,11 @@ import static org.springframework.social.test.client.RequestMatchers.method;
 import static org.springframework.social.test.client.RequestMatchers.requestTo;
 import static org.springframework.social.test.client.ResponseCreators.withResponse;
 
+import java.util.List;
+
 import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.social.foursquare.api.Category;
 import org.springframework.social.foursquare.api.Venue;
 
 public class VenueTemplateTest extends AbstractFoursquareApiTest {
@@ -36,5 +38,14 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 				"CITY", "STATE", "ZIP", "PHONE", 1, 1, "CATEGORYID");
 		assertEquals("3fd66200f964a520dbe91ee3", venue.getId());
 		mockServer.verify();
+	}
+	
+	@Test
+	public void getCateogies() {
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/categories/?access_token=ACCESS_TOKEN"))
+			.andExpect(method(GET))
+			.andRespond(withResponse(new ClassPathResource("testdata/categories.json", getClass()), responseHeaders));
+		
+		List<Category> categories = foursquare.venueOperations().getCategories();
 	}
 }
