@@ -45,6 +45,7 @@ import org.springframework.social.foursquare.api.VenueGroupItem;
 import org.springframework.social.foursquare.api.VenueHistory;
 import org.springframework.social.foursquare.api.VenueHistoryItem;
 import org.springframework.social.foursquare.api.VenueMayor;
+import org.springframework.social.foursquare.api.VenuePhotos;
 import org.springframework.social.foursquare.api.VenueSpecial;
 import org.springframework.social.foursquare.api.VenueStats;
 import org.springframework.social.foursquare.api.VenueTips;
@@ -100,6 +101,7 @@ public class FoursquareModule extends SimpleModule {
 		context.setMixInAnnotations(VenueHistory.class, VenueHistoryMixin.class);
 		context.setMixInAnnotations(VenueHistoryItem.class, VenueHistoryItemMixin.class);
 		context.setMixInAnnotations(VenueMayor.class, VenueMayorMixin.class);
+		context.setMixInAnnotations(VenuePhotos.class, VenuePhotosMixin.class);
 		context.setMixInAnnotations(VenueSpecial.class, VenueSpecialMixin.class);
 		context.setMixInAnnotations(VenueStats.class, VenueStatsMixin.class);
 		context.setMixInAnnotations(VenueTips.class, VenueTipsMixin.class);

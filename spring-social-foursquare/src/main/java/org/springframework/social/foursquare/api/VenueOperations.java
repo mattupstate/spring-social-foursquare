@@ -72,5 +72,25 @@ public interface VenueOperations {
 	 */
 	CheckinInfo getHereNow(String venueId, long afterTimestamp, int offset, int limit);
 	
+	/**
+	 * Retrieve the tips for the specified venue
+	 * @param venueId A Foursquare venue ID
+	 * @param sort Sort. Either 'recent' or 'popular'
+	 * @param offset Result set offset
+	 * @param limit	Result set limit
+	 * @return	Tips object
+	 */
+	Tips getTips(String venueId, String sort, int offset, int limit);
+	
+	/**
+	 * Retrieve photos for the specified venue
+	 * @param venueId A Foursquare venue ID
+	 * @param group	Group. Either 'checkin' or 'venue'
+	 * @param offset Result set offset
+	 * @param limit	Result set limit
+	 * @return	VenuePhotos
+	 */
+	VenuePhotos getPhotos(String venueId, String group, int offset, int limit);
+	
 	public static final String VENUES_ENDPOINT = "venues/";
 }

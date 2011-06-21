@@ -8,13 +8,17 @@ import org.springframework.social.foursquare.api.Category;
 import org.springframework.social.foursquare.api.CheckinInfo;
 import org.springframework.social.foursquare.api.ExploreQuery;
 import org.springframework.social.foursquare.api.ExploreResponse;
+import org.springframework.social.foursquare.api.Tips;
 import org.springframework.social.foursquare.api.Venue;
 import org.springframework.social.foursquare.api.VenueOperations;
+import org.springframework.social.foursquare.api.VenuePhotos;
 import org.springframework.social.foursquare.api.VenueSearchQuery;
 import org.springframework.social.foursquare.api.impl.json.CategoriesContainer;
 import org.springframework.social.foursquare.api.impl.json.ExploreResponseContainer;
 import org.springframework.social.foursquare.api.impl.json.HereNowContainer;
+import org.springframework.social.foursquare.api.impl.json.TipsContainer;
 import org.springframework.social.foursquare.api.impl.json.VenueContainer;
+import org.springframework.social.foursquare.api.impl.json.VenuePhotosContainer;
 import org.springframework.social.foursquare.api.impl.json.VenueSearchContainer;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
@@ -81,6 +85,32 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
     		params.put("limit", Integer.toString(limit));
     	}
 		return get(buildUri(VENUES_ENDPOINT + venueId + "/trending/", params), HereNowContainer.class).getCheckinInfo();
+	}
+
+	public Tips getTips(String venueId, String sort, int offset, int limit) {
+		Map<String,String> params = new HashMap<String,String>();
+		sort = (sort == null) ? "popular" : sort;
+    	params.put("sort", sort);
+    	if(offset > 0) {
+    		params.put("offset", Integer.toString(offset));
+    	}
+    	if(limit > 0) {
+    		params.put("limit", Integer.toString(limit));
+    	}
+		return get(buildUri(VENUES_ENDPOINT + venueId + "/tips/", params), TipsContainer.class).getTips();
+	}
+	
+	public VenuePhotos getPhotos(String venueId, String group, int offset, int limit) {
+		Map<String,String> params = new HashMap<String,String>();
+		group = (group == null) ? "venue" : group;
+    	params.put("group", group);
+    	if(offset > 0) {
+    		params.put("offset", Integer.toString(offset));
+    	}
+    	if(limit > 0) {
+    		params.put("limit", Integer.toString(limit));
+    	}
+		return get(buildUri(VENUES_ENDPOINT + venueId + "/photos/", params), VenuePhotosContainer.class).getPhotos();
 	}
     
     

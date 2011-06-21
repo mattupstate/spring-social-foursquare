@@ -17,7 +17,9 @@ import org.springframework.social.foursquare.api.Category;
 import org.springframework.social.foursquare.api.CheckinInfo;
 import org.springframework.social.foursquare.api.ExploreQuery;
 import org.springframework.social.foursquare.api.ExploreResponse;
+import org.springframework.social.foursquare.api.Tips;
 import org.springframework.social.foursquare.api.Venue;
+import org.springframework.social.foursquare.api.VenuePhotos;
 import org.springframework.social.foursquare.api.VenueSearchQuery;
 
 public class VenueTemplateTest extends AbstractFoursquareApiTest {
@@ -95,5 +97,25 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
         
         CheckinInfo herenow = foursquare.venueOperations().getHereNow("VENUE_ID", 0, 0, 0);
         assertTrue(herenow.getCheckins().size() > 0);
+    }
+	
+	@Test
+    public void getTips() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/tips/?access_token=ACCESS_TOKEN&v=20110608&sort=popular"))
+            .andExpect(method(GET))
+            .andRespond(withResponse(new ClassPathResource("testdata/tips.json", getClass()), responseHeaders));
+        
+        Tips tips = foursquare.venueOperations().getTips("VENUE_ID", null, 0, 0);
+        assertTrue(tips.getItems().size() > 0);
+    }
+	
+	@Test
+    public void getPhotos() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/photos/?access_token=ACCESS_TOKEN&v=20110608&group=venue"))
+            .andExpect(method(GET))
+            .andRespond(withResponse(new ClassPathResource("testdata/venuephotos.json", getClass()), responseHeaders));
+        
+        VenuePhotos photos = foursquare.venueOperations().getPhotos("VENUE_ID", null, 0, 0);
+        assertTrue(photos.getItems().size() > 0);
     }
 }
