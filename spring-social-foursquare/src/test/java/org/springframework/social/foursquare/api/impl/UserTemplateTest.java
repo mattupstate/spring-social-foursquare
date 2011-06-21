@@ -113,7 +113,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
         
         CheckinInfo checkinInfo = foursquare.userOperations().getCheckins();
         assertEquals(562, checkinInfo.getTotal());
-        assertTrue(checkinInfo.getRecentCheckins().get(0) != null);
+        assertTrue(checkinInfo.getCheckins().get(0) != null);
         mockServer.verify();
     }
     

@@ -14,6 +14,7 @@ import java.util.List;
 import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.social.foursquare.api.Category;
+import org.springframework.social.foursquare.api.CheckinInfo;
 import org.springframework.social.foursquare.api.ExploreQuery;
 import org.springframework.social.foursquare.api.ExploreResponse;
 import org.springframework.social.foursquare.api.Venue;
@@ -84,5 +85,15 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
         
         List<Venue> results = foursquare.venueOperations().getTrending(10d, 10d, 100, 0);
         assertTrue(results.size() > 0);
+    }
+	
+	@Test
+    public void getHereNow() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/trending/?access_token=ACCESS_TOKEN&v=20110608"))
+            .andExpect(method(GET))
+            .andRespond(withResponse(new ClassPathResource("testdata/herenow.json", getClass()), responseHeaders));
+        
+        CheckinInfo herenow = foursquare.venueOperations().getHereNow("VENUE_ID", 0, 0, 0);
+        assertTrue(herenow.getCheckins().size() > 0);
     }
 }

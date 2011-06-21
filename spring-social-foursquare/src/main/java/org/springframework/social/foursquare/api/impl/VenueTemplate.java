@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.social.foursquare.api.Category;
+import org.springframework.social.foursquare.api.CheckinInfo;
 import org.springframework.social.foursquare.api.ExploreQuery;
 import org.springframework.social.foursquare.api.ExploreResponse;
 import org.springframework.social.foursquare.api.Venue;
@@ -12,6 +13,7 @@ import org.springframework.social.foursquare.api.VenueOperations;
 import org.springframework.social.foursquare.api.VenueSearchQuery;
 import org.springframework.social.foursquare.api.impl.json.CategoriesContainer;
 import org.springframework.social.foursquare.api.impl.json.ExploreResponseContainer;
+import org.springframework.social.foursquare.api.impl.json.HereNowContainer;
 import org.springframework.social.foursquare.api.impl.json.VenueContainer;
 import org.springframework.social.foursquare.api.impl.json.VenueSearchContainer;
 import org.springframework.util.LinkedMultiValueMap;
@@ -66,6 +68,20 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
     	}
         return get(buildUri(VENUES_ENDPOINT + "trending/", params), VenueSearchContainer.class).getVenues();
     }
+
+	public CheckinInfo getHereNow(String venueId, long afterTimestamp, int offset, int limit) {
+		Map<String,String> params = new HashMap<String,String>();
+    	if(afterTimestamp > 0) {
+    		params.put("afterTimestamp", Long.toString(afterTimestamp));
+    	}
+    	if(offset > 0) {
+    		params.put("offset", Integer.toString(offset));
+    	}
+    	if(limit > 0) {
+    		params.put("limit", Integer.toString(limit));
+    	}
+		return get(buildUri(VENUES_ENDPOINT + venueId + "/trending/", params), HereNowContainer.class).getCheckinInfo();
+	}
     
     
 

@@ -62,5 +62,15 @@ public interface VenueOperations {
 	 */
 	List<Venue> getTrending(double latitude, double longitude, int radius, int limit);
 	
+	/**
+	 * Retrieve a count of how many people are at a given venue.
+	 * @param venueId	A Foursquare venue ID
+	 * @param afterTimestamp Seconds since epoch
+	 * @param offset Offset 
+	 * @param limit
+	 * @return
+	 */
+	CheckinInfo getHereNow(String venueId, long afterTimestamp, int offset, int limit);
+	
 	public static final String VENUES_ENDPOINT = "venues/";
 }

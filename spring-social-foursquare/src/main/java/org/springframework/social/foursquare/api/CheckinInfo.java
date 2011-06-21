@@ -5,19 +5,19 @@ import java.util.List;
 public class CheckinInfo {
 	
 	private int total;
-	private List<Checkin> recentCheckins;
+	private List<Checkin> checkins;
 	
-	public CheckinInfo(int total, List<Checkin> recentCheckins) {
+	public CheckinInfo(int total, List<Checkin> checkins) {
 		this.total = total;
-		this.recentCheckins = recentCheckins;
+		this.checkins = checkins;
 	}
 
 	public int getTotal() {
 		return total;
 	}
 
-	public List<Checkin> getRecentCheckins() {
-		return recentCheckins;
+	public List<Checkin> getCheckins() {
+		return checkins;
 	}
 	
 }
