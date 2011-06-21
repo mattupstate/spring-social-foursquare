@@ -9,6 +9,7 @@ import org.springframework.social.foursquare.api.CheckinInfo;
 import org.springframework.social.foursquare.api.ExploreQuery;
 import org.springframework.social.foursquare.api.ExploreResponse;
 import org.springframework.social.foursquare.api.Tips;
+import org.springframework.social.foursquare.api.Todo;
 import org.springframework.social.foursquare.api.Venue;
 import org.springframework.social.foursquare.api.VenueLinks;
 import org.springframework.social.foursquare.api.VenueOperations;
@@ -18,6 +19,7 @@ import org.springframework.social.foursquare.api.impl.json.CategoriesContainer;
 import org.springframework.social.foursquare.api.impl.json.ExploreResponseContainer;
 import org.springframework.social.foursquare.api.impl.json.HereNowContainer;
 import org.springframework.social.foursquare.api.impl.json.TipsContainer;
+import org.springframework.social.foursquare.api.impl.json.TodoContainer;
 import org.springframework.social.foursquare.api.impl.json.VenueContainer;
 import org.springframework.social.foursquare.api.impl.json.VenueLinksContainer;
 import org.springframework.social.foursquare.api.impl.json.VenuePhotosContainer;
@@ -118,7 +120,53 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
 	public VenueLinks getLinks(String venueId) {
 		return get(buildUri(VENUES_ENDPOINT + venueId + "/links/"), VenueLinksContainer.class).getLinks();
 	}
+
+	public Todo markTodo(String venueId, String text) {
+		requireUserAuthorization();
+		MultiValueMap<String,String> params = new LinkedMultiValueMap<String, String>();
+		if(text != null) {
+			params.add("text", text);
+		}
+		return post(buildUri(VENUES_ENDPOINT + venueId + "/marktodo/"), params, TodoContainer.class).getTodo();
+	}
+
+	public void flag(String venueId, String problem) {
+		requireUserAuthorization();
+		MultiValueMap<String,String> params = new LinkedMultiValueMap<String, String>();
+		params.add("problem", problem);
+		post(buildUri(VENUES_ENDPOINT + venueId + "/flag/"), params, Map.class);
+	}
     
-    
+	public void edit(String venueId, String name, String address, String crossStreet, String city, String state, 
+			String zip, String phone, double latitude, double longitude, String categoryId) {
+		requireUserAuthorization();
+		MultiValueMap<String,String> params = new LinkedMultiValueMap<String, String>();
+		params.add("name", name);
+		params.add("address", address);
+		params.add("crossStreet", crossStreet);
+		params.add("city", city);
+		params.add("state", state);
+		params.add("zip", zip);
+		params.add("phone", phone);
+		params.add("ll", Double.toString(latitude) + "," + Double.toString(longitude));
+		params.add("categoryId", categoryId);
+		post(buildUri(VENUES_ENDPOINT + venueId + "/edit/"), params, Map.class);
+	}
+	
+	public void proposeEdit(String venueId, String name, String address, String crossStreet, String city, String state, 
+			String zip, String phone, double latitude, double longitude, String primaryCategoryId) {
+		requireUserAuthorization();
+		MultiValueMap<String,String> params = new LinkedMultiValueMap<String, String>();
+		params.add("name", name);
+		params.add("address", address);
+		params.add("crossStreet", crossStreet);
+		params.add("city", city);
+		params.add("state", state);
+		params.add("zip", zip);
+		params.add("phone", phone);
+		params.add("ll", Double.toString(latitude) + "," + Double.toString(longitude));
+		params.add("primaryCategoryId", primaryCategoryId);
+		post(buildUri(VENUES_ENDPOINT + venueId + "/proposeedit/"), params, Map.class);
+	}
 
 }

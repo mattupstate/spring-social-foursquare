@@ -99,5 +99,56 @@ public interface VenueOperations {
 	 */
 	VenueLinks getLinks(String venueId);
 	
+	/**
+	 * Mark a venue to-do with optional text
+	 * @param venueId	A Foursquare venue ID
+	 * @param text	Todo text
+	 * @return	The added to-do item
+	 */
+	Todo markTodo(String venueId, String text);
+	
+	/**
+	 * Flag a venue as being incorrect in some way
+	 * @param venueId	A Foursquare venue ID
+	 * @param problem	The problem, either 'mislocated', 'closed', or 'duplicate'
+	 */
+	void flag(String venueId, String problem);
+	
+	/**
+	 * Make changes to a venue (requires Superuser privileges).
+	 * @see https://developer.foursquare.com/docs/venues/edit.html
+	 * @param venueId A Foursquare venue ID
+	 * @param name Name
+	 * @param address	Address	
+	 * @param crossStreet	Cross street
+	 * @param city	City
+	 * @param state	State/Province
+	 * @param zip	Zip/Postal code
+	 * @param phone	Phone
+	 * @param latitude	Latitude
+	 * @param longitude	Longitude
+	 * @param categoryId	Foursquare venue category ID
+	 */
+	void edit(String venueId, String name, String address, String crossStreet, String city, String state, 
+			String zip, String phone, double latitude, double longitude, String categoryId);
+	
+	/**
+	 * Propse an edit to a venue
+	 * @see https://developer.foursquare.com/docs/venues/proposeedit.html
+	 * @param venueId A Foursquare venue ID
+	 * @param name Name
+	 * @param address	Address	
+	 * @param crossStreet	Cross street
+	 * @param city	City
+	 * @param state	State/Province
+	 * @param zip	Zip/Postal code
+	 * @param phone	Phone
+	 * @param latitude	Latitude
+	 * @param longitude	Longitude
+	 * @param primaryCategoryId	Foursquare venue category ID
+	 */
+	void proposeEdit(String venueId, String name, String address, String crossStreet, String city, String state, 
+			String zip, String phone, double latitude, double longitude, String primaryCategoryId);
+	
 	public static final String VENUES_ENDPOINT = "venues/";
 }

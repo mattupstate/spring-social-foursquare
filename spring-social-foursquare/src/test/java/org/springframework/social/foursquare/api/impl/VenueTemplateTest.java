@@ -18,6 +18,7 @@ import org.springframework.social.foursquare.api.CheckinInfo;
 import org.springframework.social.foursquare.api.ExploreQuery;
 import org.springframework.social.foursquare.api.ExploreResponse;
 import org.springframework.social.foursquare.api.Tips;
+import org.springframework.social.foursquare.api.Todo;
 import org.springframework.social.foursquare.api.Venue;
 import org.springframework.social.foursquare.api.VenueLinks;
 import org.springframework.social.foursquare.api.VenuePhotos;
@@ -128,5 +129,48 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
         
         VenueLinks links = foursquare.venueOperations().getLinks("VENUE_ID");
         assertTrue(links.getItems().size() > 0);
+    }
+	
+	@Test
+    public void markTodo() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/marktodo/?access_token=ACCESS_TOKEN&v=20110608"))
+            .andExpect(method(POST))
+            .andExpect(body("text=TEXT"))
+            .andRespond(withResponse(new ClassPathResource("testdata/marktodo.json", getClass()), responseHeaders));
+        
+        Todo todo = foursquare.venueOperations().markTodo("VENUE_ID", "TEXT");
+        assertTrue(todo != null);
+    }
+	
+	@Test
+    public void flag() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/flag/?access_token=ACCESS_TOKEN&v=20110608"))
+            .andExpect(method(POST))
+            .andExpect(body("problem=closed"))
+            .andRespond(withResponse(new ClassPathResource("testdata/ok-response.json", getClass()), responseHeaders));
+        
+        foursquare.venueOperations().flag("VENUE_ID", "closed");
+    }
+	
+	@Test
+    public void edit() {
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/edit/?access_token=ACCESS_TOKEN&v=20110608"))
+		.andExpect(method(POST))
+		.andExpect(body("name=NAME&address=ADDRESS&crossStreet=CROSSSTREET&city=CITY&state=STATE&zip=ZIP&phone=PHONE&ll=1.0%2C1.0&categoryId=CATEGORYID"))
+		.andRespond(withResponse(new ClassPathResource("testdata/ok-response.json", getClass()), responseHeaders));
+		
+		foursquare.venueOperations().edit("VENUE_ID", "NAME", "ADDRESS", "CROSSSTREET", "CITY", "STATE", "ZIP", "PHONE", 1, 1, "CATEGORYID");
+		mockServer.verify();
+    }
+	
+	@Test
+    public void proposeEdit() {
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/proposeedit/?access_token=ACCESS_TOKEN&v=20110608"))
+		.andExpect(method(POST))
+		.andExpect(body("name=NAME&address=ADDRESS&crossStreet=CROSSSTREET&city=CITY&state=STATE&zip=ZIP&phone=PHONE&ll=1.0%2C1.0&primaryCategoryId=CATEGORYID"))
+		.andRespond(withResponse(new ClassPathResource("testdata/ok-response.json", getClass()), responseHeaders));
+		
+		foursquare.venueOperations().proposeEdit("VENUE_ID", "NAME", "ADDRESS", "CROSSSTREET", "CITY", "STATE", "ZIP", "PHONE", 1, 1, "CATEGORYID");
+		mockServer.verify();
     }
 }
