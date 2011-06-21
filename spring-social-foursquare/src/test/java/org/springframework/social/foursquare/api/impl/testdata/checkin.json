@@ -1,0 +1,112 @@
+{
+   "meta":{
+      "code":200
+   },
+   "response":{
+      "checkin":{
+         "id":"4d627f6814963704dc28ff94",
+         "createdAt":1298300776,
+         "type":"checkin",
+         "shout":"Another one of these days. #snow",
+         "timeZone":"America/New_York",
+         "user":{
+            "id":"32",
+            "firstName":"Dens",
+            "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/32_1239135232.jpg",
+            "gender":"male",
+            "homeCity":"New York, NY"
+         },
+         "venue":{
+            "id":"408c5100f964a520c6f21ee3",
+            "name":"Tompkins Square Park",
+            "contact":{
+
+            },
+            "location":{
+               "address":"btwn E 7th & 10th St",
+               "crossStreet":"btwn Ave A & B",
+               "city":"New York",
+               "state":"NY",
+               "postalCode":"10009",
+               "lat":40.72651075083395,
+               "lng":-73.98189067840576
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d163941735",
+                  "name":"Park",
+                  "pluralName":"Parks",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "parents":[
+                     "Great Outdoors"
+                  ],
+                  "primary":true
+               },
+               {
+                  "id":"4bf58dd8d48988d162941735",
+                  "name":"Other Great Outdoors",
+                  "pluralName":"Other Great Outdoors",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "parents":[
+                     "Great Outdoors"
+                  ]
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":12132,
+               "usersCount":3654
+            },
+            "todos":{
+               "count":0
+            }
+         },
+         "source":{
+            "name":"foursquare for iPhone",
+            "url":"https://foursquare.com/download/#/iphone"
+         },
+         "photos":{
+            "count":1,
+            "items":[
+               {
+                  "id":"4d627f80d47328fd96bf3448",
+                  "createdAt":1298300800,
+                  "url":"https://playfoursquare.s3.amazonaws.com/pix/UBTEFRRMLYOHHX4RWHFTGQKSDMY14A1JLHURUTG5VUJ02KQ0.jpg",
+                  "sizes":{
+                     "count":4,
+                     "items":[
+                        {
+                           "url":"https://playfoursquare.s3.amazonaws.com/pix/UBTEFRRMLYOHHX4RWHFTGQKSDMY14A1JLHURUTG5VUJ02KQ0.jpg",
+                           "width":720,
+                           "height":540
+                        },
+                        {
+                           "url":"https://playfoursquare.s3.amazonaws.com/derived_pix/UBTEFRRMLYOHHX4RWHFTGQKSDMY14A1JLHURUTG5VUJ02KQ0_300x300.jpg",
+                           "width":300,
+                           "height":300
+                        },
+                        {
+                           "url":"https://playfoursquare.s3.amazonaws.com/derived_pix/UBTEFRRMLYOHHX4RWHFTGQKSDMY14A1JLHURUTG5VUJ02KQ0_100x100.jpg",
+                           "width":100,
+                           "height":100
+                        },
+                        {
+                           "url":"https://playfoursquare.s3.amazonaws.com/derived_pix/UBTEFRRMLYOHHX4RWHFTGQKSDMY14A1JLHURUTG5VUJ02KQ0_36x36.jpg",
+                           "width":36,
+                           "height":36
+                        }
+                     ]
+                  },
+                  "user":{
+                     "id":"32",
+                     "firstName":"Dens",
+                     "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/32_1239135232.jpg",
+                     "gender":"male",
+                     "homeCity":"New York, NY"
+                  }
+               }
+            ]
+         }
+      }
+   }
+}

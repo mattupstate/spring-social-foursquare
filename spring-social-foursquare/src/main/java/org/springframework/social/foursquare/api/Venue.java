@@ -21,7 +21,7 @@ public class Venue {
 	private String shortUrl;
 	private String timezone;
 	private Map<String,Integer> beenHere;
-	private Photos photos;
+	private PhotoGroups photos;
 	private String description;
 	
 	public Venue(String id, String name, ContactInfo contactInfo, Location location, List<Category> categories,
@@ -127,7 +127,7 @@ public class Venue {
 		return beenHere;
 	}
 
-	public Photos getPhotos() {
+	public PhotoGroups getPhotos() {
 		return photos;
 	}
 

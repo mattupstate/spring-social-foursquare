@@ -1,18 +1,18 @@
 package org.springframework.social.foursquare.api.impl.json;
 
 import org.codehaus.jackson.map.annotate.JsonDeserialize;
-import org.springframework.social.foursquare.api.VenuePhotos;
+import org.springframework.social.foursquare.api.Photos;
 
 @JsonDeserialize(using=VenuePhotosContainerDeserializer.class)
 public class VenuePhotosContainer {
 	
-	private VenuePhotos photos;
+	private Photos photos;
 	
-	public VenuePhotosContainer(VenuePhotos photos) {
+	public VenuePhotosContainer(Photos photos) {
 		this.photos = photos;
 	}
 
-	public VenuePhotos getPhotos() {
+	public Photos getPhotos() {
 		return photos;
 	}
 	

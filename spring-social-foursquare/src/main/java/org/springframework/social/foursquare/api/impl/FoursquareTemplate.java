@@ -52,7 +52,7 @@ public class FoursquareTemplate extends AbstractOAuth2ApiBinding implements Four
 		boolean isAuthorized = (accessToken != null);
 		this.userOperations = new UserTemplate(this, isAuthorized);
 		this.venueOperations = new VenueTemplate(this, isAuthorized);
-		this.checkinOperations = new CheckinTemplate();
+		this.checkinOperations = new CheckinTemplate(this, isAuthorized);
 		this.tipOperations = new TipTemplate();
 		this.photoOperations = new PhotoTemplate();
 		this.settingOperations = new SettingTemplate();

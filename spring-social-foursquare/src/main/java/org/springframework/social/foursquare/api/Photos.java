@@ -5,19 +5,18 @@ import java.util.List;
 public class Photos {
 	
 	private int count;
-	private List<PhotoGroup> groups;
+	private List<Photo> items;
 	
-	public Photos(int count, List<PhotoGroup> groups) {
+	public Photos(int count, List<Photo> items) {
 		this.count = count;
-		this.groups = groups;
+		this.items = items;
 	}
 
 	public int getCount() {
 		return count;
 	}
 
-	public List<PhotoGroup> getGroups() {
-		return groups;
+	public List<Photo> getItems() {
+		return items;
 	}
-	
 }

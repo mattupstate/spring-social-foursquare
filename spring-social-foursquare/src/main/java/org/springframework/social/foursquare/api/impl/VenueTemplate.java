@@ -13,8 +13,8 @@ import org.springframework.social.foursquare.api.Todo;
 import org.springframework.social.foursquare.api.Venue;
 import org.springframework.social.foursquare.api.VenueLinks;
 import org.springframework.social.foursquare.api.VenueOperations;
-import org.springframework.social.foursquare.api.VenuePhotos;
-import org.springframework.social.foursquare.api.VenueSearchQuery;
+import org.springframework.social.foursquare.api.Photos;
+import org.springframework.social.foursquare.api.VenueSearchParams;
 import org.springframework.social.foursquare.api.impl.json.CategoriesContainer;
 import org.springframework.social.foursquare.api.impl.json.ExploreResponseContainer;
 import org.springframework.social.foursquare.api.impl.json.HereNowContainer;
@@ -61,7 +61,7 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
 	    return get(buildUri(VENUES_ENDPOINT + "explore/", query.toParameters()), ExploreResponseContainer.class).getResponse();
 	}
 
-    public List<Venue> search(VenueSearchQuery query) {
+    public List<Venue> search(VenueSearchParams query) {
         return get(buildUri(VENUES_ENDPOINT + "search/", query.toParameters()), VenueSearchContainer.class).getVenues();
     }
     
@@ -104,7 +104,7 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
 		return get(buildUri(VENUES_ENDPOINT + venueId + "/tips/", params), TipsContainer.class).getTips();
 	}
 	
-	public VenuePhotos getPhotos(String venueId, String group, int offset, int limit) {
+	public Photos getPhotos(String venueId, String group, int offset, int limit) {
 		Map<String,String> params = new HashMap<String,String>();
 		group = (group == null) ? "venue" : group;
     	params.put("group", group);

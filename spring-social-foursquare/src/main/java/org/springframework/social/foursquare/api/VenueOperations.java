@@ -50,7 +50,7 @@ public interface VenueOperations {
 	 * @param query	A VenueSearchQuery object
 	 * @return	A list of venues
 	 */
-	List<Venue> search(VenueSearchQuery query);
+	List<Venue> search(VenueSearchParams query);
 	
 	/**
 	 * Retreive a list of venues near the specified location with the most people currently checked in. 
@@ -90,7 +90,7 @@ public interface VenueOperations {
 	 * @param limit	Result set limit
 	 * @return	VenuePhotos
 	 */
-	VenuePhotos getPhotos(String venueId, String group, int offset, int limit);
+	Photos getPhotos(String venueId, String group, int offset, int limit);
 	
 	/**
 	 * Retrieve URLs or identifiers from third parties that have been applied to this venue

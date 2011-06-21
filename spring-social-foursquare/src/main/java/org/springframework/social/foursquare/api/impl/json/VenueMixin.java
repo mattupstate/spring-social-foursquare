@@ -10,7 +10,7 @@ import org.springframework.social.foursquare.api.Category;
 import org.springframework.social.foursquare.api.ContactInfo;
 import org.springframework.social.foursquare.api.HereNow;
 import org.springframework.social.foursquare.api.Location;
-import org.springframework.social.foursquare.api.Photos;
+import org.springframework.social.foursquare.api.PhotoGroups;
 import org.springframework.social.foursquare.api.VenueSpecial;
 import org.springframework.social.foursquare.api.VenueStats;
 import org.springframework.social.foursquare.api.VenueTips;
@@ -55,7 +55,7 @@ abstract class VenueMixin {
 	Map<String,Integer> beenHere;
 	
 	@JsonProperty("photos")
-	Photos photos;
+	PhotoGroups photos;
 	
 	@JsonProperty("description")
 	String description;
