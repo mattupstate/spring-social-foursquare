@@ -1,5 +1,7 @@
 package org.springframework.social.foursquare.api;
 
+import java.util.List;
+
 public interface CheckinOperations {
 	
 	/**
@@ -18,6 +20,8 @@ public interface CheckinOperations {
 	Checkin get(String checkinId, String signature);
 	
 	Checkin add(CheckinParams params);
+	
+	List<Checkin> getRecent(Double latitude, Double longitude, Long afterTimestamp, Integer limit);
 	
 	public static final String CHECKINS_ENDPOINT = "checkins/";
 }

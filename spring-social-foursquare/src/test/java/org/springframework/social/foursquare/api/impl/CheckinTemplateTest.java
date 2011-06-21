@@ -1,12 +1,15 @@
 package org.springframework.social.foursquare.api.impl;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 import static org.springframework.http.HttpMethod.GET;
 import static org.springframework.http.HttpMethod.POST;
 import static org.springframework.social.test.client.RequestMatchers.body;
 import static org.springframework.social.test.client.RequestMatchers.method;
 import static org.springframework.social.test.client.RequestMatchers.requestTo;
 import static org.springframework.social.test.client.ResponseCreators.withResponse;
+
+import java.util.List;
 
 import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
@@ -35,6 +38,17 @@ public class CheckinTemplateTest extends AbstractFoursquareApiTest {
 		CheckinParams params = new CheckinParams().venueId("VENUE_ID").shout("SHOUT").broadcast("public").latitude(10d).longitude(10d).locationAccuracy(10l).altitude(200d).altitudeAccuracy(10l);
 		Checkin checkin = foursquare.checkinOperations().add(params);
 		assertEquals("4d627f6814963704dc28ff94", checkin.getId());
+		mockServer.verify();
+	}
+	
+	@Test
+	public void getRecent() {
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/checkins/recent/?access_token=ACCESS_TOKEN&v=20110608&limit=10&afterTimestamp=1000&ll=10.0%2C10.0"))
+			.andExpect(method(GET))
+			.andRespond(withResponse(new ClassPathResource("testdata/recentcheckins.json", getClass()), responseHeaders));
+		
+		List<Checkin> checkins = foursquare.checkinOperations().getRecent(10d, 10d, 1000l, 10);
+		assertTrue(checkins.size() > 0);
 		mockServer.verify();
 	}
 }
