@@ -10,6 +10,7 @@ import org.springframework.social.foursquare.api.ExploreQuery;
 import org.springframework.social.foursquare.api.ExploreResponse;
 import org.springframework.social.foursquare.api.Tips;
 import org.springframework.social.foursquare.api.Venue;
+import org.springframework.social.foursquare.api.VenueLinks;
 import org.springframework.social.foursquare.api.VenueOperations;
 import org.springframework.social.foursquare.api.VenuePhotos;
 import org.springframework.social.foursquare.api.VenueSearchQuery;
@@ -18,6 +19,7 @@ import org.springframework.social.foursquare.api.impl.json.ExploreResponseContai
 import org.springframework.social.foursquare.api.impl.json.HereNowContainer;
 import org.springframework.social.foursquare.api.impl.json.TipsContainer;
 import org.springframework.social.foursquare.api.impl.json.VenueContainer;
+import org.springframework.social.foursquare.api.impl.json.VenueLinksContainer;
 import org.springframework.social.foursquare.api.impl.json.VenuePhotosContainer;
 import org.springframework.social.foursquare.api.impl.json.VenueSearchContainer;
 import org.springframework.util.LinkedMultiValueMap;
@@ -111,6 +113,10 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
     		params.put("limit", Integer.toString(limit));
     	}
 		return get(buildUri(VENUES_ENDPOINT + venueId + "/photos/", params), VenuePhotosContainer.class).getPhotos();
+	}
+
+	public VenueLinks getLinks(String venueId) {
+		return get(buildUri(VENUES_ENDPOINT + venueId + "/links/"), VenueLinksContainer.class).getLinks();
 	}
     
     

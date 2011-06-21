@@ -19,6 +19,7 @@ import org.springframework.social.foursquare.api.ExploreQuery;
 import org.springframework.social.foursquare.api.ExploreResponse;
 import org.springframework.social.foursquare.api.Tips;
 import org.springframework.social.foursquare.api.Venue;
+import org.springframework.social.foursquare.api.VenueLinks;
 import org.springframework.social.foursquare.api.VenuePhotos;
 import org.springframework.social.foursquare.api.VenueSearchQuery;
 
@@ -117,5 +118,15 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
         
         VenuePhotos photos = foursquare.venueOperations().getPhotos("VENUE_ID", null, 0, 0);
         assertTrue(photos.getItems().size() > 0);
+    }
+	
+	@Test
+    public void getLinks() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/links/?access_token=ACCESS_TOKEN&v=20110608"))
+            .andExpect(method(GET))
+            .andRespond(withResponse(new ClassPathResource("testdata/venuelinks.json", getClass()), responseHeaders));
+        
+        VenueLinks links = foursquare.venueOperations().getLinks("VENUE_ID");
+        assertTrue(links.getItems().size() > 0);
     }
 }

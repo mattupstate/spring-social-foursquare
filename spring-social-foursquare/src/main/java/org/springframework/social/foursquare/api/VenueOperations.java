@@ -92,5 +92,12 @@ public interface VenueOperations {
 	 */
 	VenuePhotos getPhotos(String venueId, String group, int offset, int limit);
 	
+	/**
+	 * Retrieve URLs or identifiers from third parties that have been applied to this venue
+	 * @param venueId	A Foursquare venue ID
+	 * @return	VenueLinks
+	 */
+	VenueLinks getLinks(String venueId);
+	
 	public static final String VENUES_ENDPOINT = "venues/";
 }
