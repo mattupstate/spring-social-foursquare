@@ -10,12 +10,13 @@ public class Tip {
 	private String status;
 	private Venue venue;
 	private FoursquareUser user;
+	private TipTodoGroup todo;
+	private TipTodoGroup done;
 	
-	public Tip(String id, Date createdAt, String text, String status, Venue venue, FoursquareUser user) {
+	public Tip(String id, Date createdAt, String text, Venue venue, FoursquareUser user) {
 		this.id = id;
 		this.createdAt = createdAt;
 		this.text = text;
-		this.status = status;
 		this.venue = venue;
 		this.user = user;
 	}
@@ -42,5 +43,13 @@ public class Tip {
 
 	public FoursquareUser getUser() {
 		return user;
+	}
+	
+	public TipTodoGroup getTodo() {
+		return todo;
+	}
+
+	public TipTodoGroup getDone() {
+		return done;
 	}
 }
