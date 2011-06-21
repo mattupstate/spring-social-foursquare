@@ -1,0 +1,1043 @@
+{
+   "meta":{
+      "code":200
+   },
+   "response":{
+      "venues":[
+         {
+            "id":"4b81ea40f964a520e0c330e3",
+            "name":"Brooklyn Bridge Park - Pier 1",
+            "contact":{
+
+            },
+            "location":{
+               "address":"334 Furman Street",
+               "city":"Brooklyn",
+               "state":"NY",
+               "postalCode":"11201",
+               "lat":40.701984159668676,
+               "lng":-73.9969539642334,
+               "distance":338
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d163941735",
+                  "name":"Park",
+                  "pluralName":"Parks",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "parents":[
+                     "Great Outdoors"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":4583,
+               "usersCount":2997
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":1
+            }
+         },
+         {
+            "id":"42377700f964a52024201fe3",
+            "name":"Brooklyn Heights Promenade",
+            "contact":{
+
+            },
+            "location":{
+               "address":"Columbia Heights",
+               "crossStreet":"btw Montague & Middagh",
+               "city":"Brooklyn",
+               "state":"NY",
+               "postalCode":"11201",
+               "lat":40.69829137715981,
+               "lng":-73.99663209915161,
+               "distance":342
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d163941735",
+                  "name":"Park",
+                  "pluralName":"Parks",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "parents":[
+                     "Great Outdoors"
+                  ],
+                  "primary":true
+               },
+               {
+                  "id":"4bf58dd8d48988d1e7941735",
+                  "name":"Playground",
+                  "pluralName":"Playgrounds",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/playground.png",
+                  "parents":[
+                     "Great Outdoors"
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d165941735",
+                  "name":"Scenic Lookout",
+                  "pluralName":"Scenic Lookouts",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "parents":[
+                     "Great Outdoors"
+                  ]
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":4143,
+               "usersCount":1909
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":2
+            }
+         },
+         {
+            "id":"4d88bd71d85f3704d7c4d7db",
+            "name":"Solartech",
+            "contact":{
+               "twitter":"solartechus"
+            },
+            "location":{
+               "address":"110 Wall St.",
+               "crossStreet":"btwn Front St. & South St.",
+               "city":"New York",
+               "state":"New York",
+               "postalCode":"10004",
+               "lat":40.698978,
+               "lng":-74.00043,
+               "distance":119
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d130941735",
+                  "name":"Building",
+                  "pluralName":"Buildings",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "parents":[
+                     "Homes, Work, Others"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":47,
+               "usersCount":7
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4dcbee24d4c0dfa030db3c2a",
+            "name":"South Street seaport",
+            "contact":{
+
+            },
+            "location":{
+               "state":"New York",
+               "postalCode":"11201",
+               "lat":40.700511500000005,
+               "lng":-74.00088600000001,
+               "distance":93
+            },
+            "categories":[
+
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":53,
+               "usersCount":50
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4c3f7d0cff711b8d68fd0e05",
+            "name":"75 Wall Street Gym",
+            "contact":{
+
+            },
+            "location":{
+               "city":"New York",
+               "state":"New York",
+               "lat":40.70118301666667,
+               "lng":-74.00150298333334,
+               "distance":182
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d176941735",
+                  "name":"Gym",
+                  "pluralName":"Gyms",
+                  "icon":"https://foursquare.com/img/categories/building/gym.png",
+                  "parents":[
+                     "Homes, Work, Others",
+                     "Gyms or Fitness Centers"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":63,
+               "usersCount":30
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4da5cb9843a17958beac830e",
+            "name":"Shared Experiences",
+            "contact":{
+
+            },
+            "location":{
+               "address":"110 Wall Street",
+               "city":"New York",
+               "state":"New York",
+               "postalCode":"11201",
+               "lat":40.698978,
+               "lng":-74.00043,
+               "distance":119
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d130941735",
+                  "name":"Building",
+                  "pluralName":"Buildings",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "parents":[
+                     "Homes, Work, Others"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":18,
+               "usersCount":3
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4de94e12d4c0faa564462a9f",
+            "name":"10 Hanover Square",
+            "contact":{
+
+            },
+            "location":{
+               "address":"10 Hanover Square",
+               "city":"New York",
+               "state":"New York",
+               "postalCode":"11201",
+               "lat":40.699208,
+               "lng":-74.000469,
+               "distance":96
+            },
+            "categories":[
+               {
+                  "id":"4d954b06a243a5684965b473",
+                  "name":"Apartment Building",
+                  "pluralName":"Apartment Buildings",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "parents":[
+                     "Homes, Work, Others"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":39,
+               "usersCount":11
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":1
+            }
+         },
+         {
+            "id":"4c48dc0520ab1b8d6118fd15",
+            "name":"Movies With A View",
+            "contact":{
+
+            },
+            "location":{
+               "lat":40.701781,
+               "lng":-73.997748,
+               "distance":274
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d162941735",
+                  "name":"Other Great Outdoors",
+                  "pluralName":"Other Great Outdoors",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "parents":[
+                     "Great Outdoors"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":77,
+               "usersCount":55
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4c3a5ad83849c92880e0c2b1",
+            "name":"Blue Marble Ice Cream",
+            "contact":{
+
+            },
+            "location":{
+               "address":"Brooklyn Bridge Park - Pier 1",
+               "city":"Brooklyn",
+               "state":"NY",
+               "postalCode":"11201",
+               "lat":40.70136599888968,
+               "lng":-73.99794101715088,
+               "distance":230
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1c9941735",
+                  "name":"Ice Cream Shop",
+                  "pluralName":"Ice Cream Shops",
+                  "icon":"https://foursquare.com/img/categories/food/icecream.png",
+                  "parents":[
+                     "Food"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":53,
+               "usersCount":47
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4c0077809cf52d7f4ce013e7",
+            "name":"Booze Cruise",
+            "contact":{
+               "phone":"2126916693"
+            },
+            "location":{
+               "address":"East 23rd St",
+               "crossStreet":"FDR Drive",
+               "city":"New York",
+               "state":"NY",
+               "postalCode":"10010",
+               "lat":40.703544,
+               "lng":-74.001143,
+               "distance":406
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d11f941735",
+                  "name":"Nightclub",
+                  "pluralName":"Nightclubs",
+                  "icon":"https://foursquare.com/img/categories/nightlife/danceparty.png",
+                  "parents":[
+                     "Nightlife Spots"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":54,
+               "usersCount":47
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4de799c81fc7fcfe04ac2f06",
+            "name":"East River Ferry Terminal Brooklyn Bridge Park/Dumbo",
+            "contact":{
+               "phone":"8005333779",
+               "twitter":"eastriverferry"
+            },
+            "location":{
+               "address":"Old Fulton St",
+               "crossStreet":"Furman St",
+               "city":"Brooklyn",
+               "state":"NY",
+               "lat":40.7012193,
+               "lng":-73.9973273,
+               "distance":263
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d12d951735",
+                  "name":"Boat or Ferry",
+                  "pluralName":"Boats or Ferries",
+                  "icon":"https://foursquare.com/img/categories/travel/boat.png",
+                  "parents":[
+                     "Travel Spots"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":46,
+               "usersCount":42
+            },
+            "url":"http://www.eastriverferry.com/",
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4df3ae9145dd4e26934183cb",
+            "name":"Governors Island",
+            "contact":{
+
+            },
+            "location":{
+               "state":"New York",
+               "postalCode":"11201",
+               "lat":40.7016492,
+               "lng":-73.9984506,
+               "distance":225
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d163941735",
+                  "name":"Park",
+                  "pluralName":"Parks",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "parents":[
+                     "Great Outdoors"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":16,
+               "usersCount":16
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4c1d046bb4e62d7f43fcdb93",
+            "name":"Mannahatta Park",
+            "contact":{
+
+            },
+            "location":{
+               "crossStreet":"South St and Wall St",
+               "city":"New York",
+               "state":"New York",
+               "lat":40.700281,
+               "lng":-74.001472,
+               "distance":128
+            },
+            "categories":[
+
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":10,
+               "usersCount":7
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4dcc605afa76e2535b237f50",
+            "name":"Celebrate Brooklyn",
+            "contact":{
+
+            },
+            "location":{
+               "address":"Pier 1",
+               "city":"Brooklyn",
+               "state":"NY",
+               "lat":40.70161,
+               "lng":-73.997311,
+               "distance":289
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1e5931735",
+                  "name":"Music Venue",
+                  "pluralName":"Music Venues",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/musicvenue.png",
+                  "parents":[
+                     "Arts & Entertainment"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":16,
+               "usersCount":15
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4c704f0334443704e4cc235f",
+            "name":"Spiral Pool",
+            "contact":{
+
+            },
+            "location":{
+               "city":"Brooklyn",
+               "state":"New York",
+               "postalCode":"11201",
+               "lat":40.698981285095215,
+               "lng":-73.99768352508545,
+               "distance":226
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d165941735",
+                  "name":"Scenic Lookout",
+                  "pluralName":"Scenic Lookouts",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "parents":[
+                     "Great Outdoors"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":9,
+               "usersCount":9
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4d1b6de99aa55481bd14cee0",
+            "name":"Hot Dog Vendor on corner of John and Front",
+            "contact":{
+
+            },
+            "location":{
+               "address":"John Street",
+               "crossStreet":"Front Street",
+               "city":"New York",
+               "state":"New York",
+               "lat":40.699562,
+               "lng":-74.000928,
+               "distance":92
+            },
+            "categories":[
+
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":4,
+               "usersCount":5
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4cd38685558a37046ceec1a6",
+            "name":"Shawarma truck",
+            "contact":{
+
+            },
+            "location":{
+               "address":"Wall st",
+               "crossStreet":"Water st",
+               "city":"New York",
+               "state":"New York",
+               "postalCode":"10005",
+               "lat":40.701133,
+               "lng":-73.999322,
+               "distance":138
+            },
+            "categories":[
+
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":8,
+               "usersCount":6
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4c67633d8e9120a1d3ddda64",
+            "name":"Shroud Park",
+            "contact":{
+
+            },
+            "location":{
+               "address":"Park Place",
+               "crossStreet":"Washington",
+               "city":"Brooklyn",
+               "state":"New York",
+               "postalCode":"11238",
+               "lat":40.7012193,
+               "lng":-73.9973273,
+               "distance":263
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d163941735",
+                  "name":"Park",
+                  "pluralName":"Parks",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "parents":[
+                     "Great Outdoors"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":14,
+               "usersCount":13
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4d77b0e1fbbc224b5d910832",
+            "name":"Media whiz",
+            "contact":{
+
+            },
+            "location":{
+               "address":"77 Water Street",
+               "city":"New York",
+               "state":"New York",
+               "lat":40.698411,
+               "lng":-74.00043,
+               "distance":180
+            },
+            "categories":[
+
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":7,
+               "usersCount":2
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4bf5c1a15e800f47f326e6d4",
+            "name":"Fino's",
+            "contact":{
+
+            },
+            "location":{
+               "city":"New York",
+               "state":"New York",
+               "lat":40.700396,
+               "lng":-74.001432,
+               "distance":128
+            },
+            "categories":[
+
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":5,
+               "usersCount":5
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4b7c8bedf964a5202c9a2fe3",
+            "name":"160 Columbia Heights",
+            "contact":{
+
+            },
+            "location":{
+               "address":"160 Columbia Heights",
+               "city":"Brooklyn",
+               "state":"NY",
+               "lat":40.698296,
+               "lng":-73.996675,
+               "distance":338
+            },
+            "categories":[
+
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":39,
+               "usersCount":6
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4daf4072cda12a5f1ada0ea8",
+            "name":"Dor L' Dor",
+            "contact":{
+               "phone":"2122274949"
+            },
+            "location":{
+               "address":"80 Nassau Street, # 103",
+               "crossStreet":"Fulton & John Street",
+               "city":"New York",
+               "state":"New York",
+               "postalCode":"10038",
+               "lat":40.698978,
+               "lng":-74.00043,
+               "distance":119
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d108951735",
+                  "name":"Women's Store",
+                  "pluralName":"Women's Stores",
+                  "icon":"https://foursquare.com/img/categories/shops/apparel_women.png",
+                  "parents":[
+                     "Shops",
+                     "Clothing Stores"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":3,
+               "usersCount":1
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4de4363c1f6e3190cd3a6a89",
+            "name":"บ่อนนายป๊อด",
+            "contact":{
+
+            },
+            "location":{
+               "state":"New York",
+               "postalCode":"11201",
+               "lat":40.700877,
+               "lng":-74.001603,
+               "distance":166
+            },
+            "categories":[
+
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":4,
+               "usersCount":1
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4c4672f91ddec9286aab9a32",
+            "name":"Opium Den",
+            "contact":{
+
+            },
+            "location":{
+               "city":"Noen Phoem",
+               "state":"Thailand",
+               "lat":40.702122,
+               "lng":-73.999742,
+               "distance":237
+            },
+            "categories":[
+
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":7,
+               "usersCount":6
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4ca3e0d07f84224bcfdac858",
+            "name":"Taxi 4E74",
+            "contact":{
+
+            },
+            "location":{
+               "city":"New York",
+               "state":"New York",
+               "lat":40.700249,
+               "lng":-74.001442,
+               "distance":124
+            },
+            "categories":[
+
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":3,
+               "usersCount":3
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4c4b1b6b9c8d2d7f9c41826a",
+            "name":"Wow House rehearsal space",
+            "contact":{
+
+            },
+            "location":{
+               "address":"Park",
+               "crossStreet":"Grand",
+               "city":"Brooklyn",
+               "state":"NY",
+               "lat":40.7012193,
+               "lng":-73.9973273,
+               "distance":263
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d137941735",
+                  "name":"Theater",
+                  "pluralName":"Theaters",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/default.png",
+                  "parents":[
+                     "Arts & Entertainment",
+                     "Performing Arts Venues"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":5,
+               "usersCount":5
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4d813634e6d7721e2fe326c7",
+            "name":"Easy Andy's Cold Water Flat (Where Tavis Bickle Bought The Guns)",
+            "contact":{
+
+            },
+            "location":{
+               "address":"Brooklyn Promenade",
+               "city":"Brooklyn",
+               "state":"NY",
+               "lat":40.69893836975098,
+               "lng":-73.9967554807663,
+               "distance":298
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1f1931735",
+                  "name":"General Entertainment",
+                  "pluralName":"General Entertainment",
+                  "icon":"https://foursquare.com/img/categories/arts_entertainment/default.png",
+                  "parents":[
+                     "Arts & Entertainment"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":6,
+               "usersCount":2
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4c90de437f3b8cfa65b7971e",
+            "name":"Taxi 4N62",
+            "contact":{
+
+            },
+            "location":{
+               "city":"New York",
+               "state":"New York",
+               "lat":40.700249,
+               "lng":-74.001442,
+               "distance":124
+            },
+            "categories":[
+
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":3,
+               "usersCount":3
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         },
+         {
+            "id":"4dcc6cc3b0fb44b81e464182",
+            "name":"Brooklyn Bridge Dance Party",
+            "contact":{
+
+            },
+            "location":{
+               "address":"Pier 1",
+               "city":"New York",
+               "state":"NY",
+               "lat":40.701155,
+               "lng":-73.997057,
+               "distance":279
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d163941735",
+                  "name":"Park",
+                  "pluralName":"Parks",
+                  "icon":"https://foursquare.com/img/categories/parks_outdoors/default.png",
+                  "parents":[
+                     "Great Outdoors"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":4,
+               "usersCount":4
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":0
+            }
+         }
+      ]
+   }
+}

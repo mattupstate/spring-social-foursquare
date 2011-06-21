@@ -7,9 +7,11 @@ import org.springframework.social.foursquare.api.ExploreQuery;
 import org.springframework.social.foursquare.api.ExploreResponse;
 import org.springframework.social.foursquare.api.Venue;
 import org.springframework.social.foursquare.api.VenueOperations;
+import org.springframework.social.foursquare.api.VenueSearchQuery;
 import org.springframework.social.foursquare.api.impl.json.CategoriesContainer;
 import org.springframework.social.foursquare.api.impl.json.ExploreResponseContainer;
 import org.springframework.social.foursquare.api.impl.json.VenueContainer;
+import org.springframework.social.foursquare.api.impl.json.VenueSearchContainer;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 
@@ -46,5 +48,9 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
 	public ExploreResponse explore(ExploreQuery query) {
 	    return get(buildUri(VENUES_ENDPOINT + "explore/", query.toParameters()), ExploreResponseContainer.class).getResponse();
 	}
+
+    public List<Venue> search(VenueSearchQuery query) {
+        return get(buildUri(VENUES_ENDPOINT + "search/", query.toParameters()), VenueSearchContainer.class).getVenues();
+    }
 
 }

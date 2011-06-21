@@ -24,7 +24,9 @@ public abstract class AbstractFoursquareDeserializer<T> extends JsonDeserializer
                     String responseField = jp.getCurrentName();
                     jp.nextToken();
                     if(propertyName.equals(responseField)) {
-                        return (List) jp.readValueAs(typeRef);
+                        List<?> result = (List) jp.readValueAs(typeRef);
+                        //actualStdout.println(result.toString());
+                        return result;
                     }
                 }
             }
@@ -55,7 +57,7 @@ public abstract class AbstractFoursquareDeserializer<T> extends JsonDeserializer
 	
 	public <C> C deserializeResponseObject(JsonParser jp, Class<C> container, Class<?> containee)
             throws IOException, JsonProcessingException {
-	    //PrintStream actualStdout = new PrintStream(new FileOutputStream(FileDescriptor.out));
+	    
 	    while (jp.nextToken() != JsonToken.END_OBJECT) {
             String fieldname = jp.getCurrentName();
             jp.nextToken();
@@ -66,7 +68,7 @@ public abstract class AbstractFoursquareDeserializer<T> extends JsonDeserializer
                 try {
                     return container.getConstructor(containee).newInstance(jp.readValueAs(containee));
                 } catch (Exception e) {
-                    //actualStdout.println(e.getMessage());
+                    
                     return null;
                 }
             }

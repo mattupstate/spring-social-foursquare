@@ -5,6 +5,9 @@ import java.util.Map;
 
 public class ExploreQuery {
     
+    public static enum Section { FOOD, DRINKS, COFFEE, SHOPS, ARTS }
+    public static enum Basis { ME, FRIENDS }
+    
     private Double latitude; 
     private Double longitude; 
     private Double locationAccuracy; 
@@ -87,38 +90,36 @@ public class ExploreQuery {
         this.basis = basis;
         return this;
     }
-    
-    public Map<String,String> toParameters() {
-        Map<String,String> params = new HashMap<String,String>();
-        if(latitude != null && longitude != null) {
+
+    public Map<String, String> toParameters() {
+        Map<String, String> params = new HashMap<String, String>();
+        if (latitude != null && longitude != null) {
             params.put("ll", latitude.toString() + "," + longitude.toString());
         }
-        if(locationAccuracy != null) {
+        if (locationAccuracy != null) {
             params.put("llAcc", locationAccuracy.toString());
         }
-        if(altitude != null) {
+        if (altitude != null) {
             params.put("alt", altitude.toString());
         }
-        if(altitudeAccuracy != null) {
+        if (altitudeAccuracy != null) {
             params.put("altAcc", altitudeAccuracy.toString());
         }
-        if(radius != null) {
+        if (radius != null) {
             params.put("radius", radius.toString());
         }
-        if(section != null) {
+        if (section != null) {
             params.put("section", section.toString().toLowerCase());
         }
-        if(query != null) {
+        if (query != null) {
             params.put("query", query);
         }
-        if(limit != null) {
+        if (limit != null) {
             params.put("limit", limit.toString());
         }
-        if(basis != null) {
+        if (basis != null) {
             params.put("basis", basis.toString().toLowerCase());
         }
         return params;
     }
-    public enum Section { FOOD, DRINKS, COFFEE, SHOPS, ARTS }
-    public enum Basis { ME, FRIENDS }
 }

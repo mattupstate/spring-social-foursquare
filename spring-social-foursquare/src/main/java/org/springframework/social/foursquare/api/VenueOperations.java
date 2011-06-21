@@ -45,5 +45,7 @@ public interface VenueOperations {
 	 */
 	ExploreResponse explore(ExploreQuery query);
 	
+	List<Venue> search(VenueSearchQuery query);
+	
 	public static final String VENUES_ENDPOINT = "venues/";
 }

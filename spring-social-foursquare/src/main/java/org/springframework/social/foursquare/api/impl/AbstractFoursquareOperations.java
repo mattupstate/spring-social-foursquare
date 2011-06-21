@@ -45,6 +45,7 @@ public abstract class AbstractFoursquareOperations {
 	
 	protected URI buildUri(String path, Map<String, String> params) {
 		URIBuilder uriBuilder = foursquare.withAccessToken(API_URL_BASE + path);
+		uriBuilder.queryParam("v", API_VERSION);
 		for (String paramName : params.keySet()) {
 			uriBuilder.queryParam(paramName, String.valueOf(params.get(paramName)));
 		}
@@ -53,4 +54,6 @@ public abstract class AbstractFoursquareOperations {
 	}
 	
 	private static final String API_URL_BASE = "https://api.foursquare.com/v2/";
+	
+	private static final String API_VERSION = "20110608";
 }

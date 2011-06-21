@@ -17,11 +17,12 @@ import org.springframework.social.foursquare.api.Category;
 import org.springframework.social.foursquare.api.ExploreQuery;
 import org.springframework.social.foursquare.api.ExploreResponse;
 import org.springframework.social.foursquare.api.Venue;
+import org.springframework.social.foursquare.api.VenueSearchQuery;
 
 public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	@Test
 	public void getVenue() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/?access_token=ACCESS_TOKEN"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/?access_token=ACCESS_TOKEN&v=20110608"))
 			.andExpect(method(GET))
 			.andRespond(withResponse(new ClassPathResource("testdata/venue.json", getClass()), responseHeaders));
 		
@@ -32,7 +33,7 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
 	public void addVenue() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/add/?access_token=ACCESS_TOKEN"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/add/?access_token=ACCESS_TOKEN&v=20110608"))
 			.andExpect(method(POST))
 			.andExpect(body("name=NAME&address=ADDRESS&crossStreet=CROSSSTREET&city=CITY&state=STATE&zip=ZIP&phone=PHONE&ll=1.0%2C1.0&primaryCategoryId=CATEGORYID"))
 			.andRespond(withResponse(new ClassPathResource("testdata/venue.json", getClass()), responseHeaders));
@@ -45,7 +46,7 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
 	public void getCateogies() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/categories/?access_token=ACCESS_TOKEN"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/categories/?access_token=ACCESS_TOKEN&v=20110608"))
 			.andExpect(method(GET))
 			.andRespond(withResponse(new ClassPathResource("testdata/categories.json", getClass()), responseHeaders));
 		
@@ -55,12 +56,23 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
     public void explore() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/explore/?access_token=ACCESS_TOKEN&ll=10.0%2C10.0&query=QUERY"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/explore/?access_token=ACCESS_TOKEN&v=20110608&ll=10.0%2C10.0&query=QUERY"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/explore.json", getClass()), responseHeaders));
         
         ExploreQuery query = new ExploreQuery().location(10d, 10d).query("QUERY");
         ExploreResponse response = foursquare.venueOperations().explore(query);
         assertEquals(30, response.getKeywords().getCount());
+    }
+	
+	@Test
+    public void search() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/search/?access_token=ACCESS_TOKEN&v=20110608&ll=10.0%2C10.0&query=QUERY"))
+            .andExpect(method(GET))
+            .andRespond(withResponse(new ClassPathResource("testdata/venue-search.json", getClass()), responseHeaders));
+        
+        VenueSearchQuery query = new VenueSearchQuery().location(10d, 10d).query("QUERY");
+        List<Venue> results = foursquare.venueOperations().search(query);
+        assertTrue(results.size() > 0);
     }
 }
