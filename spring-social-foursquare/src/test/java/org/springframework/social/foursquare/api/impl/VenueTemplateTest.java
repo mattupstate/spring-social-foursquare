@@ -75,4 +75,14 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
         List<Venue> results = foursquare.venueOperations().search(query);
         assertTrue(results.size() > 0);
     }
+	
+	@Test
+    public void getTrending() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/trending/?access_token=ACCESS_TOKEN&v=20110608&ll=10.0%2C10.0&radius=100"))
+            .andExpect(method(GET))
+            .andRespond(withResponse(new ClassPathResource("testdata/trending.json", getClass()), responseHeaders));
+        
+        List<Venue> results = foursquare.venueOperations().getTrending(10d, 10d, 100, 0);
+        assertTrue(results.size() > 0);
+    }
 }

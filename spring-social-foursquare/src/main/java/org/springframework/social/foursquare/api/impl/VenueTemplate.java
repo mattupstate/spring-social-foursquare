@@ -1,6 +1,8 @@
 package org.springframework.social.foursquare.api.impl;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.social.foursquare.api.Category;
 import org.springframework.social.foursquare.api.ExploreQuery;
@@ -52,5 +54,19 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
     public List<Venue> search(VenueSearchQuery query) {
         return get(buildUri(VENUES_ENDPOINT + "search/", query.toParameters()), VenueSearchContainer.class).getVenues();
     }
+    
+    public List<Venue> getTrending(double latitude, double longitude, int radius, int limit) {
+    	Map<String,String> params = new HashMap<String,String>();
+    	params.put("ll", Double.toString(latitude) + "," + Double.toString(longitude));
+    	if(radius > 0) {
+    		params.put("radius", Integer.toString(radius));
+    	}
+    	if(limit > 0) {
+    		params.put("limit", Integer.toString(limit));
+    	}
+        return get(buildUri(VENUES_ENDPOINT + "trending/", params), VenueSearchContainer.class).getVenues();
+    }
+    
+    
 
 }

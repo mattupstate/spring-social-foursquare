@@ -41,11 +41,26 @@ public interface VenueOperations {
 	
 	/**
 	 * Retrieve a list of recommended venues near the current location. 
-	 * @return
+	 * @return	An explore response
 	 */
 	ExploreResponse explore(ExploreQuery query);
 	
+	/**
+	 * Search Foursquare venues
+	 * @param query	A VenueSearchQuery object
+	 * @return	A list of venues
+	 */
 	List<Venue> search(VenueSearchQuery query);
+	
+	/**
+	 * Retreive a list of venues near the specified location with the most people currently checked in. 
+	 * @param latitude	Latitude
+	 * @param longitude	Longitude
+	 * @param radius	Radius
+	 * @param limit	Limit
+	 * @return	A list of venues
+	 */
+	List<Venue> getTrending(double latitude, double longitude, int radius, int limit);
 	
 	public static final String VENUES_ENDPOINT = "venues/";
 }

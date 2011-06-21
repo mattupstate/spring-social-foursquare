@@ -10,6 +10,7 @@ public class Location {
 	private String country;
 	private double latitude;
 	private double longitude;
+	private int distance;
 	
 	public Location(String address, String crossStreet, String city, String state,
 			String postalCode, String country, double latitude, double longitude) {
@@ -86,4 +87,9 @@ public class Location {
 	public void setLongitude(double longitude) {
 		this.longitude = longitude;
 	}
+	
+	public int getDistance() {
+		return distance;
+	}
+
 }

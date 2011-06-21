@@ -1,0 +1,553 @@
+{
+   "meta":{
+      "code":200
+   },
+   "response":{
+      "venues":[
+         {
+            "id":"42829c80f964a5205f221fe3",
+            "name":"American Express Tower",
+            "contact":{
+               "twitter":"americanexpress"
+            },
+            "location":{
+               "address":"200 Vesey Street",
+               "crossStreet":"West Street",
+               "city":"New York",
+               "state":"NY",
+               "postalCode":"10285",
+               "lat":40.713968,
+               "lng":-74.014699,
+               "distance":1989
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d124941735",
+                  "name":"Office",
+                  "pluralName":"Offices",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "parents":[
+                     "Homes, Work, Others"
+                  ],
+                  "primary":true
+               },
+               {
+                  "id":"4bf58dd8d48988d174941735",
+                  "name":"Coworking Space",
+                  "pluralName":"Coworking Spaces",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "parents":[
+                     "Homes, Work, Others",
+                     "Offices"
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d173941735",
+                  "name":"Auditorium",
+                  "pluralName":"Auditoriums",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "parents":[
+                     "Homes, Work, Others",
+                     "Offices"
+                  ]
+               },
+               {
+                  "id":"4bf58dd8d48988d171941735",
+                  "name":"Event Space",
+                  "pluralName":"Event Spaces",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "parents":[
+                     "Homes, Work, Others"
+                  ]
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":11238,
+               "usersCount":1884
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":29
+            }
+         },
+         {
+            "id":"4a737bf8f964a52091dc1fe3",
+            "name":"MTA Subway - Manhattan Bridge (B/D/N/Q)",
+            "contact":{
+               "twitter":"NYCTSubwayScoop"
+            },
+            "location":{
+               "address":"Manhattan Bridge",
+               "crossStreet":"East River",
+               "city":"New York",
+               "state":"NY",
+               "lat":40.707449752719434,
+               "lng":-73.99081707000732,
+               "distance":1135
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1fd931735",
+                  "name":"Subway",
+                  "pluralName":"Subways",
+                  "icon":"https://foursquare.com/img/categories/travel/subway.png",
+                  "parents":[
+                     "Travel Spots"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":46284,
+               "usersCount":4968
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":14
+            }
+         },
+         {
+            "id":"4ae8906ef964a52071b021e3",
+            "name":"PATH: World Trade Center Station",
+            "contact":{
+               "phone":"8002347284",
+               "twitter":"PATHTweet"
+            },
+            "location":{
+               "address":"1-19 W Broadway",
+               "crossStreet":"at Vesey St",
+               "city":"New York",
+               "state":"NY",
+               "postalCode":"10006",
+               "country":"USA",
+               "lat":40.71267092713338,
+               "lng":-74.01193141937256,
+               "distance":1733
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1fd931735",
+                  "name":"Subway",
+                  "pluralName":"Subways",
+                  "icon":"https://foursquare.com/img/categories/travel/subway.png",
+                  "parents":[
+                     "Travel Spots"
+                  ],
+                  "primary":true
+               },
+               {
+                  "id":"4bf58dd8d48988d1fc931735",
+                  "name":"Light Rail",
+                  "pluralName":"Light Rails",
+                  "icon":"https://foursquare.com/img/categories/travel/lightrail.png",
+                  "parents":[
+                     "Travel Spots"
+                  ]
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":25227,
+               "usersCount":4883
+            },
+            "url":"http://www.panynj.gov/path",
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":10
+            }
+         },
+         {
+            "id":"4bc495c774a9a5933101d6f6",
+            "name":"JPMorgan Chase & Co.",
+            "contact":{
+
+            },
+            "location":{
+               "address":"4 New York Plaza",
+               "city":"New York",
+               "state":"NY",
+               "lat":40.7028778,
+               "lng":-74.0112317,
+               "distance":1000
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d124941735",
+                  "name":"Office",
+                  "pluralName":"Offices",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "parents":[
+                     "Homes, Work, Others"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":1761,
+               "usersCount":147
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":7
+            }
+         },
+         {
+            "id":"4b3cfe63f964a520618b25e3",
+            "name":"Starbucks",
+            "contact":{
+               "phone":"2125099709",
+               "twitter":"starbucks"
+            },
+            "location":{
+               "address":"100 William Street",
+               "crossStreet":"btw Maiden Ln and Platt St",
+               "city":"New York",
+               "state":"NY",
+               "postalCode":"10038",
+               "country":"USA",
+               "lat":40.708098,
+               "lng":-74.007726,
+               "distance":1112
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1e0931735",
+                  "name":"Coffee Shop",
+                  "pluralName":"Coffee Shops",
+                  "icon":"https://foursquare.com/img/categories/food/coffeeshop.png",
+                  "parents":[
+                     "Food"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":1168,
+               "usersCount":334
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":6
+            }
+         },
+         {
+            "id":"4b20f620f964a520a03524e3",
+            "name":"Goldman Sachs",
+            "contact":{
+
+            },
+            "location":{
+               "address":"200 West St",
+               "crossStreet":"Vesey and Murray",
+               "city":"New York",
+               "state":"NY",
+               "lat":40.714102,
+               "lng":-74.014131,
+               "distance":1971
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d124941735",
+                  "name":"Office",
+                  "pluralName":"Offices",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "parents":[
+                     "Homes, Work, Others"
+                  ],
+                  "primary":true
+               },
+               {
+                  "id":"4bf58dd8d48988d174941735",
+                  "name":"Coworking Space",
+                  "pluralName":"Coworking Spaces",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "parents":[
+                     "Homes, Work, Others",
+                     "Offices"
+                  ]
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":5996,
+               "usersCount":3550
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":6
+            }
+         },
+         {
+            "id":"49e4a677f964a52014631fe3",
+            "name":"Starbucks",
+            "contact":{
+               "phone":"7188550856",
+               "twitter":"Starbucks"
+            },
+            "location":{
+               "address":"67 Front St",
+               "crossStreet":"Main St",
+               "city":"Brooklyn",
+               "state":"NY",
+               "postalCode":"11201",
+               "lat":40.702634849027795,
+               "lng":-73.99081707000732,
+               "distance":828
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d1e0931735",
+                  "name":"Coffee Shop",
+                  "pluralName":"Coffee Shops",
+                  "icon":"https://foursquare.com/img/categories/food/coffeeshop.png",
+                  "parents":[
+                     "Food"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":true,
+            "stats":{
+               "checkinsCount":5029,
+               "usersCount":1512
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":5
+            }
+         },
+         {
+            "id":"4a316ffcf964a520cd991fe3",
+            "name":"HUGE",
+            "contact":{
+               "twitter":"hugeinc"
+            },
+            "location":{
+               "address":"45 Main Street",
+               "crossStreet":"btw. Front and Water",
+               "city":"Brooklyn",
+               "state":"NY",
+               "postalCode":"11201",
+               "lat":40.7028043,
+               "lng":-73.9906663,
+               "distance":847
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d124941735",
+                  "name":"Office",
+                  "pluralName":"Offices",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "parents":[
+                     "Homes, Work, Others"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":1890,
+               "usersCount":341
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":5
+            }
+         },
+         {
+            "id":"4b2d5a59f964a520e9d424e3",
+            "name":"Deutsche Bank",
+            "contact":{
+
+            },
+            "location":{
+               "address":"60 Wall St",
+               "city":"New York",
+               "state":"NY",
+               "lat":40.706277,
+               "lng":-74.008526,
+               "distance":1002
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d124941735",
+                  "name":"Office",
+                  "pluralName":"Offices",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "parents":[
+                     "Homes, Work, Others"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":3313,
+               "usersCount":357
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":5
+            }
+         },
+         {
+            "id":"4b6b51b7f964a520a1002ce3",
+            "name":"OMD",
+            "contact":{
+
+            },
+            "location":{
+               "address":"195 Broadway",
+               "city":"New York",
+               "state":"New York",
+               "lat":40.7107975,
+               "lng":-74.0095256,
+               "distance":1445
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d124941735",
+                  "name":"Office",
+                  "pluralName":"Offices",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "parents":[
+                     "Homes, Work, Others"
+                  ],
+                  "primary":true
+               },
+               {
+                  "id":"4bf58dd8d48988d1d4941735",
+                  "name":"Speakeasy",
+                  "pluralName":"Speakeasies",
+                  "icon":"https://foursquare.com/img/categories/nightlife/secretbar.png",
+                  "parents":[
+                     "Nightlife Spots"
+                  ]
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":2179,
+               "usersCount":324
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":5
+            }
+         },
+         {
+            "id":"49f75541f964a5208a6c1fe3",
+            "name":"Experian CheetahMail",
+            "contact":{
+
+            },
+            "location":{
+               "address":"29 Broadway",
+               "crossStreet":"Morris St",
+               "city":"New York",
+               "state":"NY",
+               "postalCode":"10006",
+               "lat":40.7061,
+               "lng":-74.0135,
+               "distance":1326
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d125941735",
+                  "name":"Tech Startup",
+                  "pluralName":"Tech Startups",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "parents":[
+                     "Homes, Work, Others",
+                     "Offices"
+                  ],
+                  "primary":true
+               },
+               {
+                  "id":"4bf58dd8d48988d124941735",
+                  "name":"Office",
+                  "pluralName":"Offices",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "parents":[
+                     "Homes, Work, Others"
+                  ]
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":835,
+               "usersCount":72
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":5
+            }
+         },
+         {
+            "id":"4a0b5a0df964a520ed741fe3",
+            "name":"7 World Trade Center",
+            "contact":{
+               "phone":"2128780007"
+            },
+            "location":{
+               "address":"250 Greenwich St",
+               "city":"New York",
+               "state":"NY",
+               "postalCode":"10007",
+               "lat":40.713159,
+               "lng":-74.011889,
+               "distance":1775
+            },
+            "categories":[
+               {
+                  "id":"4bf58dd8d48988d124941735",
+                  "name":"Office",
+                  "pluralName":"Offices",
+                  "icon":"https://foursquare.com/img/categories/building/default.png",
+                  "parents":[
+                     "Homes, Work, Others"
+                  ],
+                  "primary":true
+               }
+            ],
+            "verified":false,
+            "stats":{
+               "checkinsCount":2487,
+               "usersCount":821
+            },
+            "todos":{
+               "count":0
+            },
+            "hereNow":{
+               "count":5
+            }
+         }
+      ]
+   }
+}

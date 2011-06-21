@@ -17,4 +17,7 @@ abstract class LocationMixin {
 			@JsonProperty("latitude") double latitude, 
 			@JsonProperty("longitude") double longitude){}
 	
+	@JsonProperty("distance")
+	int distance;
+	
 }
