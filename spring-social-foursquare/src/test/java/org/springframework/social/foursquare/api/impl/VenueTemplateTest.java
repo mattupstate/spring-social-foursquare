@@ -1,6 +1,7 @@
 package org.springframework.social.foursquare.api.impl;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 import static org.springframework.http.HttpMethod.GET;
 import static org.springframework.http.HttpMethod.POST;
 import static org.springframework.social.test.client.RequestMatchers.body;
@@ -13,6 +14,8 @@ import java.util.List;
 import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.social.foursquare.api.Category;
+import org.springframework.social.foursquare.api.ExploreQuery;
+import org.springframework.social.foursquare.api.ExploreResponse;
 import org.springframework.social.foursquare.api.Venue;
 
 public class VenueTemplateTest extends AbstractFoursquareApiTest {
@@ -47,5 +50,17 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 			.andRespond(withResponse(new ClassPathResource("testdata/categories.json", getClass()), responseHeaders));
 		
 		List<Category> categories = foursquare.venueOperations().getCategories();
+		assertTrue(categories.size() > 0);
 	}
+	
+	@Test
+    public void explore() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/explore/?access_token=ACCESS_TOKEN&ll=10.0%2C10.0&query=QUERY"))
+            .andExpect(method(GET))
+            .andRespond(withResponse(new ClassPathResource("testdata/explore.json", getClass()), responseHeaders));
+        
+        ExploreQuery query = new ExploreQuery().location(10d, 10d).query("QUERY");
+        ExploreResponse response = foursquare.venueOperations().explore(query);
+        assertEquals(30, response.getKeywords().getCount());
+    }
 }

@@ -39,5 +39,11 @@ public interface VenueOperations {
 	 */
 	List<Category> getCategories();
 	
+	/**
+	 * Retrieve a list of recommended venues near the current location. 
+	 * @return
+	 */
+	ExploreResponse explore(ExploreQuery query);
+	
 	public static final String VENUES_ENDPOINT = "venues/";
 }

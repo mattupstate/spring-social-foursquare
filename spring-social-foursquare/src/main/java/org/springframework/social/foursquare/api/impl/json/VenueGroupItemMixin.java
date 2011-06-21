@@ -1,23 +1,19 @@
 package org.springframework.social.foursquare.api.impl.json;
 
-import java.util.Date;
+import java.util.List;
 
 import org.codehaus.jackson.annotate.JsonCreator;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.codehaus.jackson.annotate.JsonProperty;
-import org.springframework.social.foursquare.api.FoursquareUser;
+import org.springframework.social.foursquare.api.Reasons;
+import org.springframework.social.foursquare.api.Tip;
 import org.springframework.social.foursquare.api.Venue;
 
 @JsonIgnoreProperties(ignoreUnknown=true)
-abstract class TipMixin {
+abstract class VenueGroupItemMixin {
 	@JsonCreator
-	TipMixin(
-			@JsonProperty("id") String id,
-			@JsonProperty("createdAt") Date createdAt, 
-			@JsonProperty("text") String text, 
-			@JsonProperty("status") String status,
+	VenueGroupItemMixin(
+			@JsonProperty("reasons") Reasons reasons,
 			@JsonProperty("venue") Venue venue,
-			@JsonProperty("user") FoursquareUser user){}
-	
-	
+			@JsonProperty("tips") List<Tip> tips){}
 }
