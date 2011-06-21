@@ -14,6 +14,7 @@ import java.util.List;
 import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.social.foursquare.api.Checkin;
+import org.springframework.social.foursquare.api.CheckinComment;
 import org.springframework.social.foursquare.api.CheckinParams;
 
 public class CheckinTemplateTest extends AbstractFoursquareApiTest {
@@ -49,6 +50,30 @@ public class CheckinTemplateTest extends AbstractFoursquareApiTest {
 		
 		List<Checkin> checkins = foursquare.checkinOperations().getRecent(10d, 10d, 1000l, 10);
 		assertTrue(checkins.size() > 0);
+		mockServer.verify();
+	}
+	
+	@Test
+	public void addComment() {
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/checkins/CHECKIN_ID/addcomment/?access_token=ACCESS_TOKEN&v=20110608"))
+			.andExpect(method(POST))
+			.andExpect(body("text=COMMENT_TEXT"))
+			.andRespond(withResponse(new ClassPathResource("testdata/checkincomment.json", getClass()), responseHeaders));
+		
+		CheckinComment comment = foursquare.checkinOperations().addComment("CHECKIN_ID", "COMMENT_TEXT");
+		assertEquals("commentid", comment.getId());
+		mockServer.verify();
+	}
+	
+	@Test
+	public void deleteComment() {
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/checkins/CHECKIN_ID/deletecomment/?access_token=ACCESS_TOKEN&v=20110608"))
+			.andExpect(method(POST))
+			.andExpect(body("commentId=COMMENT_ID"))
+			.andRespond(withResponse(new ClassPathResource("testdata/checkin.json", getClass()), responseHeaders));
+		
+		Checkin checkin = foursquare.checkinOperations().deleteComment("CHECKIN_ID", "COMMENT_ID");
+		assertTrue(checkin != null);
 		mockServer.verify();
 	}
 }

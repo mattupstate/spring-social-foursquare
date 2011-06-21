@@ -1,0 +1,11 @@
+{
+   "meta":{
+      "code":200
+   },
+   "response":{
+      "comment":{
+        "id":"commentid",
+        "text":"comment text"
+      }
+   }
+}
