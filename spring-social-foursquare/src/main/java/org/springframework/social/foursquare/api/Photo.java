@@ -10,13 +10,13 @@ public class Photo {
 	private PhotoSizes sizes;
 	private PhotoSource source;
 	private FoursquareUser user;
+	private Venue venue;
 	
-	public Photo(String id, Date createdAt, String url, PhotoSizes sizes, PhotoSource source, FoursquareUser user) {
+	public Photo(String id, Date createdAt, String url, PhotoSizes sizes, FoursquareUser user) {
 		this.id = id;
 		this.createdAt = createdAt;
 		this.url = url;
 		this.sizes = sizes;
-		this.source = source;
 		this.user = user;
 	}
 
@@ -43,5 +43,9 @@ public class Photo {
 	public FoursquareUser getUser() {
 		return user;
 	}
-	
+
+	public Venue getVenue() {
+		return venue;
+	}
+
 }

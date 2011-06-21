@@ -15,9 +15,13 @@ abstract class TipMixin {
 	TipMixin(
 			@JsonProperty("id") String id,
 			@JsonProperty("createdAt") Date createdAt, 
-			@JsonProperty("text") String text,
-			@JsonProperty("venue") Venue venue,
-			@JsonProperty("user") FoursquareUser user){}
+			@JsonProperty("text") String text){}
+	
+	@JsonProperty("venue") 
+	Venue venue;
+	
+	@JsonProperty("user") 
+	FoursquareUser user;
 	
 	@JsonProperty("status")
 	String status;

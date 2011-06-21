@@ -13,12 +13,10 @@ public class Tip {
 	private TipTodoGroup todo;
 	private TipTodoGroup done;
 	
-	public Tip(String id, Date createdAt, String text, Venue venue, FoursquareUser user) {
+	public Tip(String id, Date createdAt, String text) {
 		this.id = id;
 		this.createdAt = createdAt;
 		this.text = text;
-		this.venue = venue;
-		this.user = user;
 	}
 
 	public String getId() {
