@@ -1,0 +1,18 @@
+{
+   "meta":{
+      "code":200
+   },
+   "response":{
+      "settings":{
+         "receivePings":true,
+         "receiveCommentPings":true,
+         "sendToTwitter":false,
+         "sendMayorshipsToTwitter":false,
+         "sendBadgesToTwitter":false,
+         "sendToFacebook":false,
+         "sendMayorshipsToFacebook":false,
+         "sendBadgesToFacebook":false,
+         "foreignConsent":"undetermined"
+      }
+   }
+}

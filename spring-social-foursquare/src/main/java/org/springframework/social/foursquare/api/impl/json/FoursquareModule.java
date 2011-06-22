@@ -2,6 +2,7 @@ package org.springframework.social.foursquare.api.impl.json;
 
 import org.codehaus.jackson.Version;
 import org.codehaus.jackson.map.module.SimpleModule;
+import org.springframework.social.foursquare.api.AllSettings;
 import org.springframework.social.foursquare.api.Badge;
 import org.springframework.social.foursquare.api.BadgeGroup;
 import org.springframework.social.foursquare.api.BadgeImage;
@@ -64,7 +65,8 @@ public class FoursquareModule extends SimpleModule {
 	
 	@Override 
 	public void setupModule(SetupContext context) {
-	    context.setMixInAnnotations(Badge.class, BadgeMixin.class);
+		context.setMixInAnnotations(AllSettings.class, AllSettingsMixin.class);
+		context.setMixInAnnotations(Badge.class, BadgeMixin.class);
 	    context.setMixInAnnotations(BadgeGroup.class, BadgeGroupMixin.class);
 	    context.setMixInAnnotations(BadgeImage.class, BadgeImageMixin.class);
 	    context.setMixInAnnotations(BadgeSets.class, BadgeSetsMixin.class);
