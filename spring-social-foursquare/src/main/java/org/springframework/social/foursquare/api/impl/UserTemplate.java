@@ -233,27 +233,27 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 
 	public void requestFriend(String userId) {
 		requireUserAuthorization();
-		post(buildUri(USERS_ENDPOINT + userId + "/request/"), new LinkedMultiValueMap<String, String>(), Map.class);
+		post(buildUri(USERS_ENDPOINT + userId + "/request/"), new LinkedMultiValueMap<String, Object>(), Map.class);
 	}
 
 	public void removeFriend(String userId) {
 		requireUserAuthorization();
-		post(buildUri(USERS_ENDPOINT + userId + "/unfriend/"), new LinkedMultiValueMap<String, String>(), Map.class);
+		post(buildUri(USERS_ENDPOINT + userId + "/unfriend/"), new LinkedMultiValueMap<String, Object>(), Map.class);
 	}
 
 	public void approveFriend(String userId) {
 		requireUserAuthorization();
-		post(buildUri(USERS_ENDPOINT + userId + "/approve/"), new LinkedMultiValueMap<String, String>(), Map.class);
+		post(buildUri(USERS_ENDPOINT + userId + "/approve/"), new LinkedMultiValueMap<String, Object>(), Map.class);
 	}
 
 	public void denyFriend(String userId) {
 		requireUserAuthorization();
-		post(buildUri(USERS_ENDPOINT + userId + "/deny/"), new LinkedMultiValueMap<String, String>(), Map.class);
+		post(buildUri(USERS_ENDPOINT + userId + "/deny/"), new LinkedMultiValueMap<String, Object>(), Map.class);
 	}
 
 	public void setPings(String userId, boolean value) {
 		requireUserAuthorization();
-		MultiValueMap<String,String> params = new LinkedMultiValueMap<String, String>();
+		MultiValueMap<String, Object> params = new LinkedMultiValueMap<String, Object>();
 		params.add("value", Boolean.toString(value));
 		post(buildUri(USERS_ENDPOINT + userId + "/setpings/"), params, Map.class);
 	}

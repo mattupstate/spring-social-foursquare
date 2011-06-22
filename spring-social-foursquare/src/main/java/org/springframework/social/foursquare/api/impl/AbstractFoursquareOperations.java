@@ -24,8 +24,8 @@ public abstract class AbstractFoursquareOperations {
 		return foursquare.getRestTemplate().getForObject(uri, responseType);
 	}
 	
-	protected <C> C post(URI uri, MultiValueMap<String,String> data,  Class<C> responseType) {
-	    MultiValueMap<String, String> requestData = new LinkedMultiValueMap<String, String>(data);
+	protected <C> C post(URI uri, MultiValueMap<String,Object> data,  Class<C> responseType) {
+	    MultiValueMap<String, Object> requestData = new LinkedMultiValueMap<String, Object>(data);
 	    return foursquare.getRestTemplate().postForObject(uri, requestData, responseType);
 	}
 	

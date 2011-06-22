@@ -40,7 +40,7 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
 	public Venue addVenue(String name, String address, String crossStreet, String city, String state, 
 			String zip, String phone, double latitude, double longitude, String primaryCategoryId) {
 		requireUserAuthorization();
-		MultiValueMap<String,String> params = new LinkedMultiValueMap<String, String>();
+		MultiValueMap<String, Object> params = new LinkedMultiValueMap<String, Object>();
 		params.add("name", name);
 		params.add("address", address);
 		params.add("crossStreet", crossStreet);
@@ -123,7 +123,7 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
 
 	public Todo markTodo(String venueId, String text) {
 		requireUserAuthorization();
-		MultiValueMap<String,String> params = new LinkedMultiValueMap<String, String>();
+		MultiValueMap<String, Object> params = new LinkedMultiValueMap<String, Object>();
 		if(text != null) {
 			params.add("text", text);
 		}
@@ -132,7 +132,7 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
 
 	public void flag(String venueId, String problem) {
 		requireUserAuthorization();
-		MultiValueMap<String,String> params = new LinkedMultiValueMap<String, String>();
+		MultiValueMap<String, Object> params = new LinkedMultiValueMap<String, Object>();
 		params.add("problem", problem);
 		post(buildUri(VENUES_ENDPOINT + venueId + "/flag/"), params, Map.class);
 	}
@@ -140,7 +140,7 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
 	public void edit(String venueId, String name, String address, String crossStreet, String city, String state, 
 			String zip, String phone, double latitude, double longitude, String categoryId) {
 		requireUserAuthorization();
-		MultiValueMap<String,String> params = new LinkedMultiValueMap<String, String>();
+		MultiValueMap<String, Object> params = new LinkedMultiValueMap<String, Object>();
 		params.add("name", name);
 		params.add("address", address);
 		params.add("crossStreet", crossStreet);
@@ -156,7 +156,7 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
 	public void proposeEdit(String venueId, String name, String address, String crossStreet, String city, String state, 
 			String zip, String phone, double latitude, double longitude, String primaryCategoryId) {
 		requireUserAuthorization();
-		MultiValueMap<String,String> params = new LinkedMultiValueMap<String, String>();
+		MultiValueMap<String, Object> params = new LinkedMultiValueMap<String, Object>();
 		params.add("name", name);
 		params.add("address", address);
 		params.add("crossStreet", crossStreet);

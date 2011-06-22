@@ -25,7 +25,7 @@ public class TipTemplate extends AbstractFoursquareOperations implements TipOper
 
 	public Tip add(String venueId, String text, String url) {
 		requireUserAuthorization();
-		MultiValueMap<String,String> params = new LinkedMultiValueMap<String, String>();
+		MultiValueMap<String, Object> params = new LinkedMultiValueMap<String, Object>();
 		params.add("venueId", venueId);
 		params.add("text", text);
 		params.add("url", url);
@@ -51,17 +51,17 @@ public class TipTemplate extends AbstractFoursquareOperations implements TipOper
 
 	public Todo markTodo(String tipId) {
 		requireUserAuthorization();
-		return post(buildUri(TIPS_ENDPOINT + tipId + "/marktodo/"), new LinkedMultiValueMap<String, String>(), TodoContainer.class).getTodo();
+		return post(buildUri(TIPS_ENDPOINT + tipId + "/marktodo/"), new LinkedMultiValueMap<String, Object>(), TodoContainer.class).getTodo();
 	}
 
 	public Todo markDone(String tipId) {
 		requireUserAuthorization();
-		return post(buildUri(TIPS_ENDPOINT + tipId + "/markdone/"), new LinkedMultiValueMap<String, String>(), TodoContainer.class).getTodo();
+		return post(buildUri(TIPS_ENDPOINT + tipId + "/markdone/"), new LinkedMultiValueMap<String, Object>(), TodoContainer.class).getTodo();
 	}
 
 	public Tip unmarkTodo(String tipId) {
 		requireUserAuthorization();
-		return post(buildUri(TIPS_ENDPOINT + tipId + "/unmark/"), new LinkedMultiValueMap<String, String>(), TipContainer.class).getTip();
+		return post(buildUri(TIPS_ENDPOINT + tipId + "/unmark/"), new LinkedMultiValueMap<String, Object>(), TipContainer.class).getTip();
 	}
 	
 }

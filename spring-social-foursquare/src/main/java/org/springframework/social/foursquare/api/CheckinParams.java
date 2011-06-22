@@ -83,8 +83,8 @@ public class CheckinParams {
 		return this;
 	}
 	
-	public MultiValueMap<String,String> toParams() {
-		MultiValueMap<String,String> params = new LinkedMultiValueMap<String, String>();
+	public MultiValueMap<String,Object> toParams() {
+		MultiValueMap<String,Object> params = new LinkedMultiValueMap<String, Object>();
 		if(venueId != null) {
 			params.add("venueId", venueId);
 		}
