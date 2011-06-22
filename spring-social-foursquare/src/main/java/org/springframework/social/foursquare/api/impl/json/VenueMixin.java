@@ -11,7 +11,7 @@ import org.springframework.social.foursquare.api.ContactInfo;
 import org.springframework.social.foursquare.api.HereNow;
 import org.springframework.social.foursquare.api.Location;
 import org.springframework.social.foursquare.api.PhotoGroups;
-import org.springframework.social.foursquare.api.VenueSpecial;
+import org.springframework.social.foursquare.api.Special;
 import org.springframework.social.foursquare.api.VenueStats;
 import org.springframework.social.foursquare.api.VenueTips;
 
@@ -40,10 +40,10 @@ abstract class VenueMixin {
 	List<String> tags;
 	
 	@JsonProperty("specials")
-	List<VenueSpecial> specials;
+	List<Special> specials;
 
 	@JsonProperty("specialsNearby")
-	List<VenueSpecial> specialsNearby;
+	List<Special> specialsNearby;
 	
 	@JsonProperty("shortUrl")
 	String shortUrl;

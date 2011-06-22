@@ -1,0 +1,1362 @@
+{
+   "meta":{
+      "code":200
+   },
+   "response":{
+      "specials":{
+         "count":30,
+         "items":[
+            {
+               "id":"4da37ddb15ad530c110a9d52",
+               "type":"count",
+               "message":"Want 20% off? Check in at RadioShack for the first time & get 20% off your qualifying purchase. Ends 6/30/11. Exclusions apply. Ask associate for details.",
+               "icon":"newbie",
+               "title":"Newbie Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4cb38bf20cdc721ea943234f",
+                  "name":"RadioShack",
+                  "contact":{
+
+                  },
+                  "location":{
+                     "address":"57-36 Myrtle Ave",
+                     "city":"Glendale",
+                     "state":"NY",
+                     "postalCode":"11385",
+                     "lat":40.700397,
+                     "lng":-73.9023299,
+                     "distance":201
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d122951735",
+                        "name":"Electronics Store",
+                        "pluralName":"Electronics Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/technology.png",
+                        "parents":[
+                           "Shops"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":21,
+                     "usersCount":16
+                  }
+               }
+            },
+            {
+               "id":"4da37c7915ad530c97039d52",
+               "type":"frequency",
+               "message":"Check in at RadioShack for 10% off qualifying purchases. Check in enough times to earn a spot as Mayor of this store and get 20% off! Ends 6/30/11. Some exclusions apply. Ask associate for details.",
+               "icon":"check-in",
+               "title":"Check-in Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4cb38bf20cdc721ea943234f",
+                  "name":"RadioShack",
+                  "contact":{
+
+                  },
+                  "location":{
+                     "address":"57-36 Myrtle Ave",
+                     "city":"Glendale",
+                     "state":"NY",
+                     "postalCode":"11385",
+                     "lat":40.700397,
+                     "lng":-73.9023299,
+                     "distance":201
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d122951735",
+                        "name":"Electronics Store",
+                        "pluralName":"Electronics Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/technology.png",
+                        "parents":[
+                           "Shops"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":21,
+                     "usersCount":16
+                  }
+               }
+            },
+            {
+               "id":"4de50baa81dcc9bc5e880716",
+               "type":"frequency",
+               "message":"Special savings! Reserve your copy of Beyonce's new album, '4,' for only $9.99 when you show us you've checked-in! Valid 6/1-6/27. Employees: UPC 400315199039.",
+               "icon":"check-in",
+               "title":"Check-in Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4c0808ee98039521b0fac196",
+                  "name":"FYE",
+                  "contact":{
+                     "phone":"7183660204",
+                     "twitter":"fyeguy"
+                  },
+                  "location":{
+                     "address":"5717 Myrtle Avenue",
+                     "city":"Ridgewood",
+                     "state":"New York",
+                     "postalCode":"11385",
+                     "country":"USA",
+                     "lat":40.7004918,
+                     "lng":-73.9029919,
+                     "distance":258
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d10d951735",
+                        "name":"Record Shop",
+                        "pluralName":"Record Shops",
+                        "icon":"https://foursquare.com/img/categories/shops/record_shop.png",
+                        "parents":[
+                           "Shops"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":113,
+                     "usersCount":51
+                  }
+               }
+            },
+            {
+               "id":"4dd68cb381dcd5bca599827b",
+               "type":"frequency",
+               "message":"Get 30% off any used CD or DVD when you check-in! Offer valid thru 7/31/11. Cannot be combined with other offers. Limit 1 transaction per customer per visit. Employees: Use code FSUS.",
+               "icon":"check-in",
+               "title":"Check-in Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4c0808ee98039521b0fac196",
+                  "name":"FYE",
+                  "contact":{
+                     "phone":"7183660204",
+                     "twitter":"fyeguy"
+                  },
+                  "location":{
+                     "address":"5717 Myrtle Avenue",
+                     "city":"Ridgewood",
+                     "state":"New York",
+                     "postalCode":"11385",
+                     "country":"USA",
+                     "lat":40.7004918,
+                     "lng":-73.9029919,
+                     "distance":258
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d10d951735",
+                        "name":"Record Shop",
+                        "pluralName":"Record Shops",
+                        "icon":"https://foursquare.com/img/categories/shops/record_shop.png",
+                        "parents":[
+                           "Shops"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":113,
+                     "usersCount":51
+                  }
+               }
+            },
+            {
+               "id":"4defe89c81303a5167117678",
+               "type":"count",
+               "message":"Welcome to Payless! Congrats on your first check in with us!  Just for Payless Insiders: Take 10% off your entire purchase now with coupon code 47167!",
+               "finePrint":"Offer valid thru 7/8/2011. One coupon per purchase. Not valid on prior purchases. Offer excludes Shopko locations. Offer valid in-store or online at Payless.com",
+               "icon":"newbie",
+               "title":"Newbie Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4c704403fa49a1cdff9aa5e3",
+                  "name":"Payless ShoeSource",
+                  "contact":{
+                     "twitter":"PaylessInsider"
+                  },
+                  "location":{
+                     "address":"57-07 Myrtle Avenue",
+                     "crossStreet":"Seneca Avenue",
+                     "city":"Ridgewood",
+                     "state":"NY",
+                     "postalCode":"11385",
+                     "lat":40.7004638,
+                     "lng":-73.9033625,
+                     "distance":288
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d107951735",
+                        "name":"Shoe Store",
+                        "pluralName":"Shoe Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/apparel_shoestore.png",
+                        "parents":[
+                           "Shops",
+                           "Clothing Stores"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":9,
+                     "usersCount":6
+                  },
+                  "url":"http://www.payless.com"
+               }
+            },
+            {
+               "id":"4defe2cb1850828dfec475ca",
+               "type":"frequency",
+               "message":"Welcome to Payless! Thanks for checking in with us today! Just for Payless Insiders: Take $5 off of any $25 purchase now with coupon code 38257!",
+               "finePrint":"Offer valid thru 7/8/2011. One coupon per purchase. Not valid on prior purchases. Offer excludes Shopko locations. Offer valid in-store or online at Payless.com",
+               "icon":"check-in",
+               "title":"Check-in Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4c704403fa49a1cdff9aa5e3",
+                  "name":"Payless ShoeSource",
+                  "contact":{
+                     "twitter":"PaylessInsider"
+                  },
+                  "location":{
+                     "address":"57-07 Myrtle Avenue",
+                     "crossStreet":"Seneca Avenue",
+                     "city":"Ridgewood",
+                     "state":"NY",
+                     "postalCode":"11385",
+                     "lat":40.7004638,
+                     "lng":-73.9033625,
+                     "distance":288
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d107951735",
+                        "name":"Shoe Store",
+                        "pluralName":"Shoe Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/apparel_shoestore.png",
+                        "parents":[
+                           "Shops",
+                           "Clothing Stores"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":9,
+                     "usersCount":6
+                  },
+                  "url":"http://www.payless.com"
+               }
+            },
+            {
+               "id":"4defa12b814d40d589e3a3df",
+               "type":"frequency",
+               "message":"You've unlocked a chance to win a trip to space. But that's not all. Follow this link to see if you've won a free movie ticket, too. Every 88th check-in who participates wins!! www.CheckIntoSpace.com",
+               "finePrint":"You must follow the link and register after each check-in to be eligible for a prize.",
+               "icon":"check-in",
+               "title":"Check-in Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4bd0baf477b29c74695a8b82",
+                  "name":"7-Eleven",
+                  "contact":{
+                     "phone":"7184561956",
+                     "twitter":"7eleven"
+                  },
+                  "location":{
+                     "address":"57-01 Myrtle Ave",
+                     "crossStreet":"Seneca",
+                     "city":"Ridgewood",
+                     "state":"NY",
+                     "postalCode":"11385",
+                     "country":"USA",
+                     "lat":40.700572,
+                     "lng":-73.903634,
+                     "distance":313
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1f9941735",
+                        "name":"Food and Drink Shop",
+                        "pluralName":"Food and Drink Shops",
+                        "icon":"https://foursquare.com/img/categories/shops/default.png",
+                        "parents":[
+                           "Shops"
+                        ],
+                        "primary":true
+                     },
+                     {
+                        "id":"4bf58dd8d48988d11f951735",
+                        "name":"Deli or Bodega",
+                        "pluralName":"Delis or Bodegas",
+                        "icon":"https://foursquare.com/img/categories/shops/food_deli.png",
+                        "parents":[
+                           "Shops",
+                           "Food and Drink Shops"
+                        ]
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":266,
+                     "usersCount":100
+                  },
+                  "url":"http://www.7-Eleven.com"
+               }
+            },
+            {
+               "id":"4ddad9421fc7e836dc7dbbf5",
+               "type":"frequency",
+               "message":"$5 off any puchase of $20 or more of Cellucor products such as C4 Extreme and NO3 Blcak Chrome",
+               "finePrint":"Valid at participating GNC retail locations on Cellucor products only. Discount taken at register. OFFER CODE: 16871",
+               "icon":"check-in",
+               "title":"Check-in Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4be9c277415e20a17139e4bb",
+                  "name":"GNC",
+                  "contact":{
+                     "phone":"7184177316",
+                     "twitter":"gnclivewell"
+                  },
+                  "location":{
+                     "address":"56-18 MYRTLE AVENUE",
+                     "city":"RIDGEWOOD",
+                     "state":"NY",
+                     "postalCode":"11385",
+                     "lat":40.699834,
+                     "lng":-73.905346,
+                     "distance":451
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1ff941735",
+                        "name":"Miscellaneous Shop",
+                        "pluralName":"Miscellaneous Shops",
+                        "icon":"https://foursquare.com/img/categories/shops/default.png",
+                        "parents":[
+                           "Shops"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":61,
+                     "usersCount":17
+                  },
+                  "url":"http://www.gnc.com"
+               }
+            },
+            {
+               "id":"4d37394f5f8fa09020eae68b",
+               "type":"count",
+               "message":"Check in here and get $25 off of your tax preparation!\r\n\r\n(Show this to your tax preparer before you begin your return and they will use coupon code JNFEK)",
+               "icon":"newbie",
+               "title":"Newbie Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4cdd59a2901e9eb0a4f5c0ef",
+                  "name":"Jackson Hewitt Tax Service",
+                  "contact":{
+                     "phone":"8775801040",
+                     "twitter":"jacksonhewitt"
+                  },
+                  "location":{
+                     "address":"54-56 Myrtle Avenue",
+                     "city":"Ridgewood",
+                     "state":"NY",
+                     "postalCode":"11385",
+                     "country":"USA",
+                     "lat":40.7001028,
+                     "lng":-73.9056922,
+                     "distance":480
+                  },
+                  "categories":[
+
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":0,
+                     "usersCount":0
+                  }
+               }
+            },
+            {
+               "id":"4defa12b814d40d589e3a3df",
+               "type":"frequency",
+               "message":"You've unlocked a chance to win a trip to space. But that's not all. Follow this link to see if you've won a free movie ticket, too. Every 88th check-in who participates wins!! www.CheckIntoSpace.com",
+               "finePrint":"You must follow the link and register after each check-in to be eligible for a prize.",
+               "icon":"check-in",
+               "title":"Check-in Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4b4ec3acf964a52029f526e3",
+                  "name":"7-Eleven",
+                  "contact":{
+                     "phone":"7184171672",
+                     "twitter":"7eleven"
+                  },
+                  "location":{
+                     "address":"67-21 Fresh Pond Rd",
+                     "city":"Ridgewood",
+                     "state":"NY",
+                     "postalCode":"11385",
+                     "lat":40.70566047104496,
+                     "lng":-73.89644622802734,
+                     "distance":697
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1f9941735",
+                        "name":"Food and Drink Shop",
+                        "pluralName":"Food and Drink Shops",
+                        "icon":"https://foursquare.com/img/categories/shops/default.png",
+                        "parents":[
+                           "Shops"
+                        ],
+                        "primary":true
+                     },
+                     {
+                        "id":"4bf58dd8d48988d146941735",
+                        "name":"Deli or Bodega",
+                        "pluralName":"Delis or Bodegas",
+                        "icon":"https://foursquare.com/img/categories/food/deli.png",
+                        "parents":[
+                           "Food"
+                        ]
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":381,
+                     "usersCount":102
+                  },
+                  "url":"http://www.7-Eleven.com"
+               }
+            },
+            {
+               "id":"4ddad9421fc7e836dc7dbbf5",
+               "type":"frequency",
+               "message":"$5 off any puchase of $20 or more of Cellucor products such as C4 Extreme and NO3 Blcak Chrome",
+               "finePrint":"Valid at participating GNC retail locations on Cellucor products only. Discount taken at register. OFFER CODE: 16871",
+               "icon":"check-in",
+               "title":"Check-in Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4c1f64d68b3aa5933f5d9d5f",
+                  "name":"GNC",
+                  "contact":{
+                     "phone":"7188212158",
+                     "twitter":"gnclivewell"
+                  },
+                  "location":{
+                     "address":"66-69 FRESH POND RD",
+                     "crossStreet":"Madison Street & Putnam Avenue",
+                     "city":"Ridgewood",
+                     "state":"NY",
+                     "postalCode":"11385",
+                     "lat":40.706306,
+                     "lng":-73.896876,
+                     "distance":749
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1ff941735",
+                        "name":"Miscellaneous Shop",
+                        "pluralName":"Miscellaneous Shops",
+                        "icon":"https://foursquare.com/img/categories/shops/default.png",
+                        "parents":[
+                           "Shops"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":3,
+                     "usersCount":3
+                  },
+                  "url":"http://www.gnc.com"
+               }
+            },
+            {
+               "id":"4defe89c81303a5167117678",
+               "type":"count",
+               "message":"Welcome to Payless! Congrats on your first check in with us!  Just for Payless Insiders: Take 10% off your entire purchase now with coupon code 47167!",
+               "finePrint":"Offer valid thru 7/8/2011. One coupon per purchase. Not valid on prior purchases. Offer excludes Shopko locations. Offer valid in-store or online at Payless.com",
+               "icon":"newbie",
+               "title":"Newbie Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4bb4e10586a8d13a4a08df7f",
+                  "name":"Payless ShoeSource",
+                  "contact":{
+                     "phone":"7183867752",
+                     "twitter":"PaylessInsider"
+                  },
+                  "location":{
+                     "address":"6679 Fresh Pond Rd",
+                     "city":"Flushing",
+                     "state":"NY",
+                     "postalCode":"11385",
+                     "country":"USA",
+                     "lat":40.7063244,
+                     "lng":-73.8968281,
+                     "distance":753
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d107951735",
+                        "name":"Shoe Store",
+                        "pluralName":"Shoe Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/apparel_shoestore.png",
+                        "parents":[
+                           "Shops",
+                           "Clothing Stores"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":22,
+                     "usersCount":15
+                  },
+                  "url":"http://www.payless.com"
+               }
+            },
+            {
+               "id":"4defe2cb1850828dfec475ca",
+               "type":"frequency",
+               "message":"Welcome to Payless! Thanks for checking in with us today! Just for Payless Insiders: Take $5 off of any $25 purchase now with coupon code 38257!",
+               "finePrint":"Offer valid thru 7/8/2011. One coupon per purchase. Not valid on prior purchases. Offer excludes Shopko locations. Offer valid in-store or online at Payless.com",
+               "icon":"check-in",
+               "title":"Check-in Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4bb4e10586a8d13a4a08df7f",
+                  "name":"Payless ShoeSource",
+                  "contact":{
+                     "phone":"7183867752",
+                     "twitter":"PaylessInsider"
+                  },
+                  "location":{
+                     "address":"6679 Fresh Pond Rd",
+                     "city":"Flushing",
+                     "state":"NY",
+                     "postalCode":"11385",
+                     "country":"USA",
+                     "lat":40.7063244,
+                     "lng":-73.8968281,
+                     "distance":753
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d107951735",
+                        "name":"Shoe Store",
+                        "pluralName":"Shoe Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/apparel_shoestore.png",
+                        "parents":[
+                           "Shops",
+                           "Clothing Stores"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":false,
+                  "stats":{
+                     "checkinsCount":22,
+                     "usersCount":15
+                  },
+                  "url":"http://www.payless.com"
+               }
+            },
+            {
+               "id":"4e022478091a5da4052b0282",
+               "type":"count",
+               "message":"Check in for a great deal on a new membership: $5/week, no contract, and free registration! Say you saw it on foursquare and get a free t-shirt!",
+               "finePrint":"Not for existing Lucille Roberts members.",
+               "icon":"newbie",
+               "title":"Newbie Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4bad22c2f964a52057313be3",
+                  "name":"Lucille Roberts - Myrtle Ave.",
+                  "contact":{
+
+                  },
+                  "location":{
+                     "address":"5432 Myrtle Ave.",
+                     "city":"Ridgewood",
+                     "state":"NY",
+                     "postalCode":"11385",
+                     "lat":40.6996939,
+                     "lng":-73.9092461,
+                     "distance":781
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d176941735",
+                        "name":"Gym",
+                        "pluralName":"Gyms",
+                        "icon":"https://foursquare.com/img/categories/building/gym.png",
+                        "parents":[
+                           "Homes, Work, Others",
+                           "Gyms or Fitness Centers"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":77,
+                     "usersCount":27
+                  },
+                  "url":"http://www.lucilleroberts.com/womens-gym-Myrtle-Avenue"
+               }
+            },
+            {
+               "id":"4df920c4cc3f143a073ee3f3",
+               "type":"frequency",
+               "message":"Check in and get a personal training session for $19.99 (save $10)!",
+               "finePrint":"Members only.",
+               "icon":"check-in",
+               "title":"Check-in Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4bad22c2f964a52057313be3",
+                  "name":"Lucille Roberts - Myrtle Ave.",
+                  "contact":{
+
+                  },
+                  "location":{
+                     "address":"5432 Myrtle Ave.",
+                     "city":"Ridgewood",
+                     "state":"NY",
+                     "postalCode":"11385",
+                     "lat":40.6996939,
+                     "lng":-73.9092461,
+                     "distance":781
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d176941735",
+                        "name":"Gym",
+                        "pluralName":"Gyms",
+                        "icon":"https://foursquare.com/img/categories/building/gym.png",
+                        "parents":[
+                           "Homes, Work, Others",
+                           "Gyms or Fitness Centers"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":77,
+                     "usersCount":27
+                  },
+                  "url":"http://www.lucilleroberts.com/womens-gym-Myrtle-Avenue"
+               }
+            },
+            {
+               "id":"4ceffec0708060fc04ccf368",
+               "type":"regular",
+               "message":"Special is unlocked... when you check in to our office and are receiving a regular check up.  You will receive a  FREE GOODIE BAG!!! Bag includes a complimentary CREST toothbrush and tooth paste!",
+               "icon":"frequency",
+               "title":"Loyalty Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4c5cc21ebfa59521387f78ff",
+                  "name":"Babak Behmanesh DDS PC",
+                  "contact":{
+                     "phone":"7184185555"
+                  },
+                  "location":{
+                     "address":"63-54 Fresh Pond Rd",
+                     "crossStreet":"GROVE ST",
+                     "city":"Ridgewood",
+                     "state":"NY",
+                     "postalCode":"11385",
+                     "lat":40.71005225842896,
+                     "lng":-73.89975070953369,
+                     "distance":1119
+                  },
+                  "categories":[
+
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":9,
+                     "usersCount":8
+                  }
+               }
+            },
+            {
+               "id":"4d94bf950f604eb960975839",
+               "type":"frequency",
+               "message":"Check in to receive 10% off your entire purchase!*",
+               "finePrint":"*Cannot be combined with any other offer. Excludes advertised sale items, gift cards, prior purchases, special orders and Tempur-Pedic® products. Extended financing is not available with this offer.",
+               "icon":"check-in",
+               "title":"Check-in Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4cc48ee842d1b60c77691e13",
+                  "name":"Raymour & Flanigan Furniture | Metropolitan Avenue",
+                  "contact":{
+                     "phone":"7189074687",
+                     "twitter":"raymourflanigan"
+                  },
+                  "location":{
+                     "address":"66-26 Metropolitan Ave #730",
+                     "city":"Middle Village",
+                     "state":"New York",
+                     "postalCode":"11379",
+                     "lat":40.710036,
+                     "lng":-73.8916612,
+                     "distance":1320
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1f8941735",
+                        "name":"Furniture or Home Store",
+                        "pluralName":"Furniture or Home Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/furniture.png",
+                        "parents":[
+                           "Shops"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":10,
+                     "usersCount":8
+                  },
+                  "url":"http://www.raymourflanigan.com"
+               }
+            },
+            {
+               "id":"4dff57b2cc3fd071d2a1117a",
+               "type":"frequency",
+               "message":"Buy 2 Get\nthe 3rd FREE ALL\nYou & Me, Just Like Home,\nDream Dazzlers & tm!*",
+               "finePrint":"No coupon needed.\n*Free/Discounted item must be of equal or lesser value to the lowest priced item purchased. Offers cannot be combined.",
+               "icon":"check-in",
+               "title":"Check-in Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4bcca99a68f976b0bf086383",
+                  "name":"Toys\"Я\"Us",
+                  "contact":{
+                     "phone":"7183262038",
+                     "twitter":"ToysRUs"
+                  },
+                  "location":{
+                     "address":"66-26 Metropolitan Ave.",
+                     "city":"Queens",
+                     "state":"NY",
+                     "postalCode":"11379",
+                     "country":"USA",
+                     "lat":40.71125014,
+                     "lng":-73.89326512813568,
+                     "distance":1375
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1f3941735",
+                        "name":"Toy or Game Store",
+                        "pluralName":"Toy or Game Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/toys.png",
+                        "parents":[
+                           "Shops"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":362,
+                     "usersCount":222
+                  }
+               }
+            },
+            {
+               "id":"4defa12b814d40d589e3a3df",
+               "type":"frequency",
+               "message":"You've unlocked a chance to win a trip to space. But that's not all. Follow this link to see if you've won a free movie ticket, too. Every 88th check-in who participates wins!! www.CheckIntoSpace.com",
+               "finePrint":"You must follow the link and register after each check-in to be eligible for a prize.",
+               "icon":"check-in",
+               "title":"Check-in Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4bf75ae08d30d13afbfbfe17",
+                  "name":"7-Eleven",
+                  "contact":{
+                     "phone":"7184971836",
+                     "twitter":"7eleven"
+                  },
+                  "location":{
+                     "address":"69-20 Myrtle Ave",
+                     "crossStreet":"69th Pl & Cooper Ave",
+                     "city":"Glendale",
+                     "state":"NY",
+                     "postalCode":"11385",
+                     "lat":40.7017566,
+                     "lng":-73.8820425,
+                     "distance":1528
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1f9941735",
+                        "name":"Food and Drink Shop",
+                        "pluralName":"Food and Drink Shops",
+                        "icon":"https://foursquare.com/img/categories/shops/default.png",
+                        "parents":[
+                           "Shops"
+                        ],
+                        "primary":true
+                     },
+                     {
+                        "id":"4bf58dd8d48988d146941735",
+                        "name":"Deli or Bodega",
+                        "pluralName":"Delis or Bodegas",
+                        "icon":"https://foursquare.com/img/categories/food/deli.png",
+                        "parents":[
+                           "Food"
+                        ]
+                     },
+                     {
+                        "id":"4bf58dd8d48988d1ff941735",
+                        "name":"Miscellaneous Shop",
+                        "pluralName":"Miscellaneous Shops",
+                        "icon":"https://foursquare.com/img/categories/shops/default.png",
+                        "parents":[
+                           "Shops"
+                        ]
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":161,
+                     "usersCount":88
+                  },
+                  "url":"http://www.7-Eleven.com"
+               }
+            },
+            {
+               "id":"4d37394f5f8fa09020eae68b",
+               "type":"count",
+               "message":"Check in here and get $25 off of your tax preparation!\r\n\r\n(Show this to your tax preparer before you begin your return and they will use coupon code JNFEK)",
+               "icon":"newbie",
+               "title":"Newbie Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4cdd5b3a901e9eb06311c1ef",
+                  "name":"Jackson Hewitt Tax Service",
+                  "contact":{
+                     "phone":"8775801040",
+                     "twitter":"jacksonhewitt"
+                  },
+                  "location":{
+                     "address":"439 Knickerbocker Ave",
+                     "city":"Brooklyn",
+                     "state":"NY",
+                     "postalCode":"11237",
+                     "country":"USA",
+                     "lat":40.699367,
+                     "lng":-73.918856,
+                     "distance":1592
+                  },
+                  "categories":[
+
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":0,
+                     "usersCount":0
+                  }
+               }
+            },
+            {
+               "id":"4dfe836b1520af6936715cf5",
+               "type":"frequency",
+               "message":"The 2011 Pop-Up Piano Scavenger Hunt: The first 10 people to check in to all 88 Pop-Up Piano locations in NYC win a special prize from Sing for Hope!",
+               "finePrint":"You must physically be at a Pop-Up Piano for your check in to qualify.  Email us at info@singforhope.org if you have checked in to all 88 Pop-Up Piano locations!",
+               "icon":"check-in",
+               "title":"Check-in Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4dd28b68814d415b7694bb9e",
+                  "name":"Sing for Hope Pop-Up Piano - Bushwick",
+                  "contact":{
+                     "phone":"2129665955",
+                     "twitter":"singforhope"
+                  },
+                  "location":{
+                     "address":"Bleecker St",
+                     "crossStreet":"Wilson Ave",
+                     "city":"Brooklyn",
+                     "state":"NY",
+                     "postalCode":"11237",
+                     "lat":40.69700617575611,
+                     "lng":-73.91906261444092,
+                     "distance":1642
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d1e5931735",
+                        "name":"Music Venue",
+                        "pluralName":"Music Venues",
+                        "icon":"https://foursquare.com/img/categories/arts_entertainment/musicvenue.png",
+                        "parents":[
+                           "Arts & Entertainment"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":0,
+                     "usersCount":0
+                  }
+               }
+            },
+            {
+               "id":"4defe89c81303a5167117678",
+               "type":"count",
+               "message":"Welcome to Payless! Congrats on your first check in with us!  Just for Payless Insiders: Take 10% off your entire purchase now with coupon code 47167!",
+               "finePrint":"Offer valid thru 7/8/2011. One coupon per purchase. Not valid on prior purchases. Offer excludes Shopko locations. Offer valid in-store or online at Payless.com",
+               "icon":"newbie",
+               "title":"Newbie Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4c7e76300b2a9eb03574651f",
+                  "name":"Payless ShoeSource",
+                  "contact":{
+                     "phone":"7189192034",
+                     "twitter":"PaylessInsider"
+                  },
+                  "location":{
+                     "address":"379 Knickerbocker Ave",
+                     "city":"Brooklyn",
+                     "state":"NY",
+                     "postalCode":"11237-3701",
+                     "lat":40.700256,
+                     "lng":-73.920763,
+                     "distance":1752
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d107951735",
+                        "name":"Shoe Store",
+                        "pluralName":"Shoe Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/apparel_shoestore.png",
+                        "parents":[
+                           "Shops",
+                           "Clothing Stores"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":9,
+                     "usersCount":8
+                  },
+                  "url":"http://www.payless.com"
+               }
+            },
+            {
+               "id":"4defe2cb1850828dfec475ca",
+               "type":"frequency",
+               "message":"Welcome to Payless! Thanks for checking in with us today! Just for Payless Insiders: Take $5 off of any $25 purchase now with coupon code 38257!",
+               "finePrint":"Offer valid thru 7/8/2011. One coupon per purchase. Not valid on prior purchases. Offer excludes Shopko locations. Offer valid in-store or online at Payless.com",
+               "icon":"check-in",
+               "title":"Check-in Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4c7e76300b2a9eb03574651f",
+                  "name":"Payless ShoeSource",
+                  "contact":{
+                     "phone":"7189192034",
+                     "twitter":"PaylessInsider"
+                  },
+                  "location":{
+                     "address":"379 Knickerbocker Ave",
+                     "city":"Brooklyn",
+                     "state":"NY",
+                     "postalCode":"11237-3701",
+                     "lat":40.700256,
+                     "lng":-73.920763,
+                     "distance":1752
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d107951735",
+                        "name":"Shoe Store",
+                        "pluralName":"Shoe Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/apparel_shoestore.png",
+                        "parents":[
+                           "Shops",
+                           "Clothing Stores"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":9,
+                     "usersCount":8
+                  },
+                  "url":"http://www.payless.com"
+               }
+            },
+            {
+               "id":"4da37ddb15ad530c110a9d52",
+               "type":"count",
+               "message":"Want 20% off? Check in at RadioShack for the first time & get 20% off your qualifying purchase. Ends 6/30/11. Exclusions apply. Ask associate for details.",
+               "icon":"newbie",
+               "title":"Newbie Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4c6045e6c6a103bbd2ff675b",
+                  "name":"RadioShack",
+                  "contact":{
+
+                  },
+                  "location":{
+                     "address":"366 KNICKERBOCKER AVE",
+                     "city":"BROOKLYN",
+                     "state":"NY",
+                     "postalCode":"11237",
+                     "lat":40.700452,
+                     "lng":-73.921492,
+                     "distance":1814
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d122951735",
+                        "name":"Electronics Store",
+                        "pluralName":"Electronics Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/technology.png",
+                        "parents":[
+                           "Shops"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":13,
+                     "usersCount":10
+                  }
+               }
+            },
+            {
+               "id":"4da37c7915ad530c97039d52",
+               "type":"frequency",
+               "message":"Check in at RadioShack for 10% off qualifying purchases. Check in enough times to earn a spot as Mayor of this store and get 20% off! Ends 6/30/11. Some exclusions apply. Ask associate for details.",
+               "icon":"check-in",
+               "title":"Check-in Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4c6045e6c6a103bbd2ff675b",
+                  "name":"RadioShack",
+                  "contact":{
+
+                  },
+                  "location":{
+                     "address":"366 KNICKERBOCKER AVE",
+                     "city":"BROOKLYN",
+                     "state":"NY",
+                     "postalCode":"11237",
+                     "lat":40.700452,
+                     "lng":-73.921492,
+                     "distance":1814
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d122951735",
+                        "name":"Electronics Store",
+                        "pluralName":"Electronics Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/technology.png",
+                        "parents":[
+                           "Shops"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":13,
+                     "usersCount":10
+                  }
+               }
+            },
+            {
+               "id":"4da37ddb15ad530c110a9d52",
+               "type":"count",
+               "message":"Want 20% off? Check in at RadioShack for the first time & get 20% off your qualifying purchase. Ends 6/30/11. Exclusions apply. Ask associate for details.",
+               "icon":"newbie",
+               "title":"Newbie Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4bfeec1de584c92862726d25",
+                  "name":"RadioShack",
+                  "contact":{
+                     "phone":"7183263927"
+                  },
+                  "location":{
+                     "address":"6918 Metropolitan Ave",
+                     "crossStreet":"at Metropolitan Ave Shopping Center",
+                     "city":"Middle Village",
+                     "state":"NY",
+                     "postalCode":"11379",
+                     "lat":40.71214945,
+                     "lng":-73.885554,
+                     "distance":1820
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d122951735",
+                        "name":"Electronics Store",
+                        "pluralName":"Electronics Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/technology.png",
+                        "parents":[
+                           "Shops"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":36,
+                     "usersCount":29
+                  }
+               }
+            },
+            {
+               "id":"4da37c7915ad530c97039d52",
+               "type":"frequency",
+               "message":"Check in at RadioShack for 10% off qualifying purchases. Check in enough times to earn a spot as Mayor of this store and get 20% off! Ends 6/30/11. Some exclusions apply. Ask associate for details.",
+               "icon":"check-in",
+               "title":"Check-in Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4bfeec1de584c92862726d25",
+                  "name":"RadioShack",
+                  "contact":{
+                     "phone":"7183263927"
+                  },
+                  "location":{
+                     "address":"6918 Metropolitan Ave",
+                     "crossStreet":"at Metropolitan Ave Shopping Center",
+                     "city":"Middle Village",
+                     "state":"NY",
+                     "postalCode":"11379",
+                     "lat":40.71214945,
+                     "lng":-73.885554,
+                     "distance":1820
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d122951735",
+                        "name":"Electronics Store",
+                        "pluralName":"Electronics Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/technology.png",
+                        "parents":[
+                           "Shops"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":36,
+                     "usersCount":29
+                  }
+               }
+            },
+            {
+               "id":"4d933372f7e8dcb36bb0cb12",
+               "type":"frequency",
+               "message":"Free small Classic Milkshake for every 3rd check-in. As always, free small Classic Milkshake for Mayors too.",
+               "finePrint":"Not available on Premium Milkshakes. Limit one per customer per visit.",
+               "icon":"frequency",
+               "title":"Loyalty Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4b3fa4b9f964a52018ab25e3",
+                  "name":"Checkers",
+                  "contact":{
+                     "phone":"7184436160"
+                  },
+                  "location":{
+                     "address":"1611 Broadway",
+                     "crossStreet":"at Eldert St",
+                     "city":"Brooklyn",
+                     "state":"NY",
+                     "postalCode":"11207",
+                     "country":"USA",
+                     "lat":40.685437,
+                     "lng":-73.914509,
+                     "distance":2031
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d16c941735",
+                        "name":"Burger Joint",
+                        "pluralName":"Burger Joints",
+                        "icon":"https://foursquare.com/img/categories/food/burger.png",
+                        "parents":[
+                           "Food"
+                        ],
+                        "primary":true
+                     },
+                     {
+                        "id":"4bf58dd8d48988d16e941735",
+                        "name":"Fast Food Restaurant",
+                        "pluralName":"Fast Food Restaurants",
+                        "icon":"https://foursquare.com/img/categories/food/fastfood.png",
+                        "parents":[
+                           "Food"
+                        ]
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":229,
+                     "usersCount":99
+                  }
+               }
+            },
+            {
+               "id":"4d37394f5f8fa09020eae68b",
+               "type":"count",
+               "message":"Check in here and get $25 off of your tax preparation!\r\n\r\n(Show this to your tax preparer before you begin your return and they will use coupon code JNFEK)",
+               "icon":"newbie",
+               "title":"Newbie Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4cdd662b901e9eb072d0c1ef",
+                  "name":"Jackson Hewitt Tax Service",
+                  "contact":{
+                     "phone":"7189190510",
+                     "twitter":"jacksonhewitt"
+                  },
+                  "location":{
+                     "address":"1362 Broadway Avenue",
+                     "city":"Brooklyn",
+                     "state":"NY",
+                     "postalCode":"11221",
+                     "country":"USA",
+                     "lat":40.689638,
+                     "lng":-73.922294,
+                     "distance":2207
+                  },
+                  "categories":[
+
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":0,
+                     "usersCount":0
+                  }
+               }
+            },
+            {
+               "id":"4defe89c81303a5167117678",
+               "type":"count",
+               "message":"Welcome to Payless! Congrats on your first check in with us!  Just for Payless Insiders: Take 10% off your entire purchase now with coupon code 47167!",
+               "finePrint":"Offer valid thru 7/8/2011. One coupon per purchase. Not valid on prior purchases. Offer excludes Shopko locations. Offer valid in-store or online at Payless.com",
+               "icon":"newbie",
+               "title":"Newbie Special",
+               "provider":"foursquare",
+               "redemption":"standard",
+               "venue":{
+                  "id":"4c7e762a0b2a9eb02a74651f",
+                  "name":"Payless ShoeSource",
+                  "contact":{
+                     "phone":"7185742796",
+                     "twitter":"PaylessInsider"
+                  },
+                  "location":{
+                     "address":"1285-A Broadway",
+                     "city":"Brooklyn",
+                     "state":"NY",
+                     "postalCode":"11221-2908",
+                     "lat":40.69102,
+                     "lng":-73.92446,
+                     "distance":2293
+                  },
+                  "categories":[
+                     {
+                        "id":"4bf58dd8d48988d107951735",
+                        "name":"Shoe Store",
+                        "pluralName":"Shoe Stores",
+                        "icon":"https://foursquare.com/img/categories/shops/apparel_shoestore.png",
+                        "parents":[
+                           "Shops",
+                           "Clothing Stores"
+                        ],
+                        "primary":true
+                     }
+                  ],
+                  "verified":true,
+                  "stats":{
+                     "checkinsCount":1,
+                     "usersCount":1
+                  },
+                  "url":"http://www.payless.com"
+               }
+            }
+         ]
+      }
+   }
+}

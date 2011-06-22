@@ -56,7 +56,7 @@ public class FoursquareTemplate extends AbstractOAuth2ApiBinding implements Four
 		this.tipOperations = new TipTemplate(this, isAuthorized);
 		this.photoOperations = new PhotoTemplate(this, isAuthorized);
 		this.settingOperations = new SettingTemplate(this, isAuthorized);
-		this.specialOperations = new SpecialTemplate();
+		this.specialOperations = new SpecialTemplate(this, isAuthorized);
 	}
 	
 	private void registerFoursquareJsonModule(RestTemplate restTemplate) {

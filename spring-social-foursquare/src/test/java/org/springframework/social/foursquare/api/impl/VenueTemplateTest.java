@@ -25,6 +25,7 @@ import org.springframework.social.foursquare.api.Photos;
 import org.springframework.social.foursquare.api.VenueSearchParams;
 
 public class VenueTemplateTest extends AbstractFoursquareApiTest {
+	
 	@Test
 	public void getVenue() {
 		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/?access_token=ACCESS_TOKEN&v=20110608"))

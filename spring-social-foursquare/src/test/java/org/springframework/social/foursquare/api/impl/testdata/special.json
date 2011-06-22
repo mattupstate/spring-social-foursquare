@@ -1,0 +1,19 @@
+{
+   "meta":{
+      "code":200
+   },
+   "response":{
+      "special":{
+         "id":"4cfc5c5ffabc2d437522ddd2",
+         "type":"frequency",
+         "message":"Free small cappuccino",
+         "description":"every 3 check-ins",
+         "unlocked":false,
+         "icon":"frequency",
+         "title":"Loyalty Special",
+         "state":"locked",
+         "provider":"foursquare",
+         "redemption":"standard"
+      }
+   }
+}

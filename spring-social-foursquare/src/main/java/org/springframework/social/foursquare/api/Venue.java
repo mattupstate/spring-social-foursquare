@@ -16,8 +16,8 @@ public class Venue {
 	private HereNow hereNow;
 	private VenueTips tips;
 	private List<String> tags;
-	private List<VenueSpecial> specials;
-	private List<VenueSpecial> specialsNearby;
+	private List<Special> specials;
+	private List<Special> specialsNearby;
 	private String shortUrl;
 	private String timezone;
 	private Map<String,Integer> beenHere;
@@ -107,11 +107,11 @@ public class Venue {
 		return tags;
 	}
 
-	public List<VenueSpecial> getSpecials() {
+	public List<Special> getSpecials() {
 		return specials;
 	}
 
-	public List<VenueSpecial> getSpecialsNearby() {
+	public List<Special> getSpecialsNearby() {
 		return specialsNearby;
 	}
 

@@ -37,6 +37,8 @@ import org.springframework.social.foursquare.api.Provider;
 import org.springframework.social.foursquare.api.Reason;
 import org.springframework.social.foursquare.api.Reasons;
 import org.springframework.social.foursquare.api.Scores;
+import org.springframework.social.foursquare.api.Special;
+import org.springframework.social.foursquare.api.Specials;
 import org.springframework.social.foursquare.api.Tip;
 import org.springframework.social.foursquare.api.TipGroup;
 import org.springframework.social.foursquare.api.TipTodoGroup;
@@ -53,7 +55,6 @@ import org.springframework.social.foursquare.api.VenueHistoryItem;
 import org.springframework.social.foursquare.api.VenueLink;
 import org.springframework.social.foursquare.api.VenueLinks;
 import org.springframework.social.foursquare.api.VenueMayor;
-import org.springframework.social.foursquare.api.VenueSpecial;
 import org.springframework.social.foursquare.api.VenueStats;
 import org.springframework.social.foursquare.api.VenueTips;
 
@@ -90,6 +91,7 @@ public class FoursquareModule extends SimpleModule {
 		context.setMixInAnnotations(Location.class, LocationMixin.class);
 		context.setMixInAnnotations(MayorshipInfo.class, MayorshipInfoMixin.class);
 		context.setMixInAnnotations(Photo.class, PhotoMixin.class);
+		context.setMixInAnnotations(Photos.class, VenuePhotosMixin.class);
 		context.setMixInAnnotations(PhotoGroups.class, PhotosMixin.class);
 		context.setMixInAnnotations(PhotoGroup.class, PhotoGroupMixin.class);
 		context.setMixInAnnotations(PhotoSize.class, PhotoSizeMixin.class);
@@ -99,6 +101,8 @@ public class FoursquareModule extends SimpleModule {
 		context.setMixInAnnotations(Reason.class, ReasonMixin.class);
 		context.setMixInAnnotations(Reasons.class, ReasonsMixin.class);
 		context.setMixInAnnotations(Scores.class, ScoresMixin.class);
+		context.setMixInAnnotations(Special.class, SpecialMixin.class);
+		context.setMixInAnnotations(Specials.class, SpecialsMixin.class);
 		context.setMixInAnnotations(Tip.class, TipMixin.class);
 		context.setMixInAnnotations(TipGroup.class, TipGroupMixin.class);
 		context.setMixInAnnotations(TipTodoGroup.class, TipTodoGroupMixin.class);
@@ -115,8 +119,6 @@ public class FoursquareModule extends SimpleModule {
 		context.setMixInAnnotations(VenueLink.class, VenueLinkMixin.class);
 		context.setMixInAnnotations(VenueLinks.class, VenueLinksMixin.class);
 		context.setMixInAnnotations(VenueMayor.class, VenueMayorMixin.class);
-		context.setMixInAnnotations(Photos.class, VenuePhotosMixin.class);
-		context.setMixInAnnotations(VenueSpecial.class, VenueSpecialMixin.class);
 		context.setMixInAnnotations(VenueStats.class, VenueStatsMixin.class);
 		context.setMixInAnnotations(VenueTips.class, VenueTipsMixin.class);
 	}
