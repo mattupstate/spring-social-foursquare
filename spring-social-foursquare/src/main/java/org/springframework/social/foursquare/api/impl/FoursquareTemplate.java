@@ -103,7 +103,7 @@ public class FoursquareTemplate extends AbstractOAuth2ApiBinding implements Four
 	public URIBuilder withAccessToken(String uri) {
 		return (accessToken == null) 
 			? URIBuilder.fromUri(uri).queryParam("client_id", clientId).queryParam("client_secret", clientSecret)
-			: URIBuilder.fromUri(uri).queryParam("access_token", accessToken);
+			: URIBuilder.fromUri(uri).queryParam("oauth_token", accessToken);
 	}
 	
 }

@@ -15,22 +15,22 @@ public class PhotoTemplate extends AbstractFoursquareOperations implements Photo
 	
 	public Photo get(String photoId) {
 		requireUserAuthorization();
-		return get(buildUri(PHOTOS_ENDPOINT + photoId + "/"), PhotoContainer.class).getPhoto();
+		return get(buildUri(PHOTOS_ENDPOINT + photoId), PhotoContainer.class).getPhoto();
 	}
 
 	public Photo addToCheckin(String checkinId, Resource photo, String broadcast, Double latitude, Double longitude, Long locationAccuracy, Double altitude, Long altitudeAccuracy) {
 		requireUserAuthorization();
-		return post(buildUri(PHOTOS_ENDPOINT + "add/"), createPhotoParams("checkinId", checkinId, photo, broadcast, latitude, longitude, locationAccuracy, altitude, altitudeAccuracy), PhotoContainer.class).getPhoto();
+		return post(buildUri(PHOTOS_ENDPOINT + "add"), createPhotoParams("checkinId", checkinId, photo, broadcast, latitude, longitude, locationAccuracy, altitude, altitudeAccuracy), PhotoContainer.class).getPhoto();
 	}
 
 	public Photo addToTip(String tipId, Resource photo, String broadcast, Double latitude, Double longitude, Long locationAccuracy, Double altitude, Long altitudeAccuracy) {
 		requireUserAuthorization();
-		return post(buildUri(PHOTOS_ENDPOINT + "add/"), createPhotoParams("checkinId", tipId, photo, broadcast, latitude, longitude, locationAccuracy, altitude, altitudeAccuracy), PhotoContainer.class).getPhoto();
+		return post(buildUri(PHOTOS_ENDPOINT + "add"), createPhotoParams("checkinId", tipId, photo, broadcast, latitude, longitude, locationAccuracy, altitude, altitudeAccuracy), PhotoContainer.class).getPhoto();
 	}
 
 	public Photo addToVenue(String venueId, Resource photo, String broadcast, Double latitude, Double longitude, Long locationAccuracy, Double altitude, Long altitudeAccuracy) {
 		requireUserAuthorization();
-		return post(buildUri(PHOTOS_ENDPOINT + "add/"), createPhotoParams("checkinId", venueId, photo, broadcast, latitude, longitude, locationAccuracy, altitude, altitudeAccuracy), PhotoContainer.class).getPhoto();
+		return post(buildUri(PHOTOS_ENDPOINT + "add"), createPhotoParams("checkinId", venueId, photo, broadcast, latitude, longitude, locationAccuracy, altitude, altitudeAccuracy), PhotoContainer.class).getPhoto();
 	}
 
 	private MultiValueMap<String,Object> createPhotoParams(String entityParameter, String entityValue, Resource photo, String broadcast, Double latitude, Double longitude, Long locationAccuracy, Double altitude, Long altitudeAccuracy) {

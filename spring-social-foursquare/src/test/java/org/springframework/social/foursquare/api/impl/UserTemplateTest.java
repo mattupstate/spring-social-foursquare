@@ -28,7 +28,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
 	
     @Test
 	public void getUser() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/?access_token=ACCESS_TOKEN&v=20110608"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self?oauth_token=ACCESS_TOKEN&v=20110609"))
 			.andExpect(method(GET))
 			.andRespond(withResponse(new ClassPathResource("testdata/user-profile.json", getClass()), responseHeaders));
 		
@@ -39,7 +39,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
     
     @Test
     public void getLeaderboard() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/leaderboard/?access_token=ACCESS_TOKEN&v=20110608"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/leaderboard?oauth_token=ACCESS_TOKEN&v=20110609"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/leaderboard.json", getClass()), responseHeaders));
         
@@ -50,7 +50,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
     
     @Test
     public void searchWithParameters() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/search/?access_token=ACCESS_TOKEN&v=20110608&twitter=matt&phone=123&email=john%40doe.com&fbid=321"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/search?oauth_token=ACCESS_TOKEN&v=20110609&twitter=matt&phone=123&email=john%40doe.com&fbid=321"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/user-search.json", getClass()), responseHeaders));
         
@@ -63,7 +63,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
     
     @Test
     public void searchName() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/search/?access_token=ACCESS_TOKEN&v=20110608&name=matt"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/search?oauth_token=ACCESS_TOKEN&v=20110609&name=matt"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/user-search.json", getClass()), responseHeaders));
         
@@ -74,7 +74,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
     
     @Test
     public void searchTwitterFriends() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/search/?access_token=ACCESS_TOKEN&v=20110608&twitterSource=matt"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/search?oauth_token=ACCESS_TOKEN&v=20110609&twitterSource=matt"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/user-search.json", getClass()), responseHeaders));
         
@@ -85,7 +85,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
     
     @Test
     public void getRequests() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/requests/?access_token=ACCESS_TOKEN&v=20110608"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/requests?oauth_token=ACCESS_TOKEN&v=20110609"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/requests.json", getClass()), responseHeaders));
         
@@ -96,7 +96,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
     
     @Test
     public void getBadges() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/badges/?access_token=ACCESS_TOKEN&v=20110608"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/badges?oauth_token=ACCESS_TOKEN&v=20110609"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/badges.json", getClass()), responseHeaders));
         
@@ -107,7 +107,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
     
     @Test
     public void getCheckins() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/checkins/?access_token=ACCESS_TOKEN&v=20110608"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/checkins?oauth_token=ACCESS_TOKEN&v=20110609"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/checkins.json", getClass()), responseHeaders));
         
@@ -119,7 +119,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
     
     @Test
     public void getFriends() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/friends/?access_token=ACCESS_TOKEN&v=20110608"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/friends?oauth_token=ACCESS_TOKEN&v=20110609"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/friends.json", getClass()), responseHeaders));
         
@@ -131,7 +131,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
     
     @Test
     public void getTips() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/tips/?access_token=ACCESS_TOKEN&v=20110608&sort=recent"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/tips?oauth_token=ACCESS_TOKEN&v=20110609&sort=recent"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/tips.json", getClass()), responseHeaders));
         
@@ -143,7 +143,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
 
     @Test
     public void getTodos() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/todos/?access_token=ACCESS_TOKEN&v=20110608&sort=recent"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/todos?oauth_token=ACCESS_TOKEN&v=20110609&sort=recent"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/todos.json", getClass()), responseHeaders));
         
@@ -156,7 +156,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
     
     @Test
     public void getVenueHistory() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/venuehistory/?access_token=ACCESS_TOKEN&v=20110608"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/venuehistory?oauth_token=ACCESS_TOKEN&v=20110609"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/venue-history.json", getClass()), responseHeaders));
         
@@ -169,7 +169,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
     
     @Test
     public void requestFriend() {
-    	mockServer.expect(requestTo("https://api.foursquare.com/v2/users/USER_ID/request/?access_token=ACCESS_TOKEN&v=20110608"))
+    	mockServer.expect(requestTo("https://api.foursquare.com/v2/users/USER_ID/request?oauth_token=ACCESS_TOKEN&v=20110609"))
 	        .andExpect(method(POST))
 	        .andRespond(withResponse(new ClassPathResource("testdata/ok-response.json", getClass()), responseHeaders));
     	
@@ -178,7 +178,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
     
     @Test
     public void removeFriend() {
-    	mockServer.expect(requestTo("https://api.foursquare.com/v2/users/USER_ID/unfriend/?access_token=ACCESS_TOKEN&v=20110608"))
+    	mockServer.expect(requestTo("https://api.foursquare.com/v2/users/USER_ID/unfriend?oauth_token=ACCESS_TOKEN&v=20110609"))
 	        .andExpect(method(POST))
 	        .andRespond(withResponse(new ClassPathResource("testdata/ok-response.json", getClass()), responseHeaders));
     	
@@ -187,7 +187,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
     
     @Test
     public void approveFriend() {
-    	mockServer.expect(requestTo("https://api.foursquare.com/v2/users/USER_ID/approve/?access_token=ACCESS_TOKEN&v=20110608"))
+    	mockServer.expect(requestTo("https://api.foursquare.com/v2/users/USER_ID/approve?oauth_token=ACCESS_TOKEN&v=20110609"))
 	        .andExpect(method(POST))
 	        .andRespond(withResponse(new ClassPathResource("testdata/ok-response.json", getClass()), responseHeaders));
     	
@@ -196,7 +196,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
     
     @Test
     public void denyFriend() {
-    	mockServer.expect(requestTo("https://api.foursquare.com/v2/users/USER_ID/deny/?access_token=ACCESS_TOKEN&v=20110608"))
+    	mockServer.expect(requestTo("https://api.foursquare.com/v2/users/USER_ID/deny?oauth_token=ACCESS_TOKEN&v=20110609"))
 	        .andExpect(method(POST))
 	        .andRespond(withResponse(new ClassPathResource("testdata/ok-response.json", getClass()), responseHeaders));
     	
@@ -205,7 +205,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
     
     @Test
     public void setPings() {
-    	mockServer.expect(requestTo("https://api.foursquare.com/v2/users/USER_ID/setpings/?access_token=ACCESS_TOKEN&v=20110608"))
+    	mockServer.expect(requestTo("https://api.foursquare.com/v2/users/USER_ID/setpings?oauth_token=ACCESS_TOKEN&v=20110609"))
 	        .andExpect(method(POST))
 	        .andExpect(body("value=true"))
 	        .andRespond(withResponse(new ClassPathResource("testdata/ok-response.json", getClass()), responseHeaders));

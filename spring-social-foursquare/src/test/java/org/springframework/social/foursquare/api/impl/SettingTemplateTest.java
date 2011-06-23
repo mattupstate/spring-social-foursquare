@@ -17,7 +17,7 @@ public class SettingTemplateTest extends AbstractFoursquareApiTest {
 
 	@Test
 	public void getAll() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/settings/all/?access_token=ACCESS_TOKEN&v=20110608"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/settings/all?oauth_token=ACCESS_TOKEN&v=20110609"))
 			.andExpect(method(GET))
 			.andRespond(withResponse(new ClassPathResource("testdata/allsettings.json", getClass()), responseHeaders));
 		
@@ -28,7 +28,7 @@ public class SettingTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
 	public void getSetting() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/settings/SETTING_ID/?access_token=ACCESS_TOKEN&v=20110608"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/settings/SETTING_ID?oauth_token=ACCESS_TOKEN&v=20110609"))
 			.andExpect(method(GET))
 			.andRespond(withResponse(new ClassPathResource("testdata/booleansetting.json", getClass()), responseHeaders));
 		
@@ -39,7 +39,7 @@ public class SettingTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
 	public void setSetting() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/settings/SETTING_ID/set/?access_token=ACCESS_TOKEN&v=20110608"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/settings/SETTING_ID/set?oauth_token=ACCESS_TOKEN&v=20110609"))
 			.andExpect(method(POST))
 			.andExpect(body("value=1"))
 			.andRespond(withResponse(new ClassPathResource("testdata/setsetting.json", getClass()), responseHeaders));

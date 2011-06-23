@@ -20,7 +20,7 @@ public class TipTemplate extends AbstractFoursquareOperations implements TipOper
 	}
 
 	public Tip get(String tipId) {
-		return get(buildUri(TIPS_ENDPOINT + tipId + "/"), TipContainer.class).getTip();
+		return get(buildUri(TIPS_ENDPOINT + tipId), TipContainer.class).getTip();
 	}
 
 	public Tip add(String venueId, String text, String url) {
@@ -29,7 +29,7 @@ public class TipTemplate extends AbstractFoursquareOperations implements TipOper
 		params.add("venueId", venueId);
 		params.add("text", text);
 		params.add("url", url);
-		return post(buildUri(TIPS_ENDPOINT + "add/"), params, TipContainer.class).getTip();
+		return post(buildUri(TIPS_ENDPOINT + "add"), params, TipContainer.class).getTip();
 	}
 
 	public List<Tip> search(Double latitude, Double longitude, String query, Integer offset, boolean friendsOnly) {
@@ -46,22 +46,22 @@ public class TipTemplate extends AbstractFoursquareOperations implements TipOper
 		if(friendsOnly) {
 			params.put("filter", "friends");
 		}
-		return get(buildUri(TIPS_ENDPOINT + "search/", params), TipsListContainer.class).getTips();
+		return get(buildUri(TIPS_ENDPOINT + "search", params), TipsListContainer.class).getTips();
 	}
 
 	public Todo markTodo(String tipId) {
 		requireUserAuthorization();
-		return post(buildUri(TIPS_ENDPOINT + tipId + "/marktodo/"), new LinkedMultiValueMap<String, Object>(), TodoContainer.class).getTodo();
+		return post(buildUri(TIPS_ENDPOINT + tipId + "/marktodo"), new LinkedMultiValueMap<String, Object>(), TodoContainer.class).getTodo();
 	}
 
 	public Todo markDone(String tipId) {
 		requireUserAuthorization();
-		return post(buildUri(TIPS_ENDPOINT + tipId + "/markdone/"), new LinkedMultiValueMap<String, Object>(), TodoContainer.class).getTodo();
+		return post(buildUri(TIPS_ENDPOINT + tipId + "/markdone"), new LinkedMultiValueMap<String, Object>(), TodoContainer.class).getTodo();
 	}
 
 	public Tip unmarkTodo(String tipId) {
 		requireUserAuthorization();
-		return post(buildUri(TIPS_ENDPOINT + tipId + "/unmark/"), new LinkedMultiValueMap<String, Object>(), TipContainer.class).getTip();
+		return post(buildUri(TIPS_ENDPOINT + tipId + "/unmark"), new LinkedMultiValueMap<String, Object>(), TipContainer.class).getTip();
 	}
 	
 }

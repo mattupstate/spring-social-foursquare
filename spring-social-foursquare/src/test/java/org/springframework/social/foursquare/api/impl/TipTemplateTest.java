@@ -20,7 +20,7 @@ public class TipTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
 	public void get() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/tips/TIP_ID/?access_token=ACCESS_TOKEN&v=20110608"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/tips/TIP_ID?oauth_token=ACCESS_TOKEN&v=20110609"))
 			.andExpect(method(GET))
 			.andRespond(withResponse(new ClassPathResource("testdata/tip.json", getClass()), responseHeaders));
 		
@@ -31,7 +31,7 @@ public class TipTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
 	public void add() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/tips/add/?access_token=ACCESS_TOKEN&v=20110608"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/tips/add?oauth_token=ACCESS_TOKEN&v=20110609"))
 			.andExpect(method(POST))
 			.andExpect(body("venueId=VENUE_ID&text=TEXT&url=URL"))
 			.andRespond(withResponse(new ClassPathResource("testdata/tip.json", getClass()), responseHeaders));
@@ -43,7 +43,7 @@ public class TipTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
 	public void search() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/tips/search/?access_token=ACCESS_TOKEN&v=20110608&ll=10.0%2C10.0&query=QUERY&offset=10&filter=friends"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/tips/search?oauth_token=ACCESS_TOKEN&v=20110609&ll=10.0%2C10.0&query=QUERY&offset=10&filter=friends"))
 			.andExpect(method(GET))
 			.andRespond(withResponse(new ClassPathResource("testdata/searchtips.json", getClass()), responseHeaders));
 		
@@ -54,7 +54,7 @@ public class TipTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
 	public void markTodo() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/tips/TIP_ID/marktodo/?access_token=ACCESS_TOKEN&v=20110608"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/tips/TIP_ID/marktodo?oauth_token=ACCESS_TOKEN&v=20110609"))
 			.andExpect(method(POST))
 			.andRespond(withResponse(new ClassPathResource("testdata/marktodo.json", getClass()), responseHeaders));
 		
@@ -65,7 +65,7 @@ public class TipTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
 	public void markDone() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/tips/TIP_ID/markdone/?access_token=ACCESS_TOKEN&v=20110608"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/tips/TIP_ID/markdone?oauth_token=ACCESS_TOKEN&v=20110609"))
 			.andExpect(method(POST))
 			.andRespond(withResponse(new ClassPathResource("testdata/marktodo.json", getClass()), responseHeaders));
 		
@@ -76,7 +76,7 @@ public class TipTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
 	public void unmark() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/tips/TIP_ID/unmark/?access_token=ACCESS_TOKEN&v=20110608"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/tips/TIP_ID/unmark?oauth_token=ACCESS_TOKEN&v=20110609"))
 			.andExpect(method(POST))
 			.andRespond(withResponse(new ClassPathResource("testdata/tip.json", getClass()), responseHeaders));
 		

@@ -43,7 +43,7 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 	
 	public FoursquareUser getUser(String userId) {
         requireUserAuthorization();
-        return get(buildUri(USERS_ENDPOINT + userId + "/"), FoursquareUserContainer.class).getUser();
+        return get(buildUri(USERS_ENDPOINT + userId), FoursquareUserContainer.class).getUser();
     }
 
     public Leaderboard getLeaderboard() {
@@ -55,7 +55,7 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
         if(neighbors > 0) {
             params.put("neighbors", Integer.toString(neighbors));
         }
-        return get(buildUri(USERS_ENDPOINT + "leaderboard/", params), LeaderboardContainer.class).getLeaderboard();
+        return get(buildUri(USERS_ENDPOINT + "leaderboard", params), LeaderboardContainer.class).getLeaderboard();
     }
     
     public UserSearchResponse search(List<String> phoneNumbers, List<String> emailAddresses,
@@ -90,12 +90,12 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
     
     private UserSearchResponse doSearch(Map<String,String> params) {
         requireUserAuthorization();
-        return get(buildUri(USERS_ENDPOINT + "search/", params), UserSearchResponseContainer.class).getResults();
+        return get(buildUri(USERS_ENDPOINT + "search", params), UserSearchResponseContainer.class).getResults();
     }
     
     public List<FoursquareUser> getRequests() {
         requireUserAuthorization();
-        return get(buildUri(USERS_ENDPOINT + "requests/"), RequestsContainer.class).getRequests();
+        return get(buildUri(USERS_ENDPOINT + "requests"), RequestsContainer.class).getRequests();
     }
 
     public BadgesResponse getBadges() {
@@ -104,7 +104,7 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 
     public BadgesResponse getBadges(String userId) {
         requireUserAuthorization();
-        return get(buildUri(USERS_ENDPOINT + userId + "/badges/"), BadgesResponseContainer.class).getResponse();
+        return get(buildUri(USERS_ENDPOINT + userId + "/badges"), BadgesResponseContainer.class).getResponse();
     }
 
 	public CheckinInfo getCheckins() {
@@ -113,7 +113,7 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 
 	public CheckinInfo getCheckins(String userId) {
 		requireUserAuthorization();
-        return get(buildUri(USERS_ENDPOINT + userId + "/checkins/"), CheckinInfoContainer.class).getCheckinInfo();
+        return get(buildUri(USERS_ENDPOINT + userId + "/checkins"), CheckinInfoContainer.class).getCheckinInfo();
 	}
 
 	public Friends getFriends() {
@@ -136,7 +136,7 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 		if(offset > 0) {
 			params.put("offset", Integer.toString(offset));
 		}
-		return get(buildUri(USERS_ENDPOINT + userId + "/friends/", params), FriendsContainer.class).getFriends();
+		return get(buildUri(USERS_ENDPOINT + userId + "/friends", params), FriendsContainer.class).getFriends();
 	}
 
 	public Tips getRecentTips(int limit, int offset) {
@@ -176,7 +176,7 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 		if(offset > 0) {
 			params.put("offset", Integer.toString(offset));
 		}
-		return get(buildUri(USERS_ENDPOINT + userId + "/tips/", params), TipsContainer.class).getTips();
+		return get(buildUri(USERS_ENDPOINT + userId + "/tips", params), TipsContainer.class).getTips();
 	}
 
 	public Todos getRecentTodos() {
@@ -209,7 +209,7 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 		if(latitude != null && longitude != null) {
 			params.put("ll", latitude.toString() + "," + longitude.toString());
 		}
-		return get(buildUri(USERS_ENDPOINT + userId + "/todos/", params), TodosContainer.class).getTodos();
+		return get(buildUri(USERS_ENDPOINT + userId + "/todos", params), TodosContainer.class).getTodos();
 	}
 
 	public VenueHistory getVenueHistory(long beforeTimestamp, long afterTimestamp, String categoryId) {
@@ -228,33 +228,33 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 		if(categoryId != null) {
 			params.put("categoryId", categoryId);
 		}
-		return get(buildUri(USERS_ENDPOINT + userId + "/venuehistory/", params), VenueHistoryContainer.class).getVenueHistory();
+		return get(buildUri(USERS_ENDPOINT + userId + "/venuehistory", params), VenueHistoryContainer.class).getVenueHistory();
 	}
 
 	public void requestFriend(String userId) {
 		requireUserAuthorization();
-		post(buildUri(USERS_ENDPOINT + userId + "/request/"), new LinkedMultiValueMap<String, Object>(), Map.class);
+		post(buildUri(USERS_ENDPOINT + userId + "/request"), new LinkedMultiValueMap<String, Object>(), Map.class);
 	}
 
 	public void removeFriend(String userId) {
 		requireUserAuthorization();
-		post(buildUri(USERS_ENDPOINT + userId + "/unfriend/"), new LinkedMultiValueMap<String, Object>(), Map.class);
+		post(buildUri(USERS_ENDPOINT + userId + "/unfriend"), new LinkedMultiValueMap<String, Object>(), Map.class);
 	}
 
 	public void approveFriend(String userId) {
 		requireUserAuthorization();
-		post(buildUri(USERS_ENDPOINT + userId + "/approve/"), new LinkedMultiValueMap<String, Object>(), Map.class);
+		post(buildUri(USERS_ENDPOINT + userId + "/approve"), new LinkedMultiValueMap<String, Object>(), Map.class);
 	}
 
 	public void denyFriend(String userId) {
 		requireUserAuthorization();
-		post(buildUri(USERS_ENDPOINT + userId + "/deny/"), new LinkedMultiValueMap<String, Object>(), Map.class);
+		post(buildUri(USERS_ENDPOINT + userId + "/deny"), new LinkedMultiValueMap<String, Object>(), Map.class);
 	}
 
 	public void setPings(String userId, boolean value) {
 		requireUserAuthorization();
 		MultiValueMap<String, Object> params = new LinkedMultiValueMap<String, Object>();
 		params.add("value", Boolean.toString(value));
-		post(buildUri(USERS_ENDPOINT + userId + "/setpings/"), params, Map.class);
+		post(buildUri(USERS_ENDPOINT + userId + "/setpings"), params, Map.class);
 	}
 }

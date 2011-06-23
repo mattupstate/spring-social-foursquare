@@ -28,7 +28,7 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
 	public void getVenue() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/?access_token=ACCESS_TOKEN&v=20110608"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID?oauth_token=ACCESS_TOKEN&v=20110609"))
 			.andExpect(method(GET))
 			.andRespond(withResponse(new ClassPathResource("testdata/venue.json", getClass()), responseHeaders));
 		
@@ -39,7 +39,7 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
 	public void addVenue() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/add/?access_token=ACCESS_TOKEN&v=20110608"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/add?oauth_token=ACCESS_TOKEN&v=20110609"))
 			.andExpect(method(POST))
 			.andExpect(body("name=NAME&address=ADDRESS&crossStreet=CROSSSTREET&city=CITY&state=STATE&zip=ZIP&phone=PHONE&ll=1.0%2C1.0&primaryCategoryId=CATEGORYID"))
 			.andRespond(withResponse(new ClassPathResource("testdata/venue.json", getClass()), responseHeaders));
@@ -52,7 +52,7 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
 	public void getCateogies() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/categories/?access_token=ACCESS_TOKEN&v=20110608"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/categories?oauth_token=ACCESS_TOKEN&v=20110609"))
 			.andExpect(method(GET))
 			.andRespond(withResponse(new ClassPathResource("testdata/categories.json", getClass()), responseHeaders));
 		
@@ -62,7 +62,7 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
     public void explore() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/explore/?access_token=ACCESS_TOKEN&v=20110608&ll=10.0%2C10.0&query=QUERY"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/explore?oauth_token=ACCESS_TOKEN&v=20110609&ll=10.0%2C10.0&query=QUERY"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/explore.json", getClass()), responseHeaders));
         
@@ -73,7 +73,7 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
     public void search() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/search/?access_token=ACCESS_TOKEN&v=20110608&ll=10.0%2C10.0&query=QUERY"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/search?oauth_token=ACCESS_TOKEN&v=20110609&ll=10.0%2C10.0&query=QUERY"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/venue-search.json", getClass()), responseHeaders));
         
@@ -84,7 +84,7 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
     public void getTrending() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/trending/?access_token=ACCESS_TOKEN&v=20110608&ll=10.0%2C10.0&radius=100"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/trending?oauth_token=ACCESS_TOKEN&v=20110609&ll=10.0%2C10.0&radius=100"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/trending.json", getClass()), responseHeaders));
         
@@ -94,7 +94,7 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
     public void getHereNow() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/trending/?access_token=ACCESS_TOKEN&v=20110608"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/trending?oauth_token=ACCESS_TOKEN&v=20110609"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/herenow.json", getClass()), responseHeaders));
         
@@ -104,7 +104,7 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
     public void getTips() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/tips/?access_token=ACCESS_TOKEN&v=20110608&sort=popular"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/tips?oauth_token=ACCESS_TOKEN&v=20110609&sort=popular"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/tips.json", getClass()), responseHeaders));
         
@@ -114,7 +114,7 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
     public void getPhotos() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/photos/?access_token=ACCESS_TOKEN&v=20110608&group=venue"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/photos?oauth_token=ACCESS_TOKEN&v=20110609&group=venue"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/venuephotos.json", getClass()), responseHeaders));
         
@@ -124,7 +124,7 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
     public void getLinks() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/links/?access_token=ACCESS_TOKEN&v=20110608"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/links?oauth_token=ACCESS_TOKEN&v=20110609"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/venuelinks.json", getClass()), responseHeaders));
         
@@ -134,7 +134,7 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
     public void markTodo() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/marktodo/?access_token=ACCESS_TOKEN&v=20110608"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/marktodo?oauth_token=ACCESS_TOKEN&v=20110609"))
             .andExpect(method(POST))
             .andExpect(body("text=TEXT"))
             .andRespond(withResponse(new ClassPathResource("testdata/marktodo.json", getClass()), responseHeaders));
@@ -145,7 +145,7 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
     public void flag() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/flag/?access_token=ACCESS_TOKEN&v=20110608"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/flag?oauth_token=ACCESS_TOKEN&v=20110609"))
             .andExpect(method(POST))
             .andExpect(body("problem=closed"))
             .andRespond(withResponse(new ClassPathResource("testdata/ok-response.json", getClass()), responseHeaders));
@@ -155,7 +155,7 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
     public void edit() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/edit/?access_token=ACCESS_TOKEN&v=20110608"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/edit?oauth_token=ACCESS_TOKEN&v=20110609"))
 		.andExpect(method(POST))
 		.andExpect(body("name=NAME&address=ADDRESS&crossStreet=CROSSSTREET&city=CITY&state=STATE&zip=ZIP&phone=PHONE&ll=1.0%2C1.0&categoryId=CATEGORYID"))
 		.andRespond(withResponse(new ClassPathResource("testdata/ok-response.json", getClass()), responseHeaders));
@@ -166,7 +166,7 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
     public void proposeEdit() {
-		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/proposeedit/?access_token=ACCESS_TOKEN&v=20110608"))
+		mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/proposeedit?oauth_token=ACCESS_TOKEN&v=20110609"))
 		.andExpect(method(POST))
 		.andExpect(body("name=NAME&address=ADDRESS&crossStreet=CROSSSTREET&city=CITY&state=STATE&zip=ZIP&phone=PHONE&ll=1.0%2C1.0&primaryCategoryId=CATEGORYID"))
 		.andRespond(withResponse(new ClassPathResource("testdata/ok-response.json", getClass()), responseHeaders));

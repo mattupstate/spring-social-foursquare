@@ -34,7 +34,7 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
 	}
 
 	public Venue getVenue(String venueId) {
-		return get(buildUri(VENUES_ENDPOINT + venueId + "/"), VenueContainer.class).getVenue();
+		return get(buildUri(VENUES_ENDPOINT + venueId), VenueContainer.class).getVenue();
 	}
 
 	public Venue addVenue(String name, String address, String crossStreet, String city, String state, 
@@ -50,19 +50,19 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
 		params.add("phone", phone);
 		params.add("ll", Double.toString(latitude) + "," + Double.toString(longitude));
 		params.add("primaryCategoryId", primaryCategoryId);
-		return post(buildUri(VENUES_ENDPOINT + "add/"), params, VenueContainer.class).getVenue();
+		return post(buildUri(VENUES_ENDPOINT + "add"), params, VenueContainer.class).getVenue();
 	}
 
 	public List<Category> getCategories() {
-		return get(buildUri(VENUES_ENDPOINT + "categories/"), CategoriesContainer.class).getCategories();
+		return get(buildUri(VENUES_ENDPOINT + "categories"), CategoriesContainer.class).getCategories();
 	}
 	
 	public ExploreResponse explore(ExploreQuery query) {
-	    return get(buildUri(VENUES_ENDPOINT + "explore/", query.toParameters()), ExploreResponseContainer.class).getResponse();
+	    return get(buildUri(VENUES_ENDPOINT + "explore", query.toParameters()), ExploreResponseContainer.class).getResponse();
 	}
 
     public List<Venue> search(VenueSearchParams query) {
-        return get(buildUri(VENUES_ENDPOINT + "search/", query.toParameters()), VenueSearchContainer.class).getVenues();
+        return get(buildUri(VENUES_ENDPOINT + "search", query.toParameters()), VenueSearchContainer.class).getVenues();
     }
     
     public List<Venue> getTrending(double latitude, double longitude, int radius, int limit) {
@@ -74,7 +74,7 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
     	if(limit > 0) {
     		params.put("limit", Integer.toString(limit));
     	}
-        return get(buildUri(VENUES_ENDPOINT + "trending/", params), VenueSearchContainer.class).getVenues();
+        return get(buildUri(VENUES_ENDPOINT + "trending", params), VenueSearchContainer.class).getVenues();
     }
 
 	public CheckinInfo getHereNow(String venueId, long afterTimestamp, int offset, int limit) {
@@ -88,7 +88,7 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
     	if(limit > 0) {
     		params.put("limit", Integer.toString(limit));
     	}
-		return get(buildUri(VENUES_ENDPOINT + venueId + "/trending/", params), HereNowContainer.class).getCheckinInfo();
+		return get(buildUri(VENUES_ENDPOINT + venueId + "/trending", params), HereNowContainer.class).getCheckinInfo();
 	}
 
 	public Tips getTips(String venueId, String sort, int offset, int limit) {
@@ -101,7 +101,7 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
     	if(limit > 0) {
     		params.put("limit", Integer.toString(limit));
     	}
-		return get(buildUri(VENUES_ENDPOINT + venueId + "/tips/", params), TipsContainer.class).getTips();
+		return get(buildUri(VENUES_ENDPOINT + venueId + "/tips", params), TipsContainer.class).getTips();
 	}
 	
 	public Photos getPhotos(String venueId, String group, int offset, int limit) {
@@ -114,11 +114,11 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
     	if(limit > 0) {
     		params.put("limit", Integer.toString(limit));
     	}
-		return get(buildUri(VENUES_ENDPOINT + venueId + "/photos/", params), VenuePhotosContainer.class).getPhotos();
+		return get(buildUri(VENUES_ENDPOINT + venueId + "/photos", params), VenuePhotosContainer.class).getPhotos();
 	}
 
 	public VenueLinks getLinks(String venueId) {
-		return get(buildUri(VENUES_ENDPOINT + venueId + "/links/"), VenueLinksContainer.class).getLinks();
+		return get(buildUri(VENUES_ENDPOINT + venueId + "/links"), VenueLinksContainer.class).getLinks();
 	}
 
 	public Todo markTodo(String venueId, String text) {
@@ -127,14 +127,14 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
 		if(text != null) {
 			params.add("text", text);
 		}
-		return post(buildUri(VENUES_ENDPOINT + venueId + "/marktodo/"), params, TodoContainer.class).getTodo();
+		return post(buildUri(VENUES_ENDPOINT + venueId + "/marktodo"), params, TodoContainer.class).getTodo();
 	}
 
 	public void flag(String venueId, String problem) {
 		requireUserAuthorization();
 		MultiValueMap<String, Object> params = new LinkedMultiValueMap<String, Object>();
 		params.add("problem", problem);
-		post(buildUri(VENUES_ENDPOINT + venueId + "/flag/"), params, Map.class);
+		post(buildUri(VENUES_ENDPOINT + venueId + "/flag"), params, Map.class);
 	}
     
 	public void edit(String venueId, String name, String address, String crossStreet, String city, String state, 
@@ -150,7 +150,7 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
 		params.add("phone", phone);
 		params.add("ll", Double.toString(latitude) + "," + Double.toString(longitude));
 		params.add("categoryId", categoryId);
-		post(buildUri(VENUES_ENDPOINT + venueId + "/edit/"), params, Map.class);
+		post(buildUri(VENUES_ENDPOINT + venueId + "/edit"), params, Map.class);
 	}
 	
 	public void proposeEdit(String venueId, String name, String address, String crossStreet, String city, String state, 
@@ -166,7 +166,7 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
 		params.add("phone", phone);
 		params.add("ll", Double.toString(latitude) + "," + Double.toString(longitude));
 		params.add("primaryCategoryId", primaryCategoryId);
-		post(buildUri(VENUES_ENDPOINT + venueId + "/proposeedit/"), params, Map.class);
+		post(buildUri(VENUES_ENDPOINT + venueId + "/proposeedit"), params, Map.class);
 	}
 
 }

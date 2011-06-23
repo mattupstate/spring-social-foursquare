@@ -13,11 +13,11 @@ import org.springframework.web.client.DefaultResponseErrorHandler;
 public class FoursquareErrorHandler extends DefaultResponseErrorHandler {
 	
 	@Override
-	public void handleError(ClientHttpResponse response) throws IOException {				
+	public void handleError(ClientHttpResponse response) throws IOException {
 	    Map<String, Object> errorDetails = extractErrorDetailsFromResponse(response);
 	    int code = Integer.valueOf(String.valueOf(errorDetails.get("code"))).intValue();
-        String errorType = String.valueOf(errorDetails.get("error_type"));
-        String message = String.valueOf(errorDetails.get("error_message"));
+        String errorType = String.valueOf(errorDetails.get("errorType"));
+        String message = String.valueOf(errorDetails.get("errorDetail"));
         throw new FoursquareApiException(code, errorType, message);		
 	}
 	

@@ -16,19 +16,19 @@ public class SettingTemplate extends AbstractFoursquareOperations implements Set
 
 	public AllSettings getAll() {
 		requireUserAuthorization();
-		return get(buildUri(SETTINGS_ENDPOINT + "all/"), AllSettingsContainer.class).getSettings();
+		return get(buildUri(SETTINGS_ENDPOINT + "all"), AllSettingsContainer.class).getSettings();
 	}
 
 	public Boolean getSetting(String settingId) {
 		requireUserAuthorization();
-		return get(buildUri(SETTINGS_ENDPOINT + settingId + "/"), BooleanValueContainer.class).getValue();
+		return get(buildUri(SETTINGS_ENDPOINT + settingId), BooleanValueContainer.class).getValue();
 	}
 	
 	public String setSetting(String settingId, Boolean value) {
 		requireUserAuthorization();
 		MultiValueMap<String, Object> params = new LinkedMultiValueMap<String, Object>();
 		params.add("value", (value) ? "1" : "0");
-		return post(buildUri(SETTINGS_ENDPOINT + settingId + "/set/"), params, StringValueContainer.class).getValue();
+		return post(buildUri(SETTINGS_ENDPOINT + settingId + "/set"), params, StringValueContainer.class).getValue();
 	}
 	
 }

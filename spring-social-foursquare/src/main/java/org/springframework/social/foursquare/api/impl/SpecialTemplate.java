@@ -18,7 +18,7 @@ public class SpecialTemplate extends AbstractFoursquareOperations implements Spe
 	public Special get(String specialId, String venueId) {
 		Map<String, String> params = new HashMap<String, String>();
 		params.put("venueId", venueId);
-		return get(buildUri(SPECIALS_ENDPOINT + specialId + "/", params), SpecialContainer.class).getSpecial();
+		return get(buildUri(SPECIALS_ENDPOINT + specialId, params), SpecialContainer.class).getSpecial();
 	}
 
 	public Specials search(Double latitude, Double longitude, Long locationAccuracy, Double altitude, Long altitudeAccuracy, Integer limit) {
@@ -38,7 +38,7 @@ public class SpecialTemplate extends AbstractFoursquareOperations implements Spe
 		if(limit != null) {
 			params.put("limit", limit.toString());
 		}
-		return get(buildUri(SPECIALS_ENDPOINT + "search/", params), SpecialsContainer.class).getSpecials();
+		return get(buildUri(SPECIALS_ENDPOINT + "search", params), SpecialsContainer.class).getSpecials();
 	}
 	
 }

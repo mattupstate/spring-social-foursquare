@@ -29,12 +29,12 @@ public class CheckinTemplate extends AbstractFoursquareOperations implements Che
 		if(signature != null) {
 			params.put("signature", signature);
 		}
-		return get(buildUri(CHECKINS_ENDPOINT + checkinId + "/", params), CheckinContainer.class).getCheckin();
+		return get(buildUri(CHECKINS_ENDPOINT + checkinId, params), CheckinContainer.class).getCheckin();
 	}
 
 	public Checkin add(CheckinParams params) {
 		requireUserAuthorization();
-		return post(buildUri(CHECKINS_ENDPOINT + "add/"), params.toParams(), CheckinContainer.class).getCheckin();
+		return post(buildUri(CHECKINS_ENDPOINT + "add"), params.toParams(), CheckinContainer.class).getCheckin();
 	}
 
 	public List<Checkin> getRecent(Double latitude, Double longitude, Long afterTimestamp, Integer limit) {
@@ -49,21 +49,21 @@ public class CheckinTemplate extends AbstractFoursquareOperations implements Che
 		if(limit != null) {
 			params.put("limit", limit.toString());
 		}
-		return get(buildUri(CHECKINS_ENDPOINT + "recent/", params), CheckinListContainer.class).getCheckins();
+		return get(buildUri(CHECKINS_ENDPOINT + "recent", params), CheckinListContainer.class).getCheckins();
 	}
 
 	public CheckinComment addComment(String checkinId, String text) {
 		requireUserAuthorization();
 		MultiValueMap<String,Object> params = new LinkedMultiValueMap<String, Object>();
 		params.add("text", text);
-		return post(buildUri(CHECKINS_ENDPOINT + checkinId + "/addcomment/"), params, CheckinCommentContainer.class).getComment();
+		return post(buildUri(CHECKINS_ENDPOINT + checkinId + "/addcomment"), params, CheckinCommentContainer.class).getComment();
 	}
 
 	public Checkin deleteComment(String checkinId, String commentId) {
 		requireUserAuthorization();
 		MultiValueMap<String,Object> params = new LinkedMultiValueMap<String, Object>();
 		params.add("commentId", commentId);
-		return post(buildUri(CHECKINS_ENDPOINT + checkinId + "/deletecomment/"), params, CheckinContainer.class).getCheckin();
+		return post(buildUri(CHECKINS_ENDPOINT + checkinId + "/deletecomment"), params, CheckinContainer.class).getCheckin();
 	}
 
 }
