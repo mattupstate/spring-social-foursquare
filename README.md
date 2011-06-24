@@ -12,11 +12,11 @@ Note: the --recursive switch above is important, as spring-social uses git submo
     git submodule init
     git submodule update
 
-### Example Project
+## Example Project
 
 An example project is located at https://github.com/mattupstate/spring-social-foursquare-example
 
-### Using Eclipse
+## Using Eclipse
 
 To generate Eclipse metadata (.classpath and .project files), do the following:
 
@@ -26,13 +26,13 @@ Once complete, you may then import the projects into Eclipse as usual:
 
     File -> Import -> Existing projects into workspace
 
-### Using IntelliJ
+## Using IntelliJ
 
 To generate IDEA metadata (.iml and .ipr files), do the following:
 
     ./gradlew idea
 
-### Documentation
+## Documentation
 
 To build the JavaDoc, do the following from within the root directory:
 
