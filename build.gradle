@@ -149,7 +149,16 @@ project('spring-social-foursquare') {
 // Configuration for the docs subproject
 // -----------------------------------------------------------------------------
 project('docs') {
-    apply from: "$buildSrcDir/docs.gradle"
+    apply plugin: 'base'
+    task api(type: Javadoc) {
+        source javaprojects.collect { project ->
+            project.sourceSets.main.allJava
+        }
+        classpath = files(javaprojects.collect { project ->
+            project.sourceSets.main.compileClasspath
+        })
+        destinationDir = file("build/api")
+    }
 }
 
 apply from: "$buildSrcDir/dist.gradle"
