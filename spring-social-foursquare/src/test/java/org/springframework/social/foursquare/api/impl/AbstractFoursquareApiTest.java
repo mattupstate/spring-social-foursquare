@@ -27,7 +27,7 @@ public class AbstractFoursquareApiTest {
 	public void assertProfile(FoursquareUser profile) {
 		assertEquals("Matt", profile.getFirstName());
 		assertEquals("Wright", profile.getLastName());
-		assertEquals(5, profile.getMayorshipInfo().getTotal());
-		assertEquals(555, profile.getCheckinInfo().getTotal());
+		assertEquals(3, profile.getMayorshipInfo().getTotal());
+		assertEquals(659, profile.getCheckinInfo().getTotal());
 	}
 }

@@ -25,7 +25,7 @@ public class FoursquareAdapter implements ApiAdapter<Foursquare> {
 
     public void setConnectionValues(Foursquare foursquare, ConnectionValues values) {
         FoursquareUser user = foursquare.userOperations().getUser();
-        values.setProviderUserId(Long.toString(user.getId()));
+        values.setProviderUserId(user.getId());
         values.setDisplayName(user.getFirstName() + " " + user.getLastName());
         values.setImageUrl(user.getPhotoUrl());
     }

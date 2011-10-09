@@ -2,6 +2,14 @@
    "meta":{
       "code":200
    },
+   "notifications":[
+      {
+         "type":"notificationTray",
+         "item":{
+            "unreadCount":1
+         }
+      }
+   ],
    "response":{
       "user":{
          "id":"700390",
@@ -18,128 +26,46 @@
             "twitter":"mattupstate"
          },
          "badges":{
-            "count":21
+            "count":22
          },
          "mayorships":{
-            "count":5,
+            "count":3,
             "items":[
                {
                   "id":"4a8030abf964a520bcf41fe3",
                   "name":"Syrup",
                   "contact":{
-                     "phone":"2126801477"
+                     "phone":"2126801477",
+                     "formattedPhone":"(212) 680-1477"
                   },
                   "location":{
                      "address":"12 Vestry St.",
                      "crossStreet":"Hudson Street",
+                     "lat":40.72271631,
+                     "lng":-74.0070339,
+                     "postalCode":"10013",
                      "city":"New York",
                      "state":"NY",
-                     "postalCode":"10013",
-                     "country":"USA",
-                     "lat":40.7228,
-                     "lng":-74.0073
+                     "country":"USA"
                   },
                   "categories":[
                      {
                         "id":"4bf58dd8d48988d124941735",
                         "name":"Office",
                         "pluralName":"Offices",
+                        "shortName":"Corporate / Office",
                         "icon":"https://foursquare.com/img/categories/building/default.png",
                         "parents":[
-                           "Homes, Work, Others"
+                           "Professional & Other Places"
                         ],
                         "primary":true
                      }
                   ],
                   "verified":false,
                   "stats":{
-                     "checkinsCount":212,
-                     "usersCount":39
-                  },
-                  "todos":{
-                     "count":0
-                  }
-               },
-               {
-                  "id":"475b9b74f964a520d34c1fe3",
-                  "name":"Bar Great Harry",
-                  "contact":{
-                     "phone":"7182221103"
-                  },
-                  "location":{
-                     "address":"280 Smith Street",
-                     "crossStreet":"Sackett St",
-                     "city":"Brooklyn",
-                     "state":"NY",
-                     "postalCode":"11231",
-                     "country":"USA",
-                     "lat":40.6823,
-                     "lng":-73.9935
-                  },
-                  "categories":[
-                     {
-                        "id":"4bf58dd8d48988d116941735",
-                        "name":"Bar",
-                        "pluralName":"Bars",
-                        "icon":"https://foursquare.com/img/categories/nightlife/default.png",
-                        "parents":[
-                           "Nightlife Spots"
-                        ],
-                        "primary":true
-                     },
-                     {
-                        "id":"4bf58dd8d48988d11b941735",
-                        "name":"Pub",
-                        "pluralName":"Pubs",
-                        "icon":"https://foursquare.com/img/categories/nightlife/default.png",
-                        "parents":[
-                           "Nightlife Spots"
-                        ]
-                     }
-                  ],
-                  "verified":false,
-                  "stats":{
-                     "checkinsCount":3833,
-                     "usersCount":1425
-                  },
-                  "todos":{
-                     "count":0
-                  }
-               },
-               {
-                  "id":"4d98d98061a3a1cd06d4d742",
-                  "name":"Kate's Fun Bags",
-                  "contact":{
-
-                  },
-                  "location":{
-                     "address":"355 5th Ave",
-                     "crossStreet":"5th Street",
-                     "city":"Brooklyn",
-                     "state":"New York",
-                     "postalCode":"11215",
-                     "lat":40.676321359999996,
-                     "lng":-73.98349092000001
-                  },
-                  "categories":[
-                     {
-                        "id":"4bf58dd8d48988d1bc941735",
-                        "name":"Cupcake Shop",
-                        "pluralName":"Cupcake Shops",
-                        "icon":"https://foursquare.com/img/categories/food/cupcakes.png",
-                        "parents":[
-                           "Food"
-                        ],
-                        "primary":true
-                     }
-                  ],
-                  "verified":false,
-                  "stats":{
-                     "checkinsCount":9,
-                     "usersCount":3
-                  },
-                  "todos":{
-                     "count":0
+                     "checkinsCount":253,
+                     "usersCount":49,
+                     "tipCount":2
                   }
                },
                {
@@ -149,20 +75,18 @@
 
                   },
                   "location":{
-                     "state":"New York",
                      "lat":40.723536,
-                     "lng":-74.008097
+                     "lng":-74.008097,
+                     "state":"New York"
                   },
                   "categories":[
 
                   ],
                   "verified":false,
                   "stats":{
-                     "checkinsCount":4,
-                     "usersCount":3
-                  },
-                  "todos":{
-                     "count":0
+                     "checkinsCount":8,
+                     "usersCount":6,
+                     "tipCount":0
                   }
                },
                {
@@ -173,20 +97,21 @@
                   },
                   "location":{
                      "address":"355 5th Ave",
-                     "city":"Brooklyn",
-                     "state":"New York",
-                     "postalCode":"11215",
                      "lat":40.671622,
-                     "lng":-73.983891
+                     "lng":-73.983891,
+                     "postalCode":"11215",
+                     "city":"Brooklyn",
+                     "state":"New York"
                   },
                   "categories":[
                      {
                         "id":"4bf58dd8d48988d103941735",
                         "name":"Home",
                         "pluralName":"Homes",
+                        "shortName":"Home",
                         "icon":"https://foursquare.com/img/categories/building/home.png",
                         "parents":[
-                           "Homes, Work, Others"
+                           "Residences"
                         ],
                         "primary":true
                      }
@@ -194,59 +119,54 @@
                   "verified":false,
                   "stats":{
                      "checkinsCount":5,
-                     "usersCount":2
-                  },
-                  "todos":{
-                     "count":0
+                     "usersCount":2,
+                     "tipCount":0
                   }
                }
             ]
          },
          "checkins":{
-            "count":555,
+            "count":659,
             "items":[
                {
-                  "id":"4df8d11f45dd816eb5a80dfb",
-                  "createdAt":1308152095,
+                  "id":"4e5536f688770c1e52343650",
+                  "createdAt":1314207478,
                   "type":"checkin",
-                  "isMayor":true,
                   "timeZone":"America/New_York",
                   "venue":{
-                     "id":"4a8030abf964a520bcf41fe3",
-                     "name":"Syrup",
+                     "id":"4d656fda129d60fc94cb13c2",
+                     "name":"BMW Guggenheim Lab",
                      "contact":{
-                        "phone":"2126801477"
+                        "twitter":"bmwgugglab"
                      },
                      "location":{
-                        "address":"12 Vestry St.",
-                        "crossStreet":"Hudson Street",
+                        "address":"First Park | Houston at 2nd Ave",
+                        "lat":40.72387636454214,
+                        "lng":-73.99063467979431,
+                        "postalCode":"10003",
                         "city":"New York",
-                        "state":"NY",
-                        "postalCode":"10013",
-                        "country":"USA",
-                        "lat":40.7228,
-                        "lng":-74.0073
+                        "state":"NY"
                      },
                      "categories":[
                         {
-                           "id":"4bf58dd8d48988d124941735",
-                           "name":"Office",
-                           "pluralName":"Offices",
+                           "id":"4bf58dd8d48988d171941735",
+                           "name":"Event Space",
+                           "pluralName":"Event Spaces",
+                           "shortName":"Event Space",
                            "icon":"https://foursquare.com/img/categories/building/default.png",
                            "parents":[
-                              "Homes, Work, Others"
+                              "Professional & Other Places"
                            ],
                            "primary":true
                         }
                      ],
-                     "verified":false,
+                     "verified":true,
                      "stats":{
-                        "checkinsCount":212,
-                        "usersCount":39
+                        "checkinsCount":1225,
+                        "usersCount":931,
+                        "tipCount":2
                      },
-                     "todos":{
-                        "count":0
-                     }
+                     "url":"http://bmwguggenheimlab.org"
                   }
                }
             ]
@@ -255,11 +175,107 @@
             "count":25,
             "groups":[
                {
-                  "type":"others",
-                  "name":"other friends",
-                  "count":25,
+                  "type":"friends",
+                  "name":"Mutual friends",
+                  "count":0,
                   "items":[
 
+                  ]
+               },
+               {
+                  "type":"others",
+                  "name":"Other friends",
+                  "count":25,
+                  "items":[
+                     {
+                        "id":"25718",
+                        "firstName":"Elad",
+                        "lastName":"Elrom",
+                        "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/550YBSH5ENUEL0LE.jpg",
+                        "gender":"male",
+                        "homeCity":"New York, NY",
+                        "relationship":"friend"
+                     },
+                     {
+                        "id":"7785706",
+                        "firstName":"Emily",
+                        "lastName":"Lohmann",
+                        "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/QSLUKN5RE32KN4NF.jpg",
+                        "gender":"female",
+                        "homeCity":"Brooklyn, NY",
+                        "relationship":"friend"
+                     },
+                     {
+                        "id":"34534",
+                        "firstName":"Jesse",
+                        "lastName":"Freeman",
+                        "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/LGJHFFAIALFXXH2D.png",
+                        "gender":"male",
+                        "homeCity":"Brooklyn, NY",
+                        "relationship":"friend"
+                     },
+                     {
+                        "id":"6061196",
+                        "firstName":"Matt",
+                        "lastName":"Lohmann",
+                        "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/BM2PSQOSZ4XFMT4G.jpg",
+                        "gender":"male",
+                        "homeCity":"Brooklyn, NY",
+                        "relationship":"friend"
+                     },
+                     {
+                        "id":"3839677",
+                        "firstName":"Diana",
+                        "lastName":"Mandelare",
+                        "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/VJRYU3BCKIMPNBHQ.jpg",
+                        "gender":"female",
+                        "homeCity":"New York, NY",
+                        "relationship":"friend"
+                     },
+                     {
+                        "id":"1541584",
+                        "firstName":"Trey",
+                        "lastName":"Studley",
+                        "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/SG4N2FSYJIIIYEWN.jpg",
+                        "gender":"male",
+                        "homeCity":"New York, NY",
+                        "relationship":"friend"
+                     },
+                     {
+                        "id":"527",
+                        "firstName":"Crystal",
+                        "lastName":"Ginn",
+                        "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/527_1236920910.jpg",
+                        "gender":"female",
+                        "homeCity":"New York, NY",
+                        "relationship":"friend"
+                     },
+                     {
+                        "id":"7266063",
+                        "firstName":"Mustafa",
+                        "lastName":"Demirkent",
+                        "photo":"https://foursquare.com/img/blank_boy.png",
+                        "gender":"male",
+                        "homeCity":"New York, NY",
+                        "relationship":"friend"
+                     },
+                     {
+                        "id":"3795696",
+                        "firstName":"smo",
+                        "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/BKXN23XSF2GXG0ZG.png",
+                        "gender":"male",
+                        "homeCity":"Brooklyn, NY",
+                        "relationship":"friend"
+                     },
+                     {
+                        "id":"3339694",
+                        "firstName":"Dennis",
+                        "lastName":"Unlucky",
+                        "photo":"https://playfoursquare.s3.amazonaws.com/userpix_thumbs/DRBBDQEWVBDQ3RYT.jpg",
+                        "gender":"male",
+                        "homeCity":"Kihei, HI",
+                        "relationship":"friend"
+                     }
                   ]
                }
             ]
@@ -268,18 +284,18 @@
             "count":0
          },
          "requests":{
-            "count":3
+            "count":0
          },
          "tips":{
             "count":3
          },
          "todos":{
-            "count":0
+            "count":2
          },
          "scores":{
-            "recent":30,
-            "max":89,
-            "checkinsCount":8
+            "recent":0,
+            "max":116,
+            "checkinsCount":0
          }
       }
    }

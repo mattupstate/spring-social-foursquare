@@ -9,6 +9,8 @@ abstract class ContactInfoMixin {
 	@JsonCreator
 	ContactInfoMixin(
 			@JsonProperty("email") String email,
-			@JsonProperty("twitter") String twitter) {}
+			@JsonProperty("twitter") String twitter,
+			@JsonProperty("phone") String phone,
+			@JsonProperty("formattedPhone") String formattedPhone) {}
 
 }

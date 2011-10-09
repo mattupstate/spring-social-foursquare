@@ -2,7 +2,7 @@ package org.springframework.social.foursquare.api;
 
 public class FoursquareUser {
 	
-	private final long id;
+	private final String id;
 	private final String firstName;
 	private final String lastName;
 	private final String photoUrl;
@@ -16,7 +16,7 @@ public class FoursquareUser {
 	private FriendInfo friendInfo;
 	private Scores scores;
 	
-	public FoursquareUser(long id, String firstName, String lastName, String photoUrl,
+	public FoursquareUser(String id, String firstName, String lastName, String photoUrl,
 			String gender, String homeCity, String relationship) {
 		this.id = id;
 		this.firstName = firstName;
@@ -27,7 +27,7 @@ public class FoursquareUser {
 		this.relationship = relationship;
 	}
 
-	public long getId() {
+	public String getId() {
 		return id;
 	}
 

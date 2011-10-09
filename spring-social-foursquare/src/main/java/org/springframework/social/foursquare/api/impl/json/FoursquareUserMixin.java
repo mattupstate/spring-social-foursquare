@@ -14,7 +14,7 @@ abstract class FoursquareUserMixin {
 	
 	@JsonCreator
 	FoursquareUserMixin(
-			@JsonProperty("id") long id, 
+			@JsonProperty("id") String id, 
 			@JsonProperty("firstName") String firstName, 
 			@JsonProperty("lastName") String lastName, 
 			@JsonProperty("photoUrl") String photoUrl,

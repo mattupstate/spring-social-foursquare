@@ -1,6 +1,9 @@
 package org.springframework.social.foursquare.api.impl.json;
 
+import java.io.FileDescriptor;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.util.List;
 
 import org.codehaus.jackson.JsonParser;
@@ -11,15 +14,14 @@ import org.codehaus.jackson.type.TypeReference;
 
 public abstract class AbstractFoursquareDeserializer<T> extends JsonDeserializer<T> {
     
+	PrintStream actualStdout = new PrintStream(new FileOutputStream(FileDescriptor.out));
+	
     public List<?> deserializeNestedList(JsonParser jp, String propertyName, TypeReference typeRef) 
             throws IOException, JsonProcessingException {
-        while (jp.nextToken() != JsonToken.END_OBJECT) {
-            String fieldname = jp.getCurrentName();
-            jp.nextToken();
-            if("meta".equals(fieldname)) {
-                jp.clearCurrentToken(); // we can ignore this for now
-                jp.nextToken();
-            } else if("response".equals(fieldname)) {
+    	while (true) {
+			String fieldname = jp.getCurrentName();
+			jp.nextToken();
+			if("response".equals(fieldname)) {
                 while(jp.nextToken() != JsonToken.END_OBJECT) {
                     String responseField = jp.getCurrentName();
                     jp.nextToken();
@@ -31,18 +33,14 @@ public abstract class AbstractFoursquareDeserializer<T> extends JsonDeserializer
                 }
             }
         }
-        return null;
     }
     
 	public <C> C deserializeNestedResponseObject(JsonParser jp, String responseProperty, Class<C> responseType)
 		    throws IOException, JsonProcessingException {
-		while (jp.nextToken() != JsonToken.END_OBJECT) {
+		while (true) {
 			String fieldname = jp.getCurrentName();
 			jp.nextToken();
-			if("meta".equals(fieldname)) {
-				jp.clearCurrentToken(); // we can ignore this for now
-				jp.nextToken();
-			} else if("response".equals(fieldname)) {
+			if("response".equals(fieldname)) {
 				while(jp.nextToken() != JsonToken.END_OBJECT) {
 					String responseField = jp.getCurrentName();
 					jp.nextToken();
@@ -52,19 +50,15 @@ public abstract class AbstractFoursquareDeserializer<T> extends JsonDeserializer
 				}
 			}
         }
-		return null;
 	}
 	
 	public <C> C deserializeResponseObject(JsonParser jp, Class<C> container, Class<?> containee)
             throws IOException, JsonProcessingException {
 	    
-	    while (jp.nextToken() != JsonToken.END_OBJECT) {
-            String fieldname = jp.getCurrentName();
-            jp.nextToken();
-            if("meta".equals(fieldname)) {
-                jp.clearCurrentToken(); // we can ignore this for now
-                jp.nextToken();
-            } else if("response".equals(fieldname)) {
+		while (true) {
+			String fieldname = jp.getCurrentName();
+			jp.nextToken();
+			if("response".equals(fieldname)) {
                 try {
                     return container.getConstructor(containee).newInstance(jp.readValueAs(containee));
                 } catch (Exception e) {
@@ -73,7 +67,6 @@ public abstract class AbstractFoursquareDeserializer<T> extends JsonDeserializer
                 }
             }
         }
-        return null;
 	}
 	
 }
