@@ -93,6 +93,44 @@ public interface UserOperations {
 	CheckinInfo getCheckins(String userId);
 	
 	/**
+	 * Retrieve the specified user's checkin history
+	 * @param userId A Foursquare user ID
+	 * @param limit Number of results to return, up to 250.
+	 * @param offset The number of results to skip. Used to page through results.
+	 * @return CheckinInfo
+	 */
+	CheckinInfo getCheckins(String userId, int limit, int offset);
+	
+	/**
+	 * Retrieve the specified user's checkin history and filter by timestamp
+	 * @param userId A Foursquare user ID
+	 * @param afterTimeStamp Seconds since epoch.
+	 * @param beforeTimeStamp Seconds since epoch. 
+	 * @param limit Number of results to return, up to 250.
+	 * @param offset The number of results to skip. Used to page through results.
+	 * @return CheckinInfo
+	 */
+	CheckinInfo getCheckins(String userId, int afterTimestamp, int beforeTimestamp, int limit, int offset);
+	
+	/**
+	 * Retrieve the authenticated user's checkin history
+	 * @param limit Number of results to return, up to 250.
+	 * @param offset The number of results to skip. Used to page through results.
+	 * @return CheckinInfo
+	 */
+	CheckinInfo getCheckins(int limit, int offset);
+	
+	/**
+	 * Retrieve the authenticated user's checkin history and filter by timestamp
+	 * @param afterTimeStamp Seconds since epoch.
+	 * @param beforeTimeStamp Seconds since epoch. 
+	 * @param limit Number of results to return, up to 250.
+	 * @param offset The number of results to skip. Used to page through results.
+	 * @return CheckinInfo
+	 */
+	CheckinInfo getCheckins(int afterTimestamp, int beforeTimestamp, int limit, int offset);
+	
+	/**
 	 * Retrieve the authenticated user's friends
 	 * @return	Friends object
 	 */

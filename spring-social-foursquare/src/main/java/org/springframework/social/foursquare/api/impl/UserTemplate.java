@@ -110,11 +110,41 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 	public CheckinInfo getCheckins() {
 		return getCheckins("self");
 	}
+	
+	public CheckinInfo getCheckins(int limit, int offset) {
+		return getCheckins("self", limit, offset);
+	}
+	
 
+	public CheckinInfo getCheckins(int beforeTimestamp, int afterTimestamp, int limit, int offset) {
+		return getCheckins("self", beforeTimestamp, afterTimestamp, limit, offset); 
+	}
+	
 	public CheckinInfo getCheckins(String userId) {
 		requireUserAuthorization();
-        return get(buildUri(USERS_ENDPOINT + userId + "/checkins"), CheckinInfoContainer.class).getCheckinInfo();
+		return get(buildUri(USERS_ENDPOINT + userId + "/checkins"), CheckinInfoContainer.class).getCheckinInfo();
 	}
+		
+	public CheckinInfo getCheckins(String userId, int limit, int offset) {
+		Map<String,String> params = new HashMap<String,String>();
+		params.put("limit", Integer.toString(limit));
+		params.put("offset", Integer.toString(offset));
+		return doGetCheckins(userId, params); 
+	}
+	
+	public CheckinInfo getCheckins(String userId, int beforeTimestamp, int afterTimestamp, int limit, int offset) {
+		Map<String,String> params = new HashMap<String,String>();
+		params.put("beforeTimestamp", Integer.toString(beforeTimestamp));
+		params.put("afterTimestamp", Integer.toString(afterTimestamp));
+		params.put("limit", Integer.toString(limit));
+		params.put("offset", Integer.toString(offset));
+		return doGetCheckins(userId, params); 
+	}
+	
+	private CheckinInfo doGetCheckins(String userId, Map<String,String> params) {
+		return get(buildUri(USERS_ENDPOINT + userId + "/checkins", params), CheckinInfoContainer.class).getCheckinInfo();
+	}
+	
 
 	public Friends getFriends() {
 		return getFriends(0, 0);

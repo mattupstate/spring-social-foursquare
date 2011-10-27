@@ -118,6 +118,28 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
     }
     
     @Test
+    public void getCheckinsWithOffset() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/checkins?oauth_token=ACCESS_TOKEN&v=20110609&limit=100&offset=50"))
+            .andExpect(method(GET))
+            .andRespond(withResponse(new ClassPathResource("testdata/checkins.json", getClass()), responseHeaders));
+        
+        CheckinInfo checkinInfo = foursquare.userOperations().getCheckins(100, 50);
+        assertTrue(checkinInfo.getCheckins().get(0) != null);
+        mockServer.verify();
+    }
+    
+    @Test
+    public void getCheckinsWithTimestamps() {
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/checkins?oauth_token=ACCESS_TOKEN&v=20110609&limit=100&afterTimestamp=600&beforeTimestamp=500&offset=50"))
+            .andExpect(method(GET))
+            .andRespond(withResponse(new ClassPathResource("testdata/checkins.json", getClass()), responseHeaders));
+        
+        CheckinInfo checkinInfo = foursquare.userOperations().getCheckins(500, 600, 100, 50);
+        assertTrue(checkinInfo.getCheckins().get(0) != null);
+        mockServer.verify();
+    }
+    
+    @Test
     public void getFriends() {
         mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/friends?oauth_token=ACCESS_TOKEN&v=20110609"))
             .andExpect(method(GET))
