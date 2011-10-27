@@ -1,5 +1,6 @@
 package org.springframework.social.foursquare.api.impl;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -110,11 +111,41 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 	public CheckinInfo getCheckins() {
 		return getCheckins("self");
 	}
+	
+	public CheckinInfo getCheckins(int limit, int offset) {
+		return getCheckins("self", limit, offset);
+	}
+	
 
+	public CheckinInfo getCheckins(int beforeTimeStamp, int afterTimeStamp, int limit, int offset) {
+		return getCheckins("self", beforeTimeStamp, afterTimeStamp, limit, offset); 
+	}
+	
 	public CheckinInfo getCheckins(String userId) {
 		requireUserAuthorization();
-        return get(buildUri(USERS_ENDPOINT + userId + "/checkins"), CheckinInfoContainer.class).getCheckinInfo();
+		return get(buildUri(USERS_ENDPOINT + userId + "/checkins"), CheckinInfoContainer.class).getCheckinInfo();
 	}
+		
+	public CheckinInfo getCheckins(String userId, int limit, int offset) {
+		Map<String,String> params = new HashMap<String,String>();
+		params.put("limit", Integer.toString(limit));
+		params.put("offset", Integer.toString(offset));
+		return doGetCheckins(userId, params); 
+	}
+	
+	public CheckinInfo getCheckins(String userId, int beforeTimeStamp, int afterTimeStamp, int limit, int offset) {
+		Map<String,String> params = new HashMap<String,String>();
+		params.put("beforeTimeStamp", Integer.toString(beforeTimeStamp));
+		params.put("afterTimeStamp", Integer.toString(afterTimeStamp));
+		params.put("limit", Integer.toString(limit));
+		params.put("offset", Integer.toString(offset));
+		return doGetCheckins(userId, params); 
+	}
+	
+	private CheckinInfo doGetCheckins(String userId, Map<String,String> params) {
+		return get(buildUri(USERS_ENDPOINT + userId + "/checkins", params), CheckinInfoContainer.class).getCheckinInfo();
+	}
+	
 
 	public Friends getFriends() {
 		return getFriends(0, 0);
