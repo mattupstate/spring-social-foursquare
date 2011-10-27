@@ -110,7 +110,7 @@ public interface UserOperations {
 	 * @param offset The number of results to skip. Used to page through results.
 	 * @return CheckinInfo
 	 */
-	CheckinInfo getCheckins(String userId, int afterTimeStamp, int beforeTimeStamp, int limit, int offset);
+	CheckinInfo getCheckins(String userId, int afterTimestamp, int beforeTimestamp, int limit, int offset);
 	
 	/**
 	 * Retrieve the authenticated user's checkin history
@@ -128,7 +128,7 @@ public interface UserOperations {
 	 * @param offset The number of results to skip. Used to page through results.
 	 * @return CheckinInfo
 	 */
-	CheckinInfo getCheckins(int afterTimeStamp, int beforeTimeStamp, int limit, int offset);
+	CheckinInfo getCheckins(int afterTimestamp, int beforeTimestamp, int limit, int offset);
 	
 	/**
 	 * Retrieve the authenticated user's friends

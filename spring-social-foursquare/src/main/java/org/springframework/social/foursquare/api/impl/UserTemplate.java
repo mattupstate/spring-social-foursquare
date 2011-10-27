@@ -1,6 +1,5 @@
 package org.springframework.social.foursquare.api.impl;
 
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -117,8 +116,8 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 	}
 	
 
-	public CheckinInfo getCheckins(int beforeTimeStamp, int afterTimeStamp, int limit, int offset) {
-		return getCheckins("self", beforeTimeStamp, afterTimeStamp, limit, offset); 
+	public CheckinInfo getCheckins(int beforeTimestamp, int afterTimestamp, int limit, int offset) {
+		return getCheckins("self", beforeTimestamp, afterTimestamp, limit, offset); 
 	}
 	
 	public CheckinInfo getCheckins(String userId) {
@@ -133,10 +132,10 @@ public class UserTemplate extends AbstractFoursquareOperations implements UserOp
 		return doGetCheckins(userId, params); 
 	}
 	
-	public CheckinInfo getCheckins(String userId, int beforeTimeStamp, int afterTimeStamp, int limit, int offset) {
+	public CheckinInfo getCheckins(String userId, int beforeTimestamp, int afterTimestamp, int limit, int offset) {
 		Map<String,String> params = new HashMap<String,String>();
-		params.put("beforeTimeStamp", Integer.toString(beforeTimeStamp));
-		params.put("afterTimeStamp", Integer.toString(afterTimeStamp));
+		params.put("beforeTimestamp", Integer.toString(beforeTimestamp));
+		params.put("afterTimestamp", Integer.toString(afterTimestamp));
 		params.put("limit", Integer.toString(limit));
 		params.put("offset", Integer.toString(offset));
 		return doGetCheckins(userId, params); 
