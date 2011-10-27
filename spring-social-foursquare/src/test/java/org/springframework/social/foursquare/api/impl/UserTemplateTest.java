@@ -130,7 +130,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
     
     @Test
     public void getCheckinsWithTimestamps() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/checkins?oauth_token=ACCESS_TOKEN&v=20110609&limit=100&beforeTimestamp=500&afterTimestamp=600&offset=50"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/users/self/checkins?oauth_token=ACCESS_TOKEN&v=20110609&limit=100&afterTimestamp=600&beforeTimestamp=500&offset=50"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/checkins.json", getClass()), responseHeaders));
         
