@@ -14,8 +14,8 @@ abstract class LocationMixin {
 			@JsonProperty("state") String state,
 			@JsonProperty("postalCode") String postalCode, 
 			@JsonProperty("country") String country, 
-			@JsonProperty("latitude") double latitude, 
-			@JsonProperty("longitude") double longitude){}
+			@JsonProperty("lat") double latitude, 
+			@JsonProperty("lng") double longitude){}
 	
 	@JsonProperty("distance")
 	int distance;

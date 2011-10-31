@@ -2,6 +2,7 @@ package org.springframework.social.foursquare.api.impl;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertNotNull;
 import static org.springframework.http.HttpMethod.GET;
 import static org.springframework.http.HttpMethod.POST;
 import static org.springframework.social.test.client.RequestMatchers.body;
@@ -17,6 +18,7 @@ import org.springframework.social.foursquare.api.Category;
 import org.springframework.social.foursquare.api.CheckinInfo;
 import org.springframework.social.foursquare.api.ExploreQuery;
 import org.springframework.social.foursquare.api.ExploreResponse;
+import org.springframework.social.foursquare.api.Location;
 import org.springframework.social.foursquare.api.Tips;
 import org.springframework.social.foursquare.api.Todo;
 import org.springframework.social.foursquare.api.Venue;
@@ -34,6 +36,16 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 		
 		Venue venue = foursquare.venueOperations().getVenue("VENUE_ID");
 		assertEquals("3fd66200f964a520dbe91ee3", venue.getId());
+		Location location = venue.getLocation();
+		assertNotNull(location);
+		assertEquals("170 Thompson St", location.getAddress());
+		assertEquals("btwn Bleecker & Houston", location.getCrossStreet());
+		assertEquals("NY", location.getState());
+		assertEquals("New York", location.getCity());
+		assertEquals("10012", location.getPostalCode());
+		assertEquals("USA", location.getCountry());
+		assertEquals(40.7276468d, location.getLatitude(), 0d);
+		assertEquals(-74.0002398, location.getLongitude(), 0d);
 		mockServer.verify();
 	}
 	
