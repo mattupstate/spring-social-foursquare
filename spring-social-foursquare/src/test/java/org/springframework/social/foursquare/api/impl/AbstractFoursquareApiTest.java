@@ -27,7 +27,9 @@ public class AbstractFoursquareApiTest {
 	public void assertProfile(FoursquareUser profile) {
 		assertEquals("Matt", profile.getFirstName());
 		assertEquals("Wright", profile.getLastName());
+		assertEquals("male", profile.getGender());
 		assertEquals(3, profile.getMayorshipInfo().getTotal());
 		assertEquals(659, profile.getCheckinInfo().getTotal());
+		assertEquals("https://playfoursquare.s3.amazonaws.com/userpix_thumbs/OGGQATTYHOGWJL4E.jpg", profile.getPhotoUrl());
 	}
 }

@@ -17,7 +17,7 @@ abstract class FoursquareUserMixin {
 			@JsonProperty("id") String id, 
 			@JsonProperty("firstName") String firstName, 
 			@JsonProperty("lastName") String lastName, 
-			@JsonProperty("photoUrl") String photoUrl,
+			@JsonProperty("photo") String photoUrl,
 			@JsonProperty("gender") String gender, 
 			@JsonProperty("homeCity") String homeCity, 
 			@JsonProperty("relationship") String relationship){}
