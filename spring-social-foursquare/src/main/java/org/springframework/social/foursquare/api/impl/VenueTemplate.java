@@ -88,7 +88,7 @@ public class VenueTemplate extends AbstractFoursquareOperations implements Venue
     	if(limit > 0) {
     		params.put("limit", Integer.toString(limit));
     	}
-		return get(buildUri(VENUES_ENDPOINT + venueId + "/trending", params), HereNowContainer.class).getCheckinInfo();
+		return get(buildUri(VENUES_ENDPOINT + venueId + "/herenow", params), HereNowContainer.class).getCheckinInfo();
 	}
 
 	public Tips getTips(String venueId, String sort, int offset, int limit) {
