@@ -50,6 +50,7 @@ public class CheckinTemplateTest extends AbstractFoursquareApiTest {
 		
 		List<Checkin> checkins = foursquare.checkinOperations().getRecent(10d, 10d, 1000l, 10);
 		assertTrue(checkins.size() > 0);
+		assertEquals("John", checkins.get(0).getUser().getFirstName());
 		mockServer.verify();
 	}
 	
