@@ -106,7 +106,7 @@ public class VenueTemplateTest extends AbstractFoursquareApiTest {
 	
 	@Test
     public void getHereNow() {
-        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/trending?oauth_token=ACCESS_TOKEN&v=20110609"))
+        mockServer.expect(requestTo("https://api.foursquare.com/v2/venues/VENUE_ID/herenow?oauth_token=ACCESS_TOKEN&v=20110609"))
             .andExpect(method(GET))
             .andRespond(withResponse(new ClassPathResource("testdata/herenow.json", getClass()), responseHeaders));
         
