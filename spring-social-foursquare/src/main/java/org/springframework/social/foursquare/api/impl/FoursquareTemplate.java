@@ -1,11 +1,7 @@
 package org.springframework.social.foursquare.api.impl;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.codehaus.jackson.map.ObjectMapper;
-import org.springframework.http.MediaType;
-import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.http.client.ClientHttpRequestFactory;
 import org.springframework.http.converter.json.MappingJacksonHttpMessageConverter;
 import org.springframework.social.foursquare.api.CheckinOperations;
 import org.springframework.social.foursquare.api.Foursquare;
@@ -17,21 +13,34 @@ import org.springframework.social.foursquare.api.UserOperations;
 import org.springframework.social.foursquare.api.VenueOperations;
 import org.springframework.social.foursquare.api.impl.json.FoursquareModule;
 import org.springframework.social.oauth2.AbstractOAuth2ApiBinding;
+import org.springframework.social.oauth2.OAuth2Version;
+import org.springframework.social.support.ClientHttpRequestFactorySelector;
 import org.springframework.social.support.URIBuilder;
 import org.springframework.web.client.RestTemplate;
 
 public class FoursquareTemplate extends AbstractOAuth2ApiBinding implements Foursquare {
 
-	private final String accessToken;
-	private final String clientId;
-	private final String clientSecret;
-	private final UserOperations userOperations;
-	private final VenueOperations venueOperations;
-	private final CheckinOperations checkinOperations;
-	private final TipOperations tipOperations;
-	private final PhotoOperations photoOperations;
-	private final SettingOperations settingOperations;
-	private final SpecialOperations specialOperations;
+	private String accessToken;
+	
+	private String clientId;
+	
+	private String clientSecret;
+	
+	private UserOperations userOperations;
+	
+	private VenueOperations venueOperations;
+	
+	private CheckinOperations checkinOperations;
+	
+	private TipOperations tipOperations;
+	
+	private PhotoOperations photoOperations;
+	
+	private SettingOperations settingOperations;
+	
+	private SpecialOperations specialOperations;
+	
+	private ObjectMapper objectMapper;
 	
 	public FoursquareTemplate(String clientId, String clientSecret) {
 		this(clientId, clientSecret, null);
@@ -42,33 +51,50 @@ public class FoursquareTemplate extends AbstractOAuth2ApiBinding implements Four
 		this.clientId = clientId;
 		this.clientSecret = clientSecret;
 		this.accessToken = accessToken;
-		
-		MappingJacksonHttpMessageConverter json = new MappingJacksonHttpMessageConverter();
-        json.setSupportedMediaTypes(Arrays.asList(new MediaType("text", "javascript")));
-		getRestTemplate().getMessageConverters().add(json);
-		registerFoursquareJsonModule(getRestTemplate());
-		getRestTemplate().setErrorHandler(new FoursquareErrorHandler());
-		
-		boolean isAuthorized = (accessToken != null);
-		this.userOperations = new UserTemplate(this, isAuthorized);
-		this.venueOperations = new VenueTemplate(this, isAuthorized);
-		this.checkinOperations = new CheckinTemplate(this, isAuthorized);
-		this.tipOperations = new TipTemplate(this, isAuthorized);
-		this.photoOperations = new PhotoTemplate(this, isAuthorized);
-		this.settingOperations = new SettingTemplate(this, isAuthorized);
-		this.specialOperations = new SpecialTemplate(this, isAuthorized);
+		initialize();
 	}
 	
-	private void registerFoursquareJsonModule(RestTemplate restTemplate) {
-	    List<HttpMessageConverter<?>> converters = restTemplate.getMessageConverters();
-        for (HttpMessageConverter<?> converter : converters) {
-            if(converter instanceof MappingJacksonHttpMessageConverter) {
-                MappingJacksonHttpMessageConverter jsonConverter = (MappingJacksonHttpMessageConverter) converter;
-                ObjectMapper objectMapper = new ObjectMapper();             
-                objectMapper.registerModule(new FoursquareModule());
-                jsonConverter.setObjectMapper(objectMapper);
-            }
-        }
+	@Override
+	public void setRequestFactory(ClientHttpRequestFactory requestFactory) {
+		// Wrap the request factory with a BufferingClientHttpRequestFactory so that the error handler can do repeat reads on the response.getBody()
+		super.setRequestFactory(ClientHttpRequestFactorySelector.bufferRequests(requestFactory));
+	}
+	
+	// AbstractOAuth2ApiBinding hooks
+	@Override
+	protected OAuth2Version getOAuth2Version() {
+		return OAuth2Version.DRAFT_10;
+	}
+	
+	@Override
+	protected MappingJacksonHttpMessageConverter getJsonMessageConverter() {
+		MappingJacksonHttpMessageConverter converter = super.getJsonMessageConverter();
+		objectMapper = new ObjectMapper();				
+		objectMapper.registerModule(new FoursquareModule());
+		converter.setObjectMapper(objectMapper);		
+		return converter;
+	}
+	
+	@Override
+	protected void configureRestTemplate(RestTemplate restTemplate) {
+		restTemplate.setErrorHandler(new FoursquareErrorHandler());
+	}
+	
+	// private helpers
+	private void initialize() {
+		// Wrap the request factory with a BufferingClientHttpRequestFactory so that the error handler can do repeat reads on the response.getBody()
+		super.setRequestFactory(ClientHttpRequestFactorySelector.bufferRequests(getRestTemplate().getRequestFactory()));
+		initSubApis();
+	}
+	
+	private void initSubApis() {
+		this.userOperations = new UserTemplate(this, isAuthorized());
+		this.venueOperations = new VenueTemplate(this, isAuthorized());
+		this.checkinOperations = new CheckinTemplate(this, isAuthorized());
+		this.tipOperations = new TipTemplate(this, isAuthorized());
+		this.photoOperations = new PhotoTemplate(this, isAuthorized());
+		this.settingOperations = new SettingTemplate(this, isAuthorized());
+		this.specialOperations = new SpecialTemplate(this, isAuthorized());
 	}
 	
 	public UserOperations userOperations() {
@@ -98,7 +124,6 @@ public class FoursquareTemplate extends AbstractOAuth2ApiBinding implements Four
 	public SpecialOperations specialOperations() {
 		return specialOperations;
 	}
-	
 
 	public URIBuilder withAccessToken(String uri) {
 		return (accessToken == null) 
