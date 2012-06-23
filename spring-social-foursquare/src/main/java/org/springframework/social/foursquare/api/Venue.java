@@ -20,7 +20,7 @@ public class Venue {
 	private List<Special> specialsNearby;
 	private String shortUrl;
 	private String timezone;
-	private Map<String,Integer> beenHere;
+	private Map<String,Object> beenHere;
 	private PhotoGroups photos;
 	private String description;
 	
@@ -123,7 +123,7 @@ public class Venue {
 		return timezone;
 	}
 
-	public Map<String, Integer> getBeenHere() {
+	public Map<String, Object> getBeenHere() {
 		return beenHere;
 	}
 
