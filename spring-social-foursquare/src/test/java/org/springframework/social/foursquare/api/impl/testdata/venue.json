@@ -479,7 +479,8 @@
          "shortUrl":"http://4sq.com/5zCqUz",
          "timeZone":"America/New_York",
          "beenHere":{
-            "count":3
+            "count":3,
+            "marked":true
          },
          "photos":{
             "count":2,

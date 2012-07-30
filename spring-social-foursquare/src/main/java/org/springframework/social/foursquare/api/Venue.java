@@ -1,7 +1,6 @@
 package org.springframework.social.foursquare.api;
 
 import java.util.List;
-import java.util.Map;
 
 public class Venue {
 	
@@ -20,7 +19,7 @@ public class Venue {
 	private List<Special> specialsNearby;
 	private String shortUrl;
 	private String timezone;
-	private Map<String,Integer> beenHere;
+	private VenueBeenHere beenHere;
 	private PhotoGroups photos;
 	private String description;
 	
@@ -123,7 +122,7 @@ public class Venue {
 		return timezone;
 	}
 
-	public Map<String, Integer> getBeenHere() {
+	public VenueBeenHere getBeenHere() {
 		return beenHere;
 	}
 
